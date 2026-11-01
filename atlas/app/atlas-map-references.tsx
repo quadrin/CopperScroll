@@ -1,10 +1,10 @@
-import {lazy,Suspense,useState} from 'react';
+import {useState} from 'react';
 import LibraryReferences from './atlas-library-references';
 import references from './atlas-library-references.json';
 import siteMedia from './atlas-site-media.json';
 import type {SitePlan} from './atlas-explorer-model';
-import type {Entry,Place} from './atlas-types';
-const EvidenceDossier=lazy(()=>import('./atlas-dossier'));
+import type {Entry} from './atlas-types';
+import type {ContextEvidenceView} from './atlas-context-evidence';
 export type MapPanel='plan'|'photos'|'sources'|'history'|null;
 type SiteVideo={id:string;title:string;channel?:string;note:string};
 type SiteModel={uid:string;title:string;author:string;license:string;downloadable:boolean;faces:number;note:string};
@@ -30,9 +30,9 @@ export function MapModelReferences({placeId}:{placeId:string|null}){
  {active&&<><iframe className="map-model-embed" title={`3D model: ${active.title}`} src={`https://sketchfab.com/models/${active.uid}/embed?autostart=1&ui_infos=0&ui_watermark_link=1`} allow="autoplay; fullscreen; xr-spatial-tracking" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/><p className="map-media-limit">Model: <a href={`https://sketchfab.com/3d-models/${active.uid}`} target="_blank" rel="noreferrer">{active.title}</a> by {active.author} on Sketchfab · {active.license}. Loading needs an internet connection.</p></>}
  </div>;
 }
-export function MapSourceReferences({plan,placeId,assumptions,entry,place,onEntry,onHistory,onRead}:{plan?:SitePlan;placeId:string|null;assumptions:string[];entry:Entry;place:Place|null;onEntry:(id:string)=>void;onHistory:()=>void;onRead:()=>void}){
+export function MapSourceReferences({plan,placeId,assumptions,entry,onInspect}:{plan?:SitePlan;placeId:string|null;assumptions:string[];entry:Entry;onInspect?:(view:ContextEvidenceView,record?:string)=>void}){
  const [scan,setScan]=useState<string|null>(null);
  const planRefs:Record<string,{sourceId:string;locator:string}[]>=references.planReferences;
  const files:Record<string,{driveId:string;title:string}>=references.sources;
- return <div className="map-media-references"><LibraryReferences planIds={plan?[plan.id]:[]} placeId={placeId}/>{plan&&<><h3>{plan.source}</h3><p>{plan.credit}</p><p>{plan.limit}</p>{(planRefs[plan.id]??[]).map(ref=><button key={ref.sourceId} onClick={()=>setScan(files[ref.sourceId].driveId)}>View library scan here</button>)}</>}{scan&&<><iframe title="Google Drive source scan" className="map-drive-scan" src={`https://drive.google.com/file/d/${scan}/preview`} allowFullScreen/><p>Drive access follows your account’s permissions.</p></>}{assumptions.length>0&&<details><summary>Model sources and assumptions</summary>{assumptions.map(a=><p key={a}>{a}</p>)}</details>}<details className="map-evidence-accordion"><summary>Site evidence and interpretations</summary><div className="map-evidence-body"><Suspense fallback={<p>Opening the evidence record…</p>}><EvidenceDossier entry={entry} place={place} onEntry={onEntry} onLandscape={onHistory} onRead={onRead}/></Suspense></div></details></div>;
+ return <div className="map-media-references"><LibraryReferences planIds={plan?[plan.id]:[]} placeId={placeId}/>{plan&&<><h3>{plan.source}</h3><p>{plan.credit}</p><p>{plan.limit}</p>{(planRefs[plan.id]??[]).map(ref=><button key={ref.sourceId} onClick={()=>setScan(files[ref.sourceId].driveId)}>View library scan here</button>)}</>}{scan&&<><iframe title="Google Drive source scan" className="map-drive-scan" src={`https://drive.google.com/file/d/${scan}/preview`} allowFullScreen/><p>Drive access follows your account’s permissions.</p></>}{assumptions.length>0&&<details><summary>Model sources and assumptions</summary>{assumptions.map(a=><p key={a}>{a}</p>)}</details>}{onInspect&&<button className="map-evidence-link" onClick={()=>onInspect('dossier')}>Complete site record</button>}</div>;
 }

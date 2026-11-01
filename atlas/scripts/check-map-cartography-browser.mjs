@@ -1,0 +1,46 @@
+import assert from 'node:assert/strict';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {forwardPublic} from './browser-public-network.mjs';
+const {chromium}=await import(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core');
+const base=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5174/CopperScroll/atlas-site/';
+const dir=process.env.ATLAS_REVIEW_DIR||'/tmp/copperscroll-review';await mkdir(dir,{recursive:true});
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const results=[];
+try{for(const mobile of [false,true]){
+ const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:1000},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route(/^https:\/\//,forwardPublic);
+ await page.goto(base+'#entry-21/2d',{waitUntil:'domcontentloaded'});
+ const card=page.getByRole('complementary',{name:'Selected site',exact:true});await card.waitFor();
+ await page.waitForFunction(()=>document.querySelector('.map-canvas')?.dataset.modernLayerCount!=='loading',{},{timeout:45000});
+ assert(await page.locator('.maplibregl-ctrl-scale').isVisible());
+ assert(await page.getByLabel('Map center coordinates',{exact:true}).isVisible());
+ assert.match(await card.innerText(),/Location uncertainty/);
+ await page.waitForTimeout(6500);
+ const colors=await page.evaluate(()=>({scale:getComputedStyle(document.querySelector('.maplibregl-ctrl-scale')).color,pin:getComputedStyle(document.querySelector('.site-pin.selected .pin-head')).backgroundColor,attribution:getComputedStyle(document.querySelector('.maplibregl-ctrl-attrib')).backgroundColor}));console.log({mobile,colors});
+ assert.equal(colors.scale,'rgb(37, 55, 70)');
+ const unobstructed=await page.locator('.maplibregl-ctrl-scale').evaluate(el=>{const r=el.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('.maplibregl-ctrl-scale')===el});assert(unobstructed,'scale must be visually unobstructed by attribution or inspector');
+ await page.screenshot({path:`${dir}/map-cartographic-${mobile?'mobile':'desktop'}.png`});
+ await page.goto(base+'#entry-21/site/qumran-settlement/source',{waitUntil:'domcontentloaded'});
+ const panel=page.getByRole('complementary',{name:'Site reference panel'});await panel.waitFor();
+ assert.equal(await card.isVisible(),false,'one site inspector at a time');
+ const canvasBox=await page.locator('.map-canvas').boundingBox(),panelBox=await panel.boundingBox();
+ if(!mobile)assert(panelBox.width<=canvasBox.width*.36,'at least 64% of map width remains outside inspector');
+ else assert(panelBox.height<=canvasBox.height*.46,'more than half of map stays above inspector');
+ assert(await page.locator('.maplibregl-ctrl-scale').isVisible());
+ const scaleBox=await page.locator('.maplibregl-ctrl-scale').boundingBox();
+ assert(!mobile||scaleBox.y+scaleBox.height<panelBox.y,'scale remains above mobile sheet');
+ const feature=panel.locator('.site-feature-list button').first();await feature.click();
+ const selected=panel.getByLabel('Selected site feature',{exact:true});await selected.waitFor();assert.match(await selected.innerText(),/Selected/);
+ await page.screenshot({path:`${dir}/map-inspector-${mobile?'mobile':'desktop'}.png`});
+ await panel.getByRole('navigation',{name:'Site reference views'}).getByRole('button',{name:'Sources',exact:true}).click();
+ await panel.getByText('3D display settings',{exact:true}).click();
+ const smooth=panel.getByRole('button',{name:'Smooth',exact:true});await smooth.click();assert.equal(await smooth.getAttribute('aria-pressed'),'true');
+ await panel.getByRole('button',{name:'Blocks',exact:true}).click();
+ assert(await panel.getByRole('button',{name:'Complete site record',exact:true}).count());
+ await panel.getByRole('button',{name:'Close site reference panel',exact:true}).click();await card.waitFor();
+ assert.equal(await panel.count(),0);assert.deepEqual(errors,[]);
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'no horizontal overflow');
+ results.push({viewport:mobile?'mobile':'desktop',passed:true,inspector:panelBox,map:canvasBox,errors});await page.close();
+}
+await writeFile(`${dir}/map-cartography-validation.json`,JSON.stringify(results,null,2));console.log('Cartographic map desktop/mobile checks passed: one inspector, geography retained, visible scale/uncertainty/coordinates, feature selection, retained model settings and source access.');
+}finally{await browser.close();}

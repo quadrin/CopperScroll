@@ -11,7 +11,17 @@ const pilot=await module('../app/atlas-qumran-pilot.ts',{'three':Three,'maplibre
 assert(pilot.pilotAvailable("kh_qumran"));assert(pilot.pilotAvailable("wadi_qumran"));assert(!pilot.pilotAvailable("abu_saraj"));
 assert.deepEqual(pilot.pilotLocation(0,0).map(n=>+n.toFixed(5)),pilot.PILOT_ANCHOR);
 assert(pilot.pilotLocation(10,0)[0]>pilot.PILOT_ANCHOR[0]);assert(pilot.pilotLocation(0,10)[1]<pilot.PILOT_ANCHOR[1]);
-const model=pilot.buildQumranPilot();let vertices=0,instances=0,meshes=0,cliffs=0;
+const model=pilot.buildQumranPilot();
+assert.equal(model.userData.accuracy.geographicRegistration,'display-only');
+assert.equal(model.userData.accuracy.scaleBasis,'display-only');
+assert.equal(model.userData.accuracy.horizontalErrorMetres,null,'Unknown accuracy must remain unknown');
+const evidenceIds=new Set();
+model.traverse(o=>{if(!o.isMesh)return;const id=o.userData.evidenceId;evidenceIds.add(id);assert(id in pilot.PILOT_EVIDENCE,'Every rendered mesh needs an evidence classification');assert.deepEqual(o.userData.evidence,pilot.PILOT_EVIDENCE[id]);});
+assert.deepEqual([...evidenceIds].sort(),['basin','channel','dam','scenery','tunnel']);
+assert.equal(pilot.PILOT_EVIDENCE.dam.status,'published-reconstruction');
+assert.equal(pilot.PILOT_EVIDENCE.scenery.status,'illustrative');
+assert.equal(model.getObjectByName('basin-2').userData.evidenceId,'basin');
+let vertices=0,instances=0,meshes=0,cliffs=0;
 model.traverse(o=>{if(!o.isMesh)return;meshes++;if(o.isInstancedMesh)instances+=o.count;const p=o.geometry.getAttribute("position");vertices+=p.count;for(const x of p.array)assert(Number.isFinite(x));if(o.name==='connected-limestone-bed'){cliffs++;const normals=o.geometry.getAttribute('normal');assert(Array.from(normals.array).some(n=>n>.5),'Cliff faces must have outward normals');}});
 assert(meshes>10);assert(instances>500);assert(vertices>10000);assert(cliffs>0,'The limestone bank must have continuous rock geometry');
 const ground=model.getObjectByName('qumran-ground'),p=ground.geometry.getAttribute('position'),colour=ground.geometry.getAttribute('color');
@@ -28,7 +38,9 @@ for(let i=0;i<p.count;i++){
  assert.equal(p.getX(i),original[i*3]);assert.equal(p.getZ(i),original[i*3+2]);
 }
 model.traverse(o=>{if(!o.isInstancedMesh)return;const source=o.userData.sourceMatrices,m=o.instanceMatrix.array;for(let i=0;i<o.count;i++){const k=i*16;assert(Math.abs(m[k+13]-(source[k+13]+source[k+12]*.12+source[k+14]*.08))<.0001,'Stones must follow their ground');for(const c of [0,4,8])assert(Math.abs(m[k+c+1]-(source[k+c+1]+source[k+c]*.12+source[k+c+2]*.08))<.0001,'Long channel floors must follow the local slope');}});
-pilot.fitQumranGround(model,()=>0);assert(p.array.every((v,i)=>v===original[i]),'Returning to flat Map mode must remove terrain offsets');
+pilot.fitQumranGround(model,()=>0);
+model.traverse(o=>{if(o.isMesh)assert.deepEqual(o.userData.evidence,pilot.PILOT_EVIDENCE[o.userData.evidenceId],'Terrain fitting must preserve evidence status');});
+assert(p.array.every((v,i)=>v===original[i]),'Returning to flat Map mode must remove terrain offsets');
 const crest=model.getObjectByName('qumran-ridge-back').geometry.getAttribute('position');
 assert(Math.abs(crest.getY(85*29)-crest.getY(60*29))>1,'The ridge must have an uneven crest');
 assert(crest.getY(0)<2.5&&crest.getY(170*29)<2.5&&crest.getY(85*29)>5,'The cliff ends must taper into the ground');

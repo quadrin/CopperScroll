@@ -1,0 +1,49 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {mkdirSync} from 'node:fs';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url);
+const {chromium}=require(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core');
+const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox']});
+const page=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});
+const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5173/CopperScroll/atlas-site/';
+const url=origin+'#home';
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto(url);await page.locator('.landing-plate canvas').waitFor();
+assert.equal(await page.getByRole('heading',{level:1}).innerText(),'The Copper Scroll');
+assert.equal(await page.getByRole('link',{name:'Open atlas',exact:true}).count(),1);
+assert.equal(await page.getByRole('link',{name:'Open atlas',exact:true}).getAttribute('href'),'#entry-21/2d','Open atlas starts on a geographically placed site');
+assert.match(await page.locator('.landing-passage blockquote').innerText(),/42 talents\./);
+await page.locator('.landing-source-plan img').evaluate(img=>img.decode());
+const pixels=async()=>createHash('sha256').update(await page.locator('.landing-plate canvas').evaluate(c=>c.toDataURL())).digest('hex');
+const first=await pixels();await page.waitForTimeout(400);assert.equal(await pixels(),first,'reduced motion plate remains static');
+await page.locator('.landing-skip').focus();await page.keyboard.press('Enter');assert.equal(await page.evaluate(()=>location.hash),'#home');assert.equal(await page.evaluate(()=>document.activeElement?.id),'landing-introduction');
+assert.equal(await page.locator('.landing-header a',{hasText:'Evidence'}).count(),0);
+await page.locator('.landing-header').getByRole('link',{name:'Scroll',exact:true}).click();await page.locator('.copper-reader').waitFor();
+for(const viewport of [{width:320,height:640},{width:740,height:390}]){
+ await page.setViewportSize(viewport);
+ assert(await page.getByRole('link',{name:'Copper Scroll home',exact:true}).isVisible(),'Home remains accessible on narrow and landscape screens');
+ assert(await page.locator('.atlas-site-nav').evaluate(nav=>nav.scrollWidth<=nav.clientWidth),'Shared navigation fits the viewport');
+}
+await page.setViewportSize({width:1440,height:900});
+await page.goto(url);await page.locator('.landing-plate canvas').waitFor();
+await page.emulateMedia({reducedMotion:'no-preference'});await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(300);
+const animated=await pixels();await page.waitForTimeout(600);assert.notEqual(await pixels(),animated,'normal-motion lighting changes');
+await page.setViewportSize({width:1440,height:600});await page.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight));await page.waitForTimeout(200);const stopped=await pixels();await page.waitForTimeout(500);assert.equal(await pixels(),stopped,'offscreen animation pauses');
+await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(250);assert.notEqual(await pixels(),stopped,'onscreen animation resumes');
+await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(100);const reduced=await pixels();await page.waitForTimeout(400);assert.equal(await pixels(),reduced,'live reduced-motion preference pauses animation');
+console.log('PASS: static reduced motion, normal animation, offscreen pause/resume, live media change, keyboard skip without route change, scroll navigation.');
+await page.goto(origin+'#not-a-real-route');
+await page.getByRole('heading',{name:'This atlas view is unavailable.'}).waitFor();
+await page.getByRole('link',{name:'Copper Scroll home',exact:true}).click();
+await page.locator('.landing-plate canvas').waitFor();
+if(process.env.ATLAS_SCREENSHOT_DIR){
+ mkdirSync(process.env.ATLAS_SCREENSHOT_DIR,{recursive:true});
+ await page.setViewportSize({width:1440,height:1000});
+ await page.screenshot({path:process.env.ATLAS_SCREENSHOT_DIR+'/landing-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Homepage must fit phone width');
+ await page.screenshot({path:process.env.ATLAS_SCREENSHOT_DIR+'/landing-mobile.png',fullPage:true});
+}
+assert.deepEqual(errors,[],'No browser errors');
+await browser.close();

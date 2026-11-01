@@ -50,7 +50,6 @@
 .map-canvas .site-marker[hidden]{display:none}
 .atlas-shell.unified-atlas .unified-surface .map-surface[data-site-state=ready]>.map-status{top:auto;left:auto;right:72px;bottom:18px;max-width:290px;font-size:11px}
 @media(max-width:700px){.atlas-shell.unified-atlas .unified-surface .map-surface[data-site-state=ready]>.map-status{top:auto;bottom:176px;left:12px;right:74px;max-width:none}.map-surface:has(.map-inline-panel)>.map-place-panel{display:none}}
-.map-evidence-accordion{margin-top:18px;border-top:1px solid #d0d8c6;padding-top:14px}.map-evidence-accordion>summary{cursor:pointer;min-height:44px;align-content:center}
 .map-evidence-body{position:relative;margin:10px -10px 0}.map-evidence-body>.dossier-surface{position:relative;inset:auto;height:auto;min-height:450px;overflow:visible}
 .map-evidence-body .ds-heading{padding:12px;display:block}.map-evidence-body .ds-heading h2{font-size:23px}.map-evidence-body .ds-heading-actions{margin-top:10px;flex-wrap:wrap}
 .map-evidence-body .ds-confidence{grid-template-columns:1fr 1fr}.map-evidence-body .ds-tabs{overflow:auto;gap:10px}.map-evidence-body .ds-place-body{display:block;padding:14px}.map-evidence-body .ds-source-grid{grid-template-columns:1fr}
@@ -82,3 +81,5 @@
 .walk-sign-note{color:#6a5a3c;font-size:10px;font-style:italic}
 @media(max-width:700px){.walk-sign-card{max-width:165px;padding:5px 7px}.walk-sign-card strong{font-size:11px}}
 .map-site-caption .map-ground-note{color:#5b4a2a}
+
+.map-evidence-link{display:inline-block;padding:10px 0;color:#315e49;text-decoration:underline;font-size:13px}

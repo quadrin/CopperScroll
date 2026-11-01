@@ -8,6 +8,11 @@ repository; about +/-30 m 1-sigma, +/-60 m at 95%) and writes
 atlas/app/atlas-landscape-cave-survey.json for the Landscapes "Map layers"
 panel. Standard library only; the output is deterministic.
 
+The 30 October 2026 IAA crosswalk adds separate comparison coordinates for
+3Q and 1Q, with distances computed against the points actually rendered.
+IAA accuracy is unspecified. These points never replace the historical dots;
+the near-6Q name and the faulty 2Q register coordinate are not exact comparisons.
+
 These are survey points, not candidate places: nothing here touches
 atlas-data.json, the entry register or any place count. Coordinates come
 unchanged from the CSV.
@@ -20,12 +25,14 @@ probable reading.
 """
 import csv
 import json
+import math
 import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "research/history/devaux1952_cave_points/devaux1952_cave_points.csv"
 OUTPUT = ROOT / "atlas/app/atlas-landscape-cave-survey.json"
+IAA_CROSSWALK = ROOT / "research/sources/iaa_gis_2026-10-30/spatial/data/cave_crosswalk.csv"
 
 # Equivalences stated in DJD III p. 6 (8, 14 and 19 also in RB 60 pp. 542, 553, 555).
 CAVES = {
@@ -69,7 +76,7 @@ DJD3 = {
 DOT = re.compile(r"^Dot position (sure|probable|uncertain) ")
 
 
-def build():
+def build_collection():
     with SOURCE.open(newline="", encoding="utf-8") as file:
         rows = list(csv.DictReader(file))
     features = []
@@ -108,9 +115,40 @@ def build():
     if set(DJD3) - set(points) or set(CAVES) - set(points):
         raise ValueError("A site note names a point that is not in the CSV")
     features.sort(key=lambda feature: feature["properties"]["point"])
-    collection = {"type": "FeatureCollection", "features": features}
+    # Preserve the digitized map points. IAA gives separate source positions,
+    # not a correction or an independently verified cave-mouth survey.
+    comparisons = []
+    with IAA_CROSSWALK.open(newline="", encoding="utf-8") as file:
+        crosswalk = list(csv.DictReader(file))
+    for point in (8, 14):
+        matches = [row for row in crosswalk if row["devaux_site"] == str(point)
+                   and row["match_type"] == "siglum" and row["confidence"] == "high"]
+        if len(matches) != 1:
+            raise ValueError(f"Point {point}: expected one exact IAA siglum match")
+        row = matches[0]
+        if row["q_siglum"] != CAVES[point][0]:
+            raise ValueError(f"Point {point}: IAA siglum disagrees with the historical cave identity")
+        lon, lat = float(row["iaa_lon"]), float(row["iaa_lat"])
+        if not (31.70 < lat < 31.77 and 35.44 < lon < 35.47):
+            raise ValueError(f"Point {point}: IAA position lies outside the Qumran comparison area")
+        original = next(feature for feature in features if feature["properties"]["point"] == point)
+        old_lon, old_lat = original["geometry"]["coordinates"]
+        a, b = math.radians(lat), math.radians(old_lat)
+        h = math.sin((a-b)/2)**2 + math.cos(a)*math.cos(b)*math.sin(math.radians(lon-old_lon)/2)**2
+        comparisons.append({
+            "point": point, "siglum": CAVES[point][0],
+            "coordinates": [lon, lat], "offset_m": round(6371000 * 2 * math.asin(math.sqrt(h))),
+            "iaa_objectid": int(row["iaa_objectid"]), "iaa_name": row["iaa_name_heb"],
+            "itm_e": int(row["iaa_itm_x"]), "itm_n": int(row["iaa_itm_y"]),
+            "source": "IAA CaveAtlas, 30 October 2026 extract", "precision_m": None,
+        })
+    return {"type": "FeatureCollection", "features": features, "comparisons": comparisons}
+
+
+def build():
+    collection = build_collection()
     OUTPUT.write_text(json.dumps(collection, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
-    print(f"Wrote {len(features)} survey points to {OUTPUT.relative_to(ROOT)}.")
+    print(f"Wrote {len(collection['features'])} survey points and {len(collection['comparisons'])} IAA comparisons to {OUTPUT.relative_to(ROOT)}.")
 
 
 if __name__ == "__main__":

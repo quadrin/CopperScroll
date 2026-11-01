@@ -1,0 +1,12 @@
+.atlas-context-sheet{position:absolute;z-index:50;right:12px;top:12px;bottom:12px;width:min(620px,52%);max-width:calc(100% - 24px);display:flex;flex-direction:column;background:#fff;color:#202526;border:1px solid #cbd3d9;box-shadow:0 3px 15px #142d3b15;font:14px/1.6 Arial,sans-serif}
+.atlas-context-sheet>header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 14px;border-bottom:1px solid #d9dfe2;flex:none;background:#fff}
+.atlas-context-sheet>header h2{font:600 16px/1.35 Arial,sans-serif;margin:0;color:#202526}
+.atlas-context-sheet>header p{font:12px/1.5 Arial,sans-serif;margin:4px 0 0;color:#64717a}
+.atlas-context-sheet>header button{display:grid;place-items:center;min-width:44px;min-height:44px;border:0;background:none;color:#344a5b;cursor:pointer}
+.atlas-context-sheet button:focus-visible,.atlas-context-sheet a:focus-visible{outline:2px solid #23586c;outline-offset:3px}
+.context-sheet-body{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:16px 20px}
+.context-sheet-wide{width:calc(100% - 24px);top:22%;bottom:12px}
+.atlas-context-sheet[data-evidence-view=graph]{top:12px}
+.atlas-context-sheet .evidence-site-dossier{margin:0}
+.atlas-context-sheet .evidence-site-dossier .dossier-surface{padding:16px 0}
+@media(max-width:700px){.atlas-context-sheet,.context-sheet-wide{left:8px;right:8px;top:8px;bottom:8px;width:auto;max-width:none}.context-sheet-body{padding:14px}.atlas-context-sheet>header{padding:6px 10px}.atlas-context-sheet>header h2{font-size:15px}.atlas-context-sheet>header p{font-size:11px}}

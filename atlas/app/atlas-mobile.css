@@ -89,7 +89,6 @@
 
 @media(max-width:900px) and (max-height:540px){
  .atlas-site-nav.atlas-site-nav{flex-wrap:nowrap;padding:0 8px;gap:4px}
- .atlas-site-nav .atlas-site-brand{display:none}
  .atlas-site-nav>nav{order:0;flex:1;width:auto}
  .unified-atlas .atlas-context-panel{max-height:calc(100dvh - 106px)}
  .unified-atlas .unified-surface .map-selection-note{padding:8px 10px;max-height:calc(100% - 124px)}

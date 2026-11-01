@@ -1,10 +1,10 @@
 # The Copper Scroll Atlas
 
-The [GitHub Pages homepage](https://quadrin.github.io/CopperScroll/) opens the claim-centred knowledge base. Select a passage, follow typed graph relationships, compare retained branches, inspect name chronology, or preview the consequences of a changed reading or observation. Places and Read the scroll preserve the spatial atlas and photographic reader, including existing deep links. A Knowledge base link returns from those views.
+The homepage introduces the Copper Scroll with the animated copper illustration. The app has two main destinations, **Map** and **Scroll**. Assessments, comparisons, sources and research records open in the context of the selected passage or site; there is no separate Evidence page.
 
 The reviewed public snapshot contains evidence metadata and source pointers. It excludes protected dependency chains and source-image bytes. Each inspector links the underlying record and exact printed/PDF/figure locators. Graph positions are a reading layout; they carry no geographic or confidence meaning.
 
-The existing atlas remains available through its named routes. Browse all 61 scroll entries and their candidate places in the register, inspect sites on the map, or switch to the full scroll text from the top navigation. Landscapes compares dated maps and archive photographs. Place dossiers connect the retained readings to individual features, archaeological phases and source figures. The selected entry has Sites, Text, and Evidence tabs. In the wide views, **Entry notes** restores the detail panel. On narrow screens, the bottom navigation moves between the register, map or scroll, and entry details.
+Browse all 61 entries and their candidate places from the map, or read all twelve columns in Scroll. Map holds plans, photographs, historical imagery, assessments and complete site records. Scroll holds transcription, readings, attestations and passage sources. The same canonical evidence register supplies both.
 
 ## Textual scenes
 
@@ -139,13 +139,13 @@ See [photo and feature integration](PHOTO_INTEGRATION.md) for coverage, provenan
 
 Source originals, hashes, dimensions, licences and transformations are in [`../research/assets/plans/historical-landscapes/manifest.json`](../research/assets/plans/historical-landscapes/manifest.json), mirrored under `research/`. `python3 ../tools/build_landscape_data.py --intake-dir <download-directory>` rebuilds the public full-image derivatives and the permitted overlays (requires Pillow and pyproj). The protected map records are excluded. `python3 ../tools/build_cave_survey_layer.py` rebuilds the 1952 survey overlay, `app/atlas-landscape-cave-survey.json`, from the digitized CSV.
 
-**Place dossier** opens from an entry’s Sites or Evidence tab, or from Landscapes. Curated dossiers cover Qumran, Doq, Siloam, Tell es-Sultan, the Jericho palaces and the Marjama/Samiya comparison. The interpretation tab preserves 17 reading arguments across entries 11, 25, 29, 31, 49 and 60, with the same saved feature comparisons used in Research tools. The Jericho source gallery compares licensed early/later Pools Complex plans and the separate Area AC figure. Other figures retain source-record links where reproduction is restricted. Deep links include `#entry-29/dossier` and `#entry-31/landscape`.
+**Place dossier** opens from the map inspector’s **Complete site record** action, or from Landscapes. Curated dossiers cover Qumran, Doq, Siloam, Tell es-Sultan, the Jericho palaces and the Marjama/Samiya comparison. The interpretation tab preserves 17 reading arguments across entries 11, 25, 29, 31, 49 and 60, with the same saved feature comparisons used in Research tools. The Jericho source gallery compares licensed early/later Pools Complex plans and the separate Area AC figure. Other figures retain source-record links where reproduction is restricted. Deep links include `#entry-29/dossier` and `#entry-31/landscape`.
 
 The retired `#history` and `#entry-N/history` links open Places, preserving the requested entry where supplied.
 
 ## Validation
 
-The feature workbench, added 8 October 2026, has five research views at `#workbench/relationships`, `/inventory`, `/states`, `/coverage` and `/decisions`. Open **Research tools** from the main navigation or the entry's Evidence tab. The views load a separate generated snapshot from `../research/feature_workbench/build.py`; [its guide](../research/feature_workbench/README.md) documents the inputs, evaluators and research limits. Native aperture chords retain source coordinates; they are not map overlays. Decision outcome selections are hypothetical and write no evidence or request status.
+The feature workbench, added 8 October 2026, has five research views at `#workbench/relationships`, `/inventory`, `/states`, `/coverage` and `/decisions`. Open **Research tools → Feature workbench** in the shared header. The views load a separate generated snapshot from `../research/feature_workbench/build.py`; [its guide](../research/feature_workbench/README.md) documents the inputs, evaluators and research limits. Native aperture chords retain source coordinates; they are not map overlays. Decision outcome selections are hypothetical and write no evidence or request status.
 
 Run `python3 ../research/feature_workbench/check.py` to check semantic tests and snapshot freshness. After dependency installation, `node scripts/check-workbench.mjs` renders all five modules and all 179 saved selector choices without starting a browser. It checks control inclusion, selected branch results, source qualifiers and planning labels. The October 2026 revamp was tested in the browser on desktop and mobile; the earlier workbench rendering check remains available.
 
@@ -161,13 +161,24 @@ Entries 21, 32, 49, 31 and 55 now have a “Compare features & evidence” dialo
 Edit `app/atlas-evidence.json` for the shared Site/Pages content. The narrative dossier is in `research/feature_investigation.md`; its repository-wide copy is `../research/sites/feature_investigation.md`. Keep both copies aligned. The constraint register is `research/feature_constraints.csv`, mirrored in `../tables/feature_constraints.csv`. Refine locality envelopes into feature outlines or modeled candidate areas as sources permit, recording the geometry method and positional uncertainty.
 
 
-## Knowledge-base landing page
+## Home and contextual evidence
 
-`app/atlas-home.tsx` routes the homepage and `#kb` links to the knowledge base. The default passage view follows three steps: read the passage and retained alternatives, compare candidates under one branch and period, then inspect the additional observations that could decide the unresolved requirements. Candidate rows expand to show fixed assignments, individual checks and source links. The Entry 25 comparison starts with its four primary reading/aspect combinations; an explicit checkbox reveals all registered depth and sensitivity combinations. Evidence opens in a keyboard-accessible dialog with Back, Close and Escape; the page keeps its place underneath. The connection graph and all saved tests remain secondary views alongside names, sources and change impact.
+The bare homepage and `#home` retain the animated copper crop, lighting and attribution. The primary Open atlas action opens geographically located Qumran. A separate Entry 25 excerpt and licensed IV/17 plan introduce a concrete comparison. Modern transcription and documents use white surfaces; actual photographs and 3D object materials retain their own rendering.
 
-`atlas-kb-model.ts` exposes pure traversal and comparison functions. Comparisons join exact branch/window keys across candidates; missing results stay explicit, and duplicate cells fail instead of choosing one. URLs preserve entry, view and selected evidence. Search covers every exported record. The single document flow stacks on narrow screens; graph panning stays within its own view.
+Map and Scroll are the two main destinations. Map exposes Assessment, Compare locations and Complete site record; Scroll’s Sources panel opens reading alternatives, names/attestations, passage sources and proposed locations. Research tools holds the graph, saved tests, change impact, source catalogue and feature workbench. Graph tools can search every canonical record. Names explicitly describes registry-wide coverage rather than inventing a word-level association.
 
-`app/atlas-kb.json` is a deterministic projection, never an evidence-editing surface. Refresh it from the repository root after reviewing canonical inputs:
+`app/atlas-kb.tsx` contains reusable semantic renderers, not a standalone page. `atlas-context-evidence.tsx` caches one canonical snapshot/index and supplies contextual content; `atlas-context-sheet.tsx` supplies the accessible host, Close/Escape, focus restoration and per-record scroll positions. Record Back preserves comparison branch, expanded candidate and source scope. Comparisons use the same exact reading/period across all candidates and controls; missing evidence remains unknown.
+
+Contextual URLs append `inspect=<view>` and optional `record=<canonical-key>`/`place=<site-id>` to a map or scroll route. Examples:
+
+- `#entry-25/2d?inspect=compare`
+- `#entry-21/2d?place=kh_qumran&inspect=assessment`
+- `#entry-25/scroll?inspect=readings`
+- `#entry-25/2d?inspect=record&record=source%2Finventory-sion-iv17`
+
+Old `#kb` views and records redirect to these contexts. Legacy dossier links retain their selected site. Unknown records are shown as unavailable, never silently replaced. Unplaced candidates keep their source-plan frame and never acquire invented map coordinates.
+
+`app/atlas-kb.json` remains a deterministic projection of canonical research records. Refresh/check from the repository root:
 
 ```sh
 PYTHONPATH=research/shared_tools python3 -m claim_kb.web_export
@@ -177,14 +188,17 @@ corepack pnpm run check:kb
 corepack pnpm run build:pages
 ```
 
-The Pages build rejects a stale snapshot. The existing hosted Site uses the same checked-in snapshot; update evidence in the repository before synchronizing Site source. Public export calls the pilot's `public_view` filter before building entry indexes. Its version is a content hash of canonical records and input versions; explicit reviewed claim notices propagate reassessment flags to affected public results, while SQLite history stays in the local pilot. The public impact view computes dependency paths and preserves historical test outcomes. It does not simulate new archaeological evidence or revise a conclusion.
+The Pages build rejects a stale snapshot. Public export uses the pilot’s public-view filter, retains historical test outcomes and source limits, and does not create new archaeological evidence or alter conclusions.
 
-Validation covers all entry graphs, guided passage sections, every retained branch/window comparison, explicit missing controls, duplicate-cell rejection, source locators, name dates and dependency effects. Live desktop browser checks covered candidate expansion, source drill-down, Back and Escape with the expanded candidate preserved. Mobile layout remains CSS-checked; automated rendering checks alone do not verify touch interaction.
+Run `node scripts/check-kb.mjs`, `node scripts/check-explorer.mjs` and the contextual browser suites: `check-context-evidence-browser.mjs`, `check-map-evidence-browser.mjs`, `check-scroll-context-browser.mjs`, `check-evidence-navigation-browser.mjs`. Browser scripts use the existing `ATLAS_TEST_ORIGIN`, `ATLAS_PLAYWRIGHT_MODULE` and `ATLAS_CHROMIUM` overrides. The Evidence-navigation script now checks legacy redirects.
 
+The scroll reader has one column-selector toolbar. The map passage/place bar is absent there; entry boundaries show their number/title once. Metadata remains in Sources and contextual assessments.
+
+Accuracy work remains source-bounded: Qumran’s eight displayed spot levels have unspecified surface/phase; aqueduct scale/placement remains uncalibrated; relative-model measurements use model units; cave comparisons retain distinct IAA/de Vaux positions without moving candidate anchors.
 
 ## Navigation and close inspection
 
-The shared header has three destinations: **Evidence**, **Map** and **Scroll**, retaining the selected entry. Sources and research comparisons belong to Evidence. Plans, photos, videos, historical imagery and site evidence are accessible within the map; its panel has Plan, Photos and Sources, with videos under Photos and historical maps under Options. The site-plan selector opens every available source plan. Invalid routes show a recovery view. Geographic routes use an explicit `/2d` suffix; legacy bare entry links retain their historical site view.
+The shared header has **Map** and **Scroll**, retaining the selected entry, with a secondary **Research tools** menu. Sources and comparisons open in contextual panels. Plans, photos, videos, historical imagery and site evidence are accessible within the map; its panel has Plan, Photos and Sources, with videos under Photos and historical maps under Options. The site-plan selector opens every available source plan. Invalid routes show a recovery view. Geographic routes use an explicit `/2d` suffix; legacy bare entry links retain their historical site view.
 
 Source plans support up to 32× zoom. Geographic overzoom reaches level 22 and enlarges the available imagery; it adds no survey detail. A source plan can be linked directly with `#entry-25/site/abu-saraj-iv17/source`. A located site can open directly at eye level with `#entry-21/site/qumran-ilan/walk`.
 
@@ -201,7 +215,7 @@ The IV/17 model is a suitable bounded pilot: its plan scale and reported height 
 
 ### Phone navigation
 
-At phone widths, Evidence, Map and Scroll fit in a single row. The passage, candidate and site-plan selectors live in the expandable passage/place panel; the current selection and search stay visible. Native selectors use 16px text and controls use 44px targets. Escape, outside taps and navigation close the panel. The map keeps mode/north controls in its first row and details/layers/zoom in a second row, above a bounded selected-site card. The reference panel opens as a bottom sheet while the same geographic canvas stays mounted. Safe-area spacing follows the dynamic viewport.
+At phone widths, Map, Scroll and Research tools fit in a single row; Home remains available in portrait and landscape. The passage, candidate and site-plan selectors live in the expandable passage/place panel; the current selection and search stay visible. Native selectors use 16px text and controls use 44px targets. Escape, outside taps and navigation close the panel. The map keeps mode/north controls in its first row and details/layers/zoom in a second row, above a bounded selected-site card. The reference panel opens as a bottom sheet while the same geographic canvas stays mounted. Safe-area spacing follows the dynamic viewport.
 ## Qumran aqueduct detail
 
 Select Khirbet Qumran or Wadi Qumran on the map and choose **Zoom to site**. Close zoom reveals the aqueduct in MapLibre’s shared 3D render pipeline. The yellow person enters eye level; source-plan feature selection moves the same camera.
@@ -212,4 +226,4 @@ Ilan–Amit 1989 p. 283 Fig. 1 supplies sampled channel/branch relationships; th
 
 ## Interface simplification
 
-Current navigation exposes Evidence, Map and Scroll. The More menu, duplicated section links and unused About overlay are removed. Sources and research comparisons remain in Evidence; old research bookmarks still open. The passage/place selector collapses at every width. Maps render one compact site card and one Options menu, with close zoom revealing the source-based model and inline panels showing its references. Separate pilot/selection cards, compass, terrain-settings panel and map-layer toolbar no longer render. Options dismisses on outside click, Escape and view changes. `node scripts/check-interface.mjs` checks navigation/defaults alongside existing route and geometry tests.
+Current navigation exposes Map and Scroll. Contextual assessments, comparisons and source chains replace the standalone Evidence workspace; old bookmarks redirect into their corresponding contexts. The passage/place selector collapses at every width. Maps render one compact site card and one Options menu, with close zoom revealing the source-based model and inline panels showing its references. Separate pilot/selection cards, compass, terrain-settings panel and map-layer toolbar no longer render. Options dismisses on outside click, Escape and view changes. `node scripts/check-interface.mjs` checks navigation/defaults alongside existing route and geometry tests.

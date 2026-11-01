@@ -1,0 +1,47 @@
+// Evidence drill-down must retain the originating map/reader context and comparison.
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {mkdir} from 'node:fs/promises';
+import {forwardPublic} from './browser-public-network.mjs';
+const require=createRequire(import.meta.url);
+const {chromium}=require(process.env.ATLAS_PLAYWRIGHT_MODULE||'playwright-core');
+const origin=process.env.ATLAS_TEST_ORIGIN||'http://127.0.0.1:5174/CopperScroll/atlas-site/';
+const screenshots=process.env.ATLAS_SCREENSHOT_DIR;
+if(screenshots)await mkdir(screenshots,{recursive:true});
+const browser=await chromium.launch({executablePath:process.env.ATLAS_CHROMIUM||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{for(const mobile of [false,true]){
+ const page=await browser.newPage({viewport:mobile?{width:390,height:844}:{width:1440,height:1000},isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});const errors=[];page.on('pageerror',error=>errors.push(error.message));await page.route(/^https:\/\//,forwardPublic);
+ await page.goto(origin+'#entry-25/2d?inspect=compare',{waitUntil:'domcontentloaded'});
+ const sheet=page.locator('.atlas-context-sheet'),content=sheet.locator('.kb-context-evidence');await content.locator('.kb-candidate-toggle').first().waitFor();
+ assert.equal(await content.locator('nav[aria-label="Knowledge base views"]').count(),0);
+ assert.equal(await content.getByRole('combobox',{name:'Browse all entries',exact:true}).count(),0);assert.equal(await content.locator('img').count(),0);
+ const branch=content.getByRole('combobox',{name:'Comparison branch',exact:true});await branch.selectOption({index:1});const chosen=await branch.inputValue();
+ const candidate=content.locator('.kb-candidate-toggle').filter({hasText:'IV/17'});await candidate.click();
+ const result=content.locator('.kb-candidate.expanded').getByRole('button',{name:'Open saved result, assumptions & evidence',exact:true});await result.click();
+ await page.waitForURL(/inspect=record/);await content.locator('.kb-inspector-title code').waitFor();const parent=await content.locator('.kb-inspector-title code').innerText();
+ await content.locator('.kb-detail-section .kb-record-row').first().click();await content.getByRole('button',{name:'Back to previous record',exact:true}).waitFor();
+ await page.waitForFunction(parent=>document.querySelector('.kb-inspector-title code')?.textContent!==parent,parent);
+ await content.getByRole('button',{name:'Back to previous record',exact:true}).click();await page.waitForFunction(parent=>document.querySelector('.kb-inspector-title code')?.textContent===parent,parent);
+ if(screenshots)await page.screenshot({path:`${screenshots}/context-record-${mobile?'mobile':'desktop'}.png`});
+ await content.getByRole('button',{name:'Back to compare candidates',exact:true}).click();await page.waitForURL(/inspect=compare/);
+ assert.equal(await branch.inputValue(),chosen,'Record Back preserves the selected reading/period');assert.equal(await candidate.getAttribute('aria-expanded'),'true','Record Back preserves the expanded candidate');
+ if(screenshots)await page.screenshot({path:`${screenshots}/context-compare-${mobile?'mobile':'desktop'}.png`});
+ await page.evaluate(()=>{location.hash='#entry-25/2d?inspect=impact';});
+ await content.getByText('Select a source below, then choose “What depends on this?” in its record.',{exact:true}).waitFor();
+ await content.locator('.kb-source-list-item .kb-record-row').first().click();await page.waitForURL(/inspect=record/);
+ await content.getByRole('button',{name:'What depends on this?',exact:true}).click();await page.waitForURL(/inspect=impact/);await content.getByRole('heading',{name:'What changes if this record changes?',exact:true}).waitFor();
+ await page.evaluate(()=>{location.hash='#entry-18/scroll?inspect=names';});
+ await content.getByText('All reviewed name attestations in the project register, across passages.',{exact:false}).waitFor();
+ await page.evaluate(()=>{location.hash='#entry-25/2d?inspect=graph';});
+ const fullSearch=content.getByRole('searchbox',{name:'Search all records',exact:true});await fullSearch.fill('e');
+ await page.waitForFunction(()=>document.querySelectorAll('.kb-record-search .kb-record-row').length===25);
+ await content.locator('.kb-record-search').getByText('Refine the search to see other matches.',{exact:false}).waitFor();
+ await fullSearch.fill('icrc2017-native-plan');await content.locator('.kb-record-search .kb-record-row').first().waitFor();
+ if(screenshots)await page.screenshot({path:`${screenshots}/context-tools-${mobile?'mobile':'desktop'}.png`});
+ await content.locator('.kb-record-search .kb-record-row').filter({hasText:'observation · icrc2017-native-plan'}).click();await page.waitForURL(/inspect=record/);await page.waitForFunction(()=>document.querySelector('.kb-inspector-title code')?.textContent==='observation/icrc2017-native-plan');
+ await content.getByRole('button',{name:'Back to connections',exact:true}).click();await page.waitForURL(/inspect=graph/);assert.equal(await fullSearch.inputValue(),'icrc2017-native-plan');
+ await page.evaluate(()=>{location.hash='#entry-25/scroll?inspect=record&record=observation%2Fnot-a-real-record';});
+ await sheet.getByText('This evidence record is unavailable.',{exact:false}).waitFor();assert.equal(await content.locator('.kb-inspector:visible').count(),0);
+ await sheet.getByRole('button',{name:'Close contextual evidence',exact:true}).click();await sheet.waitFor({state:'detached'});assert.ok(page.url().includes('/scroll'));assert.ok(!page.url().includes('inspect='));
+ assert.deepEqual(errors,[]);await page.close();
+}console.log('Context evidence passed desktop/phone: record chain/back, selected comparison and expansion retained, direct missing record explicit, reader surface retained on Close, no standalone page controls or repeated figures.');}finally{await browser.close();}

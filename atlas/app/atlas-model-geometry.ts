@@ -7,6 +7,7 @@ import { createSiteMaterials, cloneSiteMaterial, chippedBlock } from './atlas-si
 import { decodeRaster, elementPoints, rasterRectangles, type TracedElement, type TracedPlan } from './atlas-traced';
 import tracedData from './atlas-traced-plans.json';
 import type { TerrainPatch, LandscapePad } from './atlas-model-landscape';
+import {QUMRAN_DISPLAY_LEVEL,QUMRAN_SPOT_LEVELS,qumranLevelPoint,QUMRAN_LEVEL_NOTE} from './atlas-qumran-levels';
 
 const traced=tracedData as unknown as Record<string,TracedPlan>;
 // Illustrative heights for traced plans, used only where no height is published.
@@ -23,7 +24,7 @@ const SETTINGS:Record<string,{point?:Point|string;datum?:Point|string;datumY?:nu
  // The traced frame's origin (the centre of cistern L110) is the registered point.
  // Its ground is the median of the 31 published room and court levels on Magen & Peleg Fig. 57 (−324.54 m),
  // 0.28 m below the model's floors as on every bench.
- 'qumran-settlement':{point:'traced-origin',level:-324.26,levelNote:'Heights: the model’s ground is set to −324.54 m, the median of the 31 room and court spot levels printed on Magen & Peleg 2018 Fig. 57 (−323.41 to −326.02 m; pools and channels left out), not to the modern terrain. Single rooms differ from it by up to 1.5 m; the traced walls keep one ground.'},
+ 'qumran-settlement':{point:'traced-origin',level:QUMRAN_DISPLAY_LEVEL,levelNote:'Heights: the model’s ground is set to −324.54 m, the median of the 31 room and court spot levels printed on Magen & Peleg 2018 Fig. 57 (−323.41 to −326.02 m; pools and channels left out), not to the modern terrain. The surface type and phase of the individual spots are unspecified; the traced walls keep one illustrative ground.'},
  'bethesda-pools':{point:'dam'},
  // The gatehouse is the frame's origin; y = 0 is the Haram surface at cistern XV.
  'east-gate-warren':{datum:'cistern-xv'},
@@ -654,7 +655,18 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
   if(inPool.length)assumptions.push(`${inPool.join(', ')}: drawn on the pool floor, ${TRACED_HEIGHTS.podium} m high (illustrative); no level is published.`);
   if(shown.some(e=>e.kind==='wall'&&e.lineStyle==='dashed'))assumptions.push(`Lines that the figure draws dashed, without a stated meaning, are low strips (${TRACED_HEIGHTS.dashed} m), not walls.`);
   const guessed=guessedDepth?` Where neither is published, the depth is an illustrative ${TRACED_HEIGHTS.depth} m.`:'';
-  assumptions.push(source.frame.datum?`Pool rims and floors and room floors follow the published spot levels (${source.frame.datum}); the general ground is level ${datum}.${guessed}`:`No levels are used: the site is drawn on one level surface. Pool depths are the published depths.${guessed}`);
+  assumptions.push(source.frame.datum?`Published element levels are used where recorded (${source.frame.datum}); elements without a recorded level use the common display surface at ${datum}.${guessed}`:`Architectural surfaces are drawn on one common level; pool depths use published values where available.${guessed}`);
+  if(plan.id==='qumran-settlement'){
+   const survey=new T.Group();survey.name='qumran-published-spot-levels';survey.userData.evidence='published-spot-levels';
+   const dots=new T.MeshBasicMaterial({color:0xd8a568,depthTest:false,depthWrite:false}),tethers=new T.LineDashedMaterial({color:0xd8a568,dashSize:.15,gapSize:.12,depthTest:false,depthWrite:false});
+   for(const spot of QUMRAN_SPOT_LEVELS){
+    const [x,z]=c(qumranLevelPoint(spot.pixel)),y=spot.level-QUMRAN_DISPLAY_LEVEL;
+    const dot=new T.Mesh(new T.SphereGeometry(.13,8,6),dots);dot.position.set(x,y,z);dot.renderOrder=20;dot.name=`spot-level-${spot.id}`;
+    dot.userData={evidence:'published-spot-level',level:spot.level,source:'Magen & Peleg 2018 Fig. 57 p. 53',sourcePixel:[...spot.pixel],surfaceType:'unspecified',phase:'unspecified',walkCollision:false,measureIgnore:true};survey.add(dot);
+    const tether=new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(x,0,z),new T.Vector3(x,y,z)]),tethers);tether.computeLineDistances();tether.renderOrder=19;tether.userData.walkCollision=false;survey.add(tether);
+   }
+   root.add(survey);assumptions.push(QUMRAN_LEVEL_NOTE);
+  }
  } else {
   const scale=36/Math.max(plan.width,plan.height),conv=(x:number,z:number):Point=>[(x-plan.width/2)*scale,(z-plan.height/2)*scale];
   const loader=new SVGLoader(),basinHoles:Point[][]=[];

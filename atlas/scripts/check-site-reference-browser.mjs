@@ -34,7 +34,7 @@ try{for(const mobile of [false,true]){
  assert.equal(await page.getByRole('button',{name:'Explore Abu Saraj · IV/17',exact:true}).count(),0);
  await page.screenshot({path:`/tmp/iv17-atlas-${mobile?'phone':'desktop'}.png`});
  await page.getByRole('button',{name:'Close site reference panel',exact:true}).click();await sameCanvas();
- await page.getByRole('button',{name:'Plan & details',exact:true}).click();await panel.getByLabel('Site structures').waitFor();await sameCanvas();
+ await page.getByRole('button',{name:'Inspect site',exact:true}).click();await panel.getByLabel('Site structures').waitFor();await sameCanvas();
  for(const route of ['model','walk']){await page.evaluate(route=>{location.hash='#entry-25/site/abu-saraj-iv17/'+route;},route);await panel.locator('.site-reference').waitFor();await sameCanvas();}
  await page.locator('.map-toolbar-menus').getByText('Options',{exact:true}).click();await page.getByRole('button',{name:'Historical maps',exact:true}).click();await panel.getByText('Historical maps',{exact:true}).waitFor();await sameCanvas();await page.getByRole('button',{name:'Close site reference panel',exact:true}).click();
  await nav.getByRole('link',{name:'Scroll',exact:true}).click();await page.getByRole('button',{name:'English translation',exact:true}).waitFor();await sameCanvas();assert.equal(await nav.getByRole('link',{name:'Scroll',exact:true}).getAttribute('aria-current'),'page');

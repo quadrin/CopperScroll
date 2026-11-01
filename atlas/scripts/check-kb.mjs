@@ -1,6 +1,6 @@
 // Semantic UI/rendering checks; these do not substitute for browser interaction QA.
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,existsSync} from 'node:fs';
 import {createRequire} from 'node:module';
 import {createElement} from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
@@ -31,13 +31,12 @@ assert.equal(survey.length,16);assert.ok(survey.every(r=>r.record.payload.hypoth
 const text=compile('../app/atlas-text.tsx');
 const textData=JSON.parse(readFileSync(new URL('../app/atlas-text.json',import.meta.url),'utf8'));
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
-const fieldwork=compile('../app/atlas-kb-fieldwork.tsx','',{'./atlas-text':{Segments:text.Segments,useScrollText:()=>({data:textData,failed:false})},'./atlas-explorer-model':{sitePlans:plans}});
 const filters=compile('../app/atlas-kb-filters-model.ts');
 const catalogue=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
-const finder=compile('../app/atlas-kb-filters.tsx','',{'./atlas-data.json':catalogue,'./atlas-kb-filters-model':filters});
 const nav=compile('../app/atlas-navigation.ts');
-const siteNav=compile('../app/atlas-site-nav.tsx','',{'./atlas-navigation':nav});
-const components=compile('../app/atlas-kb.tsx','\nexport {Graph,Inspector,Requirements,Names,Impact,Sources,CaseOverview,Comparison};',{'./atlas-kb-model':model,'./atlas-kb-fieldwork':fieldwork,'./atlas-kb-filters':finder,'./atlas-kb-filters-model':filters,'./atlas-site-nav':siteNav});
+const contextRoutes=compile('../app/atlas-context-routes.ts');
+const siteNav=compile('../app/atlas-site-nav.tsx','',{'./atlas-navigation':nav,'./atlas-context-routes':contextRoutes});
+const components=compile('../app/atlas-kb.tsx','',{'./atlas-kb-model':model,'./atlas-kb-filters-model':filters});
 const render=(c,props)=>renderToStaticMarkup(createElement(c,props));
 const onSelect=()=>{};
 for(const entry of Object.keys(data.entries)){
@@ -49,7 +48,7 @@ for(const entry of Object.keys(data.entries)){
 }
 const inspected=render(components.Inspector,{i,record:i.by.get('observation/icrc2017-native-plan'),onSelect,onImpact(){}});
 assert.ok(inspected.includes('4–5'));assert.ok(inspected.includes('p. 95'));assert.ok(inspected.includes('W2_identity'));assert.ok(inspected.includes('null'));assert.ok(inspected.includes('Follow the evidence chain'));
-const names=render(components.Names,{i,onSelect});assert.ok(names.includes('כוחלית'));assert.ok(names.includes('T05-062'));assert.ok(names.includes('Object / manuscript'));
+const names=render(components.Names,{i,onSelect});assert.ok(names.includes('כוחלית'));assert.ok(names.includes('T05-062'));assert.ok(names.includes('Object / manuscript'));assert.ok(names.includes('across passages'));
 const candidates=model.entryContext(i,'25').filter(r=>r.kind==='hypothesis');
 const requirements=render(components.Requirements,{i,candidates,onSelect});
 for(const id of ['hypothesis/iv17','hypothesis/iv11','hypothesis/twin','hypothesis/A41:XII/53'])assert.ok(requirements.includes(id),id);
@@ -64,8 +63,8 @@ for(const entry of ['25','11','60']){
   assert.equal(rows.length,candidates.length);
   for(const {candidate,result} of rows)if(result){assert.equal(result.payload.hypothesis_key,candidate.key);assert.equal(model.comparisonKey(result),choice.key);}
  }
- const overview=render(components.CaseOverview,{i,entry:i.by.get('entry/'+entry),context,candidates,onSelect});
- for(const heading of ['What does the passage say?','How do the candidates compare?','What evidence would help decide?'])assert.ok(overview.includes(heading));
+ const overview=render(components.ReadingAlternatives,{i,context,onSelect})+render(components.Comparison,{i,candidates,onSelect})+render(components.Targets,{i,context,onSelect});
+ for(const heading of ['One retained reading and period across every candidate and control.','What evidence would help decide?'])assert.ok(overview.includes(heading));
  for(const candidate of candidates)assert.ok(overview.includes(candidate.label.replaceAll('&','&amp;').replaceAll("'",'&#x27;')),candidate.key);
  assert.ok(overview.includes(entry==='25'?'permit L-656':'Kallai pp.172'));
  assert.ok(overview.includes('Comparison branch'));assert.ok(overview.includes('never identification confidence'));
@@ -77,49 +76,62 @@ const controls=model.comparisonRows(i,candidates,choice.key);
 assert.equal(controls.find(r=>r.candidate.key==='hypothesis/A41:XII/53').result,undefined);
 const bad=structuredClone(data),original=bad.records.find(r=>r.kind==='evaluation');bad.records.push({...original,key:original.key+'-duplicate'});
 assert.throws(()=>model.comparisonRows(model.index(bad),[i.by.get(original.payload.hypothesis_key)],model.comparisonKey(original)),/Ambiguous/);
-const entryOnly=render(components.CaseOverview,{i,entry:i.by.get('entry/1'),context:model.entryContext(i,'1'),candidates:[],onSelect});
+const entryOnly=render(components.Comparison,{i,candidates:[],onSelect});
 assert.ok(entryOnly.includes('no populated candidate comparison'));
-console.log('KB checks passed: 61 entry graphs, guided passage flow, all exact branch/period comparisons, explicit missing controls, separate readings, bounded impact, source locators and rendered views.');
+console.log('KB checks passed: 61 entry graphs, contextual reading alternatives and missing-observation targets, all exact branch/period comparisons, explicit missing controls, separate readings, bounded impact, source locators and rendered views.');
 
-// Archaeological display adapters preserve the native plate and transcription signs.
-const edition=render(fieldwork.PassageEdition,{entry:i.by.get('entry/25'),onSelect});
-assert.ok(edition.includes('lang="he"'));assert.ok(edition.includes('dir="rtl"'));
-assert.ok(edition.includes('מערת'));assert.ok(edition.includes('Milik 27'));
-assert.ok(edition.includes('Allegro 26'));assert.ok(edition.includes('CC BY-NC 4.0'));
-assert.ok(!render(fieldwork.PassageEdition,{entry:i.by.get('entry/11'),onSelect}).includes('{{east'));
-const plate=render(fieldwork.SourcePlate,{onSelect});
-for(const value of ['/CopperScroll/atlas-site/dossiers/sion2002-plan5-iv17.webp','Plan 5 p. 63','CC BY-NC 4.0','north arrow','No geographic registration','Evidence record'])assert.ok(plate.includes(value),value);
-assert.equal((plate.match(/<img /g)||[]).length,1);assert.ok(!plate.split('kb-plate-image')[1].split('</a>')[0].includes('<svg'));
-for(const id of ['hypothesis/twin','hypothesis/A41:XII/53','hypothesis/iv11']){
- const dossier=render(fieldwork.CandidateFieldRecord,{candidate:i.by.get(id),onSelect});
- assert.ok(dossier.includes('Figure coverage'));assert.ok(!dossier.includes('<img'));
-}
-const e60=render(fieldwork.PassageEdition,{entry:i.by.get('entry/60'),onSelect});assert.ok(e60.includes('{צח}'));
-console.log('Archaeological presentation checks passed: source plate, attribution, figure gaps, Hebrew sigla and edition concordance.');
+const foundRecords=components.searchEvidenceRecords(data.records,'icrc2017-native-plan');assert.ok(foundRecords.some(record=>record.key==='observation/icrc2017-native-plan'));
+assert.ok(components.searchEvidenceRecords(data.records,'כוחלית').some(record=>record.kind==='occurrence'));
+assert.deepEqual(components.searchEvidenceRecords(data.records,'a-record-that-does-not-exist'),[]);assert.deepEqual(components.searchEvidenceRecords(data.records,' '),[]);
+const recordSearch=render(components.RecordSearch,{i,onSelect});assert.ok(recordSearch.includes('Search all records'));assert.ok(recordSearch.includes('outside this passage'));
 
-// Filters subset display rows without changing branch, period, assignment or unknowns.
-const entryRows=filters.entryFilterRows(catalogue,data);
-assert.equal(entryRows.length,61);assert.equal(filters.filterEntries(entryRows,filters.emptyEntryFilters).length,61);
-const pilot=filters.filterEntries(entryRows,{...filters.emptyEntryFilters,coverage:'comparisons'});
-assert.deepEqual(pilot.map(r=>r.id).sort(),['11','25','60']);
-for(const row of filters.filterEntries(entryRows,{...filters.emptyEntryFilters,region:'jericho',feature:'cave'})){assert.equal(row.region,'jericho');assert.ok(row.features.includes('cave'));}
-assert.ok(filters.filterEntries(entryRows,{...filters.emptyEntryFilters,text:'Kohlit'}).length>0);
-assert.equal(filters.filterEntries(entryRows,{...filters.emptyEntryFilters,text:'a-place-that-is-not-recorded'}).length,0);
+// One immutable snapshot/index serves map and reader context panels.
+const contextual=compile('../app/atlas-context-evidence.tsx','',{'./atlas-kb-model':model,'./atlas-kb':components,'./atlas-components':{EvidenceComponents:()=>null},'./atlas-data.json':catalogue,'./atlas-kb.json':data});
+const loading=contextual.loadContextEvidence(),sameLoading=contextual.loadContextEvidence();assert.equal(loading,sameLoading);
+const cached=await loading;assert.equal(await contextual.loadContextEvidence(),cached);
+const contextProps={entryId:'25',view:'compare',onView(){},onRecord(){}};
+const contextComparison=render(contextual.default,contextProps);
+assert.ok(contextComparison.includes('One retained reading and period across every candidate and control.'));assert.ok(contextComparison.includes('permit L-656'));
+assert.ok(!contextComparison.includes('<main'));assert.ok(!contextComparison.includes('Atlas sections'));assert.ok(!contextComparison.includes('Browse all entries'));assert.ok(!contextComparison.includes('<img'));
+const missingRecord=render(contextual.default,{...contextProps,view:'record',record:'observation/does-not-exist'});
+assert.ok(missingRecord.includes('This evidence record is unavailable'));assert.ok(!missingRecord.includes('RECORD INSPECTOR'));
+const actualRecord=render(contextual.default,{...contextProps,view:'record',record:'observation/icrc2017-native-plan'});
+assert.ok(actualRecord.includes('Follow the evidence chain'));assert.ok(actualRecord.includes('p. 95'));assert.ok(actualRecord.includes('Back to compare candidates'));
+const alternatives=render(contextual.default,{...contextProps,view:'readings'});assert.ok(alternatives.includes('Readings, editions'));assert.ok(!alternatives.includes('<img'));
+const targets=render(components.Targets,{i,context:model.entryContext(i,'1'),onSelect});assert.ok(targets.includes('No acquisition target'));
+const impactStart=render(contextual.default,{...contextProps,view:'impact'});assert.ok(impactStart.includes('Select a source below'));assert.ok(impactStart.includes('Repeated publications may report the same original observation.'));
+console.log('Contextual evidence checks passed: shared cached snapshot/index, retained comparison controls/unknowns/targets, source chains, explicit missing records, and no duplicated passage, figure or standalone navigation.');
+
+// Canonical sources feed the real map plan viewer and manuscript reader.
+const plate=plans.find(plan=>plan.id==='abu-saraj-iv17');
+assert.equal(plate.image,'dossiers/sion2002-plan5-iv17.webp');assert.equal(plate.width,660);assert.equal(plate.height,615);
+assert.ok(plate.source.includes('Plan 5 p. 63'));assert.equal(plate.sourceUrl,'https://publications.iaa.org.il/atiqot/vol41/iss1/6/');
+assert.equal(plate.licenseUrl,'https://creativecommons.org/licenses/by-nc/4.0/');
+for(const value of ['Ofer Sion','CC BY-NC 4.0','source caption, scale and north arrow retained'])assert.ok(plate.credit.includes(value),value);
+for(const value of ['No geographic registration','no rotation or annotation baked','right opening as northern'])assert.ok(plate.limit.includes(value),value);
+const asset=new URL('../public/'+plate.image,import.meta.url);assert.ok(existsSync(asset));const signature=readFileSync(asset).subarray(0,12).toString('ascii');assert.ok(signature.startsWith('RIFF')&&signature.endsWith('WEBP'));
+const concordance=i.by.get('entry/25').payload.edition_concordance;assert.equal(concordance.item_milik,'27');assert.equal(concordance.item_allegro,'26');
+assert.ok(textData.source.includes('ETCBC dss 2.0.1'));assert.ok(textData.source.includes('CC BY-NC 4.0'));
+const cancelled=textData.entries['60'].flatMap(line=>line.w).find(word=>word.h.some(([letters,flag])=>letters==='צח'&&flag==='x'));
+assert.ok(cancelled);const cancellation=render(text.Segments,{w:cancelled});assert.ok(cancellation.includes('צח'));assert.ok(cancellation.includes('st-x'));
+console.log('Canonical source checks passed: complete map plan asset, caption/credit/licence/orientation/registration limits, edition concordance and real reader cancellation renderer.');
+
+// Contextual filters retain exact branch, period, assignment and unknowns.
 const compared=model.comparisonRows(i,candidates,model.comparisonChoices(i,candidates)[0].key);
 assert.deepEqual(filters.filterCandidateRows(compared,'','all'),compared);
 const conflicts=filters.filterCandidateRows(compared,'','conflict');assert.ok(conflicts.some(r=>r.candidate.id==='iv11'));
 for(const row of filters.filterCandidateRows(compared,'','fits'))assert.ok(row.result.payload.checks.every(c=>c.status==='compatible'));
 const missing=controls.find(r=>r.candidate.key==='hypothesis/A41:XII/53');assert.ok(filters.filterCandidateRows([missing],'','unknown').includes(missing));assert.equal(filters.filterCandidateRows([missing],'','fits').length,0);
 const iv17=filters.filterCandidateRows(compared,'IV17','all');assert.equal(iv17.length,1);assert.equal(iv17[0],compared.find(r=>r.candidate.id==='iv17'));
-assert.ok(render(finder.default,{data,current:'25',onChoose(){}}).includes('Filter entries'));
-console.log('Filter checks passed: 61-entry coverage, combined region/feature search, diacritics, exact-branch candidate subsets, explicit missing results and reset.');
+console.log('Filter checks passed: exact-branch candidate subsets, explicit missing results and source assignments.');
 
-// The shared section bar exposes three destinations; sources belong to Evidence.
+// Two primary destinations; research tools open within the selected passage.
 const routes=siteNav.sectionRoutes('25');assert.equal(routes.map,'#entry-25/2d');assert.equal(routes.scroll,'#entry-25/scroll');
-for(const active of ['evidence','map','scroll']){
+for(const active of ['map','scroll']){
  const html=render(siteNav.default,{entry:'25',active});
- for(const label of ['Atlas sections','Evidence','Map','Scroll'])assert.ok(html.includes(label));
- assert(!html.includes('<details'));assert(!html.includes('More sections'));
+ for(const label of ['Atlas sections','Map','Scroll','Research tools'])assert.ok(html.includes(label));
+ assert(html.includes('<details'));assert(!html.includes('More sections'));
+ const primary=html.match(/<nav aria-label="Atlas sections">(.*?)<\/nav>/)?.[1];assert(primary&&!primary.includes('Evidence'));assert.equal((primary.match(/<a /g)||[]).length,2);
  assert.equal((html.match(/aria-current="page"/g)||[]).length,1);
 }
 console.log('Shared navigation checks passed: geographic map route, selected-entry context, direct section access and one active section.');

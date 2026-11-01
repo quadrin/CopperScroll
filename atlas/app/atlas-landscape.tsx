@@ -18,6 +18,7 @@ const repo = "https://github.com/quadrin/CopperScroll/blob/main";
 const roadDatasetUrl = "https://doi.org/10.5281/zenodo.17122148";
 const roadFieldDescriptionUrl = "https://drive.google.com/file/d/17bLUPLoanwhqj_J6t49f5v7pBNpASC43/view";
 const surveyFolder = `${repo}/research/history/devaux1952_cave_points`;
+const iaaFolder = `${repo}/research/sources/iaa_gis_2026-10-30/spatial`;
 const base = import.meta.env?.BASE_URL ?? "/";
 type GeoJSONData = Parameters<GeoJSONSource["setData"]>[0];
 const sourceCollection = features as unknown as GeoJSONData;
@@ -25,7 +26,13 @@ const roadCollection = roads as unknown as GeoJSONData;
 // 1952 cave survey (de Vaux, RB 60 pl. XX): survey points, not candidate places.
 // The repository's tools/build_cave_survey_layer.py builds the JSON from the digitized CSV.
 const surveyCollection = caveSurvey as unknown as GeoJSONData;
-const surveyLayerIds = ["survey-ring-95", "survey-ring-1s", "survey-points", "survey-labels"];
+const comparisonCollection = {type:"FeatureCollection",features:caveSurvey.comparisons.flatMap(record=>{
+  const original=caveSurvey.features.find(feature=>feature.properties.point===record.point)!;
+  const properties={point:record.point,label:`${record.siglum} · IAA`};
+  return [{type:"Feature",properties,geometry:{type:"Point",coordinates:record.coordinates}},
+    {type:"Feature",properties,geometry:{type:"LineString",coordinates:[original.geometry.coordinates,record.coordinates]}}];
+})} as unknown as GeoJSONData;
+const surveyLayerIds = ["survey-ring-95", "survey-ring-1s", "survey-points", "survey-labels", "survey-iaa-links", "survey-iaa-points", "survey-iaa-labels"];
 // A ground distance as a circle radius: MapLibre's world is 512 px wide at zoom 0
 // and doubles with each zoom level. The scale is taken at 31.75° N, the plate's latitude.
 function surveyRadius(metres: number): ["interpolate", ["exponential", number], ["zoom"], number, number, number, number] {
@@ -68,16 +75,19 @@ function RoadRecordCard({record,onClose}:{record:RoadRecord;onClose:()=>void}) {
   </article>;
 }
 
-function SurveyPointCard({record,onClose}:{record:SurveyRecord;onClose:()=>void}) {
+export function SurveyPointCard({record,onClose}:{record:SurveyRecord;onClose:()=>void}) {
+  const comparison=caveSurvey.comparisons.find(item=>item.point===record.point);
+  const coordinates=caveSurvey.features.find(item=>item.properties.point===record.point)!.geometry.coordinates;
   return <article className="landscape-record landscape-survey-record" aria-label="Selected 1952 survey point" aria-live="polite">
     <button aria-label="Close survey point" onClick={onClose}>×</button>
     <span className="small-caps">1952 cave survey · point {record.point}</span><h3>{record.cave ?? `Survey point ${record.point}`}</h3>
-    <p>1952 survey point (de Vaux, RB 60 pl. XX), digitized ±30 m (1σ); about ±60 m at 95%.</p>
+    <p>1952 survey point (de Vaux, RB 60 pl. XX). Estimated digitization and map uncertainty: ±30 m (1σ); about ±60 m at 95%. These estimates do not resolve disagreement with another source.</p>
     <dl className="landscape-road-fields">
       <div><dt>Printed number</dt><dd>{record.point}<small>Label confidence: {record.label_confidence}. Dot identification: {record.dot_confidence}.</small></dd></div>
       {record.point!==8&&<div><dt>From point 8 (3Q)</dt><dd>{record.dist_to_8_m.toLocaleString("en")} m<small>Map distance; about ±30 m between nearby points.</small></dd></div>}
       <div><dt>Palestine grid</dt><dd>{record.pal_e_km} E · {record.pal_n_km} N km</dd></div>
     </dl>
+    {comparison&&<section aria-label="Cave coordinate comparison"><h4>Two source positions for {comparison.siglum}</h4><p>The IAA CaveAtlas point lies <strong>{comparison.offset_m} m</strong> from this digitized de Vaux point. Both are shown; the offset exceeds the historical map’s estimated uncertainty.</p><dl className="landscape-road-fields"><div><dt>De Vaux map · WGS84</dt><dd>{coordinates[1]} N, {coordinates[0]} E</dd></div><div><dt>IAA CaveAtlas · WGS84</dt><dd>{comparison.coordinates[1]} N, {comparison.coordinates[0]} E</dd></div><div><dt>IAA original grid · EPSG:2039</dt><dd>{comparison.itm_e} E · {comparison.itm_n} N m<small>Object {comparison.iaa_objectid}; positional accuracy unspecified in the extract.</small></dd></div></dl><p>Identity is matched by the cave siglum. The discrepancy remains unresolved; neither point establishes the exact cave entrance or findspot. Candidate anchors and confidence are unchanged.</p><a href={`${iaaFolder}/README.md`} target="_blank" rel="noreferrer">IAA source comparison and limits <ExternalLink size={12}/></a></section>}
     {record.djd3&&<p><strong>DJD III (1962), site {record.point}:</strong> {record.djd3}{record.label_confidence!=="sure"&&" This applies only if the printed number is read correctly."}</p>}
     <p className="landscape-survey-limit">The dot shows where de Vaux’s 1953 map placed this site; the map states no survey method. It is a survey point, not a candidate place for a scroll entry, and it does not locate a cave mouth or find spot.</p>
     <div className="landscape-road-source-links"><a href={`${surveyFolder}/README.md`} target="_blank" rel="noreferrer">Digitization and error budget <ExternalLink size={12}/></a><a href={`${surveyFolder}/devaux1952_cave_points.csv`} target="_blank" rel="noreferrer">Point table <ExternalLink size={12}/></a></div>
@@ -123,17 +133,22 @@ function Comparison({ place, left, right, showFeatures, showRoads, showSurvey, o
           }
           if (!map.getLayer("record-points")) map.addLayer({id:"record-points",source:"records",type:"circle",paint:{"circle-radius":5,"circle-color":["match",["get","state_2025"],"built_over_2025","#a66037","visible_2025","#2e6454","#77796e"],"circle-stroke-color":"#fff","circle-stroke-width":1.5},layout:{visibility:latest.current.showFeatures?"visible":"none"}});
           if (!map.getSource("cave-survey")) map.addSource("cave-survey",{type:"geojson",data:surveyCollection});
+          if (!map.getSource("cave-iaa-comparison")) map.addSource("cave-iaa-comparison",{type:"geojson",data:comparisonCollection});
           for (const {properties} of caveSurvey.features) {
             const id = `survey-label-${properties.point}`;
             const image = map.hasImage(id) ? null : surveyLabelImage(properties.label, properties.point === 8);
             if (image) map.addImage(id, image, {pixelRatio: 2});
           }
+          for(const record of caveSurvey.comparisons){const id=`survey-iaa-label-${record.point}`;const image=map.hasImage(id)?null:surveyLabelImage(`${record.siglum} · IAA`,false);if(image)map.addImage(id,image,{pixelRatio:2});}
           if (!map.getLayer("survey-points")) {
             const visibility = latest.current.showSurvey ? "visible" : "none";
             map.addLayer({id:"survey-ring-95",source:"cave-survey",type:"circle",paint:{"circle-radius":surveyRadius(60),"circle-color":"#22384f","circle-opacity":.05,"circle-stroke-color":"#22384f","circle-stroke-width":.75,"circle-stroke-opacity":.25,"circle-pitch-alignment":"map"},layout:{visibility}});
             map.addLayer({id:"survey-ring-1s",source:"cave-survey",type:"circle",paint:{"circle-radius":surveyRadius(30),"circle-opacity":0,"circle-stroke-color":"#22384f","circle-stroke-width":1,"circle-stroke-opacity":.45,"circle-pitch-alignment":"map"},layout:{visibility}});
             map.addLayer({id:"survey-points",source:"cave-survey",type:"circle",paint:{"circle-radius":["case",["==",["get","point"],8],6,4.5],"circle-color":["case",["==",["get","point"],8],"#9a4d21","#22384f"],"circle-stroke-color":"#fff","circle-stroke-width":1.5},layout:{visibility}});
             map.addLayer({id:"survey-labels",source:"cave-survey",type:"symbol",layout:{"icon-image":["concat","survey-label-",["to-string",["get","point"]]],"icon-anchor":"left","icon-offset":[5,0],"icon-padding":0,"symbol-sort-key":["case",["==",["get","point"],8],0,1],visibility}});
+            map.addLayer({id:"survey-iaa-links",source:"cave-iaa-comparison",type:"line",filter:["==",["geometry-type"],"LineString"],paint:{"line-color":"#6d4590","line-width":2,"line-dasharray":[3,2]},layout:{visibility}});
+            map.addLayer({id:"survey-iaa-points",source:"cave-iaa-comparison",type:"circle",filter:["==",["geometry-type"],"Point"],paint:{"circle-radius":6,"circle-color":"#6d4590","circle-stroke-color":"#fff","circle-stroke-width":2},layout:{visibility}});
+            map.addLayer({id:"survey-iaa-labels",source:"cave-iaa-comparison",type:"symbol",filter:["==",["geometry-type"],"Point"],layout:{"icon-image":["concat","survey-iaa-label-",["to-string",["get","point"]]],"icon-anchor":"left","icon-offset":[5,0],"icon-padding":0,visibility}});
           }
           const selected = latest.current.place;
           const anchor: GeoJSONData = {type:"FeatureCollection",features:selected?.lat!=null&&selected.lon!=null?[{type:"Feature",geometry:{type:"Point",coordinates:[selected.lon,selected.lat]},properties:{}}]:[]};
@@ -148,7 +163,7 @@ function Comparison({ place, left, right, showFeatures, showRoads, showSurvey, o
           map.on("move",() => {if(locked||gone)return;locked=true;const other=instances[1-index];other.jumpTo({center:map.getCenter(),zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});locked=false;});
           map.on("click",event=>{
             if(!latest.current.showRoads)return;
-            const pointLayers=["record-points","survey-points"].filter(id=>!!map.getLayer(id));
+            const pointLayers=["record-points","survey-points","survey-iaa-points"].filter(id=>!!map.getLayer(id));
             if(pointLayers.length&&map.queryRenderedFeatures(event.point,{layers:pointLayers}).length)return;
             const layers=["road-certain","road-uncertain"].filter(id=>!!map.getLayer(id));
             if(!layers.length)return;
@@ -163,6 +178,9 @@ function Comparison({ place, left, right, showFeatures, showRoads, showSurvey, o
           map.on("click","survey-points",event=>{const point=Number(event.features?.[0]?.properties?.point);const row=caveSurvey.features.find(f=>f.properties.point===point);latest.current.onSurvey(row?.properties??null)});
           map.on("mouseenter","survey-points",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","survey-points",()=>{map.getCanvas().style.cursor=""});
+          map.on("click","survey-iaa-points",event=>{const point=Number(event.features?.[0]?.properties?.point);const row=caveSurvey.features.find(f=>f.properties.point===point);latest.current.onSurvey(row?.properties??null)});
+          map.on("mouseenter","survey-iaa-points",()=>{map.getCanvas().style.cursor="pointer"});
+          map.on("mouseleave","survey-iaa-points",()=>{map.getCanvas().style.cursor=""});
           for(const id of ["road-certain","road-uncertain"]){map.on("mouseenter",id,()=>{map.getCanvas().style.cursor="pointer"});map.on("mouseleave",id,()=>{map.getCanvas().style.cursor=""})}
           map.on("error",()=>{if(!gone)setError("Some map tiles could not load. The source photographs and catalogue remain available.")});
           timeouts.push(setTimeout(()=>{if(!gone&&!map.loaded())setError("Map tiles are taking longer than expected. Try reloading the comparison or open a source photograph.")},15000));
@@ -219,7 +237,7 @@ export default function AtlasLandscape({entry,place,onDossier}:Props) {
       <div className="landscape-context-controls"><label><input type="checkbox" checked={showFeatures} onChange={e=>{setShowFeatures(e.target.checked);if(!e.target.checked)setRecord(null)}}/>1940s map records</label><label><input type="checkbox" checked={showRoads} onChange={e=>{setShowRoads(e.target.checked);if(!e.target.checked)setRoadRecord(null)}}/>Roman road context</label><label><input type="checkbox" checked={showSurvey} onChange={e=>{setShowSurvey(e.target.checked);if(!e.target.checked)setSurveyRecord(null)}}/>1952 cave survey (de Vaux)</label></div>
       {showFeatures&&<div className="landscape-context-note"><span className="landscape-dot visible"/>Visible in 2025 review <span className="landscape-dot built"/>Built over <span className="landscape-dot unknown"/>Other / unknown. Points record map labels or symbols, with positional uncertainty; the map supplies no ancient date.</div>}
       {showRoads&&<div className="landscape-context-note"><span className="road-key certain"/>Certain alignment <span className="road-key uncertain"/>Conjectured / hypothetical alignment. Select a road to inspect its dates and sources. Itiner-e supplies Roman-period context; dates vary or are unknown. <a href={roadDatasetUrl} target="_blank" rel="noreferrer">de Soto et al. 2025 · CC BY 4.0</a></div>}
-      {showSurvey&&<div className="landscape-context-note"><span className="landscape-dot survey"/>1952 survey point <span className="landscape-dot survey-cave3"/>Point 8: Cave 3 (3Q), where the Copper Scroll was found <span className="survey-ring-key"/>±30 m (1σ) and ±60 m (95%). The 27 legible numbered sites on de Vaux’s map of the March 1952 cliff survey (RB 60, 1953, pl. XX), digitized in this project. They are survey points, not candidate places. Select a point to inspect it. <a href={`${surveyFolder}/README.md`} target="_blank" rel="noreferrer">Digitization and error budget</a></div>}
+      {showSurvey&&<div className="landscape-context-note"><span className="landscape-dot survey"/>1952 survey point <span className="landscape-dot survey-cave3"/>Point 8: Cave 3 (3Q), where the Copper Scroll was found <span className="survey-ring-key"/>Estimated map uncertainty: ±30 m (1σ) and ±60 m (95%). Purple points: IAA positions for 3Q and 1Q, with dashed lines showing unresolved source offsets; IAA positional accuracy is unspecified. The rings describe the historical map estimate, not verified cave-mouth accuracy. The 27 legible numbered sites on de Vaux’s map of the March 1952 cliff survey (RB 60, 1953, pl. XX) remain unchanged. Select either source point to compare coordinates. <a href={`${surveyFolder}/README.md`} target="_blank" rel="noreferrer">Digitization and error budget</a></div>}
       <details className="landscape-details"><summary>Source dates and alignment</summary><p>{landscapeLayers[left].note}</p><p>{landscapeLayers[right].note}</p>{place?.id==="tell_es_sultan"&&<p>The existing Tell es-Sultan feature registration failed its positional check (about 49 m). It supplies no tested feature geometry here.</p>}<a href={`${repo}/research/regional/mandate_maps/README.md`} target="_blank" rel="noreferrer">Read the map review</a></details>
       {localRecords.length>0&&<details className="landscape-details"><summary>Map records around {place?.shortName}</summary><div className="landscape-record-list">{localRecords.map(feature=><button key={feature.id} onClick={event=>{setShowFeatures(true);chooseMapRecord(feature.properties);const tools=event.currentTarget.closest(".landscape-layer-tools");if(tools instanceof HTMLDetailsElement)tools.open=false}}><strong>{feature.properties.label_as_printed||feature.properties.feature_class}</strong><small>{feature.properties.feature_class} · {stateLabel(feature.properties.state_2025)}</small></button>)}</div></details>}
       </div></details></>:<><label className="landscape-date-select">Date<select aria-label="Landscape source date" value={epoch} onChange={e=>chooseEpoch(e.target.value)}>{landscapeEpochs.filter(item=>item.kind===(tab==="photographs"?"photo":"source")).map(item=><option key={item.id} value={item.id}>{item.label} · {item.detail}</option>)}</select></label>{tab==="photographs"&&photo&&<select className="landscape-photo-select" aria-label="Archive photograph" value={photo.id} onChange={e=>{setPhotoId(e.target.value);setZoom(1);setImageFailed(false)}}>{photoList.map(item=><option key={item.id} value={item.id}>{item.title}</option>)}</select>}</>}

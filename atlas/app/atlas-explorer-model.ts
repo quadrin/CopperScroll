@@ -1,5 +1,7 @@
 import planData from "./atlas-site-plans.json";
+import atlasData from "./atlas-data.json";
 import { entryHash, parseAtlasHash } from "./atlas-navigation";
+import {isInspectionView,type InspectionView} from './atlas-context-routes';
 export type Camera = { center: [number, number]; zoom: number; bearing: number; pitch: number };
 export type ModelCamera = { position: [number,number,number]; target: [number,number,number]; zoom: number; up?: [number,number,number]; projection?: "orthographic"|"perspective"; navigation?: "pan"|"orbit" };
 export type Viewport = { x: number; y: number; zoom: number };
@@ -13,6 +15,8 @@ export type ExplorerState = {
  entryId: string; placeId: string | null; mode: string; planId: string | null; featureId: string | null;
  siteView: "plan" | "photo"; highlightId?: string | null; scrollPhoto: boolean; scroll3d?: boolean; workbench: string | null; recordId: string | null;
  representation?: "model" | "source" | "walk"; modelCamera?: ModelCamera;
+ explicitPlace?: boolean;
+ inspection?:InspectionView|null;
  camera?: Camera; viewport?: Viewport; photoViewport?: Viewport; scrollTop?: number; scrollColumn?: number;
 };
 export const initialExplorer: ExplorerState = { entryId: "21", placeId: "kh_qumran", mode: "site", planId: "qumran-ilan", featureId: null, siteView: "plan", scrollPhoto: false, workbench: null, recordId: null };
@@ -21,10 +25,29 @@ export function archaeologyForPlace(entryId:string,placeId:string|null):Explorer
 }
 export function explorerHash(s: ExplorerState) {
  if (s.workbench) return `#workbench/${s.workbench}?entry=${s.entryId}`;
- if (s.mode === "site" && s.planId) return `#entry-${s.entryId}/site/${s.planId}${s.featureId ? `/${s.featureId}` : ""}${s.siteView === "photo" ? "/photo" : s.representation ? "/"+s.representation : ""}`;
- return entryHash(s.entryId, s.mode) + (s.mode === "scroll" && s.scrollPhoto ? "/photo" : s.mode === "scroll" && s.scroll3d ? "/3d" : "");
+ const base=s.mode === "site" && s.planId?`#entry-${s.entryId}/site/${s.planId}${s.featureId ? `/${s.featureId}` : ""}${s.siteView === "photo" ? "/photo" : s.representation ? "/"+s.representation : ""}`:entryHash(s.entryId,s.mode)+(s.mode==='scroll'&&s.scrollPhoto?'/photo':s.mode==='scroll'&&s.scroll3d?'/3d':'');
+ const params=new URLSearchParams();
+ if(s.explicitPlace&&s.placeId&&(["2d","3d","landscape","dossier","ground","scroll"].includes(s.mode)||s.inspection))params.set('place',s.placeId);
+ if(s.inspection){params.set('inspect',s.inspection);if(s.recordId)params.set('record',s.recordId);}
+ return base+(params.size?'?'+params.toString():'');
 }
 export function explorerFromHash(hash: string, primaryPlace: (id: string) => string | null): ExplorerState | null {
+ // Evidence links retain the chosen locality even when it has no source plan
+ // or mapped coordinate. Reject unknown/repeated parameters and arbitrary IDs.
+ if(hash.includes("?")&&!hash.startsWith("#workbench")){
+  const parts=hash.split("?");if(parts.length!==2)return null;
+  const params=new URLSearchParams(parts[1]);
+  const keys=[...params.keys()],placeId=params.get("place"),inspection=params.get('inspect'),record=params.get('record');
+  if(!keys.length||new Set(keys).size!==keys.length||keys.some(key=>!['place','inspect','record'].includes(key)))return null;
+  if(params.has('place')&&(!placeId||!atlasData.places.some(place=>place.id===placeId)))return null;
+  if(params.has('inspect')&&!isInspectionView(inspection))return null;
+  if(params.has('record')&&(!inspection||!record))return null;
+  const parsed=explorerFromHash(parts[0],primaryPlace);
+  if(!parsed)return null;
+  if(!inspection&&!["2d","3d","landscape","dossier","ground","scroll"].includes(parsed.mode))return null;
+  if(placeId&&parsed.mode==='site'&&!sitePlans.find(plan=>plan.id===parsed.planId)?.placeIds.includes(placeId))return null;
+  return {...parsed,...(placeId?{placeId,explicitPlace:true,planId:parsed.mode==='site'?parsed.planId:plansForPlace(placeId)[0]?.id??null}:{}),inspection:isInspectionView(inspection)?inspection:null,recordId:record};
+ }
  const overview=hash.match(/^#entry-((?:[1-9]|[1-5]\d|60|12a))\/site$/);
  if(overview)return archaeologyForPlace(overview[1],primaryPlace(overview[1]));
  const site = hash.match(/^#entry-([\da-z]+)\/site\/([\w-]+)(?:\/([\w-]+))?(?:\/(photo|source|model|walk))?$/);
