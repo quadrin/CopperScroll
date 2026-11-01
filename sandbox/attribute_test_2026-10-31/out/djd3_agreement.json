@@ -1,0 +1,80 @@
+{
+ "A_rows": 73,
+ "B_rows": 72,
+ "A_ids": 73,
+ "B_ids": 72,
+ "matched": 72,
+ "A_only": 1,
+ "B_only": 0,
+ "agreement": {
+  "class": {
+   "agree": 68,
+   "compared": 72,
+   "rate": 0.944
+  },
+  "dims": {
+   "agree": 35,
+   "compared": 35,
+   "rate": 1.0
+  },
+  "n_openings": {
+   "agree": 18,
+   "compared": 25,
+   "rate": 0.72
+  },
+  "opening_dirs": {
+   "agree": 16,
+   "compared": 16,
+   "rate": 1.0
+  },
+  "n_steps": {
+   "agree": 0,
+   "compared": 0,
+   "rate": null
+  }
+ },
+ "A_only_ids": [
+  "29.D"
+ ],
+ "B_only_ids": [],
+ "A_attribute_counts": {
+  "with_any_dimension": 23,
+  "with_n_openings": 19,
+  "with_opening_dirs": 16,
+  "with_n_steps": 0,
+  "with_grid": 0,
+  "in_window_yes": 24,
+  "classes": {
+   "building": 1,
+   "cave": 34,
+   "chamber": 14,
+   "doorway": 3,
+   "fissure": 3,
+   "other": 9,
+   "pit": 2,
+   "rock_shelter": 4,
+   "terrace": 1,
+   "wall": 2
+  }
+ },
+ "B_attribute_counts": {
+  "with_any_dimension": 23,
+  "with_n_openings": 25,
+  "with_opening_dirs": 16,
+  "with_n_steps": 0,
+  "with_grid": 0,
+  "in_window_yes": 23,
+  "classes": {
+   "building": 1,
+   "cave": 34,
+   "chamber": 12,
+   "doorway": 3,
+   "fissure": 3,
+   "other": 11,
+   "pit": 1,
+   "rock_shelter": 4,
+   "terrace": 1,
+   "wall": 2
+  }
+ }
+}
