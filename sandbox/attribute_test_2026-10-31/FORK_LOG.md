@@ -23,3 +23,8 @@ Seen at this point: both concordance files (the main session listed their descri
 - No concordance row of a run-28 describer is marked `copied = yes`; the six copied rows name other sources (Goldfus 1984, Frumkin 1988, Patrich & Arubas 1989, the Center for Cave Research, Bar-Adon 1989).
 - Neither concordance reader found any 1993 feature identified with a Bar-Adon 1972 site.
 - 1952 list: 14 disagreements (7 opening counts, 4 classes, 3 sizes) went to a third reader. Its brief adds one clarification of the schema: a phrase that says only which way a cave opens gives a direction, and counts as one opening only if the text clearly describes a single entrance.
+
+## 31 Oct 2026, ~20:35 PT: 1952 list consolidated
+
+- Third reading: A 8, B 2, both 4, neither 0. Opening counts are left blank where the text gives only a direction (sites 7, 15, 18, 20, 36); the doorway rows 4.A and 39.A get 1.
+- Rows 29.B and 29.C were a numbering mismatch between readers (sub-features of cave 29 ordered differently). The third reader's values for them are explanatory text, and they are carried into `out/djd3_consolidated.csv` as written. They are parts of a cave, so they are not benchmark items (bench28 drops them) and cannot affect the gate.
