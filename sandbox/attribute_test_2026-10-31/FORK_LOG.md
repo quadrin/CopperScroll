@@ -28,3 +28,11 @@ Seen at this point: both concordance files (the main session listed their descri
 
 - Third reading: A 8, B 2, both 4, neither 0. Opening counts are left blank where the text gives only a direction (sites 7, 15, 18, 20, 36); the doorway rows 4.A and 39.A get 1.
 - Rows 29.B and 29.C were a numbering mismatch between readers (sub-features of cave 29 ordered differently). The third reader's values for them are explanatory text, and they are carried into `out/djd3_consolidated.csv` as written. They are parts of a cave, so they are not benchmark items (bench28 drops them) and cannot affect the gate.
+
+## 31 Oct 2026, ~20:55 PT: Benjamin survey agreement; third reading limited to the model's fields
+
+Seen at this point: both Benjamin reader reports and the agreement summary (matched 167; class 148/167; sizes 83/133; opening counts 7/8; no directions, steps or pillars in either file).
+
+- The 53 size disagreements come from one source problem: the cave list prints "a × b × c m" without labels, and reader A keyed the typeset left-to-right order while reader B keyed the Hebrew reading order. Sizes are not used by the run 28 model, so they are not sent to the third reader; `consolidate28.py` keeps them as `A|B`. This limit is reported.
+- The third reading covers the 20 disagreements on fields the model uses (19 classes, 1 opening count): `out/ben93_to_adjudicate_model_fields.csv`.
+- Reader-only rows (A 29, B 44) are kept as single-reader rows, as for the Qumran sources.
