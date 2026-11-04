@@ -9,7 +9,7 @@ export function useScrollScene(){
  const [value,setValue]=useState(0),[reduced,setReduced]=useState(false);
  useEffect(()=>{
   const query=matchMedia('(prefers-reduced-motion: reduce)');let frame=0;
-  const update=()=>{frame=0;const el=ref.current;if(!el)return;const rect=el.getBoundingClientRect(),travel=Math.max(1,rect.height-innerHeight);setValue(query.matches?1:Math.max(0,Math.min(1,-rect.top/travel)));};
+  const update=()=>{frame=0;const el=ref.current;if(!el)return;const rect=el.getBoundingClientRect(),sticky=el.querySelector(':scope > .story-sticky, :scope > .story-opening-sticky') as HTMLElement|null,viewport=sticky?.offsetHeight||document.documentElement.clientHeight,travel=Math.max(1,rect.height-viewport);setValue(query.matches?1:Math.max(0,Math.min(1,-rect.top/travel)));};
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(update);};
   const preference=()=>{setReduced(query.matches);schedule();};
   preference();window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule);query.addEventListener('change',preference);

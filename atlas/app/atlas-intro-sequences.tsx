@@ -61,26 +61,19 @@ const ending:Beat[]=[
 ];
 
 function Illustration({art,progress=1}:{art:Art;progress?:number}){
- const t=clamp(progress),map=['places','directions','deposit','candidates','time'].includes(art);
- return <svg className="story-sequence-art" viewBox="0 0 1000 430" role="img" aria-label={art==='sheet'||art==='durability'?'Actual photograph of Copper Scroll strip 13, showing engraved Hebrew and corroded metal.':art==='temple'?'Photograph of the Israel Museum’s modern reconstruction of the Second Temple, representing a proposed ownership.':art==='community'?'Generic illustrative courtyard representing a proposed community ownership; not a reconstruction of Qumran.':art==='worked'?'Published IV/17 plan.':art==='entry25'?'Published radiograph containing Entry 25.':`Illustrative ${art} scene; not a surveyed landscape or an observed deposit.`} data-art={art} data-asset-family="atlas-relief-studies">
+ const t=clamp(progress),single=!['evidence','worked','entry25'].includes(art);
+ return <svg className="story-sequence-art" viewBox={art==='worked'?'265 0 470 430':art==='entry25'?(INTRO_PRIVATE_IMAGES?'300 0 400 430':'180 0 640 430'):'0 0 1000 430'} role="img" aria-label={art==='sheet'||art==='durability'?'Actual photograph of Copper Scroll strip 13, showing engraved Hebrew and corroded metal.':art==='temple'?'Photograph of the Israel Museum’s modern reconstruction of the Second Temple, representing a proposed ownership.':art==='community'?'Generic illustrative courtyard representing a proposed community ownership; not a reconstruction of Qumran.':art==='worked'?'Published IV/17 plan.':art==='entry25'?'Published radiograph containing Entry 25.':`Illustrative ${art} scene; not a surveyed landscape or an observed deposit.`} data-art={art} data-layout={single?'single':'wide'} preserveAspectRatio={single?'xMidYMid slice':'xMidYMid meet'} data-asset-family="atlas-relief-studies">
   <g>
-  {(art==='sheet'||art==='durability')&&<g transform={`translate(0 ${6*(1-t)})`}><AtlasGlyph name="copper" x={310} y={0} width={380} height={385}/>{art==='durability'&&<path d={`M${320+t*330} 55L${280+t*330} 341`} fill="none" stroke="#e8d9b9" strokeWidth="3" opacity={.2+.3*Math.sin(t*Math.PI)}/>}</g>}
-  {art==='entries'&&<><AtlasGlyph name="document" x={300} y={5} width={400} height={365}/>{[0,1,2].map(i=><path key={i} d={`M352 ${126+i*66}h-16v43h16M648 ${126+i*66}h16v43h-16`} fill="none" stroke="#9a613f" strokeWidth="2.2" opacity={clamp(t*2-i*.32)}/>)}</>}
-  {art==='structure'&&<><AtlasGlyph name="cave" x={95} y={70} width={240} height={245}/><AtlasGlyph name="document" x={390} y={65} width={220} height={255} opacity={.45+.55*clamp(t*2)}/><AtlasGlyph name="jar" x={700} y={70} width={190} height={245} opacity={.25+.75*clamp((t-.25)*2)}/><path d="M345 200H370M633 200H674" fill="none" stroke="#bca487" strokeWidth="1.8"/></>}
-  {map&&<>
-   <AtlasGlyph name="landscape" x={65} y={60} width={375} height={285}/>
-   <AtlasGlyph name={art==='time'?'strata':'cave'} x={455} y={25} width={440} height={335}/>
-   {(art==='directions'||art==='candidates')&&<path d="M385 320C491 355 577 342 662 299" fill="none" stroke="#9b613e" strokeWidth="2.5" pathLength="1" strokeDasharray="1" strokeDashoffset={1-t}/>}
-   {art==='directions'&&<g opacity={t}><path d="M884 193V317M876 193H892M876 317H892" fill="none" stroke="#9b613e" strokeWidth="2"/><text x="874" y="365" textAnchor="end" fill="#76563d" fontSize="24">3 cubits</text></g>}
-   {art==='deposit'&&<g opacity={t} transform={`translate(0 ${12*(1-t)})`}><AtlasGlyph name="jar" x={697} y={220} width={112} height={151}/><path d="M644 222H862" fill="none" stroke="#a39379" strokeWidth="1.5" strokeDasharray="5 7"/></g>}
+  {['sheet','durability','entries','structure','literary','unknown'].includes(art)&&<AtlasGlyph name="copper" x={310} y={0} width={380} height={400}/>}
+  {['places','directions','candidates'].includes(art)&&<>
+   <AtlasGlyph name="cave" x={270} y={25} width={460} height={355}/>
+   {art==='directions'&&<g><path d="M640 300V365M630 300H650M630 365H650" fill="none" stroke="#9b613e" strokeWidth="2" pathLength="1" strokeDasharray="1" strokeDashoffset={1-t}/><text x="628" y="356" textAnchor="end" fill="#76563d" fontSize="22">3 cubits</text></g>}
   </>}
+  {art==='time'&&<AtlasGlyph name="strata" x={290} y={10} width={420} height={380}/>}
+  {(art==='deposit'||art==='recovery')&&<AtlasGlyph name="jar" x={330} y={5} width={340} height={390}/>}
   {art==='worked'&&<image href={`${base}introduction/iv17-plan.webp`} x="285" y="5" width="430" height="420"/>}
   {art==='temple'&&<AtlasGlyph name="sanctuary" x={245} y={0} width={510} height={385}/>}
   {art==='community'&&<AtlasGlyph name="settlement" x={245} y={5} width={510} height={365}/>}
-  {(art==='literary'||art==='recovery'||art==='unknown')&&<>
-   <AtlasGlyph name="document" x={175} y={38} width={275} height={310}/>
-   {art==='literary'?<AtlasGlyph name="landscape" x={550} y={66} width={340} height={280} opacity={.3+.5*t}/>:<><path d="M478 227C522 190 566 190 607 227" fill="none" stroke="#a16b45" strokeWidth="2" pathLength="1" strokeDasharray={art==='unknown'?'.025 .035':'1'} strokeDashoffset={art==='unknown'?0:1-t}/><AtlasGlyph name="jar" x={635} y={84} width={190} height={250} opacity={art==='unknown'?.24:.25+.75*t}/></>}
-  </>}
   {art==='evidence'&&<><AtlasGlyph name="document" x={110} y={65} width={210} height={265}/><AtlasGlyph name="landscape" x={397} y={80} width={215} height={240}/><image href={`${base}introduction/iv17-plan.webp`} x="700" y="80" width="220" height="240"/><path d="M340 212H375M636 212H678" fill="none" stroke="#9a7050" strokeWidth="2" pathLength="1" strokeDasharray="1" strokeDashoffset={1-t}/></>}
   {art==='entry25'&&(INTRO_PRIVATE_IMAGES?<image href={`${base}introduction/entry25-12g.jpeg`} x="355" y="10" width="290" height="380" opacity={.55+.45*t}/>:<EditionPassage x={210} y={10} width={580} height={380}/>)}
   </g>
