@@ -1,0 +1,1 @@
+import{o as e}from"./atlas-site-nav-BH_oRFo1.js";var t=e(`chevron-right`,[[`path`,{d:`m9 18 6-6-6-6`,key:`mthhwq`}]]);export{t};
