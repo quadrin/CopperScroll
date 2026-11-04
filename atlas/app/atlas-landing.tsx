@@ -21,7 +21,7 @@ export default function AtlasLanding({entry='21'}:{entry?:string}){
   <a className="landing-skip" href="#landing-introduction" onClick={event=>{event.preventDefault();const introduction=document.getElementById('landing-introduction');introduction?.focus();introduction?.scrollIntoView();}}>Skip to introduction</a>
   <header className="landing-header">
    <a className="landing-brand" href="#home" aria-label="Copper Scroll Atlas home">Copper Scroll</a>
-   <nav aria-label="Atlas sections"><a href={routes.map}>Map</a><a href={routes.scroll}>Scroll</a></nav>
+   <nav aria-label="Atlas sections"><a className="atlas-intro-link" href={routes.introduction}>What is the Copper Scroll?</a><a href={routes.map}>Map</a><a href={routes.scroll}>Scroll</a></nav>
   </header>
   <main>
    <section className="landing-hero" aria-labelledby="landing-title">

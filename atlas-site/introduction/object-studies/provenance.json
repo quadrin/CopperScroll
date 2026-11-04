@@ -1,0 +1,73 @@
+{
+  "source": "Seven generated illustrative object studies and two sourced documentary references.",
+  "sourceSheetSha256": "5f9eccc16acfecfadbe64e9bf711947780be3fc9e469557847e76d198897b710",
+  "processing": "Equal-cell extraction and WebP encoding. Only sub-visible alpha fringe (below 3/255) is cleared. No object retouching, invented reconstruction of a source photograph, vector tracing or texture smoothing. Original generated PNG is retained unchanged.",
+  "limitations": "These are generated explanatory renders, not photographs of excavated objects, surveyed cave mouths, measured architecture or readings of the manuscript. Architectural forms are illustrative massing only. Actual manuscript photographs, source radiographs and plans are separate evidence assets.",
+  "assets": {
+    "cave": {
+      "file": "introduction/object-studies/cave.webp",
+      "width": 420,
+      "height": 416,
+      "kind": "illustrative-render"
+    },
+    "jar": {
+      "file": "introduction/object-studies/jar.webp",
+      "width": 421,
+      "height": 416,
+      "kind": "illustrative-render"
+    },
+    "copper": {
+      "file": "scroll/strip13.webp",
+      "width": 2467,
+      "height": 4016,
+      "viewBox": "430 300 1740 2920",
+      "kind": "manuscript-photo",
+      "source": "https://commons.wikimedia.org/wiki/File:Strip_13,_part_of_the_Copper_Dear_Sea_Scrolls,_from_Qumran_Cave_3,_Jordan_Museum.jpg",
+      "description": "Actual Copper Scroll strip 13, photographed by Osama Shukir Muhammed Amin in 2020, CC BY-SA 4.0. Viewport crop; no retouching."
+    },
+    "document": {
+      "file": "introduction/object-studies/document.webp",
+      "width": 420,
+      "height": 415,
+      "kind": "illustrative-render"
+    },
+    "sanctuary": {
+      "file": "introduction/object-studies/temple-model.webp",
+      "width": 2472,
+      "height": 3744,
+      "viewBox": "100 1050 2250 2400",
+      "kind": "reference-photo",
+      "source": "https://commons.wikimedia.org/wiki/File:Jerusalem_Modell_BW_3.JPG",
+      "description": "Berthold Werner photograph of the Holyland Model of Jerusalem, Israel Museum. Modern reconstruction of the Second Temple; public domain."
+    },
+    "settlement": {
+      "file": "introduction/object-studies/settlement.webp",
+      "width": 420,
+      "height": 415,
+      "kind": "illustrative-render"
+    },
+    "strata": {
+      "file": "introduction/object-studies/strata.webp",
+      "width": 420,
+      "height": 416,
+      "kind": "illustrative-render"
+    },
+    "landscape": {
+      "file": "introduction/object-studies/landscape.webp",
+      "width": 421,
+      "height": 416,
+      "kind": "illustrative-render"
+    },
+    "silver": {
+      "file": "introduction/object-studies/silver.webp",
+      "width": 420,
+      "height": 416,
+      "kind": "illustrative-render"
+    }
+  },
+  "referenceOverrides": [
+    "copper",
+    "sanctuary"
+  ],
+  "templeOriginalSha256": "c7d23306db5e3daab870e4a572944cd8ddf6c0c91180fa9af55b23de9f84210d"
+}

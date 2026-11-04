@@ -12,8 +12,8 @@ const contextRoutes=compile('../app/atlas-context-routes.ts');
 const nav=compile('../app/atlas-site-nav.tsx',{'./atlas-navigation':routing,'./atlas-context-routes':contextRoutes});
 const html=renderToStaticMarkup(React.createElement(nav.default,{entry:'21',active:'map'}));
 const primary=html.match(/<nav aria-label="Atlas sections">(.*?)<\/nav>/)?.[1];
-assert(primary);assert.equal((primary.match(/<a /g)??[]).length,2);assert(!primary.includes('Evidence')&&primary.includes('Map')&&primary.includes('Scroll'));
-assert(html.includes('Research tools'));assert(html.includes('Connection graph'));
+assert(primary);assert.equal((primary.match(/<a /g)??[]).length,3);assert(!primary.includes('Evidence')&&primary.includes('Map')&&primary.includes('Scroll'));
+assert(primary.includes('What is the Copper Scroll?'));assert.equal(nav.sectionRoutes('25').introduction,'#what-is-the-copper-scroll');assert(html.includes('Research tools'));assert(html.includes('Connection graph'));
 assert(!html.includes('More sections'));assert(html.includes('<details'));assert(!html.includes('Sites &amp; 3D'));assert(!html.includes('Eye-level simulation'));
 assert.equal(nav.sectionRoutes('25').map,'#entry-25/2d');
 assert.equal(nav.sectionRoutes('25').scroll,'#entry-25/scroll');
@@ -23,4 +23,4 @@ assert(!map.includes('map-place-details'));assert(!map.includes('Show selected s
 assert(!map.includes('className="map-selection-note"'));assert(!map.includes('className="terrain-controls"'));assert(!map.includes('className="map-legend"'));
 assert(map.includes('startMapWalk'));assert(map.includes('createMapSiteLayer'));assert.equal((map.match(/className="map-place-panel"/g)??[]).length,1);
 assert(map.includes('<SiteReference '));assert(!map.includes('SiteExplorer'));
-console.log('Interface checks passed: two primary routes and contextual research tools, source-plan defaults, one place panel, one map surface with inline references, dismissal handlers and no legacy floating cards.');
+console.log('Interface checks passed: map/scroll plus the explainer and contextual research tools, source-plan defaults, one place panel, one map surface with inline references, dismissal handlers and no legacy floating cards.');

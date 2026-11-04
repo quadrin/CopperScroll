@@ -45,5 +45,6 @@ if(process.env.ATLAS_SCREENSHOT_DIR){
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Homepage must fit phone width');
  await page.screenshot({path:process.env.ATLAS_SCREENSHOT_DIR+'/landing-mobile.png',fullPage:true});
 }
+await page.goto(url);await page.getByRole('link',{name:'What is the Copper Scroll?',exact:true}).click();await page.getByRole('heading',{name:'What is the Copper Scroll?',level:1}).waitFor();assert.equal(await page.evaluate(()=>location.hash),'#what-is-the-copper-scroll');await page.getByRole('link',{name:'Copper Scroll home',exact:true}).click();await page.getByRole('heading',{name:'The Copper Scroll',level:1}).waitFor();
 assert.deepEqual(errors,[],'No browser errors');
 await browser.close();
