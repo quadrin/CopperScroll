@@ -5,7 +5,7 @@ const base=import.meta.env?.BASE_URL??'/';
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const candidates=[{name:'Twin Cave',area:'near Qumran',lat:31.74183,lon:35.45941,dx:0,dy:0},{name:'IV/17',area:'near Jericho',lat:31.85611,lon:35.46306,dx:-60,dy:-8},{name:'IV/11',area:'near Jericho',lat:31.85611,lon:35.46306,dx:64,dy:28}];
 type Position={x:number;y:number};
-export default function CandidateMap({progress,reduced=false}:{progress:number;reduced?:boolean}){
+export default function CandidateMap({progress,reduced=false,onReady}:{progress:number;reduced?:boolean;onReady?:()=>void}){
  const host=useRef<HTMLDivElement>(null),update=useRef<((p:number)=>void)|null>(null),current=useRef(progress),[positions,setPositions]=useState<Position[]>([]),[failed,setFailed]=useState(false);current.current=progress;
  useEffect(()=>{
   let stopped=false,renderer:T.WebGLRenderer|undefined,geometry:T.PlaneGeometry|undefined,material:T.MeshStandardMaterial|undefined,observer:ResizeObserver|undefined;const controller=new AbortController();
@@ -23,6 +23,8 @@ export default function CandidateMap({progress,reduced=false}:{progress:number;r
   void mount();return()=>{stopped=true;controller.abort();observer?.disconnect();renderer?.dispose();geometry?.dispose();material?.dispose();host.current?.replaceChildren();update.current=null;};
  },[reduced]);
  useEffect(()=>update.current?.(progress),[progress]);
+ useEffect(()=>{if(positions.length===3||failed)onReady?.();},[positions.length,failed,onReady]);
+ useEffect(()=>{let frame=0;const resize=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>update.current?.(current.current));};window.addEventListener('resize',resize);return()=>{cancelAnimationFrame(frame);window.removeEventListener('resize',resize);};},[]);
  return <div className="story-regional-map" data-ready={positions.length===3} data-precision="regional" role="img" aria-label="Judean Desert relief map. Twin Cave is proposed near Qumran; IV/17 and IV/11 near Jericho. Pins indicate regions, not registered cave mouths.">
   <div className="story-regional-canvas" ref={host}/>
   {failed&&<svg className="story-regional-fallback" viewBox="0 0 1000 500"><path d="M100 75L390 20L570 110L680 285L900 410L650 470L370 350L160 290Z" fill="#d9d3c5"/>{Array.from({length:18},(_,i)=><path key={i} d={`M120 ${90+i*12}Q420 ${10+i*14} 620 ${230+i*10}T900 ${420+i*3}`} fill="none" stroke="#a7a18e" opacity=".45"/>)}<path d="M670 260L900 410L770 460L640 330Z" fill="#91aaa6"/></svg>}
