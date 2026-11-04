@@ -2,7 +2,7 @@
 import {Narration,stepAt,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
 import {AtlasGlyph} from './atlas-intro-glyphs';
-import {INTRO_PRIVATE_IMAGES,EditionPassage} from './atlas-intro-media';
+import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
 import CandidateMap from './atlas-intro-candidate-map';
 const base=import.meta.env?.BASE_URL??'/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
@@ -10,19 +10,19 @@ const hebrew=['[ב]מערת העמוד של שני','[ה]פתחין צופא מ�
 const english=['[In] the cave of the pillar with two entrances,','facing east, [at] the northern entrance,','dig three cubits. There is a jar,','in it one scroll; beneath it,','42 silver-weight units.'];
 export function EntryReveal(){
  const scene=useScrollScene(),p=scene.value;
- const lift=scene.reduced?1:clamp((p-.25)/.10),translation=scene.reduced?1:clamp((p-.60)/.10);
- const imageOpacity=scene.reduced?1:1-clamp((p-.25)/.10);
- const phase=p<.30?'image':p<.65?'hebrew':'english';
+ const lift=scene.reduced?1:clamp((p-.28)/.05),translation=scene.reduced?1:clamp((p-.62)/.05);
+ const imageOpacity=scene.reduced?1:1-clamp((p-.28)/.05);
+ const phase=p<1/3&&INTRO_PRIVATE_IMAGES?'image':p<2/3?'hebrew':'english';
  return <div className="story-scene story-entry-reveal" ref={scene.ref} data-progress={p.toFixed(3)} data-reduced={scene.reduced} data-reading-phase={phase}><div className="story-sticky">
   <div className="story-entry-art">
-   <div className="story-entry-radiographs" style={{opacity:imageOpacity,transform:scene.reduced?undefined:`scale(${1+p*.12})`}}>{INTRO_PRIVATE_IMAGES?['12g','12c','12d'].map(tag=><img key={tag} src={`${base}introduction/entry25-${tag}.jpeg`} alt={`Published column VI radiograph ${tag.toUpperCase()}, containing the Entry 25 passage.`}/>):<EditionPassage/>}</div>
-   <div className="story-entry-hebrew" lang="he" dir="rtl" style={{opacity:scene.reduced?1:lift*(1-translation),transform:scene.reduced?undefined:`translateY(${(1-lift)*8}px)`}} aria-hidden={!scene.reduced&&(lift<.5||translation>.5)}>{hebrew.map((line,i)=><p key={i}>{line}</p>)}</div>
+   {INTRO_PRIVATE_IMAGES&&<div className="story-entry-radiographs" style={{opacity:imageOpacity,transform:scene.reduced?undefined:`scale(${1+p*.12})`}}>{['12g','12c','12d'].map(tag=><img key={tag} src={`${base}introduction/entry25-${tag}.jpeg`} alt={`Published column VI radiograph ${tag.toUpperCase()}, containing the Entry 25 passage.`}/>)}</div>}
+   <div className="story-entry-hebrew" lang="he" dir="rtl" style={{opacity:scene.reduced?1:(INTRO_PRIVATE_IMAGES?lift:1)*(1-translation),transform:scene.reduced?undefined:`translateY(${INTRO_PRIVATE_IMAGES?(1-lift)*8:0}px)`}} aria-hidden={!scene.reduced&&((INTRO_PRIVATE_IMAGES&&lift<.5)||translation>.5)}>{hebrew.map((line,i)=><p key={i}>{line}</p>)}</div>
    <blockquote className="story-entry-english" style={{opacity:translation,transform:scene.reduced?undefined:`translateY(${(1-translation)*8}px)`}} aria-hidden={!scene.reduced&&translation<.5}>{english.map((line,i)=><p key={i}><AnimatedWords text={line} progress={scene.reduced?1:clamp((p-.56-i*.025)*7)} reduced={scene.reduced}/></p>)}</blockquote>
   </div>
   <Narration progress={p} reduced={scene.reduced} lines={[
-   'We will follow one example: Entry 25. It occupies column VI, lines 1–6.',
-   'The Hebrew lifts into modern type. Brackets mark letters supplied by editors.',
-   'Read it in English. A cave, an instruction, and a deposit.',
+   'Let’s follow one example: Entry 25, column VI, lines 1–6.',
+   'Brackets in the Hebrew mark letters supplied by editors.',
+   'In English: a cave, an instruction, and a deposit.',
   ]}/>
  </div></div>;
 }

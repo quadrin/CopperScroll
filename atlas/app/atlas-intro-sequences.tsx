@@ -1,13 +1,12 @@
 "use client";
 import {lazy,Suspense} from 'react';
 import {AtlasGlyph} from './atlas-intro-glyphs';
-import {INTRO_PRIVATE_IMAGES,EditionPassage} from './atlas-intro-media';
 const CandidateMap=lazy(()=>import('./atlas-intro-candidate-map'));
 import {Narration,stepAt,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
 const base=import.meta.env?.BASE_URL??'/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
-type Art='sheet'|'places'|'directions'|'deposit'|'entries'|'structure'|'entry25'|'candidates'|'worked'|'time'|'recovery'|'durability'|'temple'|'community'|'literary'|'unknown'|'evidence';
+type Art='sheet'|'places'|'directions'|'deposit'|'entries'|'structure'|'candidates'|'worked'|'time'|'recovery'|'durability'|'temple'|'community'|'literary'|'unknown'|'evidence';
 type Beat={text:string;art:Art};
 const inventory:Beat[]=[
  {text:'The Copper Scroll reads like an inventory of concealed treasure.',art:'sheet'},
@@ -17,7 +16,6 @@ const inventory:Beat[]=[
  {text:'Editors divide the writing into more than sixty “entries.”',art:'entries'},
  {text:'Each usually combines a place, an instruction, and a deposit.',art:'structure'},
  {text:'Entry boundaries and numbering differ between editions.',art:'entries'},
- {text:'Let’s follow one example: Entry 25.',art:'entry25'},
 ];
 const locations:Beat[]=[
  {text:'The entry describes a cave’s features, rather than a modern address.',art:'places'},
@@ -61,8 +59,8 @@ const ending:Beat[]=[
 ];
 
 function Illustration({art,progress=1}:{art:Art;progress?:number}){
- const t=clamp(progress),single=!['evidence','worked','entry25'].includes(art);
- return <svg className="story-sequence-art" viewBox={art==='worked'?'265 0 470 430':art==='entry25'?(INTRO_PRIVATE_IMAGES?'300 0 400 430':'180 0 640 430'):'0 0 1000 430'} role="img" aria-label={art==='sheet'||art==='durability'?'Actual photograph of Copper Scroll strip 13, showing engraved Hebrew and corroded metal.':art==='temple'?'Photograph of the Israel Museum’s modern reconstruction of the Second Temple, representing a proposed ownership.':art==='community'?'Generic illustrative courtyard representing a proposed community ownership; not a reconstruction of Qumran.':art==='worked'?'Published IV/17 plan.':art==='entry25'?'Published radiograph containing Entry 25.':`Illustrative ${art} scene; not a surveyed landscape or an observed deposit.`} data-art={art} data-layout={single?'single':'wide'} preserveAspectRatio={single?'xMidYMid slice':'xMidYMid meet'} data-asset-family="atlas-relief-studies">
+ const t=clamp(progress),single=!['evidence','worked'].includes(art);
+ return <svg className="story-sequence-art" viewBox={art==='worked'?'265 0 470 430':'0 0 1000 430'} role="img" aria-label={art==='sheet'||art==='durability'?'Actual photograph of Copper Scroll strip 13, showing engraved Hebrew and corroded metal.':art==='temple'?'Photograph of the Israel Museum’s modern reconstruction of the Second Temple, representing a proposed ownership.':art==='community'?'Generic illustrative courtyard representing a proposed community ownership; not a reconstruction of Qumran.':art==='worked'?'Published IV/17 plan.':`Illustrative ${art} scene; not a surveyed landscape or an observed deposit.`} data-art={art} data-layout={single?'single':'wide'} preserveAspectRatio={single?'xMidYMid slice':'xMidYMid meet'} data-asset-family="atlas-relief-studies">
   <g>
   {['sheet','durability','entries','structure','literary','unknown'].includes(art)&&<AtlasGlyph name="copper" x={310} y={0} width={380} height={400}/>}
   {['places','directions','candidates'].includes(art)&&<>
@@ -75,7 +73,6 @@ function Illustration({art,progress=1}:{art:Art;progress?:number}){
   {art==='temple'&&<AtlasGlyph name="sanctuary" x={245} y={0} width={510} height={385}/>}
   {art==='community'&&<AtlasGlyph name="settlement" x={245} y={5} width={510} height={365}/>}
   {art==='evidence'&&<><AtlasGlyph name="document" x={110} y={65} width={210} height={265}/><AtlasGlyph name="landscape" x={397} y={80} width={215} height={240}/><image href={`${base}introduction/iv17-plan.webp`} x="700" y="80" width="220" height="240"/><path d="M340 212H375M636 212H678" fill="none" stroke="#9a7050" strokeWidth="2" pathLength="1" strokeDasharray="1" strokeDashoffset={1-t}/></>}
-  {art==='entry25'&&(INTRO_PRIVATE_IMAGES?<image href={`${base}introduction/entry25-12g.jpeg`} x="355" y="10" width="290" height="380" opacity={.55+.45*t}/>:<EditionPassage x={210} y={10} width={580} height={380}/>)}
   </g>
  </svg>;
 }
