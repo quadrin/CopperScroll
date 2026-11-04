@@ -19,8 +19,12 @@ export function useScrollScene(){
  return {ref,value,reduced};
 }
 export function stepAt(value:number,count:number){return Math.min(count-1,Math.floor(value*count));}
+// Each beat reserves its last third for reading the completed visual.
+export function beatTiming(progress:number,count:number){
+ const index=stepAt(progress,count),local=progress===1?1:(progress*count)%1;
+ return {index,local,animation:Math.min(1,local/.65)};
+}
 export function Narration({lines,progress,reduced=false}:{lines:string[];progress:number;reduced?:boolean}){
- const group=stepAt(progress,lines.length),local=progress===1?1:(progress*lines.length)%1;
- const parts=lines.map(line=>line.split(/(?<=[.!?])\s+(?=[A-Z“‘])/)),fragment=stepAt(local,parts[group].length);
- return <div className="story-narration" data-static={reduced}>{parts.flatMap((sentences,i)=>sentences.map((line,j)=><p key={`${i}-${j}`} className={i===group&&j===fragment?'story-line is-current':'story-line'} aria-hidden={!reduced&&(i!==group||j!==fragment)}><AnimatedWords text={line} progress={progress===1?1:Math.max(0,Math.min(1,((local*sentences.length)%1)*2))} reduced={reduced}/></p>))}</div>;
+ const beat=beatTiming(progress,lines.length);
+ return <div className="story-narration" data-static={reduced} data-beat={beat.index} data-word-animation-complete={reduced||beat.animation===1}>{lines.map((line,i)=><p key={i} className={i===beat.index?'story-line is-current':'story-line'} aria-hidden={!reduced&&i!==beat.index}><AnimatedWords text={line} progress={beat.animation} reduced={reduced}/></p>)}</div>;
 }

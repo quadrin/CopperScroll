@@ -130,7 +130,7 @@ export default function DesertOpening(){
      node.style.opacity=String(visible?opacity:0);node.style.left=`${(projected.x+1)*50}%`;node.style.top=`${(1-projected.y)*50}%`;
     }
     function update(value:number){
-     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),unroll=smooth((story-.625)/.22),gap=smooth((story-.845)/.155);
+     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),unroll=smooth((story-.625)/.055),gap=smooth((story-.68)/.055);
      const inside=smooth((p-.54)/.22),handoff=smooth((p-.945)/.055);
      if(p<=.54){
       const u=p/.54,d=44000*Math.pow(180/44000,u),angle=.85*(1-smooth(u));
@@ -164,7 +164,7 @@ export default function DesertOpening(){
   void mount();return()=>{disposed=true;controller.abort();observer?.disconnect();disposeScene?.();renderer?.dispose();el.replaceChildren();runtime.current=null;};
  },[]);
  useEffect(()=>runtime.current?.update(value),[value,ready]);
- const flight=Math.min(1,value/.62),story=clamp((value-.70)/.30),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.625?'scroll':story<.845?'unroll':'strips';
+ const flight=Math.min(1,value/.62),story=clamp((value-.70)/.30),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.625?'scroll':story<.68?'unroll':'strips';
  const discoveryLines=['In 1952, excavators entered Qumran Cave 3.','Inside lay two rolls of copper.','A document was engraved into the metal.','It became known as the Copper Scroll.','Corrosion had made it too brittle to unwind.','In Manchester in 1955–56, Baker cut it into 23 strips.','The writing filled twelve columns.','It listed hidden valuables—and directions to them.'];
  return <div className="story-opening" ref={timeline.ref} data-progress={value.toFixed(3)} data-phase={phase} data-ready={ready} data-object="continuous-scroll" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
   <div className="story-opening-sticky">
