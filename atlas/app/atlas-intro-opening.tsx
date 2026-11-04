@@ -73,7 +73,7 @@ export default function DesertOpening(){
      const outerX=120*ca*(1+.08*Math.sin(angle*9)),outerY=70*sa*(1+.09*Math.sin(angle*6))+2;
      const x=T.MathUtils.lerp(innerX,outerX,t),y=T.MathUtils.lerp(innerY,outerY,t);
      const fine=1-smooth((Math.hypot(x,y)-5)/18);
-     const strata=fine*(.07*Math.sin(y*8+x*.4)+.12*Math.sin(y*3-x*.27));
+     const strata=fine*(.018*Math.sin(y*8+x*.4)+.035*Math.sin(y*3-x*.27));
      const relief=fine*(.20*Math.sin(x*1.5+y*.7)+.10*Math.sin(x*4-y*2.8));
      const z=.8+.25*Math.sin(x*.14)+.18*Math.sin(y*.2)+relief+strata;
      cliffPositions.push(x,y,z);
@@ -130,7 +130,7 @@ export default function DesertOpening(){
      node.style.opacity=String(visible?opacity:0);node.style.left=`${(projected.x+1)*50}%`;node.style.top=`${(1-projected.y)*50}%`;
     }
     function update(value:number){
-     const p=Math.min(1,value/.68),story=clamp((value-.68)/.32),unroll=smooth((story-.46)/.4),gap=smooth((story-.86)/.14);
+     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),unroll=smooth((story-.625)/.22),gap=smooth((story-.845)/.155);
      const inside=smooth((p-.54)/.22),handoff=smooth((p-.945)/.055);
      if(p<=.54){
       const u=p/.54,d=44000*Math.pow(180/44000,u),angle=.85*(1-smooth(u));
@@ -140,8 +140,8 @@ export default function DesertOpening(){
      }else{
       const u=smooth((p-.76)/.19),closeDistance=Math.max(.7,.5/camera.aspect);camera.position.set(T.MathUtils.lerp(1.8,-4+closeDistance,u),T.MathUtils.lerp(-.6,-1.42+.24*(closeDistance/.7),u),T.MathUtils.lerp(0,.1,u));camera.lookAt(-4,-1.42,0);
      }
-     if(value>.68){
-      const shrink=smooth(story/.15),closeDistance=Math.max(.7,.5/camera.aspect),framedDistance=Math.max(1.2,.65/camera.aspect),openDistance=Math.max(framedDistance,2.9/(2*Math.tan(43*Math.PI/360)*camera.aspect));
+     if(value>.62){
+      const shrink=smooth((value-.62)/.08),closeDistance=Math.max(.7,.5/camera.aspect),framedDistance=Math.max(1.2,.65/camera.aspect),openDistance=Math.max(framedDistance,2.9/(2*Math.tan(43*Math.PI/360)*camera.aspect));
       const distance=T.MathUtils.lerp(T.MathUtils.lerp(closeDistance,framedDistance,shrink),openDistance,unroll);
       camera.position.set(-4+distance,-1.42+.25*distance,.1);camera.lookAt(-4,-1.42-.10*distance*shrink,0);
      }
@@ -164,7 +164,7 @@ export default function DesertOpening(){
   void mount();return()=>{disposed=true;controller.abort();observer?.disconnect();disposeScene?.();renderer?.dispose();el.replaceChildren();runtime.current=null;};
  },[]);
  useEffect(()=>runtime.current?.update(value),[value,ready]);
- const flight=Math.min(1,value/.68),story=clamp((value-.68)/.32),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.46?'scroll':story<.86?'unroll':'strips';
+ const flight=Math.min(1,value/.62),story=clamp((value-.70)/.30),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.625?'scroll':story<.845?'unroll':'strips';
  const discoveryLines=['In 1952, excavators entered Qumran Cave 3.','Inside lay two rolls of copper.','A document was engraved into the metal.','It became known as the Copper Scroll.','Corrosion had made it too brittle to unwind.','In Manchester in 1955–56, Baker cut it into 23 strips.','The writing filled twelve columns.','It listed hidden valuables—and directions to them.'];
  return <div className="story-opening" ref={timeline.ref} data-progress={value.toFixed(3)} data-phase={phase} data-ready={ready} data-object="continuous-scroll" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
   <div className="story-opening-sticky">
@@ -173,7 +173,7 @@ export default function DesertOpening(){
    <div className="story-opening-wash" style={{opacity:1-smooth(flight/.23)}}/>
    <h1 aria-label="What is the Copper Scroll?" style={{opacity:1-smooth((flight-.03)/.18),transform:`translateY(${-flight*80}px)`}}>What is the <br/><AnimatedWords text="Copper Scroll?" progress={smooth(flight/.12)} reduced={timeline.reduced}/></h1>
    <span className="story-opening-place" ref={qumran}>Qumran</span><span className="story-opening-place" ref={caveLabel}>Cave 3 · 3Q</span>
-   {!timeline.reduced&&<div className="story-opening-copy" style={{opacity:smooth((value-.68)/.025)}} aria-hidden={value<.68}><Narration lines={discoveryLines} progress={story} /></div>}
+   {!timeline.reduced&&<div className="story-opening-copy" style={{opacity:smooth((value-.70)/.02)}} aria-hidden={value<.70}><Narration lines={discoveryLines} progress={story} /></div>}
    <span className="story-opening-down" style={{opacity:1-smooth(flight/.12)}} aria-hidden="true">↓</span>
   </div>
   {timeline.reduced&&<div className="story-opening-static-copy"><Narration lines={discoveryLines} progress={1} reduced/></div>}

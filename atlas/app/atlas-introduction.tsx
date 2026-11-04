@@ -15,13 +15,13 @@ const repo='https://github.com/quadrin/CopperScroll/blob/main/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 
 const caveLines=[
- '“The cave of the pillar.” Cave IV/17 near Jericho has a rock-cut dividing pillar, recorded in its excavation plan.',
- '“With the two entrances.” The plan also records two present openings. Their ancient shape and thresholds remain unresolved.',
- '“Facing east.” The present openings face roughly southeast in the plan proxy. Their ancient orientation—and which feature the phrase describes—still needs testing.',
- '“At the northern entrance, dig three cubits.” A measured instruction only becomes a location once its origin, direction and ancient surface are established.',
+ '“The cave of the pillar.” IV/17 has a rock-cut dividing pillar.',
+ '“With the two entrances.” The plan records two present openings. Their ancient shape is unresolved.',
+ '“Facing east.” The present openings are roughly southeast in the plan. Their ancient orientation needs testing.',
+ '“Dig three cubits.” First we need an ancient entrance surface. The intended direction remains uncertain.',
 ];
 function CaveExample(){
- const scene=useScrollScene(),step=stepAt(scene.value,4),trace=scene.reduced?1:clamp((scene.value-.75)*4),depth=scene.reduced?1:clamp((scene.value-.72)*8);
+ const scene=useScrollScene(),step=stepAt(scene.value,4),trace=scene.reduced?1:clamp((scene.value-.75)/.18),depth=scene.reduced||step===3?1:0;
  const active=step===0?['pillar']:step===3?['north-mouth']:['north-mouth','south-mouth'];
  return <div className="story-scene story-cave" ref={scene.ref} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced}><div className="story-sticky">
   <div className="story-cave-art">
@@ -36,15 +36,15 @@ function ConstructionPhases(){
  return <div className="story-scene story-phase" ref={scene.ref} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced}><div className="story-sticky">
   <svg className="story-phase-art" viewBox="0 0 760 340" role="img" aria-label="Illustrative construction section: a feature is cut, a repair lining is added, and later fill accumulates. No site-specific dates or samples.">
    <defs><pattern id="story-rock" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 14L14 0" stroke="#748779" strokeWidth=".7" opacity=".3"/></pattern><pattern id="story-infill" width="25" height="20" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.5" fill="#8b775c"/><path d="M15 12l5 2" stroke="#8b775c"/></pattern></defs>
-   <AtlasGlyph name="strata" x={0} y={30} width={260} height={285}/><g transform="translate(260 0) scale(.66 1)"><path d="M50 75H710V290H50Z" fill="#ded5bd"/><path d="M50 75H710V290H50Z" fill="url(#story-rock)"/>
+   <g><path d="M50 75H710V290H50Z" fill="#ded5bd"/><path d="M50 75H710V290H50Z" fill="url(#story-rock)"/>
    <path d="M225 75V120Q225 140 190 155Q155 175 155 225V255H605V225Q605 175 570 155Q535 140 535 120V75" fill="#f7f5ef" stroke="#536f60" strokeWidth="5"/>
    <path d="M238 105V125Q238 153 202 167Q170 185 170 225V242H590V225Q590 185 558 167Q522 153 522 125V105" fill="none" stroke="#bd8054" strokeWidth="14" opacity={repair}/>
-   <g opacity={infill} transform={`translate(0 ${scene.reduced?0:(1-infill)*18})`}><path d="M180 212Q250 180 330 210T580 205V235H180Z" fill="#cfc0a8"/><path d="M180 212Q250 180 330 210T580 205V235H180Z" fill="url(#story-infill)"/></g>
+   <g opacity={infill} ><path d="M180 212Q250 180 330 210T580 205V235H180Z" fill="#cfc0a8"/><path d="M180 212Q250 180 330 210T580 205V235H180Z" fill="url(#story-infill)"/></g>
   </g></svg>
   <Narration progress={scene.value} reduced={scene.reduced} lines={[
-   'A place also has a history. The feature described in an ancient text must have existed at the right time.',
-   'A repair can change its shape. A sample from that lining can help date the repair, while the original construction may be older.',
-   'Later fill can bury a floor or entrance—and contain older material moved from elsewhere. Dating the fill does not automatically date the feature.',
+   'The feature must have existed when the writer knew the place.',
+   'A repair can change the feature’s shape. A sample can date that repair, while the original construction may be older.',
+   'Later fill can bury an entrance. Its contents may be older material moved from elsewhere. Dating the fill does not automatically date the feature.',
   ]}/>
  </div></div>;
 }
