@@ -1,5 +1,5 @@
 "use client";
-import {useEffect,useRef,useState} from 'react';
+import {useEffect,useRef,useState,type ReactNode} from 'react';
 import {AnimatedWords} from './atlas-intro-words';
 
 // The main artwork follows document scroll. The entry-reading stage adds a
@@ -24,18 +24,24 @@ export function beatTiming(progress:number,count:number){
  const index=stepAt(progress,count),local=progress===1?1:(progress*count)%1;
  return {index,local,animation:Math.min(1,local/.65)};
 }
-export function Narration({lines,progress,reduced=false}:{lines:string[];progress:number;reduced?:boolean}){
- const beat=beatTiming(progress,lines.length);
- const [shown,setShown]=useState(beat.index),[transition,setTransition]=useState<'steady'|'out'|'in'>('steady');
- const shownRef=useRef(beat.index);
+export function VisualBeat({progress,count,reduced=false,children}:{progress:number;count:number;reduced?:boolean;children:ReactNode}){
+ const beat=beatTiming(progress,count),t=reduced?1:beat.animation;
+ return <div className="story-visual-beat" data-visual-beat={beat.index} data-visual-complete={reduced||t===1} style={{opacity:t*t*(3-2*t)}}>{children}</div>;
+}
+export function Narration({lines,progress,reduced=false,readyAt=.65,visualReady}:{lines:string[];progress:number;reduced?:boolean;readyAt?:number;visualReady?:boolean}){
+ const beat=beatTiming(progress,lines.length),ready=reduced||(visualReady??beat.local>=readyAt);
+ const initial=ready?beat.index:-1;
+ const [shown,setShown]=useState(initial),[transition,setTransition]=useState<'steady'|'out'|'in'>('steady');
+ const shownRef=useRef(initial);
  useEffect(()=>{
+  if(!ready){setTransition('steady');return;}
   if(reduced||beat.index===shownRef.current){setShown(beat.index);shownRef.current=beat.index;setTransition('steady');return;}
   // Finish the outgoing fade before replacing the sentence. A new target cancels
   // the pending swap, so fast scrolling and reversal always resolve to this beat.
   setTransition('out');
   const timer=window.setTimeout(()=>{shownRef.current=beat.index;setShown(beat.index);setTransition('in');},170);
   return()=>window.clearTimeout(timer);
- },[beat.index,reduced]);
+ },[beat.index,reduced,ready]);
  const display=reduced?beat.index:shown;
- return <div className="story-narration" data-static={reduced} data-beat={beat.index} data-displayed-beat={display} data-transition={reduced?'steady':transition} data-word-animation-complete={reduced||beat.animation===1}>{lines.map((line,i)=><p key={i} className={i===display?'story-line is-current':'story-line'} aria-hidden={!reduced&&i!==display}><AnimatedWords text={line} progress={display===beat.index?beat.animation:1} reduced={reduced}/></p>)}</div>;
+ return <div className="story-narration" data-static={reduced} data-beat={ready?beat.index:display} data-visual-beat={beat.index} data-visual-complete={ready} data-displayed-beat={display} data-transition={reduced?'steady':transition} data-word-animation-complete={reduced||beat.animation===1}>{lines.map((line,i)=><p key={i} className={i===display?'story-line is-current':'story-line'} aria-hidden={!reduced&&i!==display}><AnimatedWords text={line} progress={display===beat.index?Math.max(0,Math.min(1,(beat.local-readyAt)/Math.max(.01,1-readyAt))):1} reduced={reduced}/></p>)}</div>;
 }
