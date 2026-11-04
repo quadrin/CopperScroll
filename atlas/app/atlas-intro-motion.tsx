@@ -2,8 +2,8 @@
 import {useEffect,useRef,useState,type ReactNode} from 'react';
 import {AnimatedWords} from './atlas-intro-words';
 
-// The main artwork follows document scroll. The entry-reading stage adds a
-// separate visible-stage clock for its deliberate line-by-line reading.
+// The opening and inventory follow document scroll. Entry 25 has its own
+// unified finite action/caption controller in atlas-entry-investigation.tsx.
 export function useScrollScene(){
  const ref=useRef<HTMLDivElement>(null);
  const [value,setValue]=useState(0),[reduced,setReduced]=useState(false);

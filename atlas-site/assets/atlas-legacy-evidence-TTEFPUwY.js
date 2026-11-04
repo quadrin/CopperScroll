@@ -1,1 +1,0 @@
-import{i as e,n as t,o as n}from"./index-R8q5pTUN.js";import{i as r}from"./atlas-context-routes-D_TRn3TB.js";var i=n(e(),1),a=t();function o({hash:e}){return(0,i.useEffect)(()=>{location.replace(r(e))},[e]),(0,a.jsx)(`main`,{role:`status`,children:`Opening this record in the atlas…`})}export{o as default};

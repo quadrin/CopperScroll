@@ -1,0 +1,11 @@
+# Entry 25 investigation
+
+The narrative follows the held Entry 25 text and existing candidate assessments. It makes no new identification claim. Published radiographs, modern edition-based transcription and new explanatory artwork retain separate provenance.
+
+The visual treatment uses a warm limestone palette, broad shadow planes, deep openings, consistent upper-left light, restrained copper accents and generous serif reading space. One cave provides a persistent reference while each clause gets a distinct action. Native vectors supply the orientation, measurement, pottery, manuscript, silver and possible surface change. The schematic measurement is not a prescribed digging direction; the labels and optional reading state its unknown axis and ancient datum.
+
+The cave is generated artwork, not a surveyed reconstruction. The left opening is designated northern only within this explanatory reading. Actual evidence remains the unmodified source photograph and complete published plans. Only IV/17 receives source-relative feature markers, using existing recorded feature coordinates; the other plans receive no guessed geometry. The three proposal pins retain regional Qumran/Jericho anchors, not cave-mouth coordinates.
+
+`cave-generated.png` is the retained original generation; `generation-prompt.txt` is its prompt. `trace-cave.py` quantizes and traces it into actual SVG paths. `public/introduction/entry-investigation/limestone-cave.svg` is the browser asset. It contains no embedded raster. The React component separately defines editable graphic layers and a finite animation timeline. There is no independent passage autoplay or caption timer in this section.
+
+Source notes: Entry 25, VI 1–6; Brizemeure, Lacoudre and Puech (2006), pp. 382–383, plates CCCXLIII–CCCXLIV (owner-private packet only). IAA plans: Sion 2002, Plan 5 p. 63; Feig 2002, Plan 1 p. 85, CC BY-NC 4.0. Twin Cave exterior: Bar-Adon publication figure, owner-private packet only. Full image provenance remains in `public/introduction/README.md` and the page footer. Hebrew restorations retain brackets. “Pillar,” the unit of silver, digging direction and referent of “beneath it” remain disputed. Broad ownership/purpose interpretations and the final copy reference are optional reading, not repeated narrative chapters.

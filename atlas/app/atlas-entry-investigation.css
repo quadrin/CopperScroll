@@ -1,0 +1,87 @@
+/* One continuous stage; artwork and reading occupy separate, stable rows. */
+.entry-investigation{position:relative;height:calc((var(--investigation-beats)*.9 + 1)*100svh);background:var(--story-paper)}
+.investigation-sticky{position:sticky;top:0;height:100svh;display:grid;grid-template-rows:minmax(0,1fr) 182px;gap:20px;padding:40px max(28px,5vw) 24px;overflow:hidden}
+.investigation-art{position:relative;min-height:0;width:100%;max-width:1500px;justify-self:center}
+.investigation-art-layer{position:absolute;inset:0;display:grid;place-items:center;min-height:0}
+.investigation-art-layer>*{height:100%;width:100%;min-height:0;max-height:100%}
+.investigation-reading{width:min(1060px,100%);justify-self:center;align-self:start;text-align:center}
+.investigation-phrase{position:relative;height:48px;margin-bottom:10px}
+.investigation-hebrew{font:normal clamp(23px,2.6vw,36px)/1.25 'Times New Roman',serif;color:#99613b;margin:0}
+.investigation-phrase .investigation-hebrew{position:absolute;inset:0}
+.investigation-caption,.investigation-static-caption{margin:0;font:normal clamp(23px,2.8vw,38px)/1.35 Georgia,serif;letter-spacing:-.022em;text-wrap:pretty}
+.investigation-passage{display:grid;place-items:center;text-align:center}
+.investigation-radiographs{height:100%;width:100%;display:flex;align-items:center;justify-content:center;gap:12px;min-height:0}
+.investigation-radiographs img{height:100%;width:auto;max-width:calc((100% - 24px)/3);min-width:0;object-fit:contain}
+.investigation-passage-text{width:min(1100px,100%)}
+.investigation-source-label{display:block;color:#82725b;font:normal clamp(14px,1.4vw,19px)/1.5 Georgia,serif;margin-bottom:22px}
+.investigation-passage-text p{margin:0;font:normal clamp(25px,3.4vw,46px)/1.42 'Times New Roman',serif;color:#523b26}
+.investigation-translation .investigation-passage-text p{font-family:Georgia,serif;font-size:clamp(22px,2.8vw,38px);line-height:1.5;color:var(--story-ink)}
+.investigation-cave-wrap{display:grid;place-items:center}
+.investigation-cave{width:100%;height:100%;max-width:1060px;overflow:visible}
+.investigation-svg-label{font:21px Georgia,serif;fill:#815c39;paint-order:stroke;stroke:var(--story-paper);stroke-width:3px;stroke-linejoin:round}
+.investigation-svg-note{font:17px Georgia,serif;fill:#7a796b;paint-order:stroke;stroke:var(--story-paper);stroke-width:3px;stroke-linejoin:round}
+.investigation-map{position:relative;min-height:0;display:grid;grid-template-rows:minmax(0,1fr)}
+.investigation-map .story-regional-map{width:100%;height:100%}
+.investigation-comparison{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,48px);align-items:stretch;width:100%;max-width:1350px;min-height:0}
+.investigation-comparison figure{display:grid;grid-template-rows:minmax(0,1fr) 55px;min-height:0;margin:0;gap:12px;min-width:0}
+.investigation-evidence-image{display:grid;place-items:center;min-height:0;min-width:0;color:inherit}
+.investigation-evidence-image>svg{width:100%;height:100%;max-height:100%;object-fit:contain}
+.investigation-comparison figcaption{text-align:center;display:flex;flex-direction:column;justify-content:center;font:normal clamp(18px,2vw,26px)/1.3 Georgia,serif}
+.investigation-comparison figcaption strong{font-weight:normal}
+.investigation-comparison figcaption>span{color:#82725b;font-size:14px;margin-top:2px}
+.investigation-public-locator{display:grid;place-items:center;height:100%;min-height:0;text-align:center}
+.investigation-public-locator svg{width:100%;height:100%;min-height:0}
+.investigation-public-locator text{font:22px Georgia,serif;fill:#68452d}
+.investigation-public-locator span{font:13px Georgia,serif;color:#7a796b}
+.investigation-further{max-width:820px;margin:12px auto 24px;padding:22px 28px;color:#60705f;font:16px/1.7 Georgia,serif}
+.investigation-further summary{cursor:pointer;color:var(--story-ink)}
+.investigation-further p{margin:20px 0}.investigation-further a{color:inherit}
+.entry-investigation-static>article{max-width:1400px;margin:0 auto;padding:40px 6vw 65px;text-align:center}
+.investigation-static-art{height:65svh;min-height:330px;max-height:700px;margin-bottom:22px;display:grid;place-items:center}
+.investigation-static-art>*{width:100%;height:100%;min-height:0}
+.entry-investigation-static .investigation-hebrew{margin:15px 0}
+.investigation-static-caption{max-width:1000px;margin:auto}
+@media(max-width:700px){
+ .investigation-sticky{padding:28px 20px 22px;grid-template-rows:minmax(0,1fr) 182px;gap:16px}
+ .investigation-phrase{height:58px;margin-bottom:8px}.investigation-hebrew{font-size:25px;line-height:1.2}
+ .investigation-caption,.investigation-static-caption{font-size:24px;line-height:1.4}
+ .investigation-source-label{font-size:14px;margin-bottom:18px}
+ .investigation-passage-text p{font-size:clamp(23px,5.8vw,34px);line-height:1.6}
+ .investigation-translation .investigation-passage-text p{font-size:clamp(19px,4.7vw,28px);line-height:1.55}
+ .investigation-radiographs{gap:5px}.investigation-radiographs img{max-width:calc((100% - 10px)/3)}
+ .investigation-comparison{grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(0,1fr));gap:14px;max-width:560px}
+ .investigation-comparison figure{grid-template-columns:minmax(0,.85fr) minmax(0,1fr);grid-template-rows:30px minmax(0,1fr);column-gap:18px;row-gap:5px}
+ .investigation-evidence-image{grid-row:1/3;grid-column:1}.investigation-comparison figcaption{grid-row:1;grid-column:2;text-align:left;display:block;font-size:18px;line-height:1.2}
+ .investigation-comparison figcaption>span{display:inline;margin-left:5px;font-size:11px}
+ .entry-investigation-static>article{padding:30px 20px 55px}.investigation-static-art{height:60svh}
+}
+@media(max-height:650px){
+ .investigation-sticky{padding:16px 24px 16px;grid-template-rows:minmax(0,1fr) 128px;gap:12px}
+ .investigation-phrase{height:36px;margin-bottom:5px}.investigation-hebrew{font-size:22px}.investigation-caption{font-size:21px;line-height:1.3}
+ .investigation-source-label{font-size:12px;margin-bottom:10px}.investigation-passage-text p{font-size:23px;line-height:1.3}.investigation-translation .investigation-passage-text p{font-size:20px;line-height:1.3}
+ .investigation-comparison figure{grid-template-rows:minmax(0,1fr) 38px;gap:6px}.investigation-comparison figcaption{font-size:17px}.investigation-comparison figcaption>span{font-size:11px}
+}
+@media(max-width:700px) and (max-height:650px){
+ .investigation-sticky{grid-template-rows:minmax(0,1fr) 150px;padding-inline:16px}
+ .investigation-comparison{gap:8px}.investigation-comparison figure{grid-template-columns:38% minmax(0,1fr);grid-template-rows:22px minmax(0,1fr);gap:4px 12px}
+}
+@media(prefers-reduced-motion:reduce){.investigation-art-layer,.investigation-caption{animation:none!important;transition:none!important}.entry-investigation-static .investigation-map .story-regional-map{height:100%}}
+
+.investigation-cave-wrap{overflow:hidden}
+@media(max-width:700px){
+ .investigation-cave{width:155%;max-width:none;transform:translateX(var(--cave-pan));justify-self:center}
+}
+@media(max-width:700px) and (max-height:650px){
+}
+
+@media(max-width:700px){
+ .investigation-comparison figure{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:18px}
+ .investigation-evidence-image{grid-column:1;grid-row:1}
+ .investigation-comparison figcaption{grid-column:2;grid-row:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;font-size:22px}
+ .investigation-comparison figcaption>span{display:block;margin:6px 0 0;font-size:13px}
+}
+@media(max-height:500px) and (min-width:701px){
+ .investigation-comparison figure{grid-template-rows:minmax(0,1fr) 33px}
+ .investigation-comparison figcaption{font-size:15px;line-height:1.1}
+ .investigation-comparison figcaption>span{font-size:10px}
+}
