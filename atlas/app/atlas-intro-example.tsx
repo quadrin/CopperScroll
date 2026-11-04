@@ -1,23 +1,23 @@
 "use client";
 import {Narration,stepAt,useScrollScene} from './atlas-intro-motion';
-import {AnimatedWords} from './atlas-intro-words';
 import {AtlasGlyph} from './atlas-intro-glyphs';
 import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
 import CandidateMap from './atlas-intro-candidate-map';
+import {PassageLines,useReadingStage,useReadingTime} from './atlas-intro-line-reading';
 const base=import.meta.env?.BASE_URL??'/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 const hebrew=['[ב]מערת העמוד של שני','[ה]פתחין צופא מזרח','[ב]פתח הצפוני חפור','[א]מות שלוש שמ קלל','בו ספר אחד תחתו','ככ 42'];
 const english=['[In] the cave of the pillar with two entrances,','facing east, [at] the northern entrance,','dig three cubits. There is a jar,','in it one scroll; beneath it,','42 silver-weight units.'];
 export function EntryReveal(){
- const scene=useScrollScene(),p=scene.value;
+ const scene=useScrollScene(),p=scene.value,visible=useReadingStage(scene.ref);
  const lift=scene.reduced?1:clamp((p-.28)/.05),translation=scene.reduced?1:clamp((p-.61)/.05);
  const imageOpacity=scene.reduced?1:1-clamp((p-.28)/.05);
  const phase=p<1/3&&INTRO_PRIVATE_IMAGES?'image':p<2/3?'hebrew':'english';
  return <div className="story-scene story-entry-reveal" ref={scene.ref} data-progress={p.toFixed(3)} data-reduced={scene.reduced} data-reading-phase={phase} data-source-images={INTRO_PRIVATE_IMAGES}><div className="story-sticky">
   <div className="story-entry-art">
    {INTRO_PRIVATE_IMAGES&&<div className="story-entry-radiographs" style={{opacity:imageOpacity}}>{['12g','12c','12d'].map(tag=><img key={tag} src={`${base}introduction/entry25-${tag}.jpeg`} alt={`Published column VI radiograph ${tag.toUpperCase()}, containing the Entry 25 passage.`}/>)}</div>}
-   <div className="story-entry-hebrew" lang="he" dir="rtl" style={{opacity:scene.reduced?1:(INTRO_PRIVATE_IMAGES?lift:1)*(1-translation),transform:scene.reduced?undefined:`translateY(${INTRO_PRIVATE_IMAGES?(1-lift)*8:0}px)`}} aria-hidden={!scene.reduced&&((INTRO_PRIVATE_IMAGES&&lift<.5)||translation>.5)}>{hebrew.map((line,i)=><p key={i}>{line}</p>)}</div>
-   <blockquote className="story-entry-english" style={{opacity:translation,transform:scene.reduced?undefined:`translateY(${(1-translation)*8}px)`}} aria-hidden={!scene.reduced&&translation<.5}>{english.map((line,i)=><p key={i}><AnimatedWords text={line} progress={scene.reduced?1:clamp((p-.56-i*.025)*7)} reduced={scene.reduced}/></p>)}</blockquote>
+   <div className="story-entry-hebrew" lang="he" dir="rtl" style={{opacity:scene.reduced?1:(INTRO_PRIVATE_IMAGES?lift:1)*(1-translation),transform:scene.reduced?undefined:`translateY(${INTRO_PRIVATE_IMAGES?(1-lift)*8:0}px)`}} aria-hidden={!scene.reduced&&((INTRO_PRIVATE_IMAGES&&lift<.5)||translation>.5)}><PassageLines lines={hebrew} language="he" active={visible&&p>=.34&&p<.60} reduced={scene.reduced}/></div>
+   <blockquote className="story-entry-english" style={{opacity:translation,transform:scene.reduced?undefined:`translateY(${(1-translation)*8}px)`}} aria-hidden={!scene.reduced&&translation<.5}><PassageLines lines={english} language="en" active={visible&&p>=.68} reduced={scene.reduced}/></blockquote>
   </div>
   <Narration progress={p} reduced={scene.reduced} lines={[
    'Let’s follow one example: Entry 25, column VI, lines 1–6.',
@@ -33,12 +33,14 @@ const clauses=[
  {he:'שמ קלל בו ספר אחד תחתו ככ 42',en:'a jar, one scroll, and 42 silver-weight units',body:'A jar, a manuscript, and silver. “Beneath it” could refer to the jar or the manuscript.'},
 ];
 export function EntryMeaning(){
- const scene=useScrollScene(),step=stepAt(scene.value,4);
- return <div className="story-scene story-entry-meaning" ref={scene.ref} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced}><div className="story-sticky">
-  <div className="story-clause-art"><svg className="story-clue-drawing" viewBox={scene.reduced?'0 0 800 220':step===3?'500 0 300 220':'80 0 470 220'} aria-hidden="true" data-asset-family="atlas-relief-studies"><AtlasGlyph name="cave" x={100} y={0} width={360} height={215} opacity={scene.reduced||step!==3?1:.25}/><g opacity={scene.reduced||step===1?1:0}><path d="M445 168H510M499 159L510 168L499 177" fill="none" stroke="#9b613e" strokeWidth="2" pathLength="1" strokeDasharray="1" strokeDashoffset={scene.reduced?0:1-clamp((scene.value*4%1)*3)}/></g><g opacity={scene.reduced||step===2?1:0}><path d="M477 84V190M469 84H485M469 190H485" fill="none" stroke="#9b613e" strokeWidth="2"/></g><AtlasGlyph name="jar" x={530} y={42} width={115} height={160} opacity={scene.reduced||step===3?1:0}/><AtlasGlyph name="silver" x={650} y={84} width={140} height={115} opacity={scene.reduced||step===3?1:0}/></svg>{clauses.map((c,i)=><div key={i} data-reading={i} className={scene.reduced||i===step?'is-current':''} aria-hidden={!scene.reduced&&i!==step}><p lang="he" dir="rtl">{c.he}</p><p><AnimatedWords text={c.en} progress={scene.reduced?1:clamp((scene.value*4%1)*2)} reduced={scene.reduced}/></p></div>)}</div>
-  <Narration progress={scene.value} reduced={scene.reduced} lines={clauses.map(c=>c.body)}/>
+ const scene=useScrollScene(),scrollStep=stepAt(scene.value,4),visible=useReadingStage(scene.ref),time=useReadingTime(visible,scene.reduced,scrollStep);
+ const cycle=6500,step=scene.reduced?scrollStep:Math.min(3,scrollStep+Math.floor(time/cycle)),local=time%cycle,leaving=!scene.reduced&&step<3&&local>=5800;
+ return <div className="story-scene story-entry-meaning" ref={scene.ref} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced} data-reading-step={step} data-playing={visible&&!scene.reduced}><div className="story-sticky">
+  <div className="story-clause-art story-clause-reading">{clauses.map((c,i)=><div key={i} data-reading={i} data-motion={i===step?(leaving?'leaving':'reading'):'waiting'} className={scene.reduced||i===step?'is-current':''} aria-hidden={!scene.reduced&&i!==step}><p lang="he" dir="rtl">{c.he}</p><p>{c.en}</p></div>)}</div>
+  <Narration progress={scene.reduced?1:(step+.45)/4} reduced={scene.reduced} lines={clauses.map(c=>c.body)}/>
  </div></div>;
 }
+
 const candidates=[
  {name:'Twin Cave near Qumran',image:'twin-cave-figure.webp',alt:'Bar-Adon’s published exterior photograph of the Twin Cave area, looking from the southeast.',text:'Twin Cave has a pillar and two reported east-facing openings; its ancient thresholds remain uncertain.'},
  {name:'IV/17 near Jericho',image:'iv17-plan.webp',alt:'Sion’s published plan of IV/17, showing a dividing pillar and two present openings.',text:'IV/17’s plan records a rock-cut pillar and two roughly southeast-facing openings.'},

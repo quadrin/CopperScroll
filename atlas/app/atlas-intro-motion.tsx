@@ -2,8 +2,8 @@
 import {useEffect,useRef,useState} from 'react';
 import {AnimatedWords} from './atlas-intro-words';
 
-// The document's scroll position is the timeline. There is no autoplay clock:
-// stopping freezes the artwork; reversing scroll reverses the same sequence.
+// The main artwork follows document scroll. The entry-reading stage adds a
+// separate visible-stage clock for its deliberate line-by-line reading.
 export function useScrollScene(){
  const ref=useRef<HTMLDivElement>(null);
  const [value,setValue]=useState(0),[reduced,setReduced]=useState(false);
