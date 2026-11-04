@@ -1,6 +1,7 @@
 "use client";
 import {lazy,Suspense} from 'react';
 import {AtlasGlyph} from './atlas-intro-glyphs';
+import {InventoryArtScene} from './atlas-intro-inventory-art';
 const CandidateMap=lazy(()=>import('./atlas-intro-candidate-map'));
 import {Narration,beatTiming,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
@@ -59,16 +60,14 @@ const ending:Beat[]=[
 ];
 
 function Illustration({art,progress=1}:{art:Art;progress?:number}){
+ if(art==='places'||art==='directions'||art==='deposit'||art==='entries'||art==='structure')return <InventoryArtScene art={art} progress={progress}/>;
  const t=clamp(progress),single=!['evidence','worked'].includes(art);
  return <svg className="story-sequence-art" viewBox={art==='worked'?'265 0 470 430':'0 0 1000 430'} role="img" aria-label={art==='sheet'||art==='durability'?'Actual photograph of Copper Scroll strip 13, showing engraved Hebrew and corroded metal.':art==='temple'?'Photograph of the Israel Museum’s modern reconstruction of the Second Temple, representing a proposed ownership.':art==='community'?'Generic illustrative courtyard representing a proposed community ownership; not a reconstruction of Qumran.':art==='worked'?'Published IV/17 plan.':`Illustrative ${art} scene; not a surveyed landscape or an observed deposit.`} data-art={art} data-layout={single?'single':'wide'} preserveAspectRatio={single?'xMidYMid slice':'xMidYMid meet'} data-asset-family="atlas-relief-studies">
   <g>
-  {['sheet','durability','entries','structure','literary','unknown'].includes(art)&&<AtlasGlyph name="copper" x={310} y={0} width={380} height={400}/>}
-  {['places','directions','candidates'].includes(art)&&<>
-   <AtlasGlyph name="cave" x={270} y={25} width={460} height={355}/>
-   {art==='directions'&&<g><path d="M640 300V365M630 300H650M630 365H650" fill="none" stroke="#9b613e" strokeWidth="2" pathLength="1" strokeDasharray="1" strokeDashoffset={1-t}/><text x="628" y="356" textAnchor="end" fill="#76563d" fontSize="22">3 cubits</text></g>}
-  </>}
+  {['sheet','durability','literary','unknown'].includes(art)&&<AtlasGlyph name="copper" x={310} y={0} width={380} height={400}/>}
+  {art==='candidates'&&<AtlasGlyph name="cave" x={270} y={25} width={460} height={355}/>}
   {art==='time'&&<AtlasGlyph name="strata" x={290} y={10} width={420} height={380}/>}
-  {(art==='deposit'||art==='recovery')&&<AtlasGlyph name="jar" x={330} y={5} width={340} height={390}/>}
+  {art==='recovery'&&<AtlasGlyph name="jar" x={330} y={5} width={340} height={390}/>}
   {art==='worked'&&<image href={`${base}introduction/iv17-plan.webp`} x="285" y="5" width="430" height="420"/>}
   {art==='temple'&&<AtlasGlyph name="sanctuary" x={245} y={0} width={510} height={385}/>}
   {art==='community'&&<AtlasGlyph name="settlement" x={245} y={5} width={510} height={365}/>}
