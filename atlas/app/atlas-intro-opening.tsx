@@ -12,7 +12,7 @@ type Terrain={anchor:{lat:number;lon:number};verticalExaggeration:number;regiona
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const smooth=(v:number)=>{const t=clamp(v);return t*t*(3-2*t);};
 const base=import.meta.env?.BASE_URL??'/';
-const openingCues=['discovery','two-rolls','hidden-valuables','directions','hebrew-writing','corrosion','cut-curved-strips','twelve-columns'];
+const openingCues=['hidden-valuables','directions','discovery','two-rolls','hebrew-writing','corrosion','cut-curved-strips','twelve-columns'];
 export default function DesertOpening(){
  const timeline=useScrollScene(),host=useRef<HTMLDivElement>(null),qumran=useRef<HTMLSpanElement>(null),caveLabel=useRef<HTMLSpanElement>(null);
  const runtime=useRef<{update:(value:number)=>void}|null>(null),current=useRef(0);
@@ -135,7 +135,7 @@ export default function DesertOpening(){
      node.style.opacity=String(visible?opacity:0);node.style.left=`${(projected.x+1)*50}%`;node.style.top=`${(1-projected.y)*50}%`;
     }
     function update(value:number){
-     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),cue=(i:number)=>smooth((story*8-i)/.65),pair=cue(1),detail=cue(4),naming=cue(2),corrosion=cue(5),cut=cue(6);
+     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),cue=(i:number)=>smooth((story*8-i)/.65),pair=cue(3),detail=cue(4),naming=cue(0),corrosion=cue(5),cut=cue(6);
      const separation=smooth((cut-.45)/.55);
      const inside=smooth((p-.54)/.22),handoff=smooth((p-.945)/.055);
      if(p<=.54){
@@ -182,14 +182,14 @@ export default function DesertOpening(){
  },[]);
  useEffect(()=>runtime.current?.update(value),[value,ready]);
  const flight=Math.min(1,value/.62),story=clamp((value-.70)/.30),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.75?'scroll':'cut-strips';
- const openingBeat=beatTiming(story,8),cue=(i:number)=>smooth((story*8-i)/.65),inventoryReveal=cue(2)*(1-cue(4)),columnsReveal=cue(7);
- const discoveryLines=['In 1952, excavators entered Qumran Cave 3.','Inside lay two rolls of copper.','The Copper Scroll lists hidden valuables.','It gives directions for finding them.','The words were engraved in Hebrew.','Corrosion made the metal too brittle to unwind.','The rolls were cut into 23 strips to be read.','The writing filled twelve columns.'];
+ const openingBeat=beatTiming(story,8),cue=(i:number)=>smooth((story*8-i)/.65),inventoryReveal=cue(0)*(1-cue(2)),columnsReveal=cue(7);
+ const discoveryLines=['The Copper Scroll lists hidden valuables.','It gives directions for finding them.','Excavators found it in Qumran Cave 3 in 1952.','It lay there in two rolls of copper.','The words were engraved in Hebrew.','Corrosion made the metal too brittle to unwind.','The rolls were cut into 23 strips to be read.','The writing filled twelve columns.'];
  return <div className="story-opening" ref={timeline.ref} style={{background:value>.70?'#f7f5ef':undefined}} data-progress={value.toFixed(3)} data-phase={phase} data-opening-beat={openingBeat.index} data-opening-cue={openingCues[openingBeat.index]} data-visual-complete={(ready||failed)&&openingBeat.animation===1} data-ready={ready} data-object="cut-curved-scroll" data-conservation="cut-while-coiled" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
   <div className="story-opening-sticky">
    <div className="story-opening-canvas" style={{opacity:1-Math.max(inventoryReveal,columnsReveal)}} ref={host} role="img" aria-label="Scroll-driven journey across relief terrain of the Judean Desert to Qumran Cave 3, then inside an illustrative cave to the rolled Copper Scroll."/>
    {failed&&<div className="story-opening-fallback" style={{opacity:value>.7?0:1}}><svg viewBox="0 0 1000 650" role="img" aria-label="Illustrative relief of desert ridges descending towards Qumran and the Dead Sea"><rect width="1000" height="650" fill="#ded6c5"/>{Array.from({length:18},(_,i)=><path key={i} d={`M-80 ${80+i*31}L210 ${-50+i*29} 400 ${100+i*24} 570 ${130+i*22} 680 ${270+i*15} 1080 ${340+i*15}`} fill="none" stroke={i%3?'#b9a888':'#8e866b'} strokeWidth={i%3?12:22}/>)}<path d="M800 280Q730 400 860 650H1000V250Z" fill="#718b89"/></svg></div>}
-   {failed&&value>.7&&<div className="story-opening-final-art" style={{opacity:openingBeat.animation*(1-Math.max(inventoryReveal,columnsReveal))}} aria-hidden="true"><svg viewBox="0 0 1000 450"><AtlasGlyph name="copper" x={openingBeat.index===1?280:355} y={5} width={290} height={440}/>{openingBeat.index===1&&<AtlasGlyph name="copper" x={550} y={35} width={250} height={380}/>}</svg></div>}
-   <div className="story-opening-final-art story-opening-contents" style={{opacity:inventoryReveal}} aria-hidden={inventoryReveal<.5}><InventoryArtScene art={openingBeat.index===3?'directions':'deposit'} showDeposit progress={openingBeat.index===3?cue(3):inventoryReveal}/></div>
+   {failed&&value>.7&&<div className="story-opening-final-art" style={{opacity:openingBeat.animation*(1-Math.max(inventoryReveal,columnsReveal))}} aria-hidden="true"><svg viewBox="0 0 1000 450"><AtlasGlyph name="copper" x={openingBeat.index===3?280:355} y={5} width={290} height={440}/>{openingBeat.index===3&&<AtlasGlyph name="copper" x={550} y={35} width={250} height={380}/>}</svg></div>}
+   <div className="story-opening-final-art story-opening-contents" style={{opacity:inventoryReveal}} aria-hidden={inventoryReveal<.5}><InventoryArtScene art={openingBeat.index===1?'directions':'deposit'} showDeposit progress={openingBeat.index===1?cue(1):inventoryReveal}/></div>
    <div className="story-opening-final-art story-opening-columns" style={{opacity:columnsReveal}} aria-hidden={columnsReveal<.5}><ColumnDiagram progress={columnsReveal}/></div>
    <div className="story-opening-wash" style={{opacity:1-smooth(flight/.23)}}/>
    <h1 aria-label="What is the Copper Scroll?" style={{opacity:1-smooth((flight-.03)/.18),transform:`translateY(${-flight*80}px)`}}>What is the <br/><AnimatedWords text="Copper Scroll?" progress={smooth(flight/.12)} reduced={timeline.reduced}/></h1>
