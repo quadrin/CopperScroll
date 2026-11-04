@@ -26,5 +26,16 @@ export function beatTiming(progress:number,count:number){
 }
 export function Narration({lines,progress,reduced=false}:{lines:string[];progress:number;reduced?:boolean}){
  const beat=beatTiming(progress,lines.length);
- return <div className="story-narration" data-static={reduced} data-beat={beat.index} data-word-animation-complete={reduced||beat.animation===1}>{lines.map((line,i)=><p key={i} className={i===beat.index?'story-line is-current':'story-line'} aria-hidden={!reduced&&i!==beat.index}><AnimatedWords text={line} progress={beat.animation} reduced={reduced}/></p>)}</div>;
+ const [shown,setShown]=useState(beat.index),[transition,setTransition]=useState<'steady'|'out'|'in'>('steady');
+ const shownRef=useRef(beat.index);
+ useEffect(()=>{
+  if(reduced||beat.index===shownRef.current){setShown(beat.index);shownRef.current=beat.index;setTransition('steady');return;}
+  // Finish the outgoing fade before replacing the sentence. A new target cancels
+  // the pending swap, so fast scrolling and reversal always resolve to this beat.
+  setTransition('out');
+  const timer=window.setTimeout(()=>{shownRef.current=beat.index;setShown(beat.index);setTransition('in');},170);
+  return()=>window.clearTimeout(timer);
+ },[beat.index,reduced]);
+ const display=reduced?beat.index:shown;
+ return <div className="story-narration" data-static={reduced} data-beat={beat.index} data-displayed-beat={display} data-transition={reduced?'steady':transition} data-word-animation-complete={reduced||beat.animation===1}>{lines.map((line,i)=><p key={i} className={i===display?'story-line is-current':'story-line'} aria-hidden={!reduced&&i!==display}><AnimatedWords text={line} progress={display===beat.index?beat.animation:1} reduced={reduced}/></p>)}</div>;
 }
