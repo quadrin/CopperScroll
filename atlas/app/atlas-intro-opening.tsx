@@ -3,7 +3,7 @@ import {useEffect,useRef,useState} from 'react';
 import * as T from 'three';
 import {Narration,beatTiming,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
-import {InventoryArtScene} from './atlas-intro-inventory-art';
+import {InventoryArtScene,ColumnDiagram} from './atlas-intro-inventory-art';
 import {AtlasGlyph} from './atlas-intro-glyphs';
 import {sheetPoint,SHEET_LENGTH_M} from './atlas-scroll-3d-model';
 
@@ -12,7 +12,7 @@ type Terrain={anchor:{lat:number;lon:number};verticalExaggeration:number;regiona
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const smooth=(v:number)=>{const t=clamp(v);return t*t*(3-2*t);};
 const base=import.meta.env?.BASE_URL??'/';
-const openingCues=['discovery','two-rolls','engraving','copper-name','corrosion','cut-strips','twelve-columns','inventory'];
+const openingCues=['discovery','two-rolls','hidden-valuables','directions','hebrew-writing','corrosion','cut-curved-strips','twelve-columns'];
 export default function DesertOpening(){
  const timeline=useScrollScene(),host=useRef<HTMLDivElement>(null),qumran=useRef<HTMLSpanElement>(null),caveLabel=useRef<HTMLSpanElement>(null);
  const runtime=useRef<{update:(value:number)=>void}|null>(null),current=useRef(0);
@@ -115,24 +115,19 @@ export default function DesertOpening(){
      for(let i=0;i<=segments;i++){const u=(strip+i/segments)/23;uvs.set([u,0,u,1],i*4);if(i<segments){const a=i*2;indices.push(a,a+1,a+2,a+1,a+3,a+2);}}
      geometry.setAttribute('position',new T.BufferAttribute(positions,3));geometry.setAttribute('uv',new T.BufferAttribute(uvs,2));geometry.setIndex(indices);stripGeometries.push(geometry);roll.add(new T.Mesh(geometry,copper));
     }
-    let previousShape=-1;
-    function shapeRoll(unroll:number,gap:number){
-     const shape=unroll+gap;if(shape===previousShape)return;previousShape=shape;
-     for(let strip=0;strip<23;strip++){
-      const geometry=stripGeometries[strip],positions=geometry.getAttribute('position') as T.BufferAttribute;
-      for(let i=0;i<=segments;i++){const u=(strip+i/segments)/23*SHEET_LENGTH_M,[x,z]=sheetPoint(u,unroll,SHEET_LENGTH_M),cx=x-SHEET_LENGTH_M/2*(1-unroll)+(11-strip)*.018*gap;positions.setXYZ(i*2,cx,-.15,z);positions.setXYZ(i*2+1,cx,.15,z);}
-      positions.needsUpdate=true;geometry.computeVertexNormals();geometry.computeBoundingSphere();
-     }
+    // Build the coiled surface once. Cutting separates rigid curved pieces;
+    // no frame interpolates the continuous sheet towards an unrolled shape.
+    const stripCentres:T.Vector3[]=[];
+    for(let strip=0;strip<23;strip++){
+     const geometry=stripGeometries[strip],positions=geometry.getAttribute('position') as T.BufferAttribute;
+     for(let i=0;i<=segments;i++){const u=(strip+i/segments)/23*SHEET_LENGTH_M,[x,z]=sheetPoint(u,0,SHEET_LENGTH_M);positions.setXYZ(i*2,x-SHEET_LENGTH_M/2,-.15,z);positions.setXYZ(i*2+1,x-SHEET_LENGTH_M/2,.15,z);}
+     positions.needsUpdate=true;geometry.computeVertexNormals();geometry.computeBoundingBox();geometry.computeBoundingSphere();stripCentres.push(geometry.boundingBox!.getCenter(new T.Vector3()));
     }
-    shapeRoll(0,0);roll.position.set(0,-1.49,-4);roll.rotation.z=Math.PI/2;chamber.add(roll);
+    roll.position.set(0,-1.49,-4);roll.rotation.z=Math.PI/2;chamber.add(roll);
     const secondCopper=copper.clone();secondCopper.transparent=true;secondCopper.depthWrite=false;const second=roll.clone(true);second.traverse(child=>{if(child instanceof T.Mesh)child.material=secondCopper;});second.position.set(-.02,-1.49,-4.24);second.rotation.z=Math.PI/2+.08;chamber.add(second);
-    const columnGuides=new T.Group();columnGuides.position.set(0,-1.42,-4);chamber.add(columnGuides);
-    const guideMaterials:T.LineBasicMaterial[]=[],guideGeometries:T.BufferGeometry[]=[];
-    for(let i=0;i<12;i++){
-     const x=1.4-i*2.8/12,w=.18,y=.2,z=.003;
-     const geometry=new T.BufferGeometry().setFromPoints([new T.Vector3(x,y-.025,z),new T.Vector3(x,y,z),new T.Vector3(x,y,z),new T.Vector3(x-w,y,z),new T.Vector3(x-w,y,z),new T.Vector3(x-w,y-.025,z)]);
-     const material=new T.LineBasicMaterial({color:'#9b613e',transparent:true,opacity:0});guideMaterials.push(material);guideGeometries.push(geometry);columnGuides.add(new T.LineSegments(geometry,material));
-    }
+    const cutGeometry=new T.BufferGeometry().setFromPoints([new T.Vector3(0,-.17,.12),new T.Vector3(0,.17,.12)]);
+    const cutMaterial=new T.LineBasicMaterial({color:'#d5a675',transparent:true,opacity:0});
+    const cutGuide=new T.LineSegments(cutGeometry,cutMaterial);cutGuide.position.set(0,-1.42,-4);chamber.add(cutGuide);
     const render=()=>{if(!disposed)renderer!.render(scene,camera);};
     const q=new T.Vector3((35.45941-data.anchor.lon)*111320*Math.cos(data.anchor.lat*Math.PI/180),15,(data.anchor.lat-31.74183)*111320);
     function label(node:HTMLSpanElement|null,position:T.Vector3,opacity:number){
@@ -140,8 +135,8 @@ export default function DesertOpening(){
      node.style.opacity=String(visible?opacity:0);node.style.left=`${(projected.x+1)*50}%`;node.style.top=`${(1-projected.y)*50}%`;
     }
     function update(value:number){
-     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),cue=(i:number)=>smooth((story*8-i)/.65),pair=cue(1),detail=cue(2),naming=cue(3),corrosion=cue(4),columns=cue(6);
-     const unroll=smooth((story-.625)/.035),gap=smooth((story-.660)/.04625);
+     const p=Math.min(1,value/.62),story=clamp((value-.70)/.30),cue=(i:number)=>smooth((story*8-i)/.65),pair=cue(1),detail=cue(4),naming=cue(2),corrosion=cue(5),cut=cue(6);
+     const separation=smooth((cut-.45)/.55);
      const inside=smooth((p-.54)/.22),handoff=smooth((p-.945)/.055);
      if(p<=.54){
       const u=p/.54,d=44000*Math.pow(180/44000,u),angle=.85*(1-smooth(u));
@@ -154,19 +149,22 @@ export default function DesertOpening(){
      if(value>.62){
       const shrink=smooth((value-.62)/.08),closeDistance=Math.max(.7,.5/camera.aspect),framedDistance=Math.max(1.2,.65/camera.aspect),openDistance=Math.max(framedDistance,2.9/(2*Math.tan(43*Math.PI/360)*camera.aspect));
       const studyDistance=framedDistance*(1-.30*detail+.18*naming-.10*corrosion);
-      const distance=T.MathUtils.lerp(T.MathUtils.lerp(closeDistance,studyDistance,shrink),openDistance,unroll);
+      const distance=T.MathUtils.lerp(T.MathUtils.lerp(closeDistance,studyDistance,shrink),openDistance,separation);
       camera.position.set(-4+distance,-1.42+.25*distance,.1);camera.lookAt(-4,-1.42-.10*distance*shrink,0);
      }
-     shapeRoll(unroll,gap);terrainMat.opacity=1-smooth((p-.46)/.08);terrainMat.depthWrite=terrainMat.opacity>.98;terrainMesh.visible=terrainMat.opacity>.001;
+     el.dataset.curvedStrips=String(stripGeometries.filter(geometry=>{const a=geometry.getAttribute('position') as T.BufferAttribute;let lo=Infinity,hi=-Infinity;for(let i=0;i<a.count;i++){lo=Math.min(lo,a.getZ(i));hi=Math.max(hi,a.getZ(i));}return hi-lo>.001;}).length);
+     el.dataset.cutSeparation=separation.toFixed(3);
+     roll.children.forEach((child,i)=>{child.position.x=separation*((11-i)*.095-stripCentres[i].x);child.position.z=-separation*stripCentres[i].z;});
+     cutMaterial.opacity=story>=.75&&story<.875?Math.sin(Math.min(1,cut/.45)*Math.PI)*.9:0;cutGuide.position.x=.10-.20*Math.min(1,cut/.45);
+     terrainMat.opacity=1-smooth((p-.46)/.08);terrainMat.depthWrite=terrainMat.opacity>.98;terrainMesh.visible=terrainMat.opacity>.001;
      const rockOpacity=smooth((p-.43)/.11)*(1-handoff);rockMaterials.forEach(m=>{m.opacity=rockOpacity;m.depthWrite=rockOpacity>.98;});floorMat.opacity=rockOpacity*smooth((p-.64)/.08);interiorMat.opacity=rockOpacity;floorMat.depthWrite=floorMat.opacity>.98;interiorMat.depthWrite=rockOpacity>.98;
      facade.visible=rockOpacity>.001;chamber.children.forEach(child=>{if(child instanceof T.Mesh)child.visible=rockOpacity>.001;});floor.visible=floorMat.opacity>.001;
      secondCopper.opacity=value>.70?pair*(1-detail):1-handoff;
      second.position.set(T.MathUtils.lerp(-.02,.19,pair),-1.42,T.MathUtils.lerp(-4.24,-4,pair));second.rotation.z=(1-handoff)*Math.PI/2;
      roll.position.x=value>.70?-.16*pair*(1-detail):0;
-     roll.rotation.y=value>.70?(.16*(1-cue(0))-.38*detail+.26*naming+.16*corrosion)*(1-unroll):0;
+     roll.rotation.y=value>.70?(.16*(1-cue(0))-.38*detail+.26*naming+.16*corrosion)*(1-separation):0;
      copper.bumpScale=.0008+.001*detail+.0008*corrosion;copper.roughness=.88+.1*corrosion;
      copper.color.set('#b9b09f').lerp(new T.Color('#c1a27c'),naming*.12);
-     guideMaterials.forEach((material,i)=>{material.opacity=.85*clamp(columns*12-i);});columnGuides.visible=story>=.75;
      roll.rotation.z=(1-handoff)*Math.PI/2;roll.position.y=T.MathUtils.lerp(-1.49,-1.42,handoff);
      ambient.intensity=T.MathUtils.lerp(1.8,.4,inside)+handoff*1.3;sun.intensity=T.MathUtils.lerp(3,.12,inside)+handoff*2.7;light.intensity=10*(1-handoff);
      fill.position.copy(camera.position);fill.position.z+=.65*detail-.8*naming+.5*corrosion;fill.color.set('#fffaf2').lerp(new T.Color('#e6bb87'),naming*.18);fill.target.position.set(-4,-1.42,0);fill.intensity=handoff*1.8;
@@ -176,22 +174,23 @@ export default function DesertOpening(){
     }
     runtime.current={update};observer=new ResizeObserver(()=>{if(!renderer)return;const w=el.clientWidth,h=el.clientHeight;renderer.setSize(w,h);camera.aspect=w/Math.max(1,h);camera.updateProjectionMatrix();update(current.current);});observer.observe(el);
     const contextLost=(event:Event)=>{event.preventDefault();setFailed(true);};renderer.domElement.addEventListener('webglcontextlost',contextLost);
-    disposeScene=()=>{renderer?.domElement.removeEventListener('webglcontextlost',contextLost);terrainGeo.dispose();facade.geometry.dispose();floor.geometry.dispose();chamber.traverse(child=>{if(child instanceof T.Mesh&&!stripGeometries.includes(child.geometry)&&child!==facade&&child!==floor)child.geometry.dispose();});stripGeometries.forEach(g=>g.dispose());guideMaterials.forEach(m=>m.dispose());guideGeometries.forEach(g=>g.dispose());manuscript.dispose();writingTexture.dispose();[terrainMat,...rockMaterials,floorMat,interiorMat,copper,secondCopper].forEach(m=>m.dispose());};
+    disposeScene=()=>{renderer?.domElement.removeEventListener('webglcontextlost',contextLost);terrainGeo.dispose();facade.geometry.dispose();floor.geometry.dispose();chamber.traverse(child=>{if(child instanceof T.Mesh&&!stripGeometries.includes(child.geometry)&&child!==facade&&child!==floor)child.geometry.dispose();});stripGeometries.forEach(g=>g.dispose());cutGeometry.dispose();cutMaterial.dispose();manuscript.dispose();writingTexture.dispose();[terrainMat,...rockMaterials,floorMat,interiorMat,copper,secondCopper].forEach(m=>m.dispose());};
     update(current.current);setReady(true);
    }catch(error){if(!disposed&&!controller.signal.aborted)setFailed(true);}
   }
   void mount();return()=>{disposed=true;controller.abort();observer?.disconnect();disposeScene?.();renderer?.dispose();el.replaceChildren();runtime.current=null;};
  },[]);
  useEffect(()=>runtime.current?.update(value),[value,ready]);
- const flight=Math.min(1,value/.62),story=clamp((value-.70)/.30),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.625?'scroll':story<.68?'unroll':'strips';
- const openingBeat=beatTiming(story,8),inventoryReveal=smooth((story*8-7)/.65);
- const discoveryLines=['In 1952, excavators entered Qumran Cave 3.','Inside lay two rolls of copper.','A document was engraved into the metal.','It became known as the Copper Scroll.','Corrosion had made it too brittle to unwind.','In Manchester in 1955–56, Baker cut it into 23 strips.','The writing filled twelve columns.','It listed hidden valuables—and directions to them.'];
- return <div className="story-opening" ref={timeline.ref} style={{background:value>.70?'#f7f5ef':undefined}} data-progress={value.toFixed(3)} data-phase={phase} data-opening-beat={openingBeat.index} data-opening-cue={openingCues[openingBeat.index]} data-visual-complete={(ready||failed)&&openingBeat.animation===1} data-ready={ready} data-object="continuous-scroll" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
+ const flight=Math.min(1,value/.62),story=clamp((value-.70)/.30),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<.75?'scroll':'cut-strips';
+ const openingBeat=beatTiming(story,8),cue=(i:number)=>smooth((story*8-i)/.65),inventoryReveal=cue(2)*(1-cue(4)),columnsReveal=cue(7);
+ const discoveryLines=['In 1952, excavators entered Qumran Cave 3.','Inside lay two rolls of copper.','The Copper Scroll lists hidden valuables.','It gives directions for finding them.','The words were engraved in Hebrew.','Corrosion made the metal too brittle to unwind.','The rolls were cut into 23 strips to be read.','The writing filled twelve columns.'];
+ return <div className="story-opening" ref={timeline.ref} style={{background:value>.70?'#f7f5ef':undefined}} data-progress={value.toFixed(3)} data-phase={phase} data-opening-beat={openingBeat.index} data-opening-cue={openingCues[openingBeat.index]} data-visual-complete={(ready||failed)&&openingBeat.animation===1} data-ready={ready} data-object="cut-curved-scroll" data-conservation="cut-while-coiled" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
   <div className="story-opening-sticky">
-   <div className="story-opening-canvas" style={{opacity:1-inventoryReveal}} ref={host} role="img" aria-label="Scroll-driven journey across relief terrain of the Judean Desert to Qumran Cave 3, then inside an illustrative cave to the rolled Copper Scroll."/>
+   <div className="story-opening-canvas" style={{opacity:1-Math.max(inventoryReveal,columnsReveal)}} ref={host} role="img" aria-label="Scroll-driven journey across relief terrain of the Judean Desert to Qumran Cave 3, then inside an illustrative cave to the rolled Copper Scroll."/>
    {failed&&<div className="story-opening-fallback" style={{opacity:value>.7?0:1}}><svg viewBox="0 0 1000 650" role="img" aria-label="Illustrative relief of desert ridges descending towards Qumran and the Dead Sea"><rect width="1000" height="650" fill="#ded6c5"/>{Array.from({length:18},(_,i)=><path key={i} d={`M-80 ${80+i*31}L210 ${-50+i*29} 400 ${100+i*24} 570 ${130+i*22} 680 ${270+i*15} 1080 ${340+i*15}`} fill="none" stroke={i%3?'#b9a888':'#8e866b'} strokeWidth={i%3?12:22}/>)}<path d="M800 280Q730 400 860 650H1000V250Z" fill="#718b89"/></svg></div>}
-   {failed&&value>.7&&<div className="story-opening-final-art" style={{opacity:openingBeat.animation*(1-inventoryReveal)}} aria-hidden="true"><svg viewBox="0 0 1000 450"><AtlasGlyph name="copper" x={openingBeat.index===1?280:355} y={5} width={290} height={440}/>{openingBeat.index===1&&<AtlasGlyph name="copper" x={550} y={35} width={250} height={380}/>}</svg></div>}
-   <div className="story-opening-final-art" style={{opacity:inventoryReveal}} aria-hidden={inventoryReveal<.5}><InventoryArtScene art="deposit" progress={inventoryReveal}/></div>
+   {failed&&value>.7&&<div className="story-opening-final-art" style={{opacity:openingBeat.animation*(1-Math.max(inventoryReveal,columnsReveal))}} aria-hidden="true"><svg viewBox="0 0 1000 450"><AtlasGlyph name="copper" x={openingBeat.index===1?280:355} y={5} width={290} height={440}/>{openingBeat.index===1&&<AtlasGlyph name="copper" x={550} y={35} width={250} height={380}/>}</svg></div>}
+   <div className="story-opening-final-art story-opening-contents" style={{opacity:inventoryReveal}} aria-hidden={inventoryReveal<.5}><InventoryArtScene art={openingBeat.index===3?'directions':'deposit'} showDeposit progress={openingBeat.index===3?cue(3):inventoryReveal}/></div>
+   <div className="story-opening-final-art story-opening-columns" style={{opacity:columnsReveal}} aria-hidden={columnsReveal<.5}><ColumnDiagram progress={columnsReveal}/></div>
    <div className="story-opening-wash" style={{opacity:1-smooth(flight/.23)}}/>
    <h1 aria-label="What is the Copper Scroll?" style={{opacity:1-smooth((flight-.03)/.18),transform:`translateY(${-flight*80}px)`}}>What is the <br/><AnimatedWords text="Copper Scroll?" progress={smooth(flight/.12)} reduced={timeline.reduced}/></h1>
    <span className="story-opening-place" ref={qumran}>Qumran</span><span className="story-opening-place" ref={caveLabel}>Cave 3 · 3Q</span>
