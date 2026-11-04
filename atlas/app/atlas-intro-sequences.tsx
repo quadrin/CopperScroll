@@ -10,13 +10,8 @@ const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 type Art='sheet'|'places'|'directions'|'deposit'|'entries'|'structure'|'candidates'|'worked'|'time'|'recovery'|'durability'|'temple'|'community'|'literary'|'unknown'|'evidence';
 type Beat={text:string;art:Art};
 const inventory:Beat[]=[
- {text:'The Copper Scroll reads like an inventory of concealed treasure.',art:'sheet'},
- {text:'It names places and landmarks.',art:'places'},
- {text:'It gives directions and measurements.',art:'directions'},
- {text:'And records what was supposed to be hidden there.',art:'deposit'},
  {text:'Editors divide the writing into more than sixty “entries.”',art:'entries'},
- {text:'Each usually combines a place, an instruction, and a deposit.',art:'structure'},
- {text:'Entry boundaries and numbering differ between editions.',art:'entries'},
+ {text:'Each entry joins a place, an instruction and a deposit.',art:'structure'},
 ];
 const locations:Beat[]=[
  {text:'The entry describes a cave’s features, rather than a modern address.',art:'places'},
