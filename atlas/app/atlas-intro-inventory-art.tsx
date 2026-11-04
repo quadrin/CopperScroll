@@ -6,7 +6,7 @@ export type InventoryArt='places'|'directions'|'deposit'|'entries'|'structure';
 function Icon({name,x,y,width,height,opacity=1}:{name:'landscape'|'cave'|'jar'|'document';x:number;y:number;width:number;height:number;opacity?:number}){
  return <image href={`${base}introduction/inventory-illustrations/${name}.svg`} x={x} y={y} width={width} height={height} opacity={opacity} data-glyph={name} data-render="illustrative-vector"/>;
 }
-export function InventoryArtScene({art,progress=1,showDeposit=false}:{art:InventoryArt;progress?:number;showDeposit?:boolean}){
+export function InventoryArtScene({art,progress=1,showDeposit=false,showMeasurement=true}:{art:InventoryArt;progress?:number;showDeposit?:boolean;showMeasurement?:boolean}){
  const [compact,setCompact]=useState(false);
  useEffect(()=>{const query=matchMedia('(max-width:650px)'),update=()=>setCompact(query.matches);update();query.addEventListener('change',update);return()=>query.removeEventListener('change',update);},[]);
  const plateClip=useId();
@@ -19,7 +19,7 @@ export function InventoryArtScene({art,progress=1,showDeposit=false}:{art:Invent
    <Icon name="landscape" {...landscape}/><Icon name="cave" {...cave}/>
    {art==='directions'&&<>
     <path data-inventory-route d={compact?'M240 220C165 265 165 330 240 390':'M330 350C475 410 635 365 740 325'} fill="none" stroke="#9b613e" strokeWidth="2.5" pathLength="1" strokeDasharray="1" strokeDashoffset={1-t}/>
-    <g opacity={t}><path data-inventory-measure d={compact?'M450 475V545M442 475H458M442 545H458':'M950 330V410M942 330H958M942 410H958'} fill="none" stroke="#9b613e" strokeWidth="2"/><text x={compact?440:940} y={compact?575:445} textAnchor="end" fill="#76563d" fontSize={compact?28:26}>3 cubits</text></g>
+    {showMeasurement&&<g opacity={t}><path data-inventory-measure d={compact?'M450 475V545M442 475H458M442 545H458':'M950 330V410M942 330H958M942 410H958'} fill="none" stroke="#9b613e" strokeWidth="2"/><text x={compact?440:940} y={compact?575:445} textAnchor="end" fill="#76563d" fontSize={compact?28:26}>3 cubits</text></g>}
    </>}
    {(art==='deposit'||showDeposit)&&<g data-inventory-deposit opacity={showDeposit&&art==='directions'?1:t}><path d={compact?'M120 475H410':'M620 325H910'} fill="none" stroke="#a39379" strokeWidth="1.5" strokeDasharray="5 7"/><Icon name="jar" x={compact?270:730} y={compact?425:275} width={compact?90:100} height={compact?130:145}/></g>}
   </>}
