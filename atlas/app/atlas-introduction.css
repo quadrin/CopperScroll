@@ -23,7 +23,7 @@
 .story-entry-reveal[data-source-images=true] .story-entry-art{width:100%;max-width:1600px}
 .story-entry-reveal[data-source-images=true] .story-entry-radiographs{gap:12px;align-items:center}
 .story-entry-reveal[data-source-images=true] .story-entry-radiographs img{height:100%;max-width:calc((100% - 24px)/3);width:auto}
-.story-entry-reveal[data-source-images=true] .story-narration{width:min(1400px,100%);font-size:clamp(23px,2.7vw,42px);line-height:1.35}
+.story-entry-reveal[data-source-images=true] .story-narration{width:min(1400px,100%);font-size:clamp(23px,3.5vw,46px);line-height:1.35}
 @media(max-width:760px){.story-entry-reveal[data-source-images=true]:not([data-reduced=true])>.story-sticky{padding:20px 16px 24px;gap:20px;grid-template-rows:minmax(0,1fr) 108px}.story-entry-reveal[data-source-images=true] .story-entry-radiographs{gap:6px}.story-entry-reveal[data-source-images=true] .story-entry-radiographs img{max-width:calc((100% - 12px)/3)}.story-entry-reveal[data-source-images=true] .story-narration{font-size:22px}}
 @media(max-height:600px){.story-entry-reveal[data-source-images=true]:not([data-reduced=true])>.story-sticky{padding:12px 20px 16px;gap:14px;grid-template-rows:minmax(0,1fr) 75px}.story-entry-reveal[data-source-images=true] .story-narration{font-size:19px}}
 /* Reduced motion is ordinary document flow, with every reading available. */
