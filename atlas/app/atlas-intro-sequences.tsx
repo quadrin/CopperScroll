@@ -2,7 +2,7 @@
 import {lazy,Suspense} from 'react';
 import {AtlasGlyph} from './atlas-intro-glyphs';
 const CandidateMap=lazy(()=>import('./atlas-intro-candidate-map'));
-import {Narration,stepAt,useScrollScene} from './atlas-intro-motion';
+import {Narration,beatTiming,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
 const base=import.meta.env?.BASE_URL??'/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
@@ -77,8 +77,8 @@ function Illustration({art,progress=1}:{art:Art;progress?:number}){
  </svg>;
 }
 export function StorySequence({chapter}:{chapter:'inventory'|'locations'|'worked'|'time'|'purpose'|'ending'}){
- const beats={inventory,locations,worked,time,purpose,ending}[chapter],scene=useScrollScene(),step=stepAt(scene.value,beats.length),local=scene.value===1?1:(scene.value*beats.length)%1;
+ const beats={inventory,locations,worked,time,purpose,ending}[chapter],scene=useScrollScene(),timing=beatTiming(scene.value,beats.length),step=timing.index;
  return <section className={`story-scene story-sequence story-sequence-${chapter}`} ref={scene.ref} data-chapter={chapter} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced} data-beat={step} style={scene.reduced?undefined:{height:`${80+beats.length*65}svh`}}>
-  {scene.reduced?<div className="story-sequence-static">{beats.map((beat,i)=><div key={i}><>{chapter==='locations'?(i===0?<Suspense fallback={<div className="story-regional-map"/>}><CandidateMap progress={1} reduced/></Suspense>:null):<Illustration art={beat.art}/>}</><p><AnimatedWords text={beat.text} reduced/></p></div>)}</div>:<div className="story-sticky">{chapter==='locations'?<Suspense fallback={<div className="story-regional-map"/>}><CandidateMap progress={scene.value}/></Suspense>:<Illustration art={beats[step].art} progress={local*1.5}/>}<Narration lines={beats.map(b=>b.text)} progress={scene.value}/></div>}
+  {scene.reduced?<div className="story-sequence-static">{beats.map((beat,i)=><div key={i}><>{chapter==='locations'?(i===0?<Suspense fallback={<div className="story-regional-map"/>}><CandidateMap progress={1} reduced/></Suspense>:null):<Illustration art={beat.art}/>}</><p><AnimatedWords text={beat.text} reduced/></p></div>)}</div>:<div className="story-sticky">{chapter==='locations'?<Suspense fallback={<div className="story-regional-map"/>}><CandidateMap progress={scene.value}/></Suspense>:<Illustration art={beats[step].art} progress={timing.animation}/>}<Narration lines={beats.map(b=>b.text)} progress={scene.value}/></div>}
  </section>;
 }

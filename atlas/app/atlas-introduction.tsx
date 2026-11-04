@@ -15,13 +15,13 @@ const repo='https://github.com/quadrin/CopperScroll/blob/main/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 
 const caveLines=[
- '“The cave of the pillar.” IV/17 has a rock-cut dividing pillar.',
- '“With the two entrances.” The plan records two present openings. Their ancient shape is unresolved.',
- '“Facing east.” The present openings are roughly southeast in the plan. Their ancient orientation needs testing.',
- '“Dig three cubits.” First we need an ancient entrance surface. The intended direction remains uncertain.',
+ 'IV/17 has a rock-cut dividing pillar.',
+ 'The plan records two openings; their ancient shape is unresolved.',
+ 'The openings face roughly southeast today; their ancient orientation needs testing.',
+ 'To measure three cubits, we need the ancient entrance surface and direction.',
 ];
 function CaveExample(){
- const scene=useScrollScene(),step=stepAt(scene.value,4),trace=scene.reduced?1:clamp((scene.value-.75)/.18),depth=scene.reduced||step===3?1:0;
+ const scene=useScrollScene(),step=stepAt(scene.value,4),trace=scene.reduced?1:clamp((scene.value-.75)/.1625),depth=scene.reduced||step===3?1:0;
  const active=step===0?['pillar']:step===3?['north-mouth']:['north-mouth','south-mouth'];
  return <div className="story-scene story-cave" ref={scene.ref} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced}><div className="story-sticky">
   <div className="story-cave-art">
@@ -32,7 +32,7 @@ function CaveExample(){
  </div></div>;
 }
 function ConstructionPhases(){
- const scene=useScrollScene(),repair=scene.reduced?1:clamp((scene.value-.3)*4),infill=scene.reduced?1:clamp((scene.value-.65)*4);
+ const scene=useScrollScene(),repair=scene.reduced?1:clamp((scene.value-1/3)/(.65/3)),infill=scene.reduced?1:clamp((scene.value-2/3)/(.65/3));
  return <div className="story-scene story-phase" ref={scene.ref} data-progress={scene.value.toFixed(3)} data-reduced={scene.reduced}><div className="story-sticky">
   <svg className="story-phase-art" viewBox="0 0 760 340" role="img" aria-label="Illustrative construction section: a feature is cut, a repair lining is added, and later fill accumulates. No site-specific dates or samples.">
    <defs><pattern id="story-rock" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 14L14 0" stroke="#748779" strokeWidth=".7" opacity=".3"/></pattern><pattern id="story-infill" width="25" height="20" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.5" fill="#8b775c"/><path d="M15 12l5 2" stroke="#8b775c"/></pattern></defs>
@@ -43,8 +43,8 @@ function ConstructionPhases(){
   </g></svg>
   <Narration progress={scene.value} reduced={scene.reduced} lines={[
    'The feature must have existed when the writer knew the place.',
-   'A repair can change the feature’s shape. A sample can date that repair, while the original construction may be older.',
-   'Later fill can bury an entrance. Its contents may be older material moved from elsewhere. Dating the fill does not automatically date the feature.',
+   'A sample may date a repair; the original construction can be older.',
+   'Later fill can bury an entrance; dating that fill does not date the original feature.',
   ]}/>
  </div></div>;
 }
