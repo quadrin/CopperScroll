@@ -13,9 +13,9 @@ export function EntryReveal(){
  const lift=scene.reduced?1:clamp((p-.28)/.05),translation=scene.reduced?1:clamp((p-.61)/.05);
  const imageOpacity=scene.reduced?1:1-clamp((p-.28)/.05);
  const phase=p<1/3&&INTRO_PRIVATE_IMAGES?'image':p<2/3?'hebrew':'english';
- return <div className="story-scene story-entry-reveal" ref={scene.ref} data-progress={p.toFixed(3)} data-reduced={scene.reduced} data-reading-phase={phase}><div className="story-sticky">
+ return <div className="story-scene story-entry-reveal" ref={scene.ref} data-progress={p.toFixed(3)} data-reduced={scene.reduced} data-reading-phase={phase} data-source-images={INTRO_PRIVATE_IMAGES}><div className="story-sticky">
   <div className="story-entry-art">
-   {INTRO_PRIVATE_IMAGES&&<div className="story-entry-radiographs" style={{opacity:imageOpacity,transform:scene.reduced?undefined:`scale(${1+p*.12})`}}>{['12g','12c','12d'].map(tag=><img key={tag} src={`${base}introduction/entry25-${tag}.jpeg`} alt={`Published column VI radiograph ${tag.toUpperCase()}, containing the Entry 25 passage.`}/>)}</div>}
+   {INTRO_PRIVATE_IMAGES&&<div className="story-entry-radiographs" style={{opacity:imageOpacity}}>{['12g','12c','12d'].map(tag=><img key={tag} src={`${base}introduction/entry25-${tag}.jpeg`} alt={`Published column VI radiograph ${tag.toUpperCase()}, containing the Entry 25 passage.`}/>)}</div>}
    <div className="story-entry-hebrew" lang="he" dir="rtl" style={{opacity:scene.reduced?1:(INTRO_PRIVATE_IMAGES?lift:1)*(1-translation),transform:scene.reduced?undefined:`translateY(${INTRO_PRIVATE_IMAGES?(1-lift)*8:0}px)`}} aria-hidden={!scene.reduced&&((INTRO_PRIVATE_IMAGES&&lift<.5)||translation>.5)}>{hebrew.map((line,i)=><p key={i}>{line}</p>)}</div>
    <blockquote className="story-entry-english" style={{opacity:translation,transform:scene.reduced?undefined:`translateY(${(1-translation)*8}px)`}} aria-hidden={!scene.reduced&&translation<.5}>{english.map((line,i)=><p key={i}><AnimatedWords text={line} progress={scene.reduced?1:clamp((p-.56-i*.025)*7)} reduced={scene.reduced}/></p>)}</blockquote>
   </div>
