@@ -7,31 +7,31 @@ import './atlas-entry-investigation.css';
 const base=import.meta.env.BASE_URL??'/';
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const ease=(v:number)=>{const t=clamp(v);return t*t*(3-2*t);};
-type Scene='source'|'hebrew'|'translation'|'cave'|'map'|'comparison'|'surface'|'result';
+type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result';
 type Cue={id:string;scene:Scene;line:string;he?:string;action?:number};
-const allCues:Cue[]=[
- {id:'source',scene:'source',line:'Let’s follow one example: Entry 25, column VI, lines 1–6.'},
- {id:'hebrew',scene:'hebrew',line:'Brackets mark letters supplied by editors.'},
- {id:'translation',scene:'translation',line:'Here is what it says.'},
- {id:'pillar',scene:'cave',action:0,he:'מערת העמוד',line:'“The cave of the pillar…”'},
+export const entryCues:Cue[]=[
+ {id:'source',scene:'source',line:'Let’s follow one: Entry 25.'},
+ {id:'hebrew',scene:'hebrew',line:'Here is what it says.'},
+ {id:'pillar',scene:'cave',action:0,he:'מערת העמוד',line:'“[In] the cave of the pillar…”'},
  {id:'openings',scene:'cave',action:1,he:'של שני [ה]פתחין צופא מזרח',line:'“…with two entrances, facing east…”'},
- {id:'north',scene:'cave',action:2,he:'[ב]פתח הצפוני',line:'“…at the northern entrance…”'},
+ {id:'north',scene:'cave',action:2,he:'[ב]פתח הצפוני',line:'“…[at] the northern entrance…”'},
  {id:'measure',scene:'cave',action:3,he:'חפור [א]מות שלוש',line:'“…dig three cubits.”'},
  {id:'jar',scene:'cave',action:4,he:'שמ קלל',line:'“There is a jar…”'},
  {id:'manuscript',scene:'cave',action:5,he:'בו ספר אחד',line:'“…in it one scroll…”'},
  {id:'silver',scene:'cave',action:6,he:'תחתו ככ 42',line:'“…beneath it, 42 silver-weight units.”'},
- {id:'regions',scene:'map',line:'Three caves have been suggested.'},
+ {id:'find',scene:'map',action:0,line:'Could we find that cave?'},
+ {id:'regions',scene:'map',action:1,line:'Three caves have been suggested.'},
+ {id:'look',scene:'comparison',line:'What would we look for?'},
+ {id:'features',scene:'comparison',action:3,line:'A pillar—and two entrances facing east.'},
  {id:'compare-pillar',scene:'comparison',action:0,line:'A pillar is described at all three.'},
- {id:'compare-openings',scene:'comparison',action:1,line:'Twin Cave and IV/17 have two openings.'},
- {id:'compare-direction',scene:'comparison',action:2,line:'The entrances may have changed since the scroll was written.'},
- {id:'ancient-surface',scene:'surface',line:'The ground level may have changed, too.'},
- {id:'result',scene:'result',line:'We still don’t know which cave the writer meant.'},
+ {id:'compare-openings',scene:'comparison',action:1,line:'Twin Cave and IV/17 also have two openings.'},
+ {id:'compare-direction',scene:'comparison',action:2,line:'But are these the openings the writer knew?'},
+ {id:'alteration',scene:'alteration',line:'Entrances can collapse or be rebuilt.'},
+ {id:'ancient-surface',scene:'surface',line:'Ground levels can rise.'},
+ {id:'datum',scene:'datum',line:'And “dig three cubits” only helps if we know where to start.'},
+ {id:'result',scene:'result',line:'We still need to establish what these caves looked like when the instructions were written.'},
 ];
-// Public publication starts directly on Hebrew, without repeating the passage.
-export const entryCues=INTRO_PRIVATE_IMAGES?allCues:allCues.slice(1).map((cue,i)=>i===0?{...cue,line:'Let’s follow Entry 25, column VI, lines 1–6.'}:cue);
 const hebrew=['[ב]מערת העמוד של שני','[ה]פתחין צופא מזרח','[ב]פתח הצפוני חפור','[א]מות שלוש שמ קלל','בו ספר אחד תחתו','ככ 42'];
-const english=['[In] the cave of the pillar with two entrances,','facing east, [at] the northern entrance,','dig three cubits. There is a jar,','in it one scroll; beneath it,','42 silver-weight units.'];
-
 // Scroll selects a cue; one finite timeline owns action, phrase departure,
 // caption fade and settled hold. It cannot advance to another cue by itself.
 const ACTION_MS=1100,OUT_MS=180,IN_MS=260;
@@ -43,14 +43,22 @@ function useInvestigation(){
  const [reduced,setReduced]=useState(()=>typeof matchMedia!=='undefined'&&matchMedia('(prefers-reduced-motion: reduce)').matches);
  const [play,setPlay]=useState<Playback>({index:0,previous:0,progress:0,caption:-1,opacity:0,departure:0,settled:false});
  useEffect(()=>{
-  const query=matchMedia('(prefers-reduced-motion: reduce)');let animation=0,scheduled=0,current=-1,caption=-1,started=0,previous=0;
+  const query=matchMedia('(prefers-reduced-motion: reduce)');let animation=0,scheduled=0,current=-1,caption=-1,started=0,previous=0,waitingAt=0;
   const frame=(now:number)=>{
-   if(entryCues[current].scene==='map'&&!mapReady.current){started=now;animation=requestAnimationFrame(frame);return;}
-   const elapsed=now-started,progress=ease(elapsed/ACTION_MS),swapping=elapsed>=ACTION_MS+OUT_MS;
-   if(swapping)caption=current;
-   const opacity=elapsed<ACTION_MS?1:swapping?ease((elapsed-ACTION_MS-OUT_MS)/IN_MS):1-ease((elapsed-ACTION_MS)/OUT_MS);
-   const settled=elapsed>=ACTION_MS+OUT_MS+IN_MS;
-   setPlay({index:current,previous,progress,caption,opacity:caption<0?0:opacity,departure:ease(elapsed/420),settled});
+   const elapsed=now-started;
+   if(elapsed<OUT_MS){
+    setPlay({index:previous,previous,progress:1,caption,opacity:caption<0?0:1-ease(elapsed/OUT_MS),departure:ease(elapsed/OUT_MS),settled:false});
+    animation=requestAnimationFrame(frame);return;
+   }
+   if(entryCues[current].scene==='map'&&!mapReady.current){
+    if(!waitingAt)waitingAt=now;setPlay({index:current,previous,progress:0,caption:-1,opacity:0,departure:1,settled:false});
+    animation=requestAnimationFrame(frame);return;
+   }
+   if(waitingAt){started+=now-waitingAt;waitingAt=0;}
+   const actionTime=now-started-OUT_MS,progress=ease(actionTime/ACTION_MS),complete=actionTime>=ACTION_MS;
+   caption=complete?current:-1;
+   const opacity=complete?ease((actionTime-ACTION_MS)/IN_MS):0,settled=actionTime>=ACTION_MS+IN_MS;
+   setPlay({index:current,previous,progress,caption,opacity,departure:1,settled});
    if(!settled)animation=requestAnimationFrame(frame);
   };
   const update=()=>{
@@ -59,9 +67,10 @@ function useInvestigation(){
    if(rect.top>height*.1||rect.bottom<height*.2)return;
    const p=clamp(-rect.top/Math.max(1,rect.height-height)),target=Math.min(entryCues.length-1,Math.floor(p*entryCues.length));
    if(target===current)return;
-   cancelAnimationFrame(animation);previous=current<0?target:current;current=target;started=performance.now();
-   if(entryCues[current].scene==='map')mapReady.current=false;
-   setPlay({index:current,previous,progress:0,caption,opacity:caption<0?0:1,departure:0,settled:false});
+   const initial=current<0;cancelAnimationFrame(animation);previous=initial?target:current;current=target;started=performance.now()-(initial?OUT_MS:0);
+   if(entryCues[current].scene==='map'&&entryCues[previous].scene!=='map')mapReady.current=false;
+   waitingAt=0;
+   setPlay({index:previous,previous,progress:initial?0:1,caption,opacity:caption<0?0:1,departure:0,settled:false});
    animation=requestAnimationFrame(frame);
   };
   const schedule=()=>{if(!scheduled)scheduled=requestAnimationFrame(update);};
@@ -74,17 +83,17 @@ function useInvestigation(){
  return {ref,play,reduced,markMapReady};
 }
 
-function SourcePassage({phase,progress}:{phase:'source'|'hebrew'|'translation';progress:number}){
+function SourcePassage({phase,progress}:{phase:'source'|'hebrew';progress:number}){
  return <div className={'investigation-passage investigation-'+phase} style={{opacity:ease(progress*2),transform:'translateY('+((1-progress)*12)+'px)'}}>
-  {phase==='source'&&INTRO_PRIVATE_IMAGES?<div className="investigation-radiographs">{['12g','12c','12d'].map(tag=><img key={tag} src={base+'introduction/entry25-'+tag+'.jpeg'} alt={'Published column VI radiograph '+tag.toUpperCase()+'; approximate Entry 25 region.'}/>)}</div>:
-   <div className="investigation-passage-text"><span className="investigation-source-label">VI 1–6 · Entry 25{phase==='source'?' · edition-based Hebrew':''}</span>{(phase==='translation'?english:hebrew).map((line,i)=><p key={i} lang={phase==='translation'?'en':'he'} dir={phase==='translation'?'ltr':'rtl'}>{line}</p>)}</div>}
+  {phase==='source'?(INTRO_PRIVATE_IMAGES?<div className="investigation-radiographs">{['12g','12c','12d'].map(tag=><img key={tag} src={base+'introduction/entry25-'+tag+'.jpeg'} alt={'Published column VI radiograph '+tag.toUpperCase()+'; Entry 25 region.'}/>)}</div>:<svg className="investigation-column-locator" viewBox="0 0 900 440" role="img" aria-label="Entry 25 is in column VI, lines 1–6. Schematic column locator, not a manuscript reconstruction.">{Array.from({length:12},(_,i)=><g key={i}><rect x={20+i*73} y="80" width="54" height="270" fill={i===5?'#dbc4a0':'#e8e1d3'} opacity={i===5?1:.45}/><text x={47+i*73} y="390" textAnchor="middle" fill="#7b6248" fontSize="16">{['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'][i]}</text>{i===5&&<path d="M383 95H437V209H383Z" fill="#a56a3b" opacity={.2*progress}/>}</g>)}</svg>):
+   <div className="investigation-passage-text"><span className="investigation-source-label">VI 1–6 · Entry 25</span>{hebrew.map((line,i)=><p key={i} lang="he" dir="rtl">{line}</p>)}</div>}
  </div>;
 }
 
 // Outlines follow the NEW illustrative artwork, never a surveyed cave.
-function CaveArt({action,progress,surface=false}:{action:number;progress:number;surface?:boolean}){
+function CaveArt({action,progress,surface=false,alteration=false,datum=false}:{action:number;progress:number;surface?:boolean;alteration?:boolean;datum?:boolean}){
  const id=useId().replace(/:/g,'');
- const reveal=(n:number)=>surface?0:action>n?1:action===n?progress:0;
+ const reveal=(n:number)=>surface||alteration?0:action>n?1:action===n?progress:0;
  return <div className="investigation-cave-wrap" data-cave-action={surface?'surface':action} style={{'--cave-pan':surface?'0%':action===0?'10%':action===2?'33%':action>=4?'-15%':'0%'} as CSSProperties}><svg className="investigation-cave" viewBox="0 0 1200 850" role="img" aria-label={surface?'Illustrative cave section with two possible ground levels; the ancient surface is unknown.':'Illustrative two-entrance cave. Pillar, orientation, measurement and listed contents appear in sequence; no particular archaeological site is reconstructed.'}>
   <defs>
    <linearGradient id={id+'-light'} x1="0" x2="1"><stop stopColor="#f3d99a" stopOpacity="0"/><stop offset="1" stopColor="#f3d99a" stopOpacity=".7"/></linearGradient>
@@ -125,10 +134,22 @@ function CaveArt({action,progress,surface=false}:{action:number;progress:number;
      <path d="M-54 0V10L-12 18V8M-10 7V17L30 25V14M54 0V10L30 25M9-5V4L-12 18" fill="#8c978e" stroke="#737d74" strokeWidth="1.5"/>
     </g>
    </g>
+   {alteration&&<g opacity={progress}>
+    <g transform={'translate(0 '+(-100*(1-progress))+')'}>
+     <path d="M225 430L270 398L312 425L300 481L248 492L205 465Z" fill="#bc9e75" stroke="#987d59" strokeWidth="2"/>
+     <path d="M270 398L281 443L248 492L300 481L312 425Z" fill="#9c805d"/>
+     <path d="M180 502L230 467L283 493L305 531L251 556L188 548Z" fill="#d7bd96" stroke="#987d59" strokeWidth="2"/>
+    </g>
+    {[0,1,2].map(row=>[0,1,2].map(col=><path key={row+'-'+col} d={'M'+(642+col*65+(row%2)*20)+' '+(535-row*28)+'h60v25h-60Z'} fill={row%2?'#c2ab88':'#b59a74'} stroke="#8b7659" strokeWidth="1.5" opacity={clamp(progress*3-row*.6)}/>))}
+   </g>}
    {surface&&<g>
-    <path d={'M80 '+(600-90*progress)+'Q400 '+(585-90*progress)+' 1070 '+(635-90*progress)+'L1080 735Q550 760 75 690Z'} fill="#d6c5aa" opacity={.7*progress}/>
+    <path d={'M80 '+(600-90*(datum?1:progress))+'Q400 '+(585-90*(datum?1:progress))+' 1070 '+(635-90*(datum?1:progress))+'L1080 735Q550 760 75 690Z'} fill="#d6c5aa" opacity={.7*progress}/>
     <path d="M100 610Q480 590 1080 640" stroke="#7d816c" strokeWidth="2" strokeDasharray="7 7" fill="none"/>
-    <path d={'M100 '+(610-90*progress)+'Q480 '+(590-90*progress)+' 1080 '+(640-90*progress)} stroke="#9c603b" strokeWidth="3" fill="none"/>
+    <path d={'M100 '+(610-90*(datum?1:progress))+'Q480 '+(590-90*(datum?1:progress))+' 1080 '+(640-90*(datum?1:progress))} stroke="#9c603b" strokeWidth="3" fill="none"/>
+    {datum&&<g opacity={progress}>
+     <path d="M440 523V660M426 523H454M426 660H454M550 613V750M536 613H564M536 750H564" fill="none" stroke="#945b34" strokeWidth="3"/>
+     <text x="460" y="585" className="investigation-svg-label">3 cubits</text><text x="570" y="690" className="investigation-svg-label">3 cubits</text>
+    </g>}
     <text x="970" y="497" className="investigation-svg-label" opacity={progress}>later ground</text><text x="985" y="688" className="investigation-svg-label">earlier surface?</text>
    </g>}
   </g>
@@ -137,11 +158,11 @@ function CaveArt({action,progress,surface=false}:{action:number;progress:number;
 
 const candidateNames=['Twin Cave','IV/17','IV/11'];
 function EvidenceComparison({action,progress,summary=false}:{action:number;progress:number;summary?:boolean}){
- return <div className="investigation-comparison" data-comparison-clue={summary?'summary':['pillar','openings','direction'][action]}>{candidateNames.map((name,i)=><figure key={name}>
+ return <div className="investigation-comparison" data-comparison-clue={summary?'summary':['pillar','openings','direction','combined'][action]}>{candidateNames.map((name,i)=><figure key={name}>
   <a className="investigation-evidence-image" href={i===0&&!INTRO_PRIVATE_IMAGES?'https://github.com/quadrin/CopperScroll/blob/main/research/assessments/entry25_iv17/README.md':base+'introduction/'+['twin-cave-figure.webp','iv17-plan.webp','iv11-plan.png'][i]} target="_blank" rel="noreferrer" aria-label={'Open '+name+' source '+(i===0?'photograph':'plan')}>
    {i===0&&!INTRO_PRIVATE_IMAGES?<div className="investigation-public-locator"><svg viewBox="0 0 660 615" aria-label="Regional locator near Qumran, not a photograph of Twin Cave"><path d="M80 100Q260 40 490 220L570 515L305 475L85 220Z" fill="#d8cfbb"/><path d="M440 265L570 515L470 480L395 320Z" fill="#a5b5ac"/><circle cx="330" cy="265" r="9" fill="#9c603b"/><text x="330" y="310" textAnchor="middle">Near Qumran</text></svg></div>:<svg viewBox={i===2?'0 0 594 510':i===1?'0 0 660 615':'0 0 1200 520'} role="img" aria-label={name+': '+(i===0?'published exterior photograph':'complete published survey plan, retaining scale and north arrow')}>
     <image href={base+'introduction/'+['twin-cave-figure.webp','iv17-plan.webp','iv11-plan.png'][i]} width={i===2?594:i===1?660:1200} height={i===2?510:i===1?615:520} preserveAspectRatio="xMidYMid meet"/>
-    {i===1&&!summary&&<g opacity={progress} fill="#ad713b" fillOpacity=".12" stroke="#a15d32" strokeWidth="3">{action===0?<ellipse cx="415" cy="380" rx="80" ry="82"/>:action===1?<><ellipse cx="562" cy="416" rx="34" ry="35"/><ellipse cx="231" cy="442" rx="44" ry="30"/></>:<ellipse cx="133" cy="119" rx="49" ry="62"/>}</g>}
+    {i===1&&!summary&&<g opacity={progress} fill="#ad713b" fillOpacity=".12" stroke="#a15d32" strokeWidth="3">{action===3?<><ellipse cx="415" cy="380" rx="80" ry="82"/><ellipse cx="562" cy="416" rx="34" ry="35"/><ellipse cx="231" cy="442" rx="44" ry="30"/></>:action===0?<ellipse cx="415" cy="380" rx="80" ry="82"/>:action===1?<><ellipse cx="562" cy="416" rx="34" ry="35"/><ellipse cx="231" cy="442" rx="44" ry="30"/></>:<ellipse cx="133" cy="119" rx="49" ry="62"/>}</g>}
    </svg>}
   </a>
   <figcaption><strong>{name}</strong><span>{i===0?'near Qumran':'near Jericho'}</span></figcaption>
@@ -149,15 +170,15 @@ function EvidenceComparison({action,progress,summary=false}:{action:number;progr
  </figure>)}</div>;
 }
 function InvestigationVisual({cue,progress,onMapReady}:{cue:Cue;progress:number;onMapReady?:()=>void}){
- if(cue.scene==='source'||cue.scene==='hebrew'||cue.scene==='translation')return <SourcePassage phase={cue.scene} progress={progress}/>;
- if(cue.scene==='cave'||cue.scene==='surface')return <CaveArt action={cue.action??3} progress={progress} surface={cue.scene==='surface'}/>;
- if(cue.scene==='map')return <div className="investigation-map"><CandidateMap progress={progress} onReady={onMapReady}/></div>;
- return <EvidenceComparison action={cue.action??0} progress={progress} summary={cue.scene==='result'}/>;
+ if(cue.scene==='source'||cue.scene==='hebrew')return <SourcePassage phase={cue.scene} progress={progress}/>;
+ if(['cave','surface','alteration','datum'].includes(cue.scene))return <CaveArt action={cue.action??3} progress={progress} surface={cue.scene==='surface'||cue.scene==='datum'} alteration={cue.scene==='alteration'} datum={cue.scene==='datum'}/>;
+ if(cue.scene==='map')return <div className="investigation-map"><CandidateMap progress={cue.action===0?.24*progress:.24+.76*progress} onReady={onMapReady}/></div>;
+ return <EvidenceComparison action={cue.action??0} progress={progress} summary={cue.scene==='result'||cue.id==='look'}/>;
 }
 export default function EntryInvestigation(){
  const {ref,play,reduced,markMapReady}=useInvestigation(),cue=entryCues[play.index],old=entryCues[play.previous],sameScene=cue.scene===old.scene;
  if(reduced)return <section className="entry-investigation-static" aria-label="Following Entry 25">{entryCues.map(cue=><article key={cue.id} data-cue={cue.id}>
-  <div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
+  {cue.id!=='find'&&<div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>}{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
  </article>)}<FurtherReading/></section>;
  return <><div ref={ref} className="entry-investigation" aria-label="Following Entry 25" style={{'--investigation-beats':entryCues.length} as CSSProperties} data-cue={cue.id} data-index={play.index} data-cue-count={entryCues.length} data-settled={play.settled} data-action-complete={play.progress===1} data-caption-index={play.caption} data-motion="single-controller">
   <div className="investigation-sticky">
@@ -167,8 +188,7 @@ export default function EntryInvestigation(){
    </div>
    <div className="investigation-reading">
     <div className="investigation-phrase" aria-hidden="true">
-     {old.he&&play.previous!==play.index&&play.departure<1&&<p className="investigation-hebrew investigation-outgoing" lang="he" dir="rtl" style={{opacity:1-play.departure,transform:'translateX('+(-play.departure*100)+'vw)'}}>{old.he}</p>}
-     {cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl" style={{opacity:ease((play.progress-.55)/.45)}}>{cue.he}</p>}
+     {cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl" style={{opacity:play.caption===play.index?play.opacity:0}}>{cue.he}</p>}
     </div>
     <p className="investigation-caption" style={{opacity:play.opacity}}>{play.caption>=0?entryCues[play.caption].line:'\u00a0'}</p>
    </div>

@@ -34,11 +34,11 @@ export function Narration({lines,progress,reduced=false,readyAt=.65,visualReady}
  const [shown,setShown]=useState(initial),[transition,setTransition]=useState<'steady'|'out'|'in'>('steady');
  const shownRef=useRef(initial);
  useEffect(()=>{
-  if(!ready){setTransition('steady');return;}
+  if(!ready){shownRef.current=-1;setShown(-1);setTransition('steady');return;}
   if(reduced||beat.index===shownRef.current){setShown(beat.index);shownRef.current=beat.index;setTransition('steady');return;}
-  // Finish the outgoing fade before replacing the sentence. A new target cancels
-  // the pending swap, so fast scrolling and reversal always resolve to this beat.
-  setTransition('out');
+  // Clear the preceding sentence during the next visual; reveal only the matching
+  // sentence once that visual has settled. A new target cancels stale swaps.
+  setShown(-1);setTransition('out');
   const timer=window.setTimeout(()=>{shownRef.current=beat.index;setShown(beat.index);setTransition('in');},170);
   return()=>window.clearTimeout(timer);
  },[beat.index,reduced,ready]);
