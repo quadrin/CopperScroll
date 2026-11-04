@@ -7,11 +7,12 @@ import {Narration,VisualBeat,beatTiming,useScrollScene} from './atlas-intro-moti
 import {AnimatedWords} from './atlas-intro-words';
 const base=import.meta.env?.BASE_URL??'/';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
-type Art='sheet'|'places'|'directions'|'deposit'|'entries'|'structure'|'candidates'|'worked'|'time'|'recovery'|'durability'|'temple'|'community'|'literary'|'unknown'|'evidence';
+type Art='entry-directions'|'sheet'|'places'|'directions'|'deposit'|'entries'|'structure'|'candidates'|'worked'|'time'|'recovery'|'durability'|'temple'|'community'|'literary'|'unknown'|'evidence';
 type Beat={text:string;art:Art};
 const inventory:Beat[]=[
  {text:'Editors divide the writing into more than sixty “entries.”',art:'entries'},
  {text:'Each entry joins a place, an instruction and a deposit.',art:'structure'},
+ {text:'It gives directions for finding them.',art:'entry-directions'},
 ];
 const locations:Beat[]=[
  {text:'The entry describes a cave’s features, rather than a modern address.',art:'places'},
@@ -55,6 +56,7 @@ const ending:Beat[]=[
 ];
 
 function Illustration({art,progress=1}:{art:Art;progress?:number}){
+ if(art==='entry-directions')return <InventoryArtScene art="directions" showDeposit progress={progress}/>;
  if(art==='places'||art==='directions'||art==='deposit'||art==='entries'||art==='structure')return <InventoryArtScene art={art} progress={progress}/>;
  const t=clamp(progress),single=!['evidence','worked'].includes(art);
  return <svg className="story-sequence-art" viewBox={art==='worked'?'265 0 470 430':'0 0 1000 430'} role="img" aria-label={art==='sheet'||art==='durability'?'Actual photograph of Copper Scroll strip 13, showing engraved Hebrew and corroded metal.':art==='temple'?'Photograph of the Israel Museum’s modern reconstruction of the Second Temple, representing a proposed ownership.':art==='community'?'Generic illustrative courtyard representing a proposed community ownership; not a reconstruction of Qumran.':art==='worked'?'Published IV/17 plan.':`Illustrative ${art} scene; not a surveyed landscape or an observed deposit.`} data-art={art} data-layout={single?'single':'wide'} preserveAspectRatio={single?'xMidYMid slice':'xMidYMid meet'} data-asset-family="atlas-relief-studies">
