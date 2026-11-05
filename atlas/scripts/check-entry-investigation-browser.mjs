@@ -11,7 +11,7 @@ try{
  await page.goto(origin+'#what-is-the-copper-scroll');await page.locator('.entry-investigation').waitFor();
  const count=Number(await page.locator('.entry-investigation').getAttribute('data-cue-count'));
  const privateBuild=await page.locator('.investigation-radiographs img').count()===3;
- assert.equal(count,27);const opening=await page.locator('.story-opening-copy .story-line').allTextContents();assert.equal(opening.length,8);assert.match(opening[0],/^In 1952.*Judean Desert/);assert.match(opening[6],/1955–56.*23 strips/);const inventory=await page.locator('.story-sequence-inventory .story-line').allTextContents();assert.deepEqual(inventory,['What did they say?','They described hidden valuables—and gave instructions for finding them.','Editors divide the writing into more than sixty entries.']);
+ assert.equal(count,36);const opening=await page.locator('.story-opening-copy .story-line').allTextContents();assert.equal(opening.length,8);assert.match(opening[0],/^In 1952.*Judean Desert/);assert.match(opening[6],/1955–56.*23 strips/);const inventory=await page.locator('.story-sequence-inventory .story-line').allTextContents();assert.deepEqual(inventory,['What did they say?','They described hidden valuables—and gave instructions for finding them.','Editors divide the writing into more than sixty entries.']);
  async function seek(index,settle=true){
   await page.locator('.entry-investigation').evaluate((el,index)=>{const r=el.getBoundingClientRect(),h=el.firstElementChild.offsetHeight,n=Number(el.dataset.cueCount);scrollTo(0,scrollY+r.top+(index+.35)/n*(r.height-h))},index);
   await page.waitForFunction(index=>Number(document.querySelector('.entry-investigation').dataset.index)===index,index);
@@ -34,7 +34,7 @@ try{
  await seek(3+offset);assert.match(await page.locator('.investigation-caption').innerText(),/two entrances/);
  for(const [width,height] of [[1440,1000],[1200,900],[320,568],[390,844],[740,390],[844,390]]){
   await page.setViewportSize({width,height});
-  for(const index of [1+offset,5+offset,14+offset,19+offset,21+offset,24+offset,26+offset]){
+  for(const index of [1+offset,5+offset,14+offset,19+offset,22+offset,24+offset,30+offset,33+offset,35+offset]){
    await seek(index);const art=await page.locator('.investigation-art').boundingBox(),reading=await page.locator('.investigation-reading').boundingBox(),caption=await page.locator('.investigation-caption').boundingBox();
    assert(art&&reading&&caption);assert(art.y+art.height<=reading.y-8,'separate art and reading rows at '+width);assert(caption.y>=0&&caption.y+caption.height<=height-8,'caption fits at '+width);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'no page overflow at '+width);
    if(index===14+offset){assert.equal(await page.locator('.investigation-comparison figure').count(),3);for(const f of await page.locator('.investigation-comparison figure').all()){const r=await f.boundingBox();assert(r&&r.y>=0&&r.y+r.height<=art.y+art.height+2,'every candidate remains visible')}}
