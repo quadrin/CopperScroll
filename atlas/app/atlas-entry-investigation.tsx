@@ -2,7 +2,7 @@
 import {lazy,Suspense,useCallback,useEffect,useId,useRef,useState,type CSSProperties} from 'react';
 import CandidateMap from './atlas-intro-candidate-map';
 import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
-import {CopperReflection,FieldworkReflection} from './atlas-intro-reflections';
+import {MysteryReflection,FieldworkReflection} from './atlas-intro-reflections';
 import {useStoryFoley,type MaterialSound} from './atlas-story-sound';
 import './atlas-entry-investigation.css';
 const IntroExplore=lazy(()=>import('./atlas-intro-explore'));
@@ -10,7 +10,7 @@ const IntroExplore=lazy(()=>import('./atlas-intro-explore'));
 const base=import.meta.env.BASE_URL??'/';
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const ease=(v:number)=>{const t=clamp(v);return t*t*(3-2*t);};
-type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result'|'copper-reflection'|'landmark-reflection'|'hypothesis-reflection'|'fieldwork-reflection'|'explore';
+type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result'|'mystery'|'landmark-reflection'|'hypothesis-reflection'|'fieldwork-reflection'|'explore';
 type Cue={id:string;scene:Scene;line:string;he?:string;action?:number;reflection?:boolean};
 export const entryCues:Cue[]=[
  {id:'source',scene:'source',line:'Let’s follow one: Entry 25.'},
@@ -33,7 +33,16 @@ export const entryCues:Cue[]=[
  {id:'ancient-surface',scene:'surface',line:'Rockfalls have buried openings. Floods have filled them with silt.'},
  {id:'datum',scene:'datum',line:'And “dig three cubits” only helps if we know where to start.'},
  {id:'result',scene:'result',line:'We still need to establish what these caves looked like when the instructions were written.'},
- {id:'intended-reader',scene:'copper-reflection',reflection:true,line:'Someone engraved these directions in copper. Who were they expecting to read them?'},
+ {id:'mystery',scene:'mystery',action:0,reflection:true,line:'But setting the proposed locations aside, there is still the scroll itself to explain.'},
+ {id:'commission',scene:'mystery',action:1,reflection:true,line:'We don’t know who commissioned it, or exactly when it was written.'},
+ {id:'dating',scene:'mystery',action:2,reflection:true,line:'Some scholars place it in the first century CE; others argue for a later date.'},
+ {id:'temple-context',scene:'mystery',action:3,reflection:true,line:'Was it recording valuables hidden around the destruction of Jerusalem’s Temple in 70 CE?'},
+ {id:'ownership',scene:'mystery',action:4,reflection:true,line:'If so, did they belong to the Temple, to a community, or to somebody else?'},
+ {id:'practical-record',scene:'mystery',action:5,reflection:true,line:'Its detailed instructions sound like something a person could actually follow.'},
+ {id:'legendary-treasure',scene:'mystery',action:6,reflection:true,line:'Yet some scholars have interpreted it as an account of legendary treasure.'},
+ {id:'why-copper',scene:'mystery',action:7,reflection:true,line:'If it was intended to guide a real recovery, why choose copper?'},
+ {id:'preserve-directions',scene:'mystery',action:8,reflection:true,line:'Perhaps someone wanted these directions to survive until it was safe to return.'},
+ {id:'intended-reader',scene:'mystery',action:9,reflection:true,line:'Who was supposed to come back for it?'},
  {id:'familiar-landmark',scene:'landmark-reflection',reflection:true,line:'Perhaps a cave name or a familiar landmark was enough for that person to know where to go. What would they have recognized that we’re missing?'},
  {id:'predictions',scene:'comparison',action:3,reflection:true,line:'We can use the surviving clues to propose places—and work out what we should find there if a proposal is right.'},
  {id:'field-prediction',scene:'hypothesis-reflection',reflection:true,line:'For this cave, that might mean an older entrance floor, or evidence that both openings existed at the same time.'},
@@ -183,8 +192,8 @@ function EvidenceComparison({action,progress,summary=false}:{action:number;progr
 
  </figure>)}</div>;
 }
-function InvestigationVisual({cue,progress,onMapReady}:{cue:Cue;progress:number;onMapReady?:()=>void}){
- if(cue.scene==='copper-reflection')return <CopperReflection progress={progress}/>;
+function InvestigationVisual({cue,previousCue,progress,onMapReady}:{cue:Cue;previousCue?:Cue;progress:number;onMapReady?:()=>void}){
+ if(cue.scene==='mystery')return <MysteryReflection action={cue.action??0} previousAction={previousCue?.scene==='mystery'?previousCue.action??0:cue.action??0} progress={progress}/>;
  if(cue.scene==='landmark-reflection')return <CaveArt action={0} progress={progress}/>;
  if(cue.scene==='hypothesis-reflection')return <CaveArt action={3} progress={progress} surface datum testOpenings/>;
  if(cue.scene==='fieldwork-reflection')return <FieldworkReflection progress={progress}/>;
@@ -196,7 +205,7 @@ function InvestigationVisual({cue,progress,onMapReady}:{cue:Cue;progress:number;
 }
 export default function EntryInvestigation(){
  const {ref,play,reduced,markMapReady}=useInvestigation(),cue=entryCues[play.index],old=entryCues[play.previous],sameScene=cue.scene===old.scene;
- const sounds:Partial<Record<Scene,MaterialSound>>={source:'paper',hebrew:'scratch',cave:cue.action===3?'measure':cue.action===4?'clay':cue.action===5?'paper':cue.action===6?'silver':'stone',map:'pin',comparison:'paper',alteration:'stone',surface:'sand',datum:'measure',result:'paper','copper-reflection':'metal','landmark-reflection':'stone','hypothesis-reflection':'measure','fieldwork-reflection':'sand',explore:'pin'};
+ const sounds:Partial<Record<Scene,MaterialSound>>={source:'paper',hebrew:'scratch',cave:cue.action===3?'measure':cue.action===4?'clay':cue.action===5?'paper':cue.action===6?'silver':'stone',map:'pin',comparison:'paper',alteration:'stone',surface:'sand',datum:'measure',result:'paper',mystery:cue.action===3||cue.action===4?'stone':cue.action===5?'scratch':'metal','landmark-reflection':'stone','hypothesis-reflection':'measure','fieldwork-reflection':'sand',explore:'pin'};
  useStoryFoley('entry-'+cue.id,sounds[cue.scene]??'paper',!reduced&&play.departure===1&&play.progress>0&&!play.settled);
  if(reduced)return <section className="entry-investigation-static" aria-label="Following Entry 25">{entryCues.map(cue=><article key={cue.id} data-cue={cue.id} data-reflection={!!cue.reflection}>
   {cue.id!=='find'&&cue.id!=='atlas-hypotheses'&&<div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>}{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
@@ -205,7 +214,7 @@ export default function EntryInvestigation(){
   <div className="investigation-sticky">
    <div className="investigation-art">
     {!sameScene&&play.progress<.5&&<div key={old.scene} className="investigation-art-layer" aria-hidden="true" inert style={{opacity:1-ease(play.progress*2)}}><InvestigationVisual cue={old} progress={1}/></div>}
-    <div key={cue.scene} className="investigation-art-layer" style={{opacity:sameScene?1:ease(play.progress*2)}}><InvestigationVisual cue={cue} progress={play.progress} onMapReady={markMapReady}/></div>
+    <div key={cue.scene} className="investigation-art-layer" style={{opacity:sameScene?1:ease(play.progress*2)}}><InvestigationVisual cue={cue} previousCue={old} progress={play.progress} onMapReady={markMapReady}/></div>
    </div>
    <div className="investigation-reading">
     {cue.he&&<div className="investigation-phrase" aria-hidden="true"><p className="investigation-hebrew" lang="he" dir="rtl" style={{opacity:play.caption===play.index?play.opacity:0}}>{cue.he}</p></div>}
