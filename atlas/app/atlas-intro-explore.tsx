@@ -5,6 +5,7 @@ import type {Entry,Place} from './atlas-types';
 import {entryHash} from './atlas-navigation';
 import {allSiteBounds} from './atlas-geography';
 import {terrainOnlyStyle} from './atlas-terrain-style';
+import {configureAtlasMapWorkers} from './atlas-map-runtime';
 import type {Map as LibreMap,Marker} from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -27,6 +28,7 @@ export default function IntroExplore({progress,active=false}:{progress:number;ac
   async function mount(){try{
    const [lib,response]=await Promise.all([import('maplibre-gl'),fetch('https://tiles.openfreemap.org/styles/liberty',{signal:AbortSignal.any([abort.signal,AbortSignal.timeout(9000)])})]);
    if(!response.ok)throw Error('Basemap unavailable');const style=terrainOnlyStyle(await response.json());if(cancelled||!host.current)return;
+   configureAtlasMapWorkers(lib);
    instance=new lib.Map({container:host.current,style,center:[35.43,31.80],zoom:10.3,pitch:0,bearing:0,scrollZoom:false,dragRotate:false,touchPitch:false,keyboard:false,boxZoom:false,touchZoomRotate:false,renderWorldCopies:false,attributionControl:{compact:true,customAttribution:'Relief: Mapterhorn'}});
    map.current=instance;instance.dragPan.disable();instance.doubleClickZoom.disable();
    instance.on('load',()=>{

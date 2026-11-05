@@ -20,6 +20,7 @@ import type { MapSiteRuntime } from "./atlas-map-site-layer";
 import type { WalkController } from "./atlas-map-walk";
 import "./atlas-map-unified.css";
 import { terrainOnlyStyle, terrainFallback } from "./atlas-terrain-style";
+import {configureAtlasMapWorkers} from "./atlas-map-runtime";
 import type { Camera as MapCamera } from "./atlas-explorer-model";
 import "./atlas-explore.css";
 import "./atlas-qumran-pilot.css";
@@ -129,8 +130,7 @@ export default function AtlasMap(props:Props) {
       try {
         const lib=await import("maplibre-gl");
         if(gone||!container.current)return;
-        lib.setWorkerUrl(`${(import.meta as ImportMeta & {env?:{BASE_URL?:string}}).env?.BASE_URL??"/"}maplibre/maplibre-gl-worker.mjs`);
-        lib.setWorkerCount(2);
+        configureAtlasMapWorkers(lib);
         let style:StyleSpecification;
         try {
           const res=await fetch("https://tiles.openfreemap.org/styles/liberty",{signal:AbortSignal.any([abort.signal,AbortSignal.timeout(12000)])});
