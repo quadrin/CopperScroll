@@ -42,6 +42,8 @@ export function Narration({lines,progress,reduced=false,readyAt=.65,visualReady}
   const timer=window.setTimeout(()=>{shownRef.current=beat.index;setShown(beat.index);setTransition('in');},170);
   return()=>window.clearTimeout(timer);
  },[beat.index,reduced,ready]);
- const display=reduced?beat.index:shown;
+ // Gate at render time too: an effect runs after paint and can otherwise
+ // flash the preceding sentence over the next visual for one frame.
+ const display=reduced?beat.index:ready&&shown===beat.index?shown:-1;
  return <div className="story-narration" data-static={reduced} data-beat={ready?beat.index:display} data-visual-beat={beat.index} data-visual-complete={ready} data-displayed-beat={display} data-transition={reduced?'steady':transition} data-word-animation-complete={reduced||beat.animation===1}>{lines.map((line,i)=><p key={i} className={i===display?'story-line is-current':'story-line'} aria-hidden={!reduced&&i!==display}><AnimatedWords text={line} progress={display===beat.index?Math.max(0,Math.min(1,(beat.local-readyAt)/Math.max(.01,1-readyAt))):1} reduced={reduced}/></p>)}</div>;
 }
