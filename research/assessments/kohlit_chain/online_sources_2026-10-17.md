@@ -1,5 +1,8 @@
 # Online images and video that may show the strip north of Tell es-Sultan — 17 October 2026
 
+> **Retired, 30 October 2026 (owner's decision).** The SULTAN-1 blind-test rules for Tell es-Sultan are withdrawn. All Tell es-Sultan and Jericho material is open: read it normally, at any resolution, with no registration protocol, coded tiles, blind scorer or exposure log. This covers the Commons and LoC Matson photos (Drive `06 Imagery/Tell es-Sultan and Jericho photos – Commons and LoC Matson (2026-10-17)`, formerly "SULTAN-1 reserved – do not open"), BS Pal. 1032, the 1940s maps and RAF frames, and any Garstang, PEF or Nigro record. The text below is kept as a historical record and no longer governs work; earlier "exposed" labels for this material carry no weight. See [the retirement record](../preregistration/RETIRED_BLIND_RULES_2026-10-30.md), which also retires the other blind and held-area rules.
+
+
 Recorded under the [registration protocol](registration_protocol.md) for SULTAN-1. Found during the online imagery search for the atlas ([record](../../sources/online_imagery_2026-10-17/README.md)). Exploratory. No registration was made and no record below was used.
 
 ## Opened by a collection worker, then deleted (exposed)

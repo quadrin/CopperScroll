@@ -1,5 +1,8 @@
 # Images of segments 19–23 released to the access-controlled atlas (30 October 2026)
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../../preregistration/RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 **Decision.** On 30 October 2026 the owner chose to show every image of the scroll on the access-controlled atlas (Cloudflare Pages behind Cloudflare Access, approved emails only), including segments 19–23 (columns XI–XII). He was told first that this ends the blind route for the XII 10 reading.
 
 **Effect on the reserved XII 10 observation (active question 1, R07, entry 60).**

@@ -53,12 +53,9 @@ The cave offsets and the Operation Scroll join were recomputed from [`research/r
 - All 12 located Jericho-group places return no polygons, and neither do Mar Saba, Hyrcania, Buqeia, Natuf, Gerizim or Ibziq. That is a jurisdiction boundary, not an archaeological absence.
 - ASI points do cross the line: 18 near Tell es-Sultan and 2 at Kh. Qumran.
 
-## Reserved-area caution: Tell es-Sultan
+## Tell es-Sultan
 
-`place_coverage.csv` counts 18 ASI points and 4 atlas caves within 3 km of Tell es-Sultan. Some of them may lie in the strip north of the tell. That strip is reserved for the blind SULTAN-1 test ([chain](../../assessments/kohlit_chain/README.md), [registration protocol](../../assessments/kohlit_chain/registration_protocol.md)).
-- The integrating session saw only the counts, not those rows.
-- The scraping session that built the tables saw every row. That session has no role in SULTAN-1.
-- Before anyone reads the Tell es-Sultan rows of `asi_sites.csv` (Drive) or `cave_atlas.csv` (here), check them against the protocol, and log the exposure if they fall inside the strip.
+`place_coverage.csv` counts 18 ASI points and 4 atlas caves within 3 km of Tell es-Sultan. This is open material: the SULTAN-1 blind-test rules were retired on 30 October 2026.
 
 ## Proposed register changes (not applied)
 
