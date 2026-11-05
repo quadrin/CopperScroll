@@ -19,7 +19,7 @@ const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',impor
 const settings=JSON.parse(readFileSync(new URL('../app/atlas-site-context.json',import.meta.url),'utf8')).plans;
 const surroundings=id=>settings[id]&&JSON.parse(readFileSync(new URL(`../public/${settings[id].features}`,import.meta.url),'utf8')).features;
 const models=new Map();
-for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late','bethesda-pools','east-gate-warren','kidron-bene-hezir','temple-great-sea']){
+for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-waterworks','jericho-early','jericho-late','bethesda-pools','east-gate-warren','kidron-bene-hezir','temple-great-sea','feshkha-installation']){
  const plan=plans.find(p=>p.id===id),model=exports.buildModel(plan,{context:surroundings(id)});
  assert.deepEqual([...model.markers.keys()].sort(),plan.features.map(f=>f.id).sort(),`${id}: all source features must remain selectable`);
  for(const marker of model.markers.values())assert.ok(marker.toArray().every(Number.isFinite));
@@ -28,6 +28,20 @@ for(const id of ['abu-saraj-iv17','hyrcania-waterworks','gerizim-precinct','doq-
  assert.equal(model.roof.visible,false);
  assert.ok(model.assumptions.some(text=>/illustrative/.test(text)),`${id}: display assumptions must be disclosed`);
  models.set(id,model);
+}
+// Published dimensions are separate from the approximate locality anchor.
+{
+ const m=models.get('feshkha-installation');m.root.updateMatrixWorld(true);
+ assert.equal(m.units,'metres');assert.equal(m.landscape.mapped,true);assert.equal(m.landscape.registered,false);
+ for(const [id,width,length,level] of [['basin-l142',4.4,4.5,-1.3],['cell-l127',.9,1,-2.7],['cell-l119',1.5,1.8,-2.35]]){
+  const floors=m.selectable.filter(o=>o.userData.featureId===id&&o.geometry?.type==='ExtrudeGeometry');
+  const floor=floors.sort((a,b)=>new Three.Box3().setFromObject(a).max.y-new Three.Box3().setFromObject(b).max.y)[0];
+  floor.geometry.computeBoundingBox();const size=floor.geometry.boundingBox.getSize(new Three.Vector3());
+  assert.ok(Math.abs(size.x-width)<.01&&Math.abs(size.z-length)<.01,`${id}: its own published internal dimensions`);
+  assert.ok(Math.abs(new Three.Box3().setFromObject(floor).max.y-level)<.001,`${id}: separate floor level and depth`);
+ }
+ assert.ok(m.assumptions.some(text=>text.includes('approximately 300 m')));
+ assert.ok(m.assumptions.some(text=>text.includes('two reconstructed lower steps are omitted')));
 }
 const hyrcania=models.get('hyrcania-waterworks');
 for(const [id,depth] of [['north-pool',5],['south-member',2.6]]){

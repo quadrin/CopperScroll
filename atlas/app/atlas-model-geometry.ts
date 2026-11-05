@@ -155,7 +155,65 @@ export function buildModel(plan:SitePlan,options:BuildOptions={}):ModelGeometry 
  // The part of a polygon on the far side of x = c (Sutherland–Hodgman against one line).
  const clipX=(poly:Point[],c:number,keepAbove=true)=>{const out:Point[]=[],inside=(p:Point)=>keepAbove?p[0]>=c:p[0]<=c;poly.forEach((p,i)=>{const q=poly[(i+1)%poly.length];if(inside(p))out.push(p);if(inside(p)!==inside(q)){const t=(c-p[0])/(q[0]-p[0]);out.push([c,p[1]+t*(q[1]-p[1])]);}});return out;};
 
- if(plan.id==="abu-saraj-iv17"){
+ if(plan.id==="feshkha-installation"){
+  units="metres";note="L142, L127 and L119 · measured basin depths, simplified Fig. 20 outlines";
+  // Original diagram coordinates sample Fig. 20 at its 5 m bar (172 px).
+  // This fixes local scale and relative orientation, not geographic registration.
+  const s=5/172,p=(x:number,z:number):Point=>[(x-235)*s,(z-148)*s];
+  const rect=(x0:number,z0:number,x1:number,z1:number):Point[]=>[p(x0,z0),p(x1,z0),p(x1,z1),p(x0,z1)];
+  const pool=rect(213,82,364.36,236.8),west=rect(70,172,190.4,251.12),east=rect(64,53,191.28,149.32);
+  const vat=rect(114,177,144.96,211.4),small=rect(110,88,161.6,149.92);
+  const westFloor=-1.3,eastFloor=-1.45;
+  slab(pool,.3,-1.6,plaster,"basin-l142");
+  walls([p(213,82),p(364.36,82),p(364.36,236.8),p(213,236.8)],1.3,.35,-1.3,"basin-l142",false);
+  walls([p(213,82),p(213,183)],1.3,.35,-1.3,"basin-l142",false);
+  walls([p(213,192),p(213,236.8)],1.3,.35,-1.3,"basin-l142",false);
+  walls([p(213,183),p(213,192)],1.1,.35,-1.1,"basin-l142",false);
+  // Cell floors are cut round their own small basins. Neither is L142's floor.
+  slab(west,.25,westFloor-.25,plaster,"cell-l127",root,[vat]);
+  slab(east,.25,eastFloor-.25,plaster,"cell-l119",root,[small]);
+  function loweredBasin(points:Point[],depth:number,y:number,id:string){
+   const first=root.children.length;basin(points,depth,id);
+   for(const child of root.children.slice(first))child.position.y+=y;
+  }
+  loweredBasin(vat,1.4,westFloor,"cell-l127");
+  loweredBasin(small,.9,eastFloor,"cell-l119");
+  // Openings at the access stairs are left clear. Surviving wall tops vary;
+  // the common low cutaway height is solely a display choice.
+  for(const line of [[[64,53],[168,53]],[[192,53],[192,150]],[[64,53],[64,150]],[[64,150],[192,150]]] as Point[][])
+   walls(line.map(([x,z])=>p(x,z)),1.75,.38,eastFloor,"cell-l119",false);
+  for(const line of [[[70,172],[190,172]],[[70,251],[190,251]],[[70,172],[70,215]],[[70,243],[70,251]]] as Point[][])
+   walls(line.map(([x,z])=>p(x,z)),1.6,.38,westFloor,"cell-l127",false);
+  // W29 above the tiny drain is drawn with a 20 cm high hydraulic opening.
+  walls([p(202,53),p(202,183)],1.7,.45,westFloor,"drain",false);
+  walls([p(202,192),p(202,251)],1.7,.45,westFloor,"drain",false);
+  walls([p(202,183),p(202,192)],1.5,.45,westFloor+.2,"drain",false);
+  const [dx,dz]=p(179,188),drainRun=68*s;box(dx,dz,drainRun,.2,.06,westFloor,"drain",plaster);
+  for(const side of [-1,1])box(dx,dz+side*.12,drainRun,.06,.2,westFloor,"drain",plaster);
+  // Explicit rectangular stair approximations, constrained by published counts.
+  function stair(x:number,z:number,width:number,run:number,count:number,floor:number,axis:'x'|'z',reverse=false,id:string){
+   const [cx,cz]=p(x,z);
+   for(let i=0;i<count;i++){
+    const offset=((i+.5)/count-.5)*run*(reverse?-1:1),top=floor+(i+1)*(-floor)/count;
+    box(cx+(axis==='x'?offset:0),cz+(axis==='z'?offset:0),axis==='x'?run/count:width,axis==='z'?run/count:width,top-floor,floor,id,plaster);
+   }
+  }
+  stair(57,229,.8,.9,3,westFloor,'x',true,'cell-l127');
+  stair(180,68,.6,1.1,4,eastFloor,'z',true,'cell-l119');
+  stair(257,226,.8,.7,2,-1.3,'z',false,'basin-l142');
+  // Only the preserved top step of the small pool is shown; two lower steps
+  // proposed by the excavator are omitted rather than drawn as observed.
+  const [sx,sz]=p(117,94);box(sx,sz,.4,.3,.18,eastFloor-.18,"cell-l119",plaster);
+  const feed=[p(405,245),p(364,224)].map(([x,z])=>new T.Vector3(x,-.25,z));trough(feed,.22,"feed");
+  for(const f of plan.features){const [x,z]=p(f.x,f.y);marker(f.id,x,z,f.id==='drain'?-.9:.5);}
+  // Fig. 20's north arrow points down and right on the printed page.
+  const turn=Math.atan2(65,-28),frame=new T.Group();frame.rotation.y=turn;
+  for(const child of [...root.children])frame.add(child);root.add(frame);frame.updateMatrix();
+  markers.forEach(v=>v.applyMatrix4(frame.matrix));
+  const rotate=([x,z]:Point):Point=>[Math.cos(turn)*x+Math.sin(turn)*z,-Math.sin(turn)*x+Math.cos(turn)*z];
+  plinth(14,14,1,[pool,west,east].map(points=>points.map(rotate)));
+  assumptions.push("Local dimensions follow Hirschfeld 2004 pp. 56, 58, 60–62 and Figs. 20 and 24: L142 is 4.4 × 4.5 m, 1.3 m deep; L127 is 2.3 × 3.5 m with a separate 0.9 × 1 m vat, 1.4 m deep; L119 is 2.8 × 3.7 m with a separate 1.5 × 1.8 m pool, 0.9 m deep. Wall-face sampling limits plan accuracy.","Wall tops, 0.35–0.45 m drawing thicknesses, stair tread runs and the simplified drain cutaway are illustrative. L127's floor is displayed at L142's floor level; L119 is 0.15 m lower, estimated from the sections, not a surveyed shared ancient datum. Only the preserved top step into L119's pool is drawn; the excavator's two reconstructed lower steps are omitted.","The reported 1.1 m channel component and 10 × 20 cm section are small hydraulic features; the full connecting run in the drawing is schematic. Block rounding may widen them to one cell. Neither the drain nor a cell opening is a walkable underground passage.","The model is displayed at the locality anchor with approximately 300 m positional uncertainty. The source north arrow sets relative orientation; its absolute placement is unregistered. The separate storage reservoir, distribution pool, twin feed mouths and most external feeds are omitted. No Copper Scroll route, digging point or deposit is reconstructed.");
+ } else if(plan.id==="abu-saraj-iv17"){
   units="metres";note="Cave cutaway · published 1.4–1.7 m height range";
   const s=3/178, convert=([x,z]:Point):Point=>[(x-330)*s,(z-290)*s];
   const outer:Point[]=[[35,433],[103,392],[165,335],[197,295],[159,248],[158,180],[225,145],[258,103],[291,83],[338,111],[361,141],[414,122],[470,118],[545,139],[579,163],[591,230],[591,337],[576,384],[594,410],[614,425]];

@@ -1,0 +1,120 @@
+{
+  "review": "research/sites/atlas_candidate_additions_2026-11-05.md",
+  "places": [
+    {
+      "id": "ein_feshkha",
+      "name": "ʿEin Feshkha · northern water installation",
+      "shortName": "Ein Feshkha",
+      "lat": 31.7144,
+      "lon": 35.4533,
+      "precision": "~300 m (locality anchor; installation not registered)",
+      "kind": "point",
+      "region": "jericho",
+      "note": "Northern enclosure: connected basins, stepped cells and drains. Proposed comparisons for entries 16 and 55; neither a hiding place nor a deposit is identified. Model position and bearing remain schematic.",
+      "source": "Locality coordinate: Wikipedia, Ein Feshkha (31.7144, 35.4533), checked 5 November 2026; features: de Vaux 1959 pp. 230–233; Hirschfeld 2004 pp. 56–62, Fig. 20."
+    },
+    {
+      "id": "fasael",
+      "name": "Phasaelis / Fasael · town water installations",
+      "shortName": "Fasael / Phasaelis",
+      "lat": 32.0275145,
+      "lon": 35.443361,
+      "precision": "~500 m (town anchor; individual installations unregistered)",
+      "kind": "point",
+      "region": "jericho",
+      "note": "The bath courtyard, large town reservoir and residence pool pair are separate installations. Upstream Fusail/Samsam reservoir is not placed at this town anchor. Comparisons for entries 3 and 55 remain conditional.",
+      "source": "Town anchor: Pleiades 688003 (Phasaelis), 32.0275145, 35.443361, as reproduced in LACRIMALit; features: Hizmi 2016 pp. *151–*156, Figs. 10–16; Drive assessment 4–5 November 2026."
+    },
+    {
+      "id": "cypros",
+      "name": "Cypros · numbered cisterns and water supply",
+      "shortName": "Cypros",
+      "lat": 31.844205555555554,
+      "lon": 35.426788888888886,
+      "precision": "~300 m (fortress anchor; cistern mouths unlocated)",
+      "kind": "point",
+      "region": "jericho",
+      "note": "Cisterns 1–2 and 3–4 are retained as separate pairs. Cistern 3 has reported dimensions and descending steps, but its individual footprint, stair bearing and entrance coordinate remain unknown.",
+      "source": "Site anchor: PADIS archaeological project, Tell el-ʿAqaba (Cypros), 31°50′39.14″ N, 35°25′36.44″ E; features: Meshel–Amit 1979 pp. 71–72, 77; 2002 pp. 313–329; Drive reviews 3–5 November 2026."
+    }
+  ],
+  "entries": {
+    "1": {
+      "candidates": [
+        {
+          "placeId": "cypros",
+          "status": "possible",
+          "confidence": "low"
+        }
+      ],
+      "evidence": " Cypros adds a documented stair-descended cistern for comparison.",
+      "caution": " Its east-facing stair, relation beneath a ruin and identification with Achor are not established.",
+      "sources": "; Meshel–Amit 1979 pp. 71–72, 77; Cypros numbering and cistern reviews 3–5 November 2026"
+    },
+    "3": {
+      "candidates": [
+        {
+          "placeId": "fasael",
+          "status": "possible",
+          "confidence": "low"
+        }
+      ],
+      "evidence": " At Fasael, a reported 10 × 10 m courtyard contains a 3.6 × 3.6 m stepped pool and nine reported surrounding column bases.",
+      "caution": " The courtyard plan, column positions, required wall/opening relation and common early phase remain unestablished.",
+      "sources": "; Hizmi 2016 pp. *151–*156, Figs. 10–16; Fasael plan/identity review 5 November 2026"
+    },
+    "16": {
+      "candidates": [
+        {
+          "placeId": "ein_feshkha",
+          "status": "possible",
+          "confidence": "low"
+        }
+      ],
+      "evidence": " Feshkha adds observed basin-to-drain connections in a spring-fed installation.",
+      "caution": " The retained reading, measurement origin and route destination remain unresolved; no 14- or 40-cubit route is plotted.",
+      "sources": "; de Vaux 1959 pp. 230–233; Hirschfeld 2004 pp. 56–62, Fig. 20; Feshkha/Fasael assessment 4 November 2026"
+    },
+    "17": {
+      "candidates": [
+        {
+          "placeId": "cypros",
+          "status": "possible",
+          "confidence": "low"
+        }
+      ],
+      "evidence": " Cypros has two separately numbered cistern pairs, 1–2 and 3–4.",
+      "caution": " A pair alone does not establish the scroll’s two features, their midpoint, depth or location in Achor.",
+      "sources": "; Meshel–Amit 1979 pp. 71–72, 77; Cypros numbering and cistern reviews 3–5 November 2026"
+    },
+    "29": {
+      "candidates": [
+        {
+          "placeId": "cypros",
+          "status": "possible",
+          "confidence": "low"
+        }
+      ],
+      "evidence": " Cypros adds cistern and inlet comparisons from its water-system publications.",
+      "caution": " The required north-side/four-side relation is unproved. A restored place-name cannot independently identify the site.",
+      "sources": "; Meshel–Amit 1979 pp. 71–72, 77; Cypros numbering and cistern reviews 3–5 November 2026"
+    },
+    "55": {
+      "candidates": [
+        {
+          "placeId": "ein_feshkha",
+          "status": "possible",
+          "confidence": "low"
+        },
+        {
+          "placeId": "fasael",
+          "status": "possible",
+          "confidence": "low"
+        }
+      ],
+      "evidence": " Feshkha has several interconnected basins; Fasael has a separate residence immersion/reserve-pool pair joined by a reported 5 cm pipe.",
+      "caution": " Neither comparison identifies which pair or entrance the entry means, its depth datum, or the listed deposit.",
+      "sources": "; de Vaux 1959 pp. 230–233; Hirschfeld 2004 pp. 56–62, Fig. 20; Feshkha/Fasael assessment 4 November 2026; Hizmi 2016 pp. *151–*156, Figs. 10–16; Fasael plan/identity review 5 November 2026"
+    }
+  }
+}

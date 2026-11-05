@@ -2,10 +2,16 @@
 """Regenerate the source-qualified local terrain grids. Requires Pillow and curl.
 Run from any directory. Reuses the archived source tiles and licence metadata.
 """
-import json, math, pathlib, hashlib, concurrent.futures, subprocess
+import json, math, pathlib, hashlib, concurrent.futures, subprocess, argparse
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--sites',help='Comma-separated place IDs; add only these patches, retaining existing terrain and source receipts')
+args=parser.parse_args()
 from PIL import Image
 repo=pathlib.Path(__file__).resolve().parents[1]; archive=repo/'research/assets/plans/atlas-explorer/terrain';archive.mkdir(exist_ok=True)
 places=json.loads((repo/'atlas/app/atlas-data.json').read_text())['places']; ids={'kh_qumran','wadi_qumran','jericho_palaces','jer_siloam','gerizim','doq','hyrcania','jer_kidron_mon','jer_temple'}
+ids=set(args.sites.split(',')) if args.sites else ids|{'ein_feshkha'}
+assert ids <= {p['id'] for p in places if p['lat'] is not None}, 'Unknown or unplaced site'
+prior_manifest=json.loads((archive/'manifest.json').read_text())
 z=12;n=2**z;size=65;extent=800
 world=lambda lat,lon:((lon+180)/360*n,(1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*n)
 sites=[p for p in places if p['id'] in ids]; needed=set()
@@ -31,7 +37,7 @@ def elevation(lat,lon):
  def val(a,b):
   r,g,bl=tile.getpixel((max(0,min(511,a)),max(0,min(511,b))));return r*256+g+bl/256-32768
  return (val(x0,y0)*(1-tx)+val(x0+1,y0)*tx)*(1-ty)+(val(x0,y0+1)*(1-tx)+val(x0+1,y0+1)*tx)*ty
-out={}
+out=json.loads((repo/'atlas/app/atlas-model-terrain.json').read_text()) if args.sites else {}
 for p in sites:
  vals=[]
  for j in range(size):
@@ -40,8 +46,12 @@ for p in sites:
    vals.append(round(elevation(p['lat']-dy/111320,p['lon']+dx/(111320*math.cos(math.radians(p['lat'])))),2))
  out[p['id']]={'lat':p['lat'],'lon':p['lon'],'anchorPrecision':p['precision'],'extent':extent,'size':size,'elevations':vals,'centreElevation':round(elevation(p['lat'],p['lon']),2)}
 (repo/'atlas/app/atlas-model-terrain.json').write_text(json.dumps(out,separators=(',',':'))+'\n')
-attribution=json.loads((archive/'manifest.json').read_text())['sources']
+attribution=prior_manifest['sources']
+if args.sites:
+ records=list({record['url']:record for record in prior_manifest['tiles']+records}.values())
 manifest={'date':'2026-10-12','source':'Mapterhorn terrain tiles','tilejson':'https://tiles.mapterhorn.com/tilejson.json','attribution_url':'https://mapterhorn.com/attribution/','encoding':'Terrarium: R*256 + G + B/256 - 32768 metres','tiles':records,'sources':[p for p in attribution if p['source'] in ['isr10','glo30']],'sampling':'Bilinear decoded elevation; 65 × 65 samples over an 800 m square around the existing gazetteer anchor; x east, z south. Modern elevation is contextual, not ancient ground level. Local rendered plateau is feathered to expose the unregistered architectural model.','asset':'atlas/app/atlas-model-terrain.json','asset_sha256':hashlib.sha256((repo/'atlas/app/atlas-model-terrain.json').read_bytes()).hexdigest(),'limit':'Site-anchor precision retained. Model position, compass bearing, bench and architectural thresholds are illustrative; the terrain does not register the plan or identify a feature. IV/17 has no coordinates and receives no measured terrain patch.'}
+manifest['date']='2026-11-05'
+manifest['limit']+=' Ein Feshkha uses its approximately 300 m locality anchor; no installation registration is inferred.'
 (archive/'manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
 mirror=repo/'atlas/research/assets/plans/atlas-explorer/terrain';mirror.mkdir(exist_ok=True)
 for f in archive.iterdir(): (mirror/f.name).write_bytes(f.read_bytes())

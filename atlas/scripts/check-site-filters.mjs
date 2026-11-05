@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import ts from 'typescript';
+const app=path=>new URL(`../app/${path}`,import.meta.url);
+const data=JSON.parse(readFileSync(app('atlas-data.json'),'utf8'));
+const code=ts.transpileModule(readFileSync(app('atlas-site-filters-model.ts'),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;
+const filters={};new Function('exports','require',code)(filters,path=>JSON.parse(readFileSync(app(path.replace('./','')),'utf8')));
+const {siteMatchesFilters:match,explorationForSite:available,emptySiteFilters:empty,featuresForSite:tags}=filters;
+const place=id=>data.places.find(p=>p.id===id);
+assert.deepEqual(data.places.filter(p=>match(p,'',empty)),data.places);
+assert(match(place('ein_feshkha'),' FESHKHA ',empty));
+assert(!match(place('cypros'),'Feshkha',empty));
+assert(available(place('ein_feshkha')).walkable);
+assert(available(place('abu_saraj_iv17')).plan);
+assert(!available(place('abu_saraj_iv17')).walkable,'An unlocated source plan is not a walkable map site');
+assert(!available(place('fasael')).photos,'Generic nearby imagery is not a curated photograph');
+assert(available(place('jer_kidron_mon')).photos);
+const combined={...empty,explore:['walkable'],region:'dead-sea',features:['pools']};
+assert.deepEqual(data.places.filter(p=>match(p,'',combined)).map(p=>p.id),['kh_qumran','ein_feshkha']);
+assert(!match(place('wadi_qumran'),'',combined),'The aqueduct anchor does not inherit the settlement’s pool tags');
+assert(match(place('cypros'),'',{...empty,features:['pools','cisterns']}),'Multiple feature choices match any selected type');
+assert(!match(place('ein_feshkha'),'',{...empty,explore:['walkable','photos']}),'Exploration options must all be available');
+assert.equal(data.places.filter(p=>match(p,'Cypros',combined)).length,0,'Search intersects filters');
+for(const [id,values] of Object.entries(tags)){assert(place(id),`Unknown tagged site ${id}`);assert(values.every(key=>filters.siteFeatureTypes.some(type=>type.id===key)));}
+assert.equal(data.places.filter(p=>match(p,'',empty)&&p.lat===null).length,4);
+console.log('Site filters passed: combined groups, feature alternatives, real photo/plan coverage, distinct anchors, unlocated sites and empty results.');
