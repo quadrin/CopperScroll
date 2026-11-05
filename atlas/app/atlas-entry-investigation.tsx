@@ -3,6 +3,7 @@ import {lazy,Suspense,useCallback,useEffect,useId,useRef,useState,type CSSProper
 import CandidateMap from './atlas-intro-candidate-map';
 import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
 import {CopperReflection,FieldworkReflection} from './atlas-intro-reflections';
+import {useStoryFoley,type MaterialSound} from './atlas-story-sound';
 import './atlas-entry-investigation.css';
 const IntroExplore=lazy(()=>import('./atlas-intro-explore'));
 
@@ -28,8 +29,8 @@ export const entryCues:Cue[]=[
  {id:'compare-pillar',scene:'comparison',action:0,line:'A pillar is described at all three.'},
  {id:'compare-openings',scene:'comparison',action:1,line:'Twin Cave and IV/17 also have two openings.'},
  {id:'compare-direction',scene:'comparison',action:2,line:'But are these the openings the writer knew?'},
- {id:'alteration',scene:'alteration',line:'Entrances can collapse or be rebuilt.'},
- {id:'ancient-surface',scene:'surface',line:'Ground levels can rise.'},
+ {id:'alteration',scene:'alteration',line:'Over thousands of years, entrances have collapsed, been rebuilt, or been built over.'},
+ {id:'ancient-surface',scene:'surface',line:'Rockfalls have buried openings. Floods have filled them with silt.'},
  {id:'datum',scene:'datum',line:'And “dig three cubits” only helps if we know where to start.'},
  {id:'result',scene:'result',line:'We still need to establish what these caves looked like when the instructions were written.'},
  {id:'intended-reader',scene:'copper-reflection',reflection:true,line:'Someone engraved these directions in copper. Who were they expecting to read them?'},
@@ -76,6 +77,9 @@ function useInvestigation(){
    if(rect.top>height*.1||rect.bottom<height*.2)return;
    const p=clamp(-rect.top/Math.max(1,rect.height-height)),target=Math.min(entryCues.length-1,Math.floor(p*entryCues.length));
    if(target===current)return;
+   // Ignore small scroll reversals at a cue boundary, rather than replaying it.
+   const beatPosition=p*entryCues.length;
+   if(current>=0&&Math.abs(target-current)===1&&(target>current?beatPosition<current+1.035:beatPosition>current-.035))return;
    const initial=current<0;cancelAnimationFrame(animation);previous=initial?target:current;current=target;started=performance.now()-(initial?OUT_MS:0);
    if(entryCues[current].scene==='map'&&entryCues[previous].scene!=='map')mapReady.current=false;
    waitingAt=0;
@@ -192,19 +196,19 @@ function InvestigationVisual({cue,progress,onMapReady}:{cue:Cue;progress:number;
 }
 export default function EntryInvestigation(){
  const {ref,play,reduced,markMapReady}=useInvestigation(),cue=entryCues[play.index],old=entryCues[play.previous],sameScene=cue.scene===old.scene;
+ const sounds:Partial<Record<Scene,MaterialSound>>={source:'paper',hebrew:'scratch',cave:cue.action===3?'measure':cue.action===4?'clay':cue.action===5?'paper':cue.action===6?'silver':'stone',map:'pin',comparison:'paper',alteration:'stone',surface:'sand',datum:'measure',result:'paper','copper-reflection':'metal','landmark-reflection':'stone','hypothesis-reflection':'measure','fieldwork-reflection':'sand',explore:'pin'};
+ useStoryFoley('entry-'+cue.id,sounds[cue.scene]??'paper',!reduced&&play.departure===1&&play.progress>0&&!play.settled);
  if(reduced)return <section className="entry-investigation-static" aria-label="Following Entry 25">{entryCues.map(cue=><article key={cue.id} data-cue={cue.id} data-reflection={!!cue.reflection}>
   {cue.id!=='find'&&cue.id!=='atlas-hypotheses'&&<div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>}{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
  </article>)}<FurtherReading/></section>;
  return <><div ref={ref} className="entry-investigation" aria-label="Following Entry 25" style={{'--investigation-beats':entryCues.length} as CSSProperties} data-cue={cue.id} data-index={play.index} data-cue-count={entryCues.length} data-reflection={!!cue.reflection} data-settled={play.settled} data-action-complete={play.progress===1} data-caption-index={play.caption} data-motion="single-controller">
   <div className="investigation-sticky">
    <div className="investigation-art">
-    {!sameScene&&play.progress<.5&&<div key="outgoing" className="investigation-art-layer" aria-hidden="true" inert style={{opacity:1-ease(play.progress*2)}}><InvestigationVisual cue={old} progress={1}/></div>}
-    <div key="current" className="investigation-art-layer" style={{opacity:sameScene?1:ease(play.progress*2)}}><InvestigationVisual cue={cue} progress={play.progress} onMapReady={markMapReady}/></div>
+    {!sameScene&&play.progress<.5&&<div key={old.scene} className="investigation-art-layer" aria-hidden="true" inert style={{opacity:1-ease(play.progress*2)}}><InvestigationVisual cue={old} progress={1}/></div>}
+    <div key={cue.scene} className="investigation-art-layer" style={{opacity:sameScene?1:ease(play.progress*2)}}><InvestigationVisual cue={cue} progress={play.progress} onMapReady={markMapReady}/></div>
    </div>
    <div className="investigation-reading">
-    <div className="investigation-phrase" aria-hidden="true">
-     {cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl" style={{opacity:play.caption===play.index?play.opacity:0}}>{cue.he}</p>}
-    </div>
+    {cue.he&&<div className="investigation-phrase" aria-hidden="true"><p className="investigation-hebrew" lang="he" dir="rtl" style={{opacity:play.caption===play.index?play.opacity:0}}>{cue.he}</p></div>}
     <p className="investigation-caption" style={{opacity:play.opacity}}>{play.caption>=0?entryCues[play.caption].line:'\u00a0'}</p>
    </div>
   </div>

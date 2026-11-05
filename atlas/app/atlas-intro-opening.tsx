@@ -5,6 +5,7 @@ import {Narration,beatTiming,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
 import {ColumnDiagram} from './atlas-intro-inventory-art';
 import {AtlasGlyph} from './atlas-intro-glyphs';
+import {useStoryFoley,type MaterialSound} from './atlas-story-sound';
 import {sheetPoint,SHEET_LENGTH_M} from './atlas-scroll-3d-model';
 
 type Grid={extent:number;size:number;elevations:number[];centreElevation:number};
@@ -197,10 +198,12 @@ export default function DesertOpening(){
  useEffect(()=>runtime.current?.update(cameraValue),[cameraValue,ready]);
  const flight=Math.min(1,cameraValue/.62),story=openingProgress(value),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<6/openingCount?'scroll':'cut-strips';
  const rawOpeningBeat=beatTiming(story,openingCount),openingBeat=rawOpeningBeat.index===0?{...rawOpeningBeat,animation:clamp(rawOpeningBeat.local/.25)}:rawOpeningBeat,cue=(i:number)=>smooth((story*openingCount-i)/.65),inventoryReveal=0,columnsReveal=cue(7);
+ const study=smooth((value-.62)/.08),openingSounds:MaterialSound[]=['sand','sand','metal','scratch','metal','metal','cut','paper'];
+ useStoryFoley('opening-'+openingCues[openingBeat.index],openingSounds[openingBeat.index],!timeline.reduced&&(ready||failed)&&value>0&&value<1&&openingBeat.animation>0);
  const discoveryLines=['In 1952, excavators entered a cave in the Judean Desert.','It was near Qumran, above the Dead Sea.','Inside, they found two rolls of copper.','Someone had engraved Hebrew words into the metal.','But corrosion had made it too brittle to unroll.','How could they read it?','In 1955–56, the rolls were carefully cut into 23 strips.','The pieces revealed twelve columns of writing.'];
- return <div className="story-opening" ref={timeline.ref} style={{background:value>.70?'#f7f5ef':undefined}} data-progress={value.toFixed(3)} data-phase={phase} data-opening-beat={openingBeat.index} data-opening-cue={openingCues[openingBeat.index]} data-visual-complete={(ready||failed)&&openingBeat.animation===1} data-ready={ready} data-object="cut-curved-scroll" data-conservation="cut-while-coiled" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
+ return <div className="story-opening" ref={timeline.ref} style={{background:value>.70?'#f7f5ef':undefined}} data-object-study={study===1} data-progress={value.toFixed(3)} data-phase={phase} data-opening-beat={openingBeat.index} data-opening-cue={openingCues[openingBeat.index]} data-visual-complete={(ready||failed)&&openingBeat.animation===1} data-ready={ready} data-object="cut-curved-scroll" data-conservation="cut-while-coiled" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
   <div className="story-opening-sticky">
-   <div className="story-opening-canvas" style={{opacity:1-Math.max(inventoryReveal,columnsReveal)}} ref={host} role="img" aria-label="Scroll-driven journey across relief terrain of the Judean Desert to Qumran Cave 3, then inside an illustrative cave to the rolled Copper Scroll."/>
+   <div className="story-opening-canvas" style={{opacity:1-Math.max(inventoryReveal,columnsReveal),top:4*study+'%',bottom:30*study+'%'}} ref={host} role="img" aria-label="Scroll-driven journey across relief terrain of the Judean Desert to Qumran Cave 3, then inside an illustrative cave to the rolled Copper Scroll."/>
    {failed&&<div className="story-opening-fallback" style={{opacity:value>.7?0:1}}><svg viewBox="0 0 1000 650" role="img" aria-label="Illustrative relief of desert ridges descending towards Qumran and the Dead Sea"><rect width="1000" height="650" fill="#ded6c5"/>{Array.from({length:18},(_,i)=><path key={i} d={`M-80 ${80+i*31}L210 ${-50+i*29} 400 ${100+i*24} 570 ${130+i*22} 680 ${270+i*15} 1080 ${340+i*15}`} fill="none" stroke={i%3?'#b9a888':'#8e866b'} strokeWidth={i%3?12:22}/>)}<path d="M800 280Q730 400 860 650H1000V250Z" fill="#718b89"/></svg></div>}
    {failed&&value>.7&&<div className="story-opening-final-art" style={{opacity:openingBeat.animation*(1-Math.max(inventoryReveal,columnsReveal))}} aria-hidden="true"><svg viewBox="0 0 1000 450"><AtlasGlyph name="copper" x={openingBeat.index===2?280:355} y={5} width={290} height={440}/>{openingBeat.index===2&&<AtlasGlyph name="copper" x={550} y={35} width={250} height={380}/>}</svg></div>}
    <div className="story-opening-final-art story-opening-columns" style={{opacity:columnsReveal}} aria-hidden={columnsReveal<.5}><ColumnDiagram progress={columnsReveal}/></div>
