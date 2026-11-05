@@ -3,6 +3,7 @@
 .atlas-shell.unified-atlas .map-surface .map-sites .site-filter-chips{display:flex;flex-wrap:wrap;gap:6px}
 .atlas-shell.unified-atlas .map-surface .map-sites .site-filter-chips button{display:inline-flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto;min-height:44px;padding:7px 10px;border:1px solid #cbd3d9;border-radius:5px;background:#fff;color:#344a5b;font-size:12px;text-align:center}
 .atlas-shell.unified-atlas .map-surface .map-sites .site-filter-chips button[aria-pressed=true]{background:#e7eff4;border-color:#35708f;color:#204b65;box-shadow:inset 0 0 0 1px #35708f}
+.map-sites .site-feature-icon{display:inline-block;flex:0 0 26px;width:26px;height:26px;margin-right:6px;background-repeat:no-repeat;background-size:400% 200%;clip-path:inset(1px)}
 .map-sites .site-filter-options{margin-top:8px;border-top:1px solid #e0e5e9}
 .map-sites .site-filter-options>summary{display:flex;align-items:center;gap:7px;min-height:44px;cursor:pointer;color:#344a5b}
 .map-sites .site-filter-options>summary::before{content:'▸';font-size:12px}.map-sites .site-filter-options[open]>summary::before{content:'▾'}

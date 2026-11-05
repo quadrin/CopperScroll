@@ -19,6 +19,12 @@ try{for(const mobile of [false,true]){
  await menu.getByRole('button',{name:'Walkable',exact:true}).click();
  assert((await listed()).includes('Ein Feshkha'));assert(!(await listed()).includes('Abu Saraj · IV/17'));
  await menu.locator('.site-filter-options>summary').click();
+ const icons=menu.locator('.site-feature-icon');assert.equal(await icons.count(),7);
+ for(const icon of await icons.all()){
+  assert.equal(await icon.getAttribute('aria-hidden'),'true','Feature art is decorative; labels retain accessible names');
+  const box=await icon.boundingBox();assert(box.width===26&&box.height===26,'Feature icons keep a small, consistent size');
+ }
+ assert(await icons.first().evaluate(async element=>{const url=getComputedStyle(element).backgroundImage.slice(5,-2),image=new Image();image.src=url;await image.decode();return image.naturalWidth>0&&image.naturalHeight>0;}),'Generated sprite loads from the build’s asset base');
  await menu.getByLabel('Filter sites by region').selectOption('dead-sea');
  await menu.getByRole('button',{name:'Pools & reservoirs',exact:true}).click();
  assert.deepEqual(await listed(),['Khirbet Qumran','Ein Feshkha']);
