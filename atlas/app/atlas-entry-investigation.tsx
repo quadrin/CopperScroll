@@ -2,14 +2,15 @@
 import {lazy,Suspense,useCallback,useEffect,useId,useRef,useState,type CSSProperties} from 'react';
 import CandidateMap from './atlas-intro-candidate-map';
 import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
-import {MysteryReflection,FieldworkReflection} from './atlas-intro-reflections';
+import {MysteryReflection} from './atlas-intro-reflections';
+import ReaderLandscape from './atlas-reader-landscape';
 import './atlas-entry-investigation.css';
 const IntroExplore=lazy(()=>import('./atlas-intro-explore'));
 
 const base=import.meta.env.BASE_URL??'/';
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const ease=(v:number)=>{const t=clamp(v);return t*t*(3-2*t);};
-type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result'|'mystery'|'landmark-reflection'|'hypothesis-reflection'|'fieldwork-reflection'|'explore';
+type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result'|'mystery'|'reader-landscape'|'explore';
 type Cue={id:string;scene:Scene;line:string;he?:string;action?:number;reflection?:boolean};
 export const entryCues:Cue[]=[
  {id:'source',scene:'source',line:'Let’s follow one: Entry 25.'},
@@ -40,12 +41,12 @@ export const entryCues:Cue[]=[
  {id:'practical-record',scene:'mystery',action:5,reflection:true,line:'Its detailed instructions sound like something a person could actually follow.'},
  {id:'legendary-treasure',scene:'mystery',action:6,reflection:true,line:'Yet some scholars have interpreted it as an account of legendary treasure.'},
  {id:'why-copper',scene:'mystery',action:7,reflection:true,line:'If it was intended to guide a real recovery, why choose copper?'},
- {id:'preserve-directions',scene:'mystery',action:8,reflection:true,line:'Perhaps someone wanted these directions to survive until it was safe to return.'},
- {id:'intended-reader',scene:'mystery',action:9,reflection:true,line:'For someone who already knew the landscape, a cave name or a familiar landmark might have been enough.'},
- {id:'familiar-landmark',scene:'landmark-reflection',reflection:true,line:'Could we reconstruct enough of that landscape to follow the directions today?'},
- {id:'predictions',scene:'comparison',action:3,reflection:true,line:'We can use the surviving clues to propose places—and work out what we should find there if a proposal is right.'},
- {id:'field-prediction',scene:'hypothesis-reflection',reflection:true,line:'For this cave, that might mean an older entrance floor, or evidence that both openings existed at the same time.'},
- {id:'fieldwork',scene:'fieldwork-reflection',reflection:true,line:'Those are hypotheses we can take into the field. Archaeological records, a site survey or excavation could help us test them.'},
+ {id:'preserve-directions',scene:'reader-landscape',action:0,reflection:true,line:'Perhaps someone wanted these directions to survive until it was safe to return.'},
+ {id:'intended-reader',scene:'reader-landscape',action:1,reflection:true,line:'For someone who already knew the landscape, a cave name or a familiar landmark might have been enough.'},
+ {id:'familiar-landmark',scene:'reader-landscape',action:2,reflection:true,line:'Could we reconstruct enough of that landscape to follow the directions today?'},
+ {id:'predictions',scene:'reader-landscape',action:3,reflection:true,line:'We can use the surviving clues to propose places—and work out what we should find there if a proposal is right.'},
+ {id:'field-prediction',scene:'reader-landscape',action:4,reflection:true,line:'For this cave, that might mean an older entrance floor, or evidence that both openings existed at the same time.'},
+ {id:'fieldwork',scene:'reader-landscape',action:5,reflection:true,line:'Those are hypotheses we can take into the field. Archaeological records, a site survey or excavation could help us test them.'},
  {id:'atlas-hypotheses',scene:'explore',action:0,reflection:true,line:'The Atlas lets us compare readings and proposed locations, then ask what evidence would distinguish one possibility from another.'},
  {id:'where-start',scene:'explore',action:1,reflection:true,line:'Where would you start?'},
 ];
@@ -73,9 +74,10 @@ function useInvestigation(){
     animation=requestAnimationFrame(frame);return;
    }
    if(waitingAt){started+=now-waitingAt;waitingAt=0;}
-   const actionTime=now-started-OUT_MS,progress=ease(actionTime/ACTION_MS),complete=actionTime>=ACTION_MS;
+   const duration=entryCues[current].scene==='reader-landscape'?1600:ACTION_MS;
+   const actionTime=now-started-OUT_MS,progress=ease(actionTime/duration),complete=actionTime>=duration;
    caption=complete?current:-1;
-   const opacity=complete?ease((actionTime-ACTION_MS)/IN_MS):0,settled=actionTime>=ACTION_MS+IN_MS;
+   const opacity=complete?ease((actionTime-duration)/IN_MS):0,settled=actionTime>=duration+IN_MS;
    setPlay({index:current,previous,progress,caption,opacity,departure:1,settled});
    if(!settled)animation=requestAnimationFrame(frame);
   };
@@ -193,9 +195,7 @@ function EvidenceComparison({action,progress,summary=false}:{action:number;progr
 }
 function InvestigationVisual({cue,previousCue,progress,onMapReady}:{cue:Cue;previousCue?:Cue;progress:number;onMapReady?:()=>void}){
  if(cue.scene==='mystery')return <MysteryReflection action={cue.action??0} previousAction={previousCue?.scene==='mystery'?previousCue.action??0:cue.action??0} progress={progress}/>;
- if(cue.scene==='landmark-reflection')return <CaveArt action={0} progress={progress}/>;
- if(cue.scene==='hypothesis-reflection')return <CaveArt action={3} progress={progress} surface datum testOpenings/>;
- if(cue.scene==='fieldwork-reflection')return <FieldworkReflection progress={progress}/>;
+ if(cue.scene==='reader-landscape')return <ReaderLandscape stage={cue.action??0} previousStage={previousCue?.scene==='reader-landscape'&&previousCue!==cue?previousCue.action??0:(cue.action??0)-1} progress={progress}/>;
  if(cue.scene==='explore')return <Suspense fallback={<div className="intro-atlas-loading"/>}><IntroExplore progress={cue.action===0?progress:1} active={cue.action===1&&progress===1}/></Suspense>;
  if(cue.scene==='source'||cue.scene==='hebrew')return <SourcePassage phase={cue.scene} progress={progress}/>;
  if(['cave','surface','alteration','datum'].includes(cue.scene))return <CaveArt action={cue.action??3} progress={progress} surface={cue.scene==='surface'||cue.scene==='datum'} alteration={cue.scene==='alteration'} datum={cue.scene==='datum'}/>;

@@ -35,7 +35,7 @@ try{
   for(let i=20;i<30;i++){
    await seek(page,i);const art=await page.locator('.investigation-art').boundingBox(),caption=await page.locator('.investigation-caption').boundingBox();
    assert(art&&caption&&art.y+art.height+8<=caption.y&&caption.y+caption.height<=height-8,'mystery caption fits '+width+' at '+i);
-   assert.equal(await page.locator('.investigation-art-layer:not([aria-hidden]) [data-mystery-action]').getAttribute('data-mystery-action'),String(i-20));
+   if(i<28)assert.equal(await page.locator('.investigation-art-layer:not([aria-hidden]) [data-mystery-action]').getAttribute('data-mystery-action'),String(i-20));else assert.equal(await page.locator('.investigation-art-layer:not([aria-hidden]) [data-reader-stage]').getAttribute('data-reader-stage'),String(i-28));
    if(i===23)await page.screenshot({path:'/tmp/mystery-temple-'+width+'.png'});
   }
  }
