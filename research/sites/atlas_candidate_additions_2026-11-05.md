@@ -37,14 +37,24 @@ All three WGS84 coordinates are locality display anchors. No individual opening,
 
 ## Model scope
 
-Feshkha is the strongest next Minecraft build: a measured plan and sections support a model of basin L142 and cells L119/L127, with their pools and drains. Its map placement and bearing would remain schematic until registered. Wall tops, missing masonry and any inferred geometry must be identified as display assumptions.
+Feshkha now has a source-based display model of basin L142 and cells L119/L127, with their separate small pools, steps and hydraulic connection. Hirschfeld Fig. 20 (p. 58; PDF page 23) and Fig. 24 (p. 62; PDF page 27) were inspected directly. Simplified wall faces were sampled at Fig. 20’s 5 m bar, with reported basin dimensions and depths retained separately. Relative orientation follows the source arrow; placement at the locality anchor remains schematic. Wall tops, drawing thicknesses, stair tread runs, estimated relative cell-floor levels and the full connecting drain run are display assumptions. The two reconstructed lower steps into L119’s pool are omitted.
 
 Fasael can support a dimension-based courtyard schematic; a measured reconstruction needs the missing plan. Cypros cannot yet support a measured cistern footprint.
 
-This data-and-dossier draft does not add model geometry, Minecraft assets or terrain patches. No new Minecraft control should be enabled until the model has been built, saved and read back through the existing Java-server pipeline, and checked in the browser.
+The model is `feshkha-installation` in `atlas/app/atlas-site-plans.json` and `atlas/app/atlas-model-geometry.ts`. Its local terrain uses a 65 × 65 Mapterhorn grid over 800 m around the existing anchor; modern terrain supplies no ancient datum or registration. The source tile and receipt are archived in the existing terrain directories and mirrors.
+
+The Java Edition 26.3 build uses 0.125 m blocks and was saved and read back through `atlas/scripts/minecraft/build-world.mjs`: 112 × 40 × 112 blocks, 5,145 fill commands, 364,953 blocks placed, 501,760 block positions checked, zero mismatches and zero missing saved sky-light values. The Atlas mesh is `atlas/public/minecraft/feshkha-installation.bin.gz`; the separate [saved world](../models/minecraft/feshkha-installation-26.3.zip) opens in creative mode above this build. It extends neither the existing combined-world archive nor the archaeological claims.
+
+The additive input `atlas/research/candidate_additions_2026-11-05.json` is applied by `build_atlas.py`, so rebuilding retains all three sites and seven associations. Map Sources now exposes the same dossier sources and exact locators used by the complete site record. Existing status/confidence fields, candidates and locality records are retained. The earlier corpus review date remains separate from this bounded update.
 
 ## Review coverage
 
 The Atlas's inherited review date and snapshot identify its earlier corpus-wide review. This pass updates only the candidate associations and dossiers listed above. It does not assert a new review of the other Atlas entries.
 
 No protected source pages, photographs, credentials or private PDFs are included.
+
+## Implementation checks
+
+TypeScript and source-model checks passed. The Minecraft validation checks all 75 saved builds and preserves the existing block files and world strips. Desktop and phone browser checks passed for the three pins, site search, seven entry/locality deep links, all eleven dossier features, direct source links, Feshkha’s loaded block mesh, selectable plan features and eye-level walking. Candidate records survive rebuilding the data; inherited status, confidence and place records match the previous main revision.
+
+The static app passed the pinned GitHub Jekyll Pages builder and payload checks (126.4 MiB, unchanged app-file bytes, resolving entrypoints, no research/private archive payload). The owner-private hosted build retains its separate private image packet and access settings. No additional restricted source page or photograph is included.

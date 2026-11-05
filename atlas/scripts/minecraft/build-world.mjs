@@ -76,6 +76,8 @@ export function buildSpecs(models){
   if(!pads.has(spec.plan))pads.set(spec.plan,barePads(models,models.plans.find(p=>p.id===spec.plan)));
   specs.push({...spec,id:bareKey(spec.id),bare:true,normal:spec.id,context:false,pads:pads.get(spec.plan)});
  }
+ // Additions follow the original normal/ring/bare series, preserving its saved world strips.
+ specs.push({id:'feshkha-installation',plan:'feshkha-installation',size:.125});
  return specs;
 }
 // Wider terrain (atlas/public/terrain), decoded to the landscape patch shape.
@@ -195,8 +197,10 @@ async function runServer({jar,java,work,builds,log}){
   if(pending.length)throw Error(`${build.spec.id}: ${pending.length} fills never found loaded chunks`);
   report[build.spec.id]={commands:commands.length,filled};log(`${build.spec.id}: ${commands.length} fill commands, ${filled} blocks`);
  }
- // The saved world opens in creative mode in front of the Qumran tunnel mouth.
- await run('defaultgamemode creative');await run('setworldspawn 188 -23 163');
+ // A standalone build opens above that site; the combined world keeps Qumran's spawn.
+ const only=builds.length===1?builds[0]:null;
+ const spawnAt=only?`${only.world.x0+Math.floor(only.blocks.nx/2)} ${only.world.y0+only.blocks.ny+3} ${only.world.z0+Math.floor(only.blocks.nz/2)}`:'188 -23 163';
+ await run('defaultgamemode creative');await run(`setworldspawn ${spawnAt}`);
  // Let the light engine settle before saving.
  await sleep(8000);
  log(await run('save-all flush'));await sleep(3000);

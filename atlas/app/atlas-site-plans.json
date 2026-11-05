@@ -2580,5 +2580,169 @@
       }
     ],
     "terrain": "wide"
+  },
+  {
+    "id": "feshkha-installation",
+    "placeIds": [
+      "ein_feshkha"
+    ],
+    "label": "Ein Feshkha · basin and adjoining cells",
+    "width": 480,
+    "height": 350,
+    "source": "Hirschfeld 2004 Fig. 20 p. 58; Fig. 24 p. 62; dimensions pp. 56, 58, 60–62",
+    "sourceUrl": "https://drive.google.com/file/d/1wZYMP8HcXe76PpJYCHcZmOf4d_ZIFZ4M/view",
+    "credit": "Original project diagram of selected measured structural relations. Source page images remain in the owner’s library.",
+    "limit": "Locality anchor only, approximately 300 m; the installation is not geographically registered. Plan outlines are simplified and sampled at the published 5 m scale. Relative orientation follows the source arrow; absolute placement remains schematic. Wall tops and minor drain geometry are illustrative. No deposit point or scroll route is drawn.",
+    "scale": {
+      "x": 240,
+      "y": 300,
+      "length": 172,
+      "label": "5 m"
+    },
+    "north": {
+      "x": 375,
+      "y": 275,
+      "dx": 65,
+      "dy": 28
+    },
+    "shapes": [
+      {
+        "d": "M213 82H364V237H213Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M64 53H191V150H64Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M70 172H191V243H70Z",
+        "kind": "wall"
+      },
+      {
+        "d": "M110 88H164V150H110Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M114 177H145V211H114Z",
+        "kind": "basin"
+      },
+      {
+        "d": "M213 190H145",
+        "kind": "channel"
+      },
+      {
+        "d": "M405 245L364 224",
+        "kind": "channel"
+      }
+    ],
+    "annotations": [
+      {
+        "x": 245,
+        "y": 68,
+        "text": "L142 · large basin"
+      },
+      {
+        "x": 65,
+        "y": 38,
+        "text": "L119"
+      },
+      {
+        "x": 70,
+        "y": 264,
+        "text": "L127"
+      },
+      {
+        "x": 25,
+        "y": 328,
+        "text": "Simplified measured relations · unregistered"
+      }
+    ],
+    "features": [
+      {
+        "id": "basin-l142",
+        "label": "Large basin · L142",
+        "x": 290,
+        "y": 156,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "55"
+        ],
+        "description": "Reported internal dimensions 4.4 × 4.5 m, depth 1.3 m. Two steps and a floor-level drainage opening are described.",
+        "limit": "The diagram samples wall faces and does not locate an entrance or establish a scroll measurement origin.",
+        "sources": [
+          "Hirschfeld 2004 pp. 56–62, Figs. 20–24"
+        ],
+        "sourceUrl": "https://drive.google.com/file/d/1wZYMP8HcXe76PpJYCHcZmOf4d_ZIFZ4M/view"
+      },
+      {
+        "id": "cell-l127",
+        "label": "Cell L127 · gathering vat",
+        "x": 126,
+        "y": 219,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "55"
+        ],
+        "description": "A 2.3 × 3.5 m cell contains a separate 0.9 × 1 m gathering vat, 1.4 m deep, and three access steps.",
+        "limit": "Cell floor and vat floor are separate levels. The working de Vaux numbering correspondence remains provisional.",
+        "sources": [
+          "Hirschfeld 2004 pp. 56–62, Figs. 20–24"
+        ],
+        "sourceUrl": "https://drive.google.com/file/d/1wZYMP8HcXe76PpJYCHcZmOf4d_ZIFZ4M/view"
+      },
+      {
+        "id": "cell-l119",
+        "label": "Cell L119 · small pool",
+        "x": 128,
+        "y": 113,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "55"
+        ],
+        "description": "A 2.8 × 3.7 m cell contains a 1.5 × 1.8 m pool, 0.9 m deep. Four steps enter the cell.",
+        "limit": "Hirschfeld’s ritual-bath interpretation is attributed. Only the upper step into the small pool survives; two more are his reconstruction.",
+        "sources": [
+          "Hirschfeld 2004 pp. 56–62, Figs. 20–24"
+        ],
+        "sourceUrl": "https://drive.google.com/file/d/1wZYMP8HcXe76PpJYCHcZmOf4d_ZIFZ4M/view"
+      },
+      {
+        "id": "drain",
+        "label": "Basin-to-vat drain",
+        "x": 179,
+        "y": 188,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "55"
+        ],
+        "description": "The large basin drains beneath partition W29 to the vat. The report gives a 1.1 m channel with a 10 × 20 cm section and a 10 cm round drainage hole.",
+        "limit": "It is a small hydraulic connection. Its simplified cutaway is not a traversable passage.",
+        "sources": [
+          "Hirschfeld 2004 pp. 56–62, Figs. 20–24"
+        ],
+        "sourceUrl": "https://drive.google.com/file/d/1wZYMP8HcXe76PpJYCHcZmOf4d_ZIFZ4M/view"
+      },
+      {
+        "id": "feed",
+        "label": "Feed channel · L137",
+        "x": 400,
+        "y": 239,
+        "kind": "Reported remains",
+        "entryIds": [
+          "16",
+          "55"
+        ],
+        "description": "The reported 2.5 m feed brings spring water to the large basin.",
+        "limit": "The model shows only the adjoining segment; the distribution pool, storage reservoir and twin feed mouths lie outside this selection.",
+        "sources": [
+          "Hirschfeld 2004 pp. 56–62, Figs. 20–24"
+        ],
+        "sourceUrl": "https://drive.google.com/file/d/1wZYMP8HcXe76PpJYCHcZmOf4d_ZIFZ4M/view"
+      }
+    ]
   }
 ]

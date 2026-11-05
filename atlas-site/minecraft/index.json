@@ -3727,6 +3727,55 @@
     "stone_slab[type=bottom]": 15250
    },
    "quads": 35297
+  },
+  "feshkha-installation": {
+   "file": "feshkha-installation.bin.gz",
+   "plan": "feshkha-installation",
+   "layer": null,
+   "ring": null,
+   "surroundings": null,
+   "terrainPlace": null,
+   "bytes": 49988,
+   "blockSize": 0.125,
+   "origin": [
+    -7,
+    -4,
+    -7
+   ],
+   "blocks": [
+    112,
+    40,
+    112
+   ],
+   "world": {
+    "x0": 75776,
+    "z0": 0,
+    "y0": -60
+   },
+   "masonry": "rubble",
+   "fills": {
+    "commands": 5145,
+    "filled": 364953
+   },
+   "readback": {
+    "blocks": 501760,
+    "mismatches": 0,
+    "examples": [],
+    "missingSkyLight": 0
+   },
+   "counts": {
+    "coarse_dirt": 155392,
+    "cobblestone": 226,
+    "cobblestone_slab[type=bottom]": 12,
+    "smooth_quartz": 6691,
+    "smooth_quartz_slab[type=bottom]": 1934,
+    "smooth_quartz_slab[type=top]": 126,
+    "smooth_stone": 12984,
+    "smooth_stone_slab[type=bottom]": 1997,
+    "smooth_stone_slab[type=top]": 934,
+    "stone": 184657
+   },
+   "quads": 10180
   }
  },
  "minecraft": {
@@ -3735,5 +3784,5 @@
   "serverJarSha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
   "dataVersion": 5023
  },
- "built": "2026-10-23"
+ "built": "2026-11-05"
 }

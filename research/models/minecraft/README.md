@@ -178,3 +178,7 @@ node scripts/check-minecraft.mjs --require-bare
 ```
 
 `--sites` takes build names or plan ids; a plan id selects its normal and bare builds, and `--bare-only` keeps only the bare ones. A partial run saves a fresh world with only its own strips. Strip n is region files x = 2n and 2n + 1; copy those into the full save, not the neighbouring region files that the server touches. `--skip-server` re-reads an existing save. A rebuild from unchanged models gives the same blocks; the same save gives byte-identical atlas files.
+
+## Ein Feshkha addition — 5 November 2026
+
+The separate [Feshkha world](feshkha-installation-26.3.zip) contains the basin-and-cell model described in the [candidate source review](../../sites/atlas_candidate_additions_2026-11-05.md). It uses Java Edition 26.3 and 0.125 m blocks; all 501,760 checked positions matched, with saved sky light throughout. This world opens above Feshkha in creative mode at approximately x = 75832, y = −17, z = 56. The existing combined-world archive is retained. Source-relative dimensions and display assumptions also apply to the blocks.

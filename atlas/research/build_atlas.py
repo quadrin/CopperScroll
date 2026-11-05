@@ -229,8 +229,22 @@ for entry in entries:
     if entry['id']=='29':
         entry['period'] = 'Tested pools Hasmonean (Jericho 103–67 BCE, joined under Herod; Hyrcania, abandoned after Herod)'
         entry['sources'] += '; Trümper 2018 pp. 280–286; Netzer 1983 pp. 101, 105–106; Patrich 1989 pp. 255–256, Fig. 22; Patrich 2002 p. 336; entry-29 assessments (2 October 2026)'
+# Additive November review: retain existing candidate order, status and confidence.
+# Keep the reviewed corpus date above separate from this bounded site update.
+additions=json.loads((root/'candidate_additions_2026-11-05.json').read_text())
+for place in additions['places']:
+    assert place['id'] not in places
+    places[place['id']]=place
+for entry in entries:
+    update=additions['entries'].get(entry['id'])
+    if not update:
+        continue
+    assert not {c['placeId'] for c in entry['candidates']} & {c['placeId'] for c in update['candidates']}
+    entry['candidates']+=update['candidates']
+    for field in ['evidence','caution','sources']:
+        entry[field]+=update[field]
 out={'snapshot':'e3b51ce6523e947fe217a630d64fa16486fc3c7c','reviewDate':'12 October 2026','entries':entries,'places':list(places.values())}
-assert len(entries)==61 and len(places)==41
+assert len(entries)==61 and len(places)==44
 assert all(c['placeId'] in places for e in entries for c in e['candidates'])
-(root.parent/'app/atlas-data.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
+(root.parent/'app/atlas-data.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
 print(f'Built {len(entries)} entries and {len(places)} places; {sum(p["lat"] is not None for p in places.values())} mapped anchors.')
