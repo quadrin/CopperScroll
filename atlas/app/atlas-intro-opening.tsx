@@ -5,7 +5,6 @@ import {Narration,beatTiming,useScrollScene} from './atlas-intro-motion';
 import {AnimatedWords} from './atlas-intro-words';
 import {ColumnDiagram} from './atlas-intro-inventory-art';
 import {AtlasGlyph} from './atlas-intro-glyphs';
-import {useStoryFoley,type MaterialSound} from './atlas-story-sound';
 import {sheetPoint,SHEET_LENGTH_M} from './atlas-scroll-3d-model';
 
 type Grid={extent:number;size:number;elevations:number[];centreElevation:number};
@@ -198,8 +197,7 @@ export default function DesertOpening(){
  useEffect(()=>runtime.current?.update(cameraValue),[cameraValue,ready]);
  const flight=Math.min(1,cameraValue/.62),story=openingProgress(value),phase=flight<.36?'desert':flight<.6?'approach':flight<.82?'cave':story<6/openingCount?'scroll':'cut-strips';
  const rawOpeningBeat=beatTiming(story,openingCount),openingBeat=rawOpeningBeat.index===0?{...rawOpeningBeat,animation:clamp(rawOpeningBeat.local/.25)}:rawOpeningBeat,cue=(i:number)=>smooth((story*openingCount-i)/.65),inventoryReveal=0,columnsReveal=cue(7);
- const study=smooth((value-.62)/.08),openingSounds:MaterialSound[]=['sand','sand','metal','scratch','metal','metal','cut','paper'];
- useStoryFoley('opening-'+openingCues[openingBeat.index],openingSounds[openingBeat.index],!timeline.reduced&&(ready||failed)&&value>0&&value<1&&openingBeat.animation>0);
+ const study=smooth((value-.62)/.08);
  const discoveryLines=['In 1952, excavators entered a cave in the Judean Desert.','It was near Qumran, above the Dead Sea.','Inside, they found two rolls of copper.','Someone had engraved Hebrew words into the metal.','But corrosion had made it too brittle to unroll.','How could they read it?','In 1955–56, the rolls were carefully cut into 23 strips.','The pieces revealed twelve columns of writing.'];
  return <div className="story-opening" ref={timeline.ref} style={{background:value>.70?'#f7f5ef':undefined}} data-object-study={study===1} data-progress={value.toFixed(3)} data-phase={phase} data-opening-beat={openingBeat.index} data-opening-cue={openingCues[openingBeat.index]} data-visual-complete={(ready||failed)&&openingBeat.animation===1} data-ready={ready} data-object="cut-curved-scroll" data-conservation="cut-while-coiled" data-surface="photographic-hebrew" data-reduced={timeline.reduced}>
   <div className="story-opening-sticky">

@@ -3,7 +3,6 @@ import {lazy,Suspense,useCallback,useEffect,useId,useRef,useState,type CSSProper
 import CandidateMap from './atlas-intro-candidate-map';
 import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
 import {MysteryReflection,FieldworkReflection} from './atlas-intro-reflections';
-import {useStoryFoley,type MaterialSound} from './atlas-story-sound';
 import './atlas-entry-investigation.css';
 const IntroExplore=lazy(()=>import('./atlas-intro-explore'));
 
@@ -205,8 +204,6 @@ function InvestigationVisual({cue,previousCue,progress,onMapReady}:{cue:Cue;prev
 }
 export default function EntryInvestigation(){
  const {ref,play,reduced,markMapReady}=useInvestigation(),cue=entryCues[play.index],old=entryCues[play.previous],sameScene=cue.scene===old.scene;
- const sounds:Partial<Record<Scene,MaterialSound>>={source:'paper',hebrew:'scratch',cave:cue.action===3?'measure':cue.action===4?'clay':cue.action===5?'paper':cue.action===6?'silver':'stone',map:'pin',comparison:'paper',alteration:'stone',surface:'sand',datum:'measure',result:'paper',mystery:cue.action===3||cue.action===4?'stone':cue.action===5?'scratch':'metal','landmark-reflection':'stone','hypothesis-reflection':'measure','fieldwork-reflection':'sand',explore:'pin'};
- useStoryFoley('entry-'+cue.id,sounds[cue.scene]??'paper',!reduced&&play.departure===1&&play.progress>0&&!play.settled);
  if(reduced)return <section className="entry-investigation-static" aria-label="Following Entry 25">{entryCues.map(cue=><article key={cue.id} data-cue={cue.id} data-reflection={!!cue.reflection}>
   {cue.id!=='find'&&cue.id!=='atlas-hypotheses'&&<div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>}{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
  </article>)}<FurtherReading/></section>;
