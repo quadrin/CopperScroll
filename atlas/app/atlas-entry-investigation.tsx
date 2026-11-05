@@ -1,14 +1,16 @@
 "use client";
-import {useCallback,useEffect,useId,useRef,useState,type CSSProperties} from 'react';
+import {lazy,Suspense,useCallback,useEffect,useId,useRef,useState,type CSSProperties} from 'react';
 import CandidateMap from './atlas-intro-candidate-map';
 import {INTRO_PRIVATE_IMAGES} from './atlas-intro-media';
+import {CopperReflection,FieldworkReflection} from './atlas-intro-reflections';
 import './atlas-entry-investigation.css';
+const IntroExplore=lazy(()=>import('./atlas-intro-explore'));
 
 const base=import.meta.env.BASE_URL??'/';
 const clamp=(v:number)=>Math.max(0,Math.min(1,v));
 const ease=(v:number)=>{const t=clamp(v);return t*t*(3-2*t);};
-type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result';
-type Cue={id:string;scene:Scene;line:string;he?:string;action?:number};
+type Scene='source'|'hebrew'|'cave'|'map'|'comparison'|'alteration'|'surface'|'datum'|'result'|'copper-reflection'|'landmark-reflection'|'hypothesis-reflection'|'fieldwork-reflection'|'explore';
+type Cue={id:string;scene:Scene;line:string;he?:string;action?:number;reflection?:boolean};
 export const entryCues:Cue[]=[
  {id:'source',scene:'source',line:'Let’s follow one: Entry 25.'},
  {id:'hebrew',scene:'hebrew',line:'Here is what it says.'},
@@ -30,6 +32,13 @@ export const entryCues:Cue[]=[
  {id:'ancient-surface',scene:'surface',line:'Ground levels can rise.'},
  {id:'datum',scene:'datum',line:'And “dig three cubits” only helps if we know where to start.'},
  {id:'result',scene:'result',line:'We still need to establish what these caves looked like when the instructions were written.'},
+ {id:'intended-reader',scene:'copper-reflection',reflection:true,line:'Someone engraved these directions in copper. Who were they expecting to read them?'},
+ {id:'familiar-landmark',scene:'landmark-reflection',reflection:true,line:'Perhaps a cave name or a familiar landmark was enough for that person to know where to go. What would they have recognized that we’re missing?'},
+ {id:'predictions',scene:'comparison',action:3,reflection:true,line:'We can use the surviving clues to propose places—and work out what we should find there if a proposal is right.'},
+ {id:'field-prediction',scene:'hypothesis-reflection',reflection:true,line:'For this cave, that might mean an older entrance floor, or evidence that both openings existed at the same time.'},
+ {id:'fieldwork',scene:'fieldwork-reflection',reflection:true,line:'Those are hypotheses we can take into the field. Archaeological records, a site survey or excavation could help us test them.'},
+ {id:'atlas-hypotheses',scene:'explore',action:0,reflection:true,line:'The Atlas lets us compare readings and proposed locations, then ask what evidence would distinguish one possibility from another.'},
+ {id:'where-start',scene:'explore',action:1,reflection:true,line:'Where would you start?'},
 ];
 const hebrew=['[ב]מערת העמוד של שני','[ה]פתחין צופא מזרח','[ב]פתח הצפוני חפור','[א]מות שלוש שמ קלל','בו ספר אחד תחתו','ככ 42'];
 // Scroll selects a cue; one finite timeline owns action, phrase departure,
@@ -91,7 +100,7 @@ function SourcePassage({phase,progress}:{phase:'source'|'hebrew';progress:number
 }
 
 // Outlines follow the NEW illustrative artwork, never a surveyed cave.
-function CaveArt({action,progress,surface=false,alteration=false,datum=false}:{action:number;progress:number;surface?:boolean;alteration?:boolean;datum?:boolean}){
+function CaveArt({action,progress,surface=false,alteration=false,datum=false,testOpenings=false}:{action:number;progress:number;surface?:boolean;alteration?:boolean;datum?:boolean;testOpenings?:boolean}){
  const id=useId().replace(/:/g,'');
  const reveal=(n:number)=>surface||alteration?0:action>n?1:action===n?progress:0;
  return <div className="investigation-cave-wrap" data-cave-action={surface?'surface':action} style={{'--cave-pan':surface?'0%':action===0?'10%':action===2?'33%':action>=4?'-15%':'0%'} as CSSProperties}><svg className="investigation-cave" viewBox="0 0 1200 850" role="img" aria-label={surface?'Illustrative cave section with two possible ground levels; the ancient surface is unknown.':'Illustrative two-entrance cave. Pillar, orientation, measurement and listed contents appear in sequence; no particular archaeological site is reconstructed.'}>
@@ -142,6 +151,7 @@ function CaveArt({action,progress,surface=false,alteration=false,datum=false}:{a
     </g>
     {[0,1,2].map(row=>[0,1,2].map(col=><path key={row+'-'+col} d={'M'+(642+col*65+(row%2)*20)+' '+(535-row*28)+'h60v25h-60Z'} fill={row%2?'#c2ab88':'#b59a74'} stroke="#8b7659" strokeWidth="1.5" opacity={clamp(progress*3-row*.6)}/>))}
    </g>}
+   {testOpenings&&<g opacity={clamp((progress-.5)*2)} fill="none" stroke="#98603a" strokeWidth="3" strokeDasharray="7 8"><ellipse cx="284" cy="460" rx="86" ry="95"/><ellipse cx="790" cy="434" rx="172" ry="133"/></g>}
    {surface&&<g>
     <path d={'M80 '+(600-90*(datum?1:progress))+'Q400 '+(585-90*(datum?1:progress))+' 1070 '+(635-90*(datum?1:progress))+'L1080 735Q550 760 75 690Z'} fill="#d6c5aa" opacity={.7*progress}/>
     <path d="M100 610Q480 590 1080 640" stroke="#7d816c" strokeWidth="2" strokeDasharray="7 7" fill="none"/>
@@ -170,6 +180,11 @@ function EvidenceComparison({action,progress,summary=false}:{action:number;progr
  </figure>)}</div>;
 }
 function InvestigationVisual({cue,progress,onMapReady}:{cue:Cue;progress:number;onMapReady?:()=>void}){
+ if(cue.scene==='copper-reflection')return <CopperReflection progress={progress}/>;
+ if(cue.scene==='landmark-reflection')return <CaveArt action={0} progress={progress}/>;
+ if(cue.scene==='hypothesis-reflection')return <CaveArt action={3} progress={progress} surface datum testOpenings/>;
+ if(cue.scene==='fieldwork-reflection')return <FieldworkReflection progress={progress}/>;
+ if(cue.scene==='explore')return <Suspense fallback={<div className="intro-atlas-loading"/>}><IntroExplore progress={cue.action===0?progress:1} active={cue.action===1&&progress===1}/></Suspense>;
  if(cue.scene==='source'||cue.scene==='hebrew')return <SourcePassage phase={cue.scene} progress={progress}/>;
  if(['cave','surface','alteration','datum'].includes(cue.scene))return <CaveArt action={cue.action??3} progress={progress} surface={cue.scene==='surface'||cue.scene==='datum'} alteration={cue.scene==='alteration'} datum={cue.scene==='datum'}/>;
  if(cue.scene==='map')return <div className="investigation-map"><CandidateMap progress={cue.action===0?.24*progress:.24+.76*progress} onReady={onMapReady}/></div>;
@@ -177,13 +192,13 @@ function InvestigationVisual({cue,progress,onMapReady}:{cue:Cue;progress:number;
 }
 export default function EntryInvestigation(){
  const {ref,play,reduced,markMapReady}=useInvestigation(),cue=entryCues[play.index],old=entryCues[play.previous],sameScene=cue.scene===old.scene;
- if(reduced)return <section className="entry-investigation-static" aria-label="Following Entry 25">{entryCues.map(cue=><article key={cue.id} data-cue={cue.id}>
-  {cue.id!=='find'&&<div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>}{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
+ if(reduced)return <section className="entry-investigation-static" aria-label="Following Entry 25">{entryCues.map(cue=><article key={cue.id} data-cue={cue.id} data-reflection={!!cue.reflection}>
+  {cue.id!=='find'&&cue.id!=='atlas-hypotheses'&&<div className="investigation-static-art"><InvestigationVisual cue={cue} progress={1}/></div>}{cue.he&&<p className="investigation-hebrew" lang="he" dir="rtl">{cue.he}</p>}<p className="investigation-static-caption">{cue.line}</p>
  </article>)}<FurtherReading/></section>;
- return <><div ref={ref} className="entry-investigation" aria-label="Following Entry 25" style={{'--investigation-beats':entryCues.length} as CSSProperties} data-cue={cue.id} data-index={play.index} data-cue-count={entryCues.length} data-settled={play.settled} data-action-complete={play.progress===1} data-caption-index={play.caption} data-motion="single-controller">
+ return <><div ref={ref} className="entry-investigation" aria-label="Following Entry 25" style={{'--investigation-beats':entryCues.length} as CSSProperties} data-cue={cue.id} data-index={play.index} data-cue-count={entryCues.length} data-reflection={!!cue.reflection} data-settled={play.settled} data-action-complete={play.progress===1} data-caption-index={play.caption} data-motion="single-controller">
   <div className="investigation-sticky">
    <div className="investigation-art">
-    {!sameScene&&play.progress<.5&&<div key="outgoing" className="investigation-art-layer" aria-hidden="true" style={{opacity:1-ease(play.progress*2)}}><InvestigationVisual cue={old} progress={1}/></div>}
+    {!sameScene&&play.progress<.5&&<div key="outgoing" className="investigation-art-layer" aria-hidden="true" inert style={{opacity:1-ease(play.progress*2)}}><InvestigationVisual cue={old} progress={1}/></div>}
     <div key="current" className="investigation-art-layer" style={{opacity:sameScene?1:ease(play.progress*2)}}><InvestigationVisual cue={cue} progress={play.progress} onMapReady={markMapReady}/></div>
    </div>
    <div className="investigation-reading">
