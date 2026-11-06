@@ -1,0 +1,21 @@
+{
+  "figure": "Drive 1iT4sAYZ-iGWpebUW2Dq7CZlwcjOMxCZZ (Qumran_Freund2012_fig3.2_ERT_west_of_ruins_Bauman.png, 976x730 px)",
+  "method": "each section pixel assigned to the nearest colour of the 207-px colour bar (row py 588, px 380-586), read as linear 50-240 ohm-m; masks at thresholds; 4-connected components (scipy.ndimage.label)",
+  "calibration": {"x": "8.93 px/m, 0 m at px 148", "z": "10.2 px/m, 0 m at py 355"},
+  "body1_seed": {"line_m": 33, "depth_m": 5.5},
+  "body2_seed": {"line_m": 59, "depth_m": 7.5},
+  "body1": {
+    "100": {"line_m": [28.6, 44.3], "depth_m": [0.0, 10.7], "reaches_surface": true},
+    "150": {"line_m": [29.7, 43.7], "depth_m": [0.0, 9.6], "reaches_surface": true, "surface_contact_m": [34.6, 43.7]},
+    "180": {"line_m": [30.0, 41.5], "depth_m": [0.1, 9.2], "reaches_surface": true, "surface_contact_m": [34.6, 41.3]},
+    "200": {"line_m": [30.3, 39.4], "depth_m": [3.7, 9.0], "reaches_surface": false}
+  },
+  "body1_neck_line_m_by_depth_thr180": {"2.0": [39.9, 41.4], "2.5": [39.9, 41.0], "3.0": [39.4, 40.6], "3.5": [38.7, 40.2]},
+  "body2": {
+    "100": {"line_m": [54.2, 64.5], "depth_m": [4.2, 13.1], "reaches_surface": false},
+    "130": {"line_m": [56.7, 61.8], "depth_m": [5.1, 10.7], "reaches_surface": false},
+    "150": {"line_m": [57.8, 60.8], "depth_m": [5.8, 9.5], "reaches_surface": false}
+  },
+  "near_surface_ge200_segments_line_m_depth_0.2_to_1.0": [[0.6, 10.6], [13.2, 19.4], [34.6, 39.3], [39.8, 41.3], [51.4, 53.9], [72.6, 79.7]],
+  "markers_line_m_round1": {"WALL": [8, 24, 41, 59, 74], "FENCE": [34]}
+}
