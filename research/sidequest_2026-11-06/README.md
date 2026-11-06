@@ -8,14 +8,14 @@
 - **Follow-up (same day):** at 19:08 UTC three blocked inputs were added to the store (3Q15 cuts 12–15, DJD III vol. I, JSP 19; see "Follow-up" below). Three more workers (A1b, B5b, B4b) used them, and a seventh reviewer (R7) checked their 9 cards and re-graded the earlier cards they touch.
 
 **Result:**
-- Workers wrote **78 find cards** (69 + 9 in the follow-up). The reviewers **killed 2** (E1-2, B5-1) and **weakened 19**; they changed tags and merged two pairs (B1b-1 + B1c-2; B5b-1 into A1b-1).
-- **74 distinct cards survive.**
-- Tags of the surviving cards, counted by each card's leading tag: **24 NEW TO THE LITERATURE, 39 NEW TO THE PROJECT, 11 KNOWN BUT UNDER-DISCUSSED.** Several cards carry a second tag for one part; each lane's `FINDS.md` has the exact tags.
+- Workers wrote **79 find cards** (69 + 9 in the follow-up + 1 orchestrator card, A1c, not yet independently reviewed). The reviewers **killed 2** (E1-2, B5-1) and **weakened 19**; they changed tags and merged two pairs (B1b-1 + B1c-2; B5b-1 into A1b-1).
+- **75 distinct cards survive** (74 reviewed + A1c).
+- Tags of the surviving cards, counted by each card's leading tag: **24 NEW TO THE LITERATURE, 40 NEW TO THE PROJECT, 11 KNOWN BUT UNDER-DISCUSSED.** Several cards carry a second tag for one part; each lane's `FINDS.md` has the exact tags.
 - No find identifies a scroll place. Several touch scroll entries (24, 29, Qumran caves) or the project's own data. See "Corrections for the owner".
 
 **Where everything is:**
 - Each lane has its own branch, `claude/sidequest-2026-11-06-<lane>`, with `research/sidequest_2026-11-06/<LANE>/FINDS.md` plus data.
-- This branch has all 28 lane folders (25 + A1b, B5b, B4b), the reviews (`review/R1.md` … `R7.md`, `review/all_verdicts.csv` for R1–R6) and this summary.
+- This branch has all 29 lane folders (25 + A1b, B5b, B4b, A1c), the reviews (`review/R1.md` … `R7.md`, `review/all_verdicts.csv` for R1–R6) and this summary.
 - **Private products** are not in the repository: crops from USC/WSRP, IAA, HEXAGON and the owner's photos, and the coordinates of unrecorded features. They were delivered to the owner as a download (see "Private products").
 
 Ranking rule (brief §8.4): tag (NEW TO THE LITERATURE first) × confidence × cost to confirm. Ties were broken toward variety of lanes and toward cards that touch the scroll or the project's data.
@@ -173,7 +173,7 @@ Each lane's `FINDS.md` has the full card, and `review/R*.md` has the reviewer's 
 | 62 | C4-2 | Qumran dump ERT: second unlabelled resistive body | KNOWN BUT UNDER-DISCUSSED / NEW TO THE LITERATURE | SURVIVES | low (feature real) | needs new data |
 | 63 | D2-3 | Rock-cut entrances follow slope; no Temple preference | KNOWN BUT UNDER-DISCUSSED | SURVIVES | medium | cheap |
 | 64 | C4-3 | Cave of Letters metal null only to 3.5 m; ERT debris 7–8 m | KNOWN BUT UNDER-DISCUSSED | WEAKENED | medium | moderate |
-| 65 | A1-1 | 1955 cut-mark labels; "A5 à A4" | KNOWN BUT UNDER-DISCUSSED (R7) | WEAKENED (scheme published by Baker; EDF's plate corrects its text; E1, E4, segs 6–7 still open) | high | cheap (EDF revers plates for segs 4–7) |
+| 65 | A1-1 | 1955 cut-mark labels; "A5 à A4" | KNOWN BUT UNDER-DISCUSSED (R7) | WEAKENED (scheme published by Baker; EDF's plate corrects its text; E1, E4, segs 6–7 read on EDF's plates in A1c) | high | done (A1c) |
 | 66 | D2-1 | Built doors E/S not W, "regardless of slope" | KNOWN BUT UNDER-DISCUSSED | WEAKENED | medium | cheap |
 
 ## Follow-up: cuts 12–15, DJD III vol. I and JSP 19 (6 Nov, after 19:08 UTC)
@@ -193,7 +193,7 @@ The owner's builder notebook (cells 2b–2c, script `08 Working files/HEXAGON CO
 
 Effect on earlier cards (R7): **A1-1** weakened, tag → KNOWN BUT UNDER-DISCUSSED, removed from the top 10. **B5-1** killed. **B5-2** weakened further. **B5-3** tag → KNOWN BUT UNDER-DISCUSSED. **A1-2** core kept. **B4-1** sharpened (top-10 #10). Also corrected: the Manchester saw was 1¾ in. × 0.006 in. (6 Mar 1956 letter), not "1 in." (OCR error in A1/B5); the find date is 20 March 1952; scroll no. 1 is the smaller roll (cols IX–XII), opened first. B5b used Baker's BJRL 39 (1956) pp. 45–56 from the Internet Archive (`bulletin-of-the-john-rylands-library_1956-09_39_1`).
 
-Next cheap step (A1b): the EDF revers plates for segments 4–7 should settle the missing E1, the doubled E4 and the "?" on segments 6–7 in the same way.
+**A1c (orchestrator, not independently reviewed):** EDF's relevé plates CXII–CXXVI (PDF pp. 404–418) settle the remaining open labels. The "?" on segments 6 and 7 are their last labels (D3, D8) drawn truncated at the cut edge. E1 appears only as fragments on both edges of the 3|4 cut, so the saw cut split it. A full "E4" is drawn on both sides of the 4|5 cut; the 1994 photograph confirms E4 on segment 4, but segment 5's left end is unreadable at book resolution, so a doubled painted E4 is not confirmed. Segment 3 has one tick carrying both 11 and 12, on the drawing and on the photograph. NEW TO THE PROJECT; confidence high for what the plates draw, low for E4 being painted twice. Data: `A1c/labels_seg2-9_from_EDF_plates.csv`.
 
 ## Killed
 
