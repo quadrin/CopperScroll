@@ -1,6 +1,6 @@
 # Current research direction
 
-Reviewed 30 October 2026. Research instructions: [AGENTS.md](../AGENTS.md).
+Reviewed 30 October 2026. AGENTS.md was removed on 6 November 2026 at the owner's request.
 
 ## Aim and present position
 
@@ -28,7 +28,7 @@ Column XII, line 10 means column 12, line 10 of the scroll. Its images were rele
 
 For an explicit user question, answer it. For an open-ended continuation, compare at most three substantially different ways to improve the site identifications or geographic interpretation using available evidence. Include synthesis across entries, candidate comparison or a competing explanation where useful. Choose one attainable result and state a bounded deliverable and stopping point.
 
-Actively propose and compare hypotheses. Exploratory synthesis can use inspected evidence with its assumptions stated; independent confirmation requires the controls and unused observation defined in AGENTS. The formal counters do not determine which exploratory questions are worth asking.
+Actively propose and compare hypotheses. Exploratory synthesis can use inspected evidence with its assumptions stated; an independent confirmation claim should still state its controls and whether the evidence was unseen. The formal counters do not determine which exploratory questions are worth asking.
 
 Explain what we could learn that we do not already know, which plausible result would change our view or next action, what has already been tried, and why the needed evidence is available now. An unfinished task supplies no priority. If no approach clears that bar, report the limit and stop. Do not create another planning system or re-audit the whole repository.
 

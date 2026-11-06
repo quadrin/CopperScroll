@@ -8,7 +8,7 @@ A useful result gives a defensible location or bounded area, the evidence connec
 
 ## Start here
 
-For a new session, read [AGENTS.md](AGENTS.md), then [Current research direction](research/ACTIVE_TEST.md). Choose work that could change an identification, the candidate set, our interpretation of the directions or our understanding of the scroll’s geography. An inherited priority label, unfinished task or incoming source does not determine the next work.
+For a new session, read [Current research direction](research/ACTIVE_TEST.md). Choose work that could change an identification, the candidate set, our interpretation of the directions or our understanding of the scroll’s geography. An inherited priority label, unfinished task or incoming source does not determine the next work.
 
 ## What the research supports
 

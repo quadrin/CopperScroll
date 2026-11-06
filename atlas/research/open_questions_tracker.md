@@ -1,6 +1,6 @@
 # Open questions and research progress
 
-> **Priority reset, 30 October 2026.** This is an evidence backlog and history. All inherited P1/P2/P3 labels and next-step instructions are superseded by [AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md) and [the current research direction](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md). An unresolved question or pending source does not authorize another session. Existing results and reopening conditions remain in force.
+> **Priority reset, 30 October 2026.** This is an evidence backlog and history. All inherited P1/P2/P3 labels and next-step instructions are superseded by [the current research direction](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md). An unresolved question or pending source does not authorize another session. Existing results and reopening conditions remain in force.
 
 Last reviewed: 8 October 2026 UTC / 7 October Los Angeles. Baseline: published research at `5614ce8`.
 
@@ -10,7 +10,7 @@ Identify the particular landmarks described by the Copper Scroll, reconstruct th
 
 The project has edition comparisons, regional candidates, archaeological comparisons and reproducible spatial tests. Exact deposit locations remain unconfirmed. Site confidence, feature identity, period compatibility and geographic precision require separate assessments. Atlas scenes and map markers inherit the uncertainties of their supporting records.
 
-For the next session, use [the active test](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md) and the short workflow in [AGENTS.md](https://github.com/quadrin/CopperScroll/blob/main/AGENTS.md). This tracker is the research backlog and evidence history; its older “next” instructions are not an instruction to restart every lane. The [historical question log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/open_questions.md) retains the older Q identifiers and detailed revisions. The [findings log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/findings_log.md) retains the full research history. R01–R12 below group the current work; they do not replace or renumber those historical questions.
+For the next session, use [the active test](https://github.com/quadrin/CopperScroll/blob/main/research/ACTIVE_TEST.md). This tracker is the research backlog and evidence history; its older “next” instructions are not an instruction to restart every lane. The [historical question log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/open_questions.md) retains the older Q identifiers and detailed revisions. The [findings log](https://github.com/quadrin/CopperScroll/blob/main/research/logs/findings_log.md) retains the full research history. R01–R12 below group the current work; they do not replace or renumber those historical questions.
 
 ## Identification outcomes and coverage
 
