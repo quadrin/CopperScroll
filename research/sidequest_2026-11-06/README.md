@@ -202,8 +202,8 @@ Next cheap step (A1b): the EDF revers plates for segments 4–7 should settle th
 
 ## Merged
 
-- **B1b-1 + B1c-2** → top-10 card 3.
-- **B5b-1** merged into **A1b-1** (same marking scheme, two witnesses). They report the same error class and use the same three-witness test.
+- **B1b-1 + B1c-2** → top-10 card 3. They report the same error class and use the same three-witness test.
+- **B5b-1** merged into **A1b-1** (same marking scheme, two witnesses).
 - **A6-3 and B3-1** share only the Maresha IV renumbering (SC 57 → SC 126). B3-1 is the card for it; A6-3 cross-references it.
 - **C2-3 and E2-2** do not overlap: E2's roads are in Galilee, the Golan, the Sharon and the Shephelah; C2's are on SWP sheet XVIII. Both show that Itiner-e carries the main routes and leaves out secondary roads.
 
@@ -237,7 +237,7 @@ The swarm changed nothing in the project. These are errors or gaps in the projec
 
 ## Dead ends (merged across lanes; one line each)
 
-- A1: Cuts 12–15 were not analysed; they exist only in Drive at 46–69 MB, too large for the connector. No ruling/guide-line search: C2 (31 Oct) showed line measurement fails on most frames. Cut 10 rivet count by eye: could not separate rivets from corrosion blisters. The raised flap on cut 16 is already in the USC catalogue.
+- A1: Cuts 12–15 were not analysed in the first pass (Drive only, 46–69 MB); since added to the store and covered by A1b. No ruling/guide-line search: C2 (31 Oct) showed line measurement fails on most frames. Cut 10 rivet count by eye: could not separate rivets from corrosion blisters. The raised flap on cut 16 is already in the USC catalogue.
 - A1 side note withdrawn by R1: EDF's "grotte n° 8" is not an error (DJD III and Puech use "grotte 8 = 3Q").
 - A2: The H&C 1994 photo inventory and page-register CSVs carry no captions, loci or dates (file lists only). About 39 Feshkha dates "1959" in the OCR are an italic-8 misreading of 1958. Caption parsing recovered only 175 of 538 caption starts. PEF P46–P48 cross-references off by one: trivial.
 - A3: Full-sheet OCR of the Albright sheets misses many labels. The bucket's `reading/iaa_mandate/` has no text extractions. The 25 Mandate notes on caves/cisterns are about Jericho and the Judean Desert, not Jerusalem. One copy per sheet, so no edition-to-edition comparison is possible.
@@ -305,4 +305,4 @@ The swarm changed nothing in the project. These are errors or gaps in the projec
 
 ## Private products
 
-There are 123 image files (crops, panels, page photos) plus the coordinate CSVs and notes, about 97 MB in all, under `private/<LANE>/`. They were packed as one zip, `sidequest_2026-11-06_private.zip`, and delivered to the owner as a download, for Drive `10 Side-quest finds/2026-11-06/`. The Drive connector cannot upload binary files of this size from the session. Nothing from them is in the repository.
+There are 123 image files (crops, panels, page photos) plus the coordinate CSVs and notes, about 97 MB in all, under `private/<LANE>/`. They were packed as one zip, `sidequest_2026-11-06_private.zip`, and delivered to the owner as a download, for Drive `10 Side-quest finds/2026-11-06/`. The Drive connector cannot upload binary files of this size from the session. Nothing from them is in the repository. The follow-up added A1b's crops (43 windows of cuts 12–15), delivered separately as `sidequest_2026-11-06_private_A1b.zip`.
