@@ -193,7 +193,7 @@ The owner's builder notebook (cells 2b–2c, script `08 Working files/HEXAGON CO
 
 Effect on earlier cards (R7): **A1-1** weakened, tag → KNOWN BUT UNDER-DISCUSSED, removed from the top 10. **B5-1** killed. **B5-2** weakened further. **B5-3** tag → KNOWN BUT UNDER-DISCUSSED. **A1-2** core kept. **B4-1** sharpened (top-10 #10). Also corrected: the Manchester saw was 1¾ in. × 0.006 in. (6 Mar 1956 letter), not "1 in." (OCR error in A1/B5); the find date is 20 March 1952; scroll no. 1 is the smaller roll (cols IX–XII), opened first. B5b used Baker's BJRL 39 (1956) pp. 45–56 from the Internet Archive (`bulletin-of-the-john-rylands-library_1956-09_39_1`).
 
-**A1c (orchestrator, not independently reviewed):** EDF's relevé plates CXII–CXXVI (PDF pp. 404–418) settle the remaining open labels. The "?" on segments 6 and 7 are their last labels (D3, D8) drawn truncated at the cut edge. E1 appears only as fragments on both edges of the 3|4 cut, so the saw cut split it. A full "E4" is drawn on both sides of the 4|5 cut; the 1994 photograph confirms E4 on segment 4, but segment 5's left end is unreadable at book resolution, so a doubled painted E4 is not confirmed. Segment 3 has one tick carrying both 11 and 12, on the drawing and on the photograph. NEW TO THE PROJECT; confidence high for what the plates draw, low for E4 being painted twice. Data: `A1c/labels_seg2-9_from_EDF_plates.csv`.
+**A1c (orchestrator, not independently reviewed):** EDF's relevé plates CXII–CXXVI (PDF pp. 404–418) settle the remaining open labels. The "?" on segments 6 and 7 are their last labels (D3, D8) drawn truncated at the cut edge. E1 appears only as fragments on both edges of the 3|4 cut, so the saw cut split it. A full "E4" is drawn on both sides of the 4|5 cut; the 1994 photograph and the 1988 USC verso previews in the repository (`images/previews/cuts-01-10/`) confirm E4 painted on segment 4; on segment 5 the 1988 previews show a lone "5" at the curved left edge, then E6–E8, so a second E4 beside E5 would be out of view and is not confirmed. Segment 3 has one tick carrying both 11 and 12, on the drawing and on the photograph. NEW TO THE PROJECT; confidence high for what the plates draw, low for E4 being painted twice. Data: `A1c/labels_seg2-9_from_EDF_plates.csv`.
 
 ## Killed
 
@@ -267,7 +267,7 @@ The swarm changed nothing in the project. These are errors or gaps in the projec
 ## Blocked inputs
 
 - ~~**Cuts 12–15 of 3Q15**~~ — **resolved 6 Nov 19:08 UTC:** now in the store as `usc:DSS_3Q15_CT12…CT15_*` (see Follow-up).
-- **The 24 colour verso frames of 3Q15** (1988): in neither Drive nor the bucket; the USC preview links have expired (HTTP 403).
+- **Full-resolution 1988 verso frames of 3Q15:** not held (the WSRP TIFF delivery and `private-media/wsrp-1988/` are recto only). *Correction:* low-resolution USC verso previews of all 23 segments (colour and b&w, about 1000 px tall) are already in the repository under `images/previews/`; the first-pass claim that no verso images were held was wrong.
 - ~~**DJD III vol. I**~~ — **resolved 6 Nov:** in the PDF store (`hexview.py pdfs Petites`, 344 pp.; Baker's notes from PDF p. 222).
 - **CIIP I.1** (Drive `1RNl4SwNvUF1XomCQ5N9Ze7WS4bMoGZb8`): reading returned only the front matter; download said "message from the server was too large". The 24.9 MB copy `126ct8RGvh91Nh4qHqHUWwqFsaqEus8R9` was not tried.
 - ~~**JSP 19**~~ — **resolved 6 Nov:** in the PDF store (`pdfs Gerizim-Excavations-III`, 284 pp.). Still missing: its digital appendix (coin-by-coin K data).
