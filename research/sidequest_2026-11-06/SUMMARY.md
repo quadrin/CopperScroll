@@ -1,5 +1,7 @@
 # Side-quest swarm, 6 November 2026: summary
 
+> **Round 2 (6 Nov, after AGENTS.md was removed):** see [SUMMARY_ROUND2.md](SUMMARY_ROUND2.md): 25 lanes redone, 71 new surviving cards, and four round-1 cards killed or corrected (C1c-2, C1c-3, C1a-1, A1b-2). This file is the round-1 record.
+
 **Goal (brief of 6 Nov 2026):** find anything new, strange or overlooked in the Copper Scroll corpus, whether or not it relates to the scroll. A find must be specific, checkable and new. A find is **not** an identification. Nothing here changes a rating, the outcome ledger, ACTIVE_TEST, OPEN_QUESTIONS or the atlas data.
 
 **What ran:**
