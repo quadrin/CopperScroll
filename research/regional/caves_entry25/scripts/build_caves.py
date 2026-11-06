@@ -31,6 +31,7 @@ OIG2ITM = Transformer.from_crs("EPSG:28191", "EPSG:2039", always_xy=True)
 WGS2OIG = Transformer.from_crs("EPSG:4326", "EPSG:28191", always_xy=True)
 
 # Same proper name (PLAN 4.2), across field campaigns. Each pair is flagged, never merged.
+# (6 Nov 2026: the WB:E756 "Q-3" pairs were removed; that row is now merged into DJD3:8, see coded/wbadb.py.)
 NAME_FLAGS = [
     ("Z23:PoolNahalDavid", "ASI:147-149", "same name: Cave of the Pool, Nahal David"),
     ("Z23:Horror", "ASI:147-417", "same name: Cave of Horror"),
@@ -44,8 +45,6 @@ NAME_FLAGS = [
     ("A41:IV/11", "WB:E707", "same name: 'Cave of the Pillar' (Atiqot 41 Index nickname of IV/11; WBADB record at Qumran)"),
     ("A41:II/49", "PAT:UMakkuk-5", "same name: Cave of the Spring (upper Wadi Makkuk)"),
     ("DJD3:8", "A41:X/35", "same label 'Q3' (ESI 6 for 1952 no. 8; Atiqot 41 p. 180 for Patrich and Arubas Cave 13)"),
-    ("DJD3:8", "WB:E756", "same label 'Q3' / 'Q-3'"),
-    ("A41:X/35", "WB:E756", "same label 'Q3' / 'Q-3'"),
 ]
 
 

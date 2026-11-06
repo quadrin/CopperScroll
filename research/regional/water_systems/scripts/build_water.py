@@ -11,7 +11,8 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import common as C  # noqa: E402
+import common as C
+from corrections import apply_corrections  # noqa: E402
 import literature_data as L  # noqa: E402
 import literature_data_2  # noqa: E402,F401  (registers its rows)
 
@@ -196,6 +197,12 @@ def main():
     supersede(survey, lit)
     rows = survey + lit
     exposure(rows)
+    apply_corrections(rows)
+    write_outputs(rows)
+    print(len(survey), len(lit), file=sys.stderr)
+
+
+def write_outputs(rows):
     for r in rows:
         if r['lat']:
             r['in_box'] = 'yes' if C.in_box(float(r['lat']), float(r['lon'])) else 'no'
@@ -226,7 +233,7 @@ def main():
         w.writerow(['unit_id', 'n_rows', 'row_ids'])
         for u in sorted(units):
             w.writerow([u, len(units[u]), ';'.join(units[u])])
-    print(len(survey), len(lit), len(units), file=sys.stderr)
+    print(len(units), 'merged units', file=sys.stderr)
 
 
 if __name__ == '__main__':
