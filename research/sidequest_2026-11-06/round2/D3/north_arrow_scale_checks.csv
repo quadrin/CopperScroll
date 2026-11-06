@@ -1,0 +1,20 @@
+volume,figure,pdf_page_store,subject,scale_bar_as_printed,scale_check,arrow_measured_deg_cw_from_page_up,arrow_corrected_deg,expected_deg,diff_deg,basis_of_expected,verdict
+Magen 2018,Fig. 9 general plan,3,whole site,"0 10 20 cm",L91 outer length on plan 139 px / (165 px per 20 units) = 16.9 units; Fig. 98 gives 17.2 m outer and text 15.60 m inner -> units are metres,-5.3,0.0,0,0,reference (north-up plan; tool bias -5.2 deg calibrated on 9 north-up arrows),SCALE LABEL WRONG (cm for m); arrow OK
+Magen 2018,Fig. 16,8,NW tower,0-5 m,not measured,(180 = tip/tail swap; vertical),0,0,0,north-up,OK
+Magen 2018,Fig. 24,15,western wing,0-5 m,not measured,(vertical),0,0,0,north-up,OK
+Magen 2018,Fig. 31,21,NW wing,0-5 m,not measured,-5.5,-0.3,0,-0.3,north-up,OK (calibration)
+Magen 2018,Fig. 38,27,eastern wing,0-3 m,not measured,-4.7,0.5,0,0.5,north-up,OK (calibration)
+Magen 2018,Fig. 41,30,E and S wings,0-10 m,L56/58 walls at +16.3 to +18.4 deg on north-up plan,-4.6,0.6,0,0.6,north-up,OK (calibration)
+Magen 2018,Fig. 57,44,western building,0-5 m,not measured,-5.9,-0.7,0,-0.7,north-up,OK (calibration)
+Magen 2018,Fig. 98,76,L83/L91,0-5 m,L91 inner 460 px at 29.2 px/m (100 dpi) = 15.75 m vs text 15.60 m,-107.9,-102.7,-107,4.3,L91 axis on Fig. 9 bears 19 deg; pool axis +2.0 deg on page; N end at left,OK within 5 deg
+Magen 2018,Fig. 100,78,L56/L58,0-5 m,L56 width 145 px at 40.6 px/m = 3.57 m vs text 3.55 m; length 8.2-8.4 m to W609 vs text 9.30 m (W609 0.7 m thick),-27.0,-21.8,-17,-4.8,L56/58 axis on Fig. 41 bears 106-108 deg; pool axis 0 deg on page; E end at right,OK within 5 deg
+Magen 2018,Fig. 102,80,L67,0-5 m,not measured,-4.7,0.5,0,0.5,north-up,OK
+Magen 2018,Fig. 104,82,L68-L70,0-5 m,not measured,-5.7,-0.5,0,-0.5,north-up,OK
+Magen 2018,Fig. 107,84,L71,0-5 m,not measured,63.0,68.2,69.8,-1.6,L71 axis on Fig. 9 bears 20.8 deg; pool axis +0.6 deg on page; N end at right,OK
+Galor in HG 2003,Fig. 7,328,L83/85/91,0-3 m,L91 (flat part) 712 x 296 px at 60 px/m = 11.9 x 4.9 m; plus L85 stepped zone 3.3 m = c. 15.3 m total (Magen counts the steps in L91),not measured (rotated page),,,,,scale consistent
+Galor in HG 2003,Fig. 9,330,L43 L48/49,0-3 m,not measured,75.4 (by eye from grid),75.4,71,4.4,site N-S walls bear c. 19 deg; L49 axis horizontal; N end at right,OK within 5 deg
+Galor in HG 2003,Fig. 10,330,L50,0-3 m,not measured,-22.8 (by eye),-22.8,-19,-3.8,walls page-aligned; L49 south of L50,OK
+Galor in HG 2003,Fig. 11,330,L34,0-3 m,not measured,-16 (by eye),-16,-19,3,walls page-aligned,OK
+Galor in HG 2003,Fig. 12,331,L68/L72,0-3 m,not measured,-33 (by eye),-33,-22 to -25,-8 to -11,L68/69 walls bear 22-25 deg on Magen Fig. 104,possible 8-11 deg offset; not carded
+Galor in HG 2003,Fig. 13,332,L69/L70,0-3 m,not measured,-31 (by eye),-31,-22 to -25,-6 to -9,as Fig. 12,possible 6-9 deg offset; not carded
+Stern 2025 Maresha IV,Plan 1.3.1,16,all SCs on orthophoto,none printed,A6 registration: 0.530 m per px at 220 dpi,arrow points page-up after -90 deg page rotation,0,0,-0.1,A6 SIFT registration to Esri z17 (rotation -0.10 deg),OK; no scale bar on the plan
