@@ -1,0 +1,11 @@
+item,source,x_px,y_px,height_fraction_frame,height_fraction_EDF_equiv,description,match
+r1,usc:DSS_3Q15_CT15_RLT_T,1225,1005,0.11,0.13,round dark hole about 40 px across inside a pale adhesive blob about 0.7 cm from left edge (EDF hatches this zone as old adhesive),seg16 hole 0.13 (Pl. CXLIV)
+r2,usc:DSS_3Q15_CT15_RLT_T,1070,2160,0.36,0.39,flat round head with rim; diameter about 80 px (0.5 cm); 0.45 cm from left edge; also seen in CT15_RET,no EDF seg15 symbol; seg16 hole 0.40
+r4,usc:DSS_3Q15_CT15_RLT_T,1070,2680,0.48,0.51,flat round head about 70 px; 0.4 cm from edge; also in RET,EDF seg15 rivet 1 (0.51)
+EDF2,EDF Pl. CXL plate (487;955),,,(0.57),0.60,EDF rivet 2; frame zone y about 3100 is cracked with violet glue line and no head visible,seg16 hole 0.61
+r7,usc:DSS_3Q15_CT15_RLT_T,1085,3875,0.74,0.77,rounded disc about 70 px at left edge; also in RET,EDF seg15 rivet 3 (0.77); seg16 hole 0.77
+r5,usc:DSS_3Q15_CT15_RLT_T,1040,4590,0.90,0.93,oval boss 90x110 px at the edge with two pits; also in RET,EDF seg15 rivet 4 (0.93)
+r3,usc:DSS_3Q15_CT15_RLT_T,1410,2380,0.41,0.44,hole with raised pale rim about 2.6 cm in from the left edge (not on the rivet line),EDF draws a hatched lacuna at plate (595;790)
+scale,usc:DSS_3Q15_CT15_RLT_T,670,1117-3455,,,ruler 0-15 cm = 2338 px => about 156 px/cm at ruler plane,
+frame_extent,usc:DSS_3Q15_CT15_RLT_T,1000-2700,520-5050,,,left edge height 4530 px; fractions = (y-520)/4530; EDF-equiv = frame fraction + 0.03 (offset fitted on 3 matched rivets),
+EDF_plate_extent,EDF 2006 copy B PDF p.432 (Pl. CXL) rendered at 130 dpi,465-1020,380-1335,,,EDF fractions = (y-380)/955; seg16 Pl. CXLIV (p.436) fractions = (y-380)/1045,
