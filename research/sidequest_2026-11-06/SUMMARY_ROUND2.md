@@ -234,3 +234,15 @@ Each lane's `round2/<LANE>/FINDS.md` has the full card, and `round2/review/RR*.m
 - Overpass mirrors (all timed out).
 
 Each lane's FINDS.md lists the rest.
+
+## Post-review checks with the owner's approval (6 Nov, 14:32 PT)
+
+The owner approved the three web lookups that the reviewers had left waiting for approval.
+
+- **E1-1 (Massekhet Kelim plaques): PaleoJudaica, 2011.** The post (`paleojudaica.blogspot.com/2011/05/ezekiel-platesand-legend-of-temple.html`) quotes a *Jerusalem Post* story:
+  - The Ezekiel tiles reached Yitzhak Ben-Zvi after Lebanon and a 1953 smuggling into Israel.
+  - The Massekhet Kelim plaques were no longer at Yad Ben-Zvi, which did not know where they were.
+  - Authenticity is "open to question". The blogger dates both sets no earlier than the 7th–8th c. CE, and notes Milik's 1959 photo.
+  - Effect: doubt about the plaques was public by 2011. E1-1's forgery point stays NEW TO THE PROJECT. The "373 BCE" arithmetic error is unaffected.
+- **B3-1 (SC 57 → SC 126 wording of 2014): not checked.** The Wayback capture of HA report 12643 is blocked for the fetch tool ("SITE_BLOCKED"). It was not routed round. RR3's caveat stands: the 2014 wording is not independently dated.
+- **C1b-2 (SWP's ʿAin ed Duk kokhim tomb): the kill test is run, and the card holds in its weakened form.** The owner's copy of Hachlili & Killebrew 1999 (IAA Reports 7, Drive; printed p. 2, Fig. I.1) bounds the Jericho cemetery between Hill H in the south and Hills F–G on Wadi Tasun below Deir el-Quruntul in the north. ʿAin ed Duk lies about 3 km north of that limit, outside the cemetery, and the volume does not record the SWP tomb. Bennett's and Kenyon's Jericho tombs are also near the tell, not at the springs. The card's count is still 14 loculi (RR4), not 21.
