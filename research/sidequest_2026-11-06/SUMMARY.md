@@ -6,16 +6,18 @@
 - 25 lane workers (A1–A6, B1a–c, B2–B6, C1a–c, C2–C4, D1–D3, E1, E2). Each worker made one bounded pass. All work was AI only: no contact with people and no purchases.
 - Then 6 reviewers (R1–R6) who had not taken part. They opened the cited evidence, redid every literature check, and tried to kill every card.
 - **Follow-up (same day):** at 19:08 UTC three blocked inputs were added to the store (3Q15 cuts 12–15, DJD III vol. I, JSP 19; see "Follow-up" below). Three more workers (A1b, B5b, B4b) used them, and a seventh reviewer (R7) checked their 9 cards and re-graded the earlier cards they touch.
+- **Second follow-up (evening):** three more lanes (A1d: verso previews of all 23 segments; D3b: figure and plate cross-references; B2b: the survey joins that B2 did not do). Reviewer R8 checked their 7 cards and A1c. A separate frozen test was run on entry 24 and Mughâret Ekteif (see "Entry 24 frozen test").
 
 **Result:**
-- Workers wrote **79 find cards** (69 + 9 in the follow-up + 1 orchestrator card, A1c, not yet independently reviewed). The reviewers **killed 2** (E1-2, B5-1) and **weakened 19**; they changed tags and merged two pairs (B1b-1 + B1c-2; B5b-1 into A1b-1).
-- **75 distinct cards survive** (74 reviewed + A1c).
-- Tags of the surviving cards, counted by each card's leading tag: **24 NEW TO THE LITERATURE, 40 NEW TO THE PROJECT, 11 KNOWN BUT UNDER-DISCUSSED.** Several cards carry a second tag for one part; each lane's `FINDS.md` has the exact tags.
+- Workers wrote **86 find cards** (69 + 9 in the first follow-up + 7 in the second + 1 orchestrator card, A1c). All are now independently reviewed. The reviewers **killed 2** (E1-2, B5-1) and **weakened 21**; they changed tags and merged three pairs (B1b-1 + B1c-2; B5b-1 into A1b-1; A1d-1 into A1-3).
+- **81 distinct cards survive.**
+- Tags of the surviving cards, counted by each card's leading tag: **29 NEW TO THE LITERATURE, 41 NEW TO THE PROJECT, 11 KNOWN BUT UNDER-DISCUSSED.** Several cards carry a second tag for one part; each lane's `FINDS.md` has the exact tags.
 - No find identifies a scroll place. Several touch scroll entries (24, 29, Qumran caves) or the project's own data. See "Corrections for the owner".
 
 **Where everything is:**
 - Each lane has its own branch, `claude/sidequest-2026-11-06-<lane>`, with `research/sidequest_2026-11-06/<LANE>/FINDS.md` plus data.
-- This branch has all 29 lane folders (25 + A1b, B5b, B4b, A1c), the reviews (`review/R1.md` … `R7.md`, `review/all_verdicts.csv` for R1–R6) and this summary.
+- This branch has all 32 lane folders (25 + A1b, B5b, B4b, A1c, A1d, D3b, B2b), the reviews (`review/R1.md` … `R8.md`; `review/all_verdicts.csv` for R1–R6 and R8) and this summary.
+- The entry 24 frozen test is on its own branch, `claude/entry24-ekteif-2026-11-06` (`research/first_tests_2026-11-06/entry24_ekteif/`).
 - **Private products** are not in the repository: crops from USC/WSRP, IAA, HEXAGON and the owner's photos, and the coordinates of unrecorded features. They were delivered to the owner as a download (see "Private products").
 
 Ranking rule (brief §8.4): tag (NEW TO THE LITERATURE first) × confidence × cost to confirm. Ties were broken toward variety of lanes and toward cards that touch the scroll or the project's data.
@@ -193,7 +195,34 @@ The owner's builder notebook (cells 2b–2c, script `08 Working files/HEXAGON CO
 
 Effect on earlier cards (R7): **A1-1** weakened, tag → KNOWN BUT UNDER-DISCUSSED, removed from the top 10. **B5-1** killed. **B5-2** weakened further. **B5-3** tag → KNOWN BUT UNDER-DISCUSSED. **A1-2** core kept. **B4-1** sharpened (top-10 #10). Also corrected: the Manchester saw was 1¾ in. × 0.006 in. (6 Mar 1956 letter), not "1 in." (OCR error in A1/B5); the find date is 20 March 1952; scroll no. 1 is the smaller roll (cols IX–XII), opened first. B5b used Baker's BJRL 39 (1956) pp. 45–56 from the Internet Archive (`bulletin-of-the-john-rylands-library_1956-09_39_1`).
 
-**A1c (orchestrator, not independently reviewed):** EDF's relevé plates CXII–CXXVI (PDF pp. 404–418) settle the remaining open labels. The "?" on segments 6 and 7 are their last labels (D3, D8) drawn truncated at the cut edge. E1 appears only as fragments on both edges of the 3|4 cut, so the saw cut split it. A full "E4" is drawn on both sides of the 4|5 cut; the 1994 photograph and the 1988 USC verso previews in the repository (`images/previews/cuts-01-10/`) confirm E4 painted on segment 4; on segment 5 the 1988 previews show a lone "5" at the curved left edge, then E6–E8, so a second E4 beside E5 would be out of view and is not confirmed. Segment 3 has one tick carrying both 11 and 12, on the drawing and on the photograph. NEW TO THE PROJECT; confidence high for what the plates draw, low for E4 being painted twice. Data: `A1c/labels_seg2-9_from_EDF_plates.csv`.
+**A1c (orchestrator; R8: SURVIVES, NEW TO THE PROJECT, with four corrections listed after this paragraph):** EDF's relevé plates CXII–CXXVI (PDF pp. 404–418) settle the remaining open labels. The "?" on segments 6 and 7 are their last labels (D3, D8) drawn truncated at the cut edge. E1 appears only as fragments on both edges of the 3|4 cut, so the saw cut split it. A full "E4" is drawn on both sides of the 4|5 cut; the 1994 photograph and the 1988 USC verso previews in the repository (`images/previews/cuts-01-10/`) confirm E4 painted on segment 4; on segment 5 the 1988 previews show a lone "5" at the curved left edge, then E6–E8, so a second E4 beside E5 would be out of view and is not confirmed. Segment 3 has one tick carrying both 11 and 12, on the drawing and on the photograph. NEW TO THE PROJECT; confidence high for what the plates draw, low for E4 being painted twice. Data: `A1c/labels_seg2-9_from_EDF_plates.csv`.
+
+R8's corrections to A1c: (1) segment 9 ends in a bare "C" cut off at the 9|10 edge; it is C7, truncated like D3 and D8. (2) Segment 1 (Pl. CX) carries only its number, so F1 is on neither segment 1 nor segment 2. (3) The two E4 ticks are about one mark apart across the 4|5 cut, so they are not one label split by the saw. (4) The "12 over 11" on segment 3 may be a 1955 correction, not two numbers on one tick.
+
+## Second follow-up: verso previews, cross-references, survey joins (6 Nov, evening)
+
+| Lane-card | Short title | Final tag | R8 verdict | Confidence | Cost |
+|---|---|---|---|---|---|
+| A1d-1 (merged into A1-3) | The 1955 label C8 of segment 10 is painted on the loose two-piece chain that the Zuckermans boxed separately in Dec 1988 (CT10_FRS); EDF Pl. XXXIX shows it loose, Pl. CXXVIII draws it back. EDF's radiograph list: "10 D2 (avec fragments rapportés le 22/12/93)" | NEW TO THE PROJECT (+ NEW TO THE LITERATURE, provisional, for the date bracket) | SURVIVES; MERGE with A1-3 | high | cheap |
+| A1d-2 | Pieces on both sides of the broken sheet 2/3 rivet join (segment 15 rivet-edge fragment; segment 16 loose plate) are one piece in the Dec 1988 previews and three pieces each in EDF's Feb 1994 photos; EDF says "cassures récentes" with no date | NEW TO THE LITERATURE (provisional) | WEAKENED: old adhesive shows in 1988, so "whole" and "glued" cannot be told apart; bracket narrowed to Dec 1988–Dec 1993 ("16 D2 … 22/12/93") | medium | cheap |
+| A1d-3 | EDF's text says segment 10's plates are joined by "huit rivets"; its plates draw 7 positions. The 1988 back view shows positions 4–7 | NEW TO THE PROJECT (tag changed) | WEAKENED: R8 read radiographs Pl. LXXIII (1993) and CCXXXII (1997): 7 certain plus a fainter disc at 0.41 of the strip height, so "eight" may be right and the plates may leave one out | high (positions); medium (count 7+1) | cheap |
+| D3b-1 | *Maresha IV* (Stern 2025, IAA Reports 76) has 10 cross-chapter figure pointers to the wrong figure or to figures that do not exist; four chapter 1 targets are exactly two numbers too low (renumbering after the text was written) | NEW TO THE LITERATURE | SURVIVES (6 of 10 confirmed on page images; no erratum found) | high | cheap |
+| B2b-1 | JSP 10 gives the Kh. Abu-Mussarah dwelling cave (licence 959, 2002) the map reference of Peleg's 1996 Mishor Adummim cave (L-749), 6.4 km away; the Hebrew p. 40 prints the same reference, so the error is in the report | NEW TO THE LITERATURE | SURVIVES (kill test run by R8) | high | cheap |
+| B2b-2 | WBADB files five JSP 10 digs under the wrong place or name (Beitar ʿIlit, Carmel, Beit Sahur, Geba, Hyrcania Valley graves); licences 733/773 are crossed. R8: endnote 1 on Hebrew p. 15 reads 733 for Baal Hazor, so JSP 10's English "773" is the misprint and WBADB's 733 on the two Mattityahu rows is the error | NEW TO THE LITERATURE | SURVIVES | high | cheap |
+| B2b-3 | WBADB misplaces ʿAtiqot 41 caves IX/8 by 6.3 km and X/14 by 5.4 km (northing digits; text gives 19114/14071 and 19386/13064, WBADB 147010 and 136040); the wrong points are copied into the sandbox inventory, the landscape-map scores and C2's distance table | NEW TO THE LITERATURE | SURVIVES | high | cheap |
+
+Other D3b and B2b checks found nothing to report. Magen 2018 (107 references), Leibner 2018 (1,378), Reich & Shukron 2021 (1,941) and DJD III vol. I (Fig. 5) resolve, apart from trivial or already-logged slips. JSP 10 × WBADB: the other 25 gridded entries agree to within 450 m. ʿAtiqot 41 × WBADB: 291 of 300 matched caves agree to within 100 m. Data: `D3b/xref_checks.csv` (5,222 rows), `B2b/join_jsp10_x_wbadb.csv`, `B2b/join_atiqot41_x_wbadb.csv`.
+
+Candidates for the top 10 (not re-ranked here): B2b-3 and B2b-1 are high-confidence, cheap, NEW TO THE LITERATURE, and B2b-3 touches the project's own data.
+
+## Entry 24 frozen test: Mughâret Ekteif (6 Nov, evening)
+
+A test under AGENTS.md, separate from the side-quest cards. The protocol was committed before any reserved observation (8d97a0d, SHA-256 `d0e441e0…`). It ran once, with a blind reader on ten 600 m windows of 2023 WorldView-2 imagery (target, 8 controls on a 1.5 km ring, and Kh. Qumran as a positive control). The 1974 HEXAGON epoch was left out because its registration failed the frozen condition.
+
+- **Claim A** (a visible open cut of the SWP size within 300 m of the SWP label): **not identifiable from available evidence.** The positive control failed: the reader marked no probable feature in any window, Qumran included. The criterion was too strict for 0.5 m imagery; this is not evidence of absence.
+- **Claim B** (Mughâret Ekteif is the entry 24 tomb): **not identifiable from available evidence**, as stated before the reading. No available observation gives the excavation's kind or date. All 8 Jericho→Secacah corridor lines pass within 3 km, so the route clause does not separate it from the 24-J controls.
+- Exploratory only: one `possible` 32 m line in the target window, on the north side of the wadi, just south of a modern highway; it can be a rill or a road-works cut. The highway makes destruction of the north bank a realistic alternative.
+- The ten windows are now EXPOSED (eight are in held area H1). Reopening needs a new observation: an unviewed 1940s RAF frame or a registered HEXAGON F014 window under a newly frozen criterion with a positive control of known size, or a field visit. Result: `research/first_tests_2026-11-06/entry24_ekteif/RESULT.md` on branch `claude/entry24-ekteif-2026-11-06` (42b655d).
 
 ## Killed
 
@@ -205,6 +234,7 @@ Effect on earlier cards (R7): **A1-1** weakened, tag → KNOWN BUT UNDER-DISCUSS
 - **B1b-1 + B1c-2** → top-10 card 3. They report the same error class and use the same three-witness test.
 - **B5b-1** merged into **A1b-1** (same marking scheme, two witnesses).
 - **A6-3 and B3-1** share only the Maresha IV renumbering (SC 57 → SC 126). B3-1 is the card for it; A6-3 cross-references it.
+- **A1d-1** merged into **A1-3** (the same CT10_FRS fragments; A1d-1 identifies them as the chain with label C8).
 - **C2-3 and E2-2** do not overlap: E2's roads are in Galilee, the Golan, the Sharon and the Shephelah; C2's are on SWP sheet XVIII. Both show that Itiner-e carries the main routes and leaves out secondary roads.
 
 ## Corrections for the owner (project data; decide under AGENTS.md)
@@ -230,6 +260,8 @@ The swarm changed nothing in the project. These are errors or gaps in the projec
   - A 3-point correction is in `C1a/F014_3point_affine.json`.
   - Anyone using run E's frames needs to re-register them locally first.
 - **Entry 24 (Wadi Kuteif):** the project's `kuteif` point sits on the "Wady Ekteif" label. The Mughâret Ekteif rock-cut passage (Memoirs III p. 220) is on the SWP sheet about 2.4 km east, and no record lies within 567 m (C2-1). Its position is private.
+- **WBADB grid errors in ʿAtiqot 41 caves IX/8 and X/14 (B2b-3):** they are in the sandbox `features_unified_v2.csv` and the 1 km landscape-map scores, and in C2's SWP distance table. C2's verdict does not change. B2's join and the entry 25 cave inventory are not affected.
+- **Entry 24:** the frozen test above closed both claims as not identifiable. The rating's "decisive next" is unchanged; the private position (±250–300 m) is a field target.
 - **Kh. Abu Lahm (Q24 / entry 31):** Mandate card 8751's "4 km NE of ʿAin es-Sultan" is wrong; the ruin is 2.2–3.2 km NW–NNW (D1-2).
 - **Cave of Letters coding:** the metal-detector null reaches only about 3.5 m (for a drum-sized target), while ERT debris reaches about 6–7.5 m. The "no second metal deposit" coding should carry that depth limit (C4-3, as weakened by R5).
 - **Qumran plateau:** Hadashot 117 report 126 (Price) records that the 1990/1996 deep "cave" targets were dug by hand to 17 m in 2002 and were natural stone lines (C4-1). The salvage records stop at S34–S36 and do not include it.
@@ -285,6 +317,7 @@ The swarm changed nothing in the project. These are errors or gaps in the projec
   - Commons and LoC APIs: HTTP 429.
   - The Wuppertal repository API returns HTML; the backup host works.
   - The old IAA permit register at `antiquities.org.il` now redirects; a Wayback fetch was not approved.
+- **Second follow-up (blocked or not done):** EDF's radiographs of segments 15/16 (not read); JSP 10, SBF 36 and Frumkin 2015 are not in the PDF store (JSP 10 read from Drive HEIC photos, 7 of 172 opened; Frumkin held only as intro chapters, so no site list to join); HCM 2016, JSP 8, ROSAPAT 07 and Humbert–Fidanzio 2019 have no captions in their text layers, so D3b's check needs page images there; the IAA online PDF of *Maresha IV* was not compared with the store copy; HEXAGON 1974 F014 could not be registered to 2023 imagery at the Ekteif windows (3–5 SIFT inliers).
 - **Store index:** `hexcog2.build_index` fails on `open-sources/manifest.json` (other format). Until the builder skips it, run notebook cell 2c after any builder job, or `index.json` will not update.
 - **Tooling:**
   - `git grep` over all 86 branches times out. The orchestrator built `branch_only/` (1,876 files that exist only on branches) as a workaround.
@@ -305,4 +338,4 @@ The swarm changed nothing in the project. These are errors or gaps in the projec
 
 ## Private products
 
-There are 123 image files (crops, panels, page photos) plus the coordinate CSVs and notes, about 97 MB in all, under `private/<LANE>/`. They were packed as one zip, `sidequest_2026-11-06_private.zip`, and delivered to the owner as a download, for Drive `10 Side-quest finds/2026-11-06/`. The Drive connector cannot upload binary files of this size from the session. Nothing from them is in the repository. The follow-up added A1b's crops (43 windows of cuts 12–15), delivered separately as `sidequest_2026-11-06_private_A1b.zip`.
+There are 123 image files (crops, panels, page photos) plus the coordinate CSVs and notes, about 97 MB in all, under `private/<LANE>/`. They were packed as one zip, `sidequest_2026-11-06_private.zip`, and delivered to the owner as a download, for Drive `10 Side-quest finds/2026-11-06/`. The Drive connector cannot upload binary files of this size from the session. Nothing from them is in the repository. The follow-up added A1b's crops (43 windows of cuts 12–15), delivered separately as `sidequest_2026-11-06_private_A1b.zip`. The second follow-up's private products (A1d crops, B2b positions and scripts, R8 crops, and the entry 24 windows, centre and route distances) are in `sidequest_2026-11-06_private_evening.zip`.
