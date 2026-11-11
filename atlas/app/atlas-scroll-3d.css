@@ -58,3 +58,5 @@
 .scroll-3d-viewer-next{right:10px;top:50%}
 @container (max-width:640px){.scroll-3d-gallery{padding:4px 14px 16px}.scroll-3d-thumbs img{height:100px}.scroll-3d-stage{height:50vh}}
 @media (max-width:640px){.scroll-3d-viewer{padding:52px 8px 12px}}
+.scroll-3d-photos{display:inline-flex;align-items:center;gap:6px;text-decoration:none;white-space:nowrap}
+.scroll-3d-actions .reader-text-button{white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
