@@ -5,6 +5,7 @@ import siteMedia from './atlas-site-media.json';
 import type {SitePlan} from './atlas-explorer-model';
 import type {Entry} from './atlas-types';
 import type {ContextEvidenceView} from './atlas-context-evidence';
+import {dossierSources,placeDossiers} from './atlas-dossiers-data';
 export type MapPanel='plan'|'photos'|'sources'|'history'|null;
 type SiteVideo={id:string;title:string;channel?:string;note:string};
 type SiteModel={uid:string;title:string;author:string;license:string;downloadable:boolean;faces:number;note:string};
@@ -34,5 +35,7 @@ export function MapSourceReferences({plan,placeId,assumptions,entry,onInspect}:{
  const [scan,setScan]=useState<string|null>(null);
  const planRefs:Record<string,{sourceId:string;locator:string}[]>=references.planReferences;
  const files:Record<string,{driveId:string;title:string}>=references.sources;
- return <div className="map-media-references"><LibraryReferences planIds={plan?[plan.id]:[]} placeId={placeId}/>{plan&&<><h3>{plan.source}</h3><p>{plan.credit}</p><p>{plan.limit}</p>{(planRefs[plan.id]??[]).map(ref=><button key={ref.sourceId} onClick={()=>setScan(files[ref.sourceId].driveId)}>View library scan here</button>)}</>}{scan&&<><iframe title="Google Drive source scan" className="map-drive-scan" src={`https://drive.google.com/file/d/${scan}/preview`} allowFullScreen/><p>Drive access follows your account’s permissions.</p></>}{assumptions.length>0&&<details><summary>Model sources and assumptions</summary>{assumptions.map(a=><p key={a}>{a}</p>)}</details>}{onInspect&&<button className="map-evidence-link" onClick={()=>onInspect('dossier')}>Complete site record</button>}</div>;
+ const dossier=placeDossiers.find(item=>item.id===placeId);
+ const sources=dossierSources.filter(source=>dossier?.sourceIds.includes(source.id));
+ return <div className="map-media-references"><LibraryReferences planIds={plan?[plan.id]:[]} placeId={placeId}/>{dossier&&<section aria-label="Site evidence sources"><h3>{dossier.name}</h3><p>{dossier.summary}</p>{sources.map(source=><article key={source.id}><h4><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a></h4><p>{source.locator}</p><p>{source.note}</p></article>)}<p>{dossier.unresolved}</p></section>}{plan&&<><h3>{plan.source}</h3><p>{plan.credit}</p><p>{plan.limit}</p>{(planRefs[plan.id]??[]).map(ref=><button key={ref.sourceId} onClick={()=>setScan(files[ref.sourceId].driveId)}>View library scan here</button>)}</>}{scan&&<><iframe title="Google Drive source scan" className="map-drive-scan" src={`https://drive.google.com/file/d/${scan}/preview`} allowFullScreen/><p>Drive access follows your account’s permissions.</p></>}{assumptions.length>0&&<details><summary>Model sources and assumptions</summary>{assumptions.map(a=><p key={a}>{a}</p>)}</details>}{onInspect&&<button className="map-evidence-link" onClick={()=>onInspect('dossier')}>Complete site record</button>}</div>;
 }

@@ -27,6 +27,8 @@ import "./atlas-qumran-pilot.css";
 import GroundView from "./atlas-ground";
 import ScrollView from "./atlas-scroll";
 import SceneView from "./atlas-scene";
+import SiteFiltersPanel from './atlas-site-filters';
+import {emptySiteFilters,siteMatchesFilters,type SiteFilters} from './atlas-site-filters-model';
 const LandscapeView=lazy(()=>import("./atlas-landscape"));
 
 
@@ -60,6 +62,10 @@ export default function AtlasMap(props:Props) {
   const [backgroundUnavailable,setBackgroundUnavailable]=useState(false);
   const [imageryState,setImageryState]=useState("idle");
   const [siteQuery,setSiteQuery]=useState("");
+  const [siteFilters,setSiteFilters]=useState<SiteFilters>(emptySiteFilters);
+  const matchingSites=useMemo(()=>places.filter(place=>siteMatchesFilters(place,siteQuery,siteFilters)),[places,siteQuery,siteFilters]);
+  const matchingSiteIds=useMemo(()=>new Set(matchingSites.map(place=>place.id)),[matchingSites]);
+  const siteFiltersActive=!!siteQuery.trim()||!!siteFilters.region||siteFilters.explore.length>0||siteFilters.features.length>0;
   const sitesRef=useRef<HTMLDetailsElement>(null);
   const optionsRef=useRef<HTMLDetailsElement>(null);
   const [panel,setPanel]=useState<MapPanel>(mode==="site"?"plan":null);
@@ -213,13 +219,15 @@ export default function AtlasMap(props:Props) {
       const candidate=entry.candidates.find(c=>c.placeId===m.place.id);
       const preferred=entries.some(e=>e.candidates.some(c=>c.placeId===m.place.id&&c.status==="preferred"));
       m.button.className=`site-pin ${candidate?.status||(preferred?"preferred":"possible")} ${focusId===m.place.id?"selected":""}`;
-      // Searching entries must not silently remove other sites from the map.
+      // Only explicit site search/filters hide pins; entry browsing stays independent.
       m.button.style.display="flex";
       m.button.setAttribute("aria-pressed",String(focusId===m.place.id));
-      m.marker.getElement().hidden=walking||(siteState==="ready"&&mapZoom>=15.5&&focusId===m.place.id);
+      const hidden=!matchingSiteIds.has(m.place.id)||walking||(siteState==="ready"&&mapZoom>=15.5&&focusId===m.place.id);
+      m.marker.getElement().hidden=hidden;
+      m.marker.getElement().style.display=hidden?'none':'';
     }
-    (mapRef.current?.getSource("precision") as GeoJSONSource|undefined)?.setData(candidateAreas(entry,places,focusId));
-  },[ready,entry,focusId,visibleIds,places,entries,walking,siteState,mapZoom]);
+    (mapRef.current?.getSource("precision") as GeoJSONSource|undefined)?.setData(candidateAreas(entry,matchingSites,focusId));
+  },[ready,entry,focusId,visibleIds,matchingSites,matchingSiteIds,entries,walking,siteState,mapZoom]);
 
   useEffect(()=>{
     const map=mapRef.current;if(!ready||!map)return;
@@ -336,14 +344,16 @@ export default function AtlasMap(props:Props) {
     stopWalk();if(siteRuntime.current){siteRuntime.current.focus();return;}
     mapRef.current?.flyTo({center:[place.lon,place.lat],zoom:18,pitch:mode==="3d"?65:0,duration:reduced.current?0:1000});
   }
-  function overview(){stopWalk();setPanel(null);const map=mapRef.current,bounds=allSiteBounds(places);if(map&&bounds)map.fitBounds(bounds,{padding:mapPadding(map),pitch:0,bearing:0,maxZoom:12,duration:reduced.current?0:900})}
+  function clearSiteFilters(){setSiteQuery('');setSiteFilters(emptySiteFilters);}
+  function fitSites(sites:Place[]){stopWalk();setPanel(null);const map=mapRef.current,bounds=allSiteBounds(sites);if(map&&bounds)map.fitBounds(bounds,{padding:mapPadding(map),pitch:0,bearing:0,maxZoom:12,duration:reduced.current?0:900})}
+  function overview(){clearSiteFilters();fitSites(places);}
   function fitEntry(){
-    const bounds=entry.candidates.flatMap(c=>{const p=places.find(p=>p.id===c.placeId);const b=p?candidateBounds(p):null;return b?[b]:[]});
+    const bounds=entry.candidates.flatMap(c=>{const p=matchingSites.find(p=>p.id===c.placeId);const b=p?candidateBounds(p):null;return b?[b]:[]});
     if(!bounds.length)return;
     const map=mapRef.current;if(map)map.fitBounds([[Math.min(...bounds.map(b=>b[0][0])),Math.min(...bounds.map(b=>b[0][1]))],[Math.max(...bounds.map(b=>b[1][0])),Math.max(...bounds.map(b=>b[1][1]))]],{padding:mapPadding(map),maxZoom:16.7,pitch:mode==="3d"?55:0,duration:reduced.current?0:800});
   }
   const mappedPlaces=places.filter(p=>p.lat!==null&&p.lon!==null);
-  const matchingSites=places.filter(p=>!siteQuery||`${p.name} ${p.shortName}`.toLocaleLowerCase().includes(siteQuery.toLocaleLowerCase()));
+  const matchingMapped=matchingSites.filter(p=>p.lat!==null&&p.lon!==null);
   const hasPlan=plansForPlace(focusId).length>0;
   const selectedFeature=plan?.features.find(feature=>feature.id===localFeature);
   const modelSettings=modelAvailable&&<details className="map-model-settings"><summary>3D display settings</summary><p>{plan?.label} · {siteRegistered==="imagery"?"registered to satellite imagery":siteRegistered?"registered to mapped outlines":"approximate alignment"}{siteStyle==="minecraft"?" · built in Minecraft":""}</p><div className="map-model-style" role="group" aria-label="Model style"><button aria-pressed={modelStyle==="minecraft"} onClick={()=>chooseStyle("minecraft")} title="The source model built block by block in a Minecraft server">Blocks</button><button aria-pressed={modelStyle==="smooth"} onClick={()=>chooseStyle("smooth")} title="The source model with smooth geometry">Smooth</button></div>{plan?.layers&&plan.layers.length>1&&<div className="map-model-style map-model-layer" role="group" aria-label="Remains or reconstruction">{plan.layers.map(l=><button key={l.id} aria-pressed={planLayer===l.id} onClick={()=>chooseLayer(l.id)} title={l.label}>{l.kind==="observed"?"Remains":l.label.replace(/\s*\(.*$/,"").replace(/,.*$/,"")}</button>)}</div>}{groundChoice&&<div className="map-model-style map-model-ground" role="group" aria-label="Ground"><button aria-pressed={!ancient} onClick={()=>chooseGround("today")} title="Today's terrain with today's mapped features (OpenStreetMap)">Today</button><button aria-pressed={ancient} onClick={()=>chooseGround("ancient")} title="Today's terrain without the modern mapped features">Ancient ground</button></div>}{ancient&&plan&&<small className="map-layer-note map-ground-note">{ancientGroundCaption(ancientGround(plan.id),ancientApplied)}{modelStyle==="minecraft"&&siteStyle==="smooth"?" Blocks include today’s features, so this view is drawn smooth.":""}</small>}{layerInfo?.kind==="published-reconstruction"&&<small className="map-layer-note">{layerInfo.label}: a published reconstruction. Pale parts with a dashed grid are drawn only by it; heights that no source gives are illustrative.</small>}</details>;
@@ -356,12 +366,14 @@ export default function AtlasMap(props:Props) {
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode==="3d"?"3d":basemap==="satellite"?"satellite":"2d"} onValueChange={value=>{stopWalk();if(value!=="3d")setBasemap(value==="satellite"?"satellite":"map");onMode(value==="3d"?"3d":"2d")}} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="satellite">Satellite</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
       <div className="map-toolbar-menus">
-      <details ref={sitesRef} className="map-options map-sites"><summary aria-label="Browse all sites">Sites · {mappedPlaces.length}</summary><div>
+      <details ref={sitesRef} className="map-options map-sites"><summary aria-label="Browse all sites">Sites · {siteFiltersActive?`${matchingMapped.length}/${mappedPlaces.length}`:mappedPlaces.length}</summary><div>
         <label className="map-site-search">Find a site<input aria-label="Search map sites" type="search" placeholder="Qumran, Siloam…" value={siteQuery} onChange={e=>setSiteQuery(e.target.value)}/></label>
-        <button disabled={!ready} onClick={()=>{overview();sitesRef.current?.removeAttribute("open")}}>Show all {mappedPlaces.length} mapped sites</button>
+        <SiteFiltersPanel value={siteFilters} onChange={setSiteFilters}/>
+        <div className="site-filter-results"><span role="status" aria-label="Site filter results">{siteFiltersActive?`${matchingMapped.length} of ${mappedPlaces.length} mapped sites`:`${mappedPlaces.length} mapped sites`}{matchingSites.length>matchingMapped.length?` · ${matchingSites.length-matchingMapped.length} unlocated`:''}</span>{siteFiltersActive&&<button className="site-filter-clear" onClick={clearSiteFilters}>Clear filters</button>}</div>
+        <button disabled={!ready||matchingMapped.length===0} onClick={()=>{fitSites(matchingSites);sitesRef.current?.removeAttribute("open")}}>{siteFiltersActive?`Show ${matchingMapped.length} mapped results`:`Show all ${mappedPlaces.length} mapped sites`}</button>
         <nav aria-label="Map sites">{matchingSites.map(p=><button key={p.id} aria-current={p.id===focusId?"location":undefined} onClick={()=>{setPanel(null);onPlace(p.id);sitesRef.current?.removeAttribute("open");if(p.id===focusId)inspectSite();}}><strong>{p.shortName}</strong><small>{p.lat===null?"Location unresolved":plansForPlace(p.id).length?"Mapped · detailed plan available":"Mapped · imagery & evidence"}</small></button>)}</nav>
-        {matchingSites.length===0&&<p>No matching site.</p>}
-        <p className="map-sites-note">{places.length-mappedPlaces.length} sites have no established coordinate and appear in the list only.</p>
+        {matchingSites.length===0&&<p className="site-filter-empty">No sites match. Try removing a filter or changing the search.</p>}
+        {matchingSites.length>matchingMapped.length&&<p className="map-sites-note">Unlocated sites appear in the list only.</p>}
       </div></details>
       <details ref={optionsRef} className="map-options"><summary>Options</summary><div>
         <button disabled={!ready} onClick={()=>{fitEntry();optionsRef.current?.removeAttribute("open")}}>Fit candidate area</button>
@@ -387,6 +399,7 @@ export default function AtlasMap(props:Props) {
     {walking&&<WalkTouchControls walker={()=>walker.current} flying={walker.current?.stance().flying??false} crouched={walker.current?.stance().crouched??false} sprintEnabled={walker.current?.stance().sprintEnabled??false}/>}
     {!offMap&&!walking&&!props.inspection&&<aside className="map-place-panel" aria-label="Selected site">
       <div className="map-place-summary"><div className="map-place-title"><strong>{selectedPlace?.shortName??"Location unresolved"}</strong><span>{selectedPlace?.lat==null?"No mapped coordinate":`Location uncertainty · ${selectedPlace.precision}`}</span>{selectedFeature&&<output className="map-selected-feature" aria-label="Selected site feature">{selectedFeature.label}</output>}</div></div>
+      {selectedPlace&&!matchingSiteIds.has(selectedPlace.id)&&<p className="site-filter-excluded">Selected site is outside the current filters.</p>}
       <nav className="map-place-actions" aria-label="Explore selected site"><button disabled={!ready||selectedPlace?.lat==null} onClick={inspectSite}>Zoom to site</button><button className="map-primary-action" aria-expanded={!!panel} aria-controls="map-site-inspector" onClick={()=>setPanel(hasPlan?"plan":"sources")}>Inspect site</button></nav>
       {basemap==="satellite"&&<p className="map-imagery-note">Modern satellite imagery · resolution varies{mapZoom>19?" · enlarged beyond native tile detail":""}. Site pins show approximate locations.</p>}
     </aside>}
