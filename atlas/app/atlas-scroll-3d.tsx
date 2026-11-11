@@ -5,13 +5,16 @@ import { createPortal } from "react-dom";
 import * as T from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { BookOpen, ChevronLeft, ChevronRight, ExternalLink, RotateCcw, X } from "lucide-react";
-import { columnAt, layoutScroll, LIGHT_NAMES, pickFrame, ROMAN, SHEET_HEIGHT_M, sheetPoint, type ScrollLayout } from "./atlas-scroll-3d-model";
+import { columnAt, layoutScroll, LIGHT_NAMES, LIGHT_ORDER, pickFrame, ROMAN, SHEET_HEIGHT_M, sheetPoint, stripProfile, type ScrollLayout, type StripFit } from "./atlas-scroll-3d-model";
 import "./atlas-scroll-3d.css";
 
 // The scroll as an object: rolled, unrolled, or cut into its 23 strips. The
 // strips carry the edition-based transcription. In the access-controlled build
 // a media library (media/index.json next to the page) adds every photograph,
-// facsimile and plate: on the strips, and in a gallery below the model.
+// facsimile and plate: on the strips, and in a gallery below the model. When
+// the library has the registered model, each strip has its measured length
+// along the surface and, as a cut strip, its measured curve; its layers (two
+// lights, relief, b&w, facsimile, Allegro, hand copy, radiograph) share one grid.
 
 export type Line3d = { ref: string; no: number; text: string };
 type MediaImage = {
@@ -20,7 +23,7 @@ type MediaImage = {
   strip?: string; aspect?: number; link?: string; kind?: string; section?: string;
 };
 type MediaSet = { id: string; label: string; level: "segment" | "column"; date: string; credit: string };
-type Media = { sets: MediaSet[]; images: MediaImage[] };
+type Media = { sets: MediaSet[]; images: MediaImage[]; model?: { strips: Record<string, StripFit> } };
 type Props = { columns: Line3d[][]; column: number; onColumn: (column: number) => void; onClose: () => void };
 type Strip = { segment: number; u0: number; u1: number; front: T.Mesh; back: T.Mesh; geometry: T.BufferGeometry; text: T.CanvasTexture };
 type Surface = "text" | "best" | string;
@@ -29,7 +32,7 @@ type Loaded = { map: T.Texture; alpha: T.Texture };
 const PX_PER_M = 3400;
 const SHAPES = [{ id: 0, label: "Rolled" }, { id: 1, label: "Unrolled" }, { id: 2, label: "Strips" }];
 const GAP_M = 0.018;
-const STRIP_SETS = ["wsrp88", "usc"];
+const STRIP_SETS = ["model", "wsrp88", "usc"];
 const PHOTO_SITE = ((import.meta.env as unknown as Record<string, string | undefined> | undefined)?.VITE_WSRP_PHOTO_SITE) ?? "";
 
 function median(values: number[]) { const v = [...values].sort((a, b) => a - b); return v.length ? v[Math.floor(v.length / 2)] : 0; }
@@ -115,15 +118,17 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
   }, [base]);
 
   const images = useMemo(() => media?.images ?? [], [media]);
+  const modelFit = useMemo(() => { const f = media?.model?.strips; return f && Object.keys(f).length === 23 ? f : null; }, [media]);
   const layout = useMemo(() => {
     if (media === undefined) return null;
     const widths: Record<number, number> = {};
+    if (modelFit) { for (let s = 1; s <= 23; s++) widths[s] = modelFit[s].arc; return layoutScroll(widths, true); }
     for (let s = 1; s <= 23; s++) for (const set of STRIP_SETS) {
       const a = rectoStrips(images, set, s).map(i => i.aspect ?? 0).filter(x => x > 0);
       if (a.length) { widths[s] = median(a) * SHEET_HEIGHT_M; break; }
     }
     return layoutScroll(widths);
-  }, [media, images]);
+  }, [media, images, modelFit]);
 
   useEffect(() => {
     const el = host.current;
@@ -148,7 +153,7 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
       for (let i = 0; i <= n; i++) { uv.set([1 - i / n, 0], i * 2); uv.set([1 - i / n, 1], (n + 1) * 2 + i * 2); }
       for (let i = 0; i < n; i++) { const t0 = n + 1 + i, t1 = n + 1 + i + 1; index.push(i + 1, i, t1, i, t0, t1); }
       geometry.setAttribute("position", new T.BufferAttribute(pos, 3)); geometry.setAttribute("uv", new T.BufferAttribute(uv, 2)); geometry.setIndex(index);
-      geometry.userData = { n, u0: s.u0, u1: s.u1 };
+      geometry.userData = { n, u0: s.u0, u1: s.u1, h: modelFit?.[s.segment]?.height ?? H, tangent: modelFit?.[s.segment]?.tangent ?? null };
       const text = drawText(layout, s, columns, font);
       const front = new T.Mesh(geometry, new T.MeshStandardMaterial({ map: text, metalness: .35, roughness: .55, side: T.FrontSide }));
       const back = new T.Mesh(geometry, new T.MeshStandardMaterial({ color: "#55705d", metalness: .3, roughness: .75, side: T.BackSide }));
@@ -200,13 +205,15 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
       shapeNow = t;
       const unroll = Math.min(1, t), spread = Math.max(0, t - 1);
       strips.forEach((s, k) => {
-        const { n, u0, u1 } = s.geometry.userData as { n: number; u0: number; u1: number };
+        const { n, u0, u1, h, tangent } = s.geometry.userData as { n: number; u0: number; u1: number; h: number; tangent: number[] | null };
+        // A cut strip takes its measured curve as the strips move apart.
+        const curved = tangent && unroll >= 1 && spread > 0 ? stripProfile(tangent, u1 - u0, n, spread) : null, centre = L / 2 - (u0 + u1) / 2;
         const attr = s.geometry.getAttribute("position") as T.BufferAttribute;
         const dx = (11 - k) * GAP_M * spread;
         for (let i = 0; i <= n; i++) {
           const u = u0 + (u1 - u0) * i / n;
-          const [x, z] = sheetPoint(u, unroll, L);
-          attr.setXYZ(i, x + dx, -H / 2, z); attr.setXYZ(n + 1 + i, x + dx, H / 2, z);
+          const [x, z] = curved ? [centre + curved[i][0], curved[i][1]] : sheetPoint(u, unroll, L);
+          attr.setXYZ(i, x + dx, -h / 2, z); attr.setXYZ(n + 1 + i, x + dx, h / 2, z);
         }
         attr.needsUpdate = true; s.geometry.computeVertexNormals(); s.geometry.computeBoundingBox(); s.geometry.computeBoundingSphere();
       });
@@ -265,7 +272,7 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
       cache.forEach(p => p.then(({ map, alpha }) => { map.dispose(); alpha.dispose(); }).catch(() => {}));
       renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove();
     };
-  }, [layout, columns, images, base]);
+  }, [layout, columns, images, base, modelFit]);
 
   useEffect(() => { runtime.current?.setShape(target); }, [target]);
   useEffect(() => { runtime.current?.highlight(column, selected); }, [column, selected, layout]);
@@ -274,8 +281,11 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
   const sets = useMemo(() => media?.sets ?? [], [media]);
   const surfaces = STRIP_SETS.filter(s => images.some(i => i.set === s && i.strip));
   const lightPool = images.filter(i => i.strip && i.side === "recto" && (surface === "best" ? STRIP_SETS.includes(i.set) : i.set === surface));
-  const lights = Array.from(new Set(lightPool.map(i => i.light ?? "").filter(Boolean))).sort((a, b) => a.localeCompare(b));
+  const order = (l: string) => { const i = LIGHT_ORDER.indexOf(l); return i < 0 ? LIGHT_ORDER.length : i; };
+  const lights = Array.from(new Set(lightPool.map(i => i.light ?? "").filter(Boolean))).sort((a, b) => order(a) - order(b) || a.localeCompare(b));
+  const layered = lights.some(l => l.startsWith("M") && l.length === 2);
   const strip = selected && layout ? layout.strips[selected - 1] : null;
+  const stripFit = strip && modelFit ? modelFit[strip.segment] : null;
   const shownFront = strip ? frontFor(images, surface, strip.segment, light) : null;
   const shownBack = strip && surface !== "text" ? backFor(images, strip.segment) : null;
   const colsOf = (s: { columns: number[] }) => s.columns.map(c => ROMAN[c]).join("–");
@@ -310,7 +320,7 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
       <div className="scroll-3d-actions">
         <div role="group" aria-label="Shape of the scroll">{SHAPES.map(s => <button key={s.id} type="button" aria-pressed={target === s.id} onClick={() => setTarget(s.id)}>{s.label}</button>)}</div>
         {surfaces.length > 0 && <label className="scroll-3d-light">Surface<select value={surface} onChange={e => { setSurface(e.target.value); setLight(null); }}><option value="best">Best photograph per strip</option>{surfaces.map(s => <option key={s} value={s}>{setLabel(s)}</option>)}<option value="text">Transcription</option></select></label>}
-        {surface !== "text" && lights.length > 0 && <label className="scroll-3d-light">Light<select value={light ?? ""} onChange={e => setLight(e.target.value || null)}><option value="">Best per strip</option>{lights.map(l => <option key={l} value={l}>{LIGHT_NAMES[l] ?? l}</option>)}</select></label>}
+        {surface !== "text" && lights.length > 0 && <label className="scroll-3d-light">{layered ? "Layer" : "Light"}<select value={light ?? ""} onChange={e => setLight(e.target.value || null)}><option value="">Best per strip</option>{lights.map(l => <option key={l} value={l}>{LIGHT_NAMES[l] ?? l}</option>)}</select></label>}
         <button type="button" className="scroll-3d-icon" aria-label="Reset the view" onClick={() => runtime.current?.fit()}><RotateCcw size={15} /></button>
         <button type="button" className="reader-text-button" onClick={onClose}><BookOpen size={14} />Text view</button>
       </div>
@@ -324,7 +334,8 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
       <div className="scroll-3d-card" aria-live="polite">
         {strip ? <>
           <strong>Segment {strip.segment} · column {colsOf(strip)}</strong>
-          <span>Width {((strip.u1 - strip.u0) * 100).toFixed(1)} cm · {strip.measured ? "measured on a 1988 photograph (strip height = 30 cm), then scaled with all strips to a 2.4 m sheet" : "assumed: the mean of the photographed strips"}</span>
+          {stripFit ? <span>{stripFit.measured ? `At least ${(stripFit.arc * 100).toFixed(1)} cm along the surface, measured across the left, centre and right frames` : `About ${(stripFit.arc * 100).toFixed(1)} cm along the surface, modelled: this strip has one frame only`} · {(stripFit.chord * 100).toFixed(1)} cm wide as photographed · {(stripFit.height * 100).toFixed(1)} cm high by the scale in the frame</span>
+            : <span>Width {((strip.u1 - strip.u0) * 100).toFixed(1)} cm · {strip.measured ? "measured on a 1988 photograph (strip height = 30 cm), then scaled with all strips to a 2.4 m sheet" : "assumed: the mean of the photographed strips"}</span>}
           {shownFront && <span>Front: {setLabel(shownFront.set)} · {LIGHT_NAMES[shownFront.light ?? ""] ?? shownFront.light} · <a href={`${base}${shownFront.full}`} target="_blank" rel="noreferrer">full frame <ExternalLink size={11} /></a></span>}
           {shownBack && <span>Back: {setLabel(shownBack.set)} verso, mirrored · <a href={`${base}${shownBack.full}`} target="_blank" rel="noreferrer">full frame <ExternalLink size={11} /></a></span>}
           <button type="button" className="reader-text-button" onClick={onClose}>Read column {ROMAN[column]}</button>
@@ -332,8 +343,9 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
       </div>
       <details className="scroll-3d-notes"><summary>What is drawn, and what is assumed</summary>
         <p>The sheet is about 2.4 m long and 30 cm high, in 23 strips cut in Manchester in 1955–56. The transcription is M. G. Abegg Jr.’s, in modern type, not the engraved letters.</p>
-        <p>Columns I–X follow the segment map in Puech 2006’s radiograph captions. XI = 19–20 and XII = 21–23 are assumed. A segment shared by two columns is split at its middle.</p>
-        <p>{images.length ? "Strip widths are measured on the 1988 photographs, with the strip height taken as 30 cm, and scaled together to 2.4 m because the photographs show the strips curved. The strip outlines are cut out of the photographs automatically; backs show the USC verso photograph, mirrored, where one exists." : "Strip widths are assumed."} The roll is one illustrative roll with the inscribed face inside; the scroll was found as two rolls, and the joins of its three sheets are not drawn.</p>
+        <p>The columns follow the segment map in the radiograph captions of Brizemeure, Lacoudre and Puech 2006 (plates CCCXXXIII–CCCLVI), which give XI = 19–20 and XII = 21–23. A segment shared by two columns is split at its middle.</p>
+        {modelFit && <p>Registered model: each strip is unrolled along its surface from the left, centre and right frames of the 1988 photographs. Its length is a lower limit, and the sheet is drawn at the sum of these lengths, not at 2.4 m. Cut into strips, each strip takes the curve found from the same frames; strips with one frame have a modelled arc. The layers of a strip lie on one grid. The facsimile, the Allegro prints, Milik’s hand copy and the radiographs were fitted automatically and can be off by part of a line; Milik’s column I and several radiographs did not fit and are left out.</p>}
+        <p>{modelFit ? "Backs show the USC verso photograph, mirrored, where one exists." : images.length ? "Strip widths are measured on the 1988 photographs, with the strip height taken as 30 cm, and scaled together to 2.4 m because the photographs show the strips curved. The strip outlines are cut out of the photographs automatically; backs show the USC verso photograph, mirrored, where one exists." : "Strip widths are assumed."} The roll is one illustrative roll with the inscribed face inside; the scroll was found as two rolls, and the joins of its three sheets are not drawn.</p>
         {!images.length && (PHOTO_SITE ? <p>The photographs, facsimile and plates are available to approved readers on the <a href={PHOTO_SITE} target="_blank" rel="noreferrer">photo version of the atlas</a>, which needs a sign-in.</p> : <p>The photographs are not published here.</p>)}
       </details>
     </div>

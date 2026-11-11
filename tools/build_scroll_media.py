@@ -13,6 +13,10 @@ Writes <out>/index.json and every image the 3D view can show:
   djd3      DJD III (1962) plates: Milik's photographs and hand copies, and the
             plates of the object (research/assets/plans/djdIII1962/plates-volume.pdf)
   commons   The Jordan Museum photograph of strip 13 (CC BY-SA 4.0, already public)
+  model     Registered model (private, decrypted, set scroll-model): each strip
+            unrolled along its surface, with every layer on the same grid. The
+            measurements come from research/sources/usc_copper_scroll_images/
+            scroll_model_fit.json and are copied into index.json as "model".
 
 Colour recto and verso photographs of segments also get a strip cut-out (WebP
 with a transparent background) so the 3D model can carry them.
@@ -36,7 +40,15 @@ USC_LIGHT = {
     "bot ctr": "RBC", "top ctr": "RTC", "fragments": "FRS", "frgs": "FRS",
     "left": "L", "right": "R", "": "",
 }
+MODEL_LAYERS = {
+    "MT": "top light, left, centre and right frames blended", "MB": "bottom light, left, centre and right frames blended",
+    "MR": "relief from the top and bottom light", "MN": "black-and-white negative (1988)",
+    "MF": "EDF facsimile on the strip", "MA": "Allegro photograph (1955–56) on the strip",
+    "MM": "Milik's hand copy on the relief", "MX": "EDF radiograph on the strip",
+}
 SETS = [
+    {"id": "model", "label": "Registered model (all layers on one grid)", "level": "segment", "date": "2026",
+     "credit": "Each strip unrolled along its surface from the left, centre and right frames of the WSRP 1988 masters (B. and K. Zuckerman, West Semitic Research; courtesy the Department of Antiquities, Jordan). Further layers on the same grid: USC previews of the 1988 b&w negatives; the EDF facsimile (West Semitic Research 2013 photographs, USC Digital Library); John Allegro's 1955–56 photographs (courtesy of the John Allegro estate © Judith Brown, via DQCAAS); Milik's hand copies (DJD III, 1962); radiographs printed in Brizemeure, Lacoudre and Puech 2006 (STDJ 55). Fitted automatically; private study copy, not for publication."},
     {"id": "wsrp88", "label": "WSRP 1988 masters", "level": "segment", "date": "1988",
      "credit": "Photographs by Bruce and Kenneth Zuckerman, West Semitic Research, in collaboration with Princeton Theological Seminary. Courtesy the Department of Antiquities, Jordan. 1/4-scale previews of the drum-scanned colour transparencies; private study copy."},
     {"id": "usc", "label": "USC library previews (1988)", "level": "segment", "date": "1988",
@@ -117,6 +129,18 @@ class Library:
         self.images.append(item)
         return item
 
+    def add_registered(self, set_id, src, name, **meta):
+        """A layer of the registered model: already a strip cut-out, kept as it is."""
+        folder = self.out / set_id; (folder / "t").mkdir(parents=True, exist_ok=True)
+        im = Image.open(src)
+        shutil.copyfile(src, folder / f"{name}.webp")
+        t = Image.new("RGB", im.size, (29, 26, 22)); t.paste(im.convert("RGBA"), (0, 0), im.convert("RGBA")); t.thumbnail((THUMB, THUMB * 2)); t.save(folder / "t" / f"{name}.jpg", quality=80)
+        path = f"media/{set_id}/{name}.webp"
+        item = {"id": f"{set_id}:{name}", "set": set_id, "full": path, "thumb": f"media/{set_id}/t/{name}.jpg", "w": im.width, "h": im.height,
+                "strip": path, "aspect": round(im.width / im.height, 4), **meta}
+        self.images.append(item)
+        return item
+
 
 def build(out, private):
     lib = Library(out)
@@ -130,6 +154,19 @@ def build(out, private):
             seg, light = int(m.group(1)), m.group(2)
             lib.add("wsrp88", p, f"CT{seg}_{light}", strip=light not in ("FRS", "RFR"),
                     segment=seg, side="recto", light=light, film="colour", title=f"Segment {seg} · recto · {light}")
+
+    # Registered model (decrypted). Names: S<nn>_<LAYER>.webp
+    model = private / "scroll-model" if private else None
+    fit = None
+    if model and model.exists():
+        fit_file = ROOT / "research/sources/usc_copper_scroll_images/scroll_model_fit.json"
+        for p in sorted(model.glob("S*_M?.webp")):
+            m = re.match(r"S(\d+)_(M[A-Z])\.webp$", p.name)
+            seg, layer = int(m.group(1)), m.group(2)
+            lib.add_registered("model", p, f"S{seg:02d}_{layer}", segment=seg, side="recto", light=layer,
+                               film="b&w" if layer in ("MN", "MX", "MA") else "colour", title=f"Segment {seg} · {MODEL_LAYERS.get(layer, layer)}")
+        if fit_file.exists() and any(i["set"] == "model" for i in lib.images):
+            fit = json.loads(fit_file.read_text(encoding="utf-8"))["strips"]
 
     # USC public previews of the 1988 photographs, and of the facsimile.
     index = list(csv.DictReader(open(ROOT / "research/sources/usc_copper_scroll_images/index.csv", encoding="utf-8")))
@@ -185,6 +222,8 @@ def build(out, private):
 
     used = {i["set"] for i in lib.images}
     index_out = {"version": 2, "sets": [s for s in SETS if s["id"] in used], "images": lib.images}
+    if fit:
+        index_out["model"] = {"strips": {k: {"arc": v["arc_cm"] / 100, "chord": v["chord_cm"] / 100, "height": v["height_cm"] / 100, "measured": v["measured"], "tangent": v["tangent"]} for k, v in fit.items()}}
     (Path(out) / "index.json").write_text(json.dumps(index_out, ensure_ascii=False, separators=(",", ":")))
     counts = {s: sum(1 for i in lib.images if i["set"] == s) for s in used}
     strips = sum(1 for i in lib.images if "strip" in i)
