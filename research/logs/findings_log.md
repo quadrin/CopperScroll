@@ -1682,3 +1682,10 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Change list.** [26 lines](../sources/hexagon_registration_2026-11-11/regional_checklist_change_list.csv), record numbers checked against the 9 November checklist, accepted by the owner. No level changes.
 - **Exposure.** The reader saw the Jericho palace plans and images, Nebi Musa, Deir Hajla and the Kafrein sites, with the project notes open. Nothing here is unseen-ground evidence.
 
+## 11 November 2026 (evening) — plan tests for Tell Nimrin and Nebi Musa; Iktanu south hill; EAMENA cross-check (exploratory)
+
+- **Plan tests (one reader, not blind).** Tell Nimrin: the 1989 topographic map (Flanagan and McCreery 1990, fig. 4) agrees with the 1 December 1974 image to about 10 m. Nebi Musa: the Pirsky ground plan (Daʿadli 2020, fig. 9) agrees to 3–6 m. Each used the plan's scale bar, its north arrow and one anchor. [Record](../sources/hexagon_registration_2026-11-11/README.md), notes 12–13.
+- **Tell Iktanu.** The south hill is the flat-topped spur south-east of the highway, as Prag's Introduction describes; an earlier point of the same day marked only its south-west end.
+- **EAMENA.** Records exist for 17 places of the site table; 13 lie within 100 m of our points. EAMENA's Tall Barakat point is 140 m west of the fort on the images at the same latitude, which does not support the grid reference in Prag and Barnes 1996; the source of the EAMENA point is unknown.
+- **No level changes.** Nothing bears on a scroll entry.
+

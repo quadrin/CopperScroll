@@ -46,5 +46,41 @@
    2.06
   ]
  },
- "note": "The west transform is wrong by approximately 330 m at Kafrein. Use the east transform there. Between the two areas (Shunat Nimrin) there is no control."
+ "note": "Three transforms. Use the transform of the area.",
+ "nimrin": {
+  "A": [
+   [
+    2.032290044118332,
+    0.35422096434908346
+   ],
+   [
+    0.15533329584212308,
+    -2.0196035003271717
+   ],
+   [
+    204358.7222826692,
+    640804.2633134203
+   ]
+  ],
+  "fit": "43 blocks against HEXAGON A017e of 1 Dec 1974 (Shunat Nimrin window), rms 11 m",
+  "valid": "tile x 25000 to 28600, y 1300 to 4900"
+ },
+ "hexagon_A017e_shunat_nimrin_window": {
+  "A": [
+   [
+    0.9388601547241961,
+    -0.13273678455469262
+   ],
+   [
+    -0.02889257787477267,
+    -0.8540970118728782
+   ],
+   [
+    257383.59883556262,
+    647411.5510438542
+   ]
+  ],
+  "frame": "pixels of A017e_dec74_shunat_nimrin_full_x19000_y19200.jpg (turned 180 degrees)",
+  "fit": "26 blocks against the elevation model, rms 12 m; three sun directions agree to 10 m"
+ }
 }

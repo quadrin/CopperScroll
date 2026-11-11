@@ -22,8 +22,10 @@
 | Deir Hajla, Nebi Musa, Mar Saba, Khirbet Mazin: positions agree with published points to 30 to 60 m | notes 01, 02, 06 | Position only |
 | 5 May 1978 at Jericho: the excavated areas agree with six area plans of Netzer 2001, placed by the site grid (10 m squares, turned 13 degrees east of north) with one anchor from plan 14. Pools Complex, Twin Palaces and Northern Wing: agreement 5 to 15 m | notes 08 to 11 | Plans were photographed obliquely and corrected from their grid borders; grid lines marked by eye; one reader. Areas AA and AC and the Second Palace are Probable only |
 | CORONA, 26 September 1967, strip DF041 tile d: registered to the HEXAGON images (341 blocks, 16 m, west side; 136 blocks, 17 m, Kafrein). No Kafrein dam and no reservoir on this date; the square outline of the Plateau Fort is present | notes 08, 09; `transforms_corona_1967_df041d.json` | Approximately 2.1 m for each pixel: position and land use only. Two transforms; no control at Shunat Nimrin |
-| Nebi Musa: wall lengths on the image of 1 December 1974 (66–70, 67, 66, 53 m) against published 74, 70, 68, 55 m | note 11 | Published values from a web page; primary survey not seen |
-| Tell Iktanu: a lower second summit at 31.8163 N, 35.6682 E, south-east of the highway (elevation model) | note 11 | Probable south hill of the Prag monograph; her plan not seen |
+| Nebi Musa: the ground plan by V. Pirsky (Daʿadli 2020, fig. 9) agrees with the image of 1 December 1974 to 3 to 6 m (scale from the bar, north from the arrow, one anchor) | notes 11, 13 | One reader |
+| Tell Iktanu: the south hill is the flat-topped spur of approximately 600 by 150 m south-east of the highway (middle 31.8166 N, 35.6701 E) | notes 11, 13 | Description in Prag (Introduction) and an EAMENA record agree; her site plan not seen |
+| Tell Nimrin: oval mound at 31.9010 N, 35.6251 E; the topographic map of 1989 (Flanagan and McCreery 1990, fig. 4) agrees to approximately 10 m | notes 12, 13 | One reader |
+| EAMENA records exist for 17 places of the site table; 13 are within 100 m of our points. EAMENA puts Tall Barakat at the latitude of the fort on the image, not 340 m south | note 13 | The source of the EAMENA points is not known; records not read one by one |
 
 ## Corrections to earlier statements of the same day
 
@@ -33,11 +35,11 @@ The notes were written in steps, and later steps corrected earlier ones. Note 04
 
 | File | Content |
 |---|---|
-| `sites.csv`, `sites.geojson`, `sites.kml` | 38 places: status, type, WGS 84 position, error, source of the position, note |
+| `sites.csv`, `sites.geojson`, `sites.kml` | 39 places: status, type, WGS 84 position, error, source of the position, note |
 | `transforms.json` | Pixel-to-grid transforms (EPSG:2039) for each tile and window, with the height term where fitted |
 | `regional_checklist_change_list.csv` | 20 proposed additions to the records of the regional checklist. **The record numbers were read from a two-column PDF and are not checked** |
 | `scripts/` | Registration (`demtool.py`, `warp.py`, `reg.py`, `auto.py`, `reg2.py`), rectified chips and overlays (`chips.py`, `pairs.py`, `ov.py`), and the cut scripts that the owner ran on the full tiles |
-| `notes/` | The eleven working notes, in order. They are written in simplified technical English |
+| `notes/` | The thirteen working notes, in order. They are written in simplified technical English |
 | `figures/` | Four date pairs: the Kafrein dam site (1967 and 1974); Nebi Musa (1974 and 1978); Barakat with the end of the Kafrein dam (June and December 1974); Tulul Abu el-ʿAlayiq (December 1974 and May 1978) |
 
 The scripts have the paths of the session that made them; they are a record of the method, not a package.
