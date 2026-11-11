@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import * as T from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { BookOpen, ChevronLeft, ChevronRight, ExternalLink, RotateCcw, X } from "lucide-react";
+import { BookOpen, ChevronLeft, ChevronRight, ExternalLink, Lock, RotateCcw, X } from "lucide-react";
 import { columnAt, layoutScroll, LIGHT_NAMES, LIGHT_ORDER, pickFrame, ROMAN, SHEET_HEIGHT_M, sheetPoint, stripProfile, type ScrollLayout, type StripFit } from "./atlas-scroll-3d-model";
 import "./atlas-scroll-3d.css";
 
@@ -33,7 +33,8 @@ const PX_PER_M = 3400;
 const SHAPES = [{ id: 0, label: "Rolled" }, { id: 1, label: "Unrolled" }, { id: 2, label: "Strips" }];
 const GAP_M = 0.018;
 const STRIP_SETS = ["model", "wsrp88", "usc"];
-const PHOTO_SITE = ((import.meta.env as unknown as Record<string, string | undefined> | undefined)?.VITE_WSRP_PHOTO_SITE) ?? "";
+// The access-controlled build (Cloudflare Pages behind Cloudflare Access). Set VITE_WSRP_PHOTO_SITE to "" to hide the links.
+const PHOTO_SITE = ((import.meta.env as unknown as Record<string, string | undefined> | undefined)?.VITE_WSRP_PHOTO_SITE) ?? "https://copper-scroll-photos.pages.dev/";
 
 function median(values: number[]) { const v = [...values].sort((a, b) => a - b); return v.length ? v[Math.floor(v.length / 2)] : 0; }
 const segmentsOf = (i: MediaImage) => i.segments?.length ? i.segments : i.segment != null ? [i.segment] : [];
@@ -322,6 +323,7 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
         {surfaces.length > 0 && <label className="scroll-3d-light">Surface<select value={surface} onChange={e => { setSurface(e.target.value); setLight(null); }}><option value="best">Best photograph per strip</option>{surfaces.map(s => <option key={s} value={s}>{setLabel(s)}</option>)}<option value="text">Transcription</option></select></label>}
         {surface !== "text" && lights.length > 0 && <label className="scroll-3d-light">{layered ? "Layer" : "Light"}<select value={light ?? ""} onChange={e => setLight(e.target.value || null)}><option value="">Best per strip</option>{lights.map(l => <option key={l} value={l}>{LIGHT_NAMES[l] ?? l}</option>)}</select></label>}
         <button type="button" className="scroll-3d-icon" aria-label="Reset the view" onClick={() => runtime.current?.fit()}><RotateCcw size={15} /></button>
+        {media === null && PHOTO_SITE && <a className="reader-text-button scroll-3d-photos" href={`${PHOTO_SITE}#scroll/3d`} target="_blank" rel="noreferrer" title="The photographs of the scroll are on a separate copy of the atlas for approved readers"><Lock size={14} />Photographs (sign-in)</a>}
         <button type="button" className="reader-text-button" onClick={onClose}><BookOpen size={14} />Text view</button>
       </div>
     </header>
@@ -346,7 +348,7 @@ export default function Scroll3d({ columns, column, onColumn, onClose }: Props) 
         <p>The columns follow the segment map in the radiograph captions of Brizemeure, Lacoudre and Puech 2006 (plates CCCXXXIII–CCCLVI), which give XI = 19–20 and XII = 21–23. A segment shared by two columns is split at its middle.</p>
         {modelFit && <p>Registered model: each strip is unrolled along its surface from the left, centre and right frames of the 1988 photographs. Its length is a lower limit, and the sheet is drawn at the sum of these lengths, not at 2.4 m. Cut into strips, each strip takes the curve found from the same frames; strips with one frame have a modelled arc. The layers of a strip lie on one grid. The facsimile, the Allegro prints, Milik’s hand copy and the radiographs were fitted automatically and can be off by part of a line; Milik’s column I and several radiographs did not fit and are left out.</p>}
         <p>{modelFit ? "Backs show the USC verso photograph, mirrored, where one exists." : images.length ? "Strip widths are measured on the 1988 photographs, with the strip height taken as 30 cm, and scaled together to 2.4 m because the photographs show the strips curved. The strip outlines are cut out of the photographs automatically; backs show the USC verso photograph, mirrored, where one exists." : "Strip widths are assumed."} The roll is one illustrative roll with the inscribed face inside; the scroll was found as two rolls, and the joins of its three sheets are not drawn.</p>
-        {!images.length && (PHOTO_SITE ? <p>The photographs, facsimile and plates are available to approved readers on the <a href={PHOTO_SITE} target="_blank" rel="noreferrer">photo version of the atlas</a>, which needs a sign-in.</p> : <p>The photographs are not published here.</p>)}
+        {!images.length && (PHOTO_SITE ? <p>The photographs, facsimile and plates are available to approved readers on the <a href={`${PHOTO_SITE}#scroll/3d`} target="_blank" rel="noreferrer">photo version of the atlas</a>, which needs a sign-in.</p> : <p>The photographs are not published here.</p>)}
       </details>
     </div>
     {gallery.length > 0 || scope === "all" ? <section className="scroll-3d-gallery" aria-label="Images of the scroll">
