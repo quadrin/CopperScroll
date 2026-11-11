@@ -1673,3 +1673,12 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **No level changes.** A [change list](../sources/hexagon_registration_2026-11-11/regional_checklist_change_list.csv) proposes additions to the regional checklist; its record numbers are unchecked.
 - **Exposure.** The reader saw Tell es-Sultan, the Jericho palaces, Qumran, ʿEin Feshkha, Hyrcania and the Kafrein forts on the images, with the project notes of 9–11 November open. Nothing here is unseen-ground evidence.
 
+## 11 November 2026 (later) — CORONA 1967 registered; Netzer 2001 plans on the 1978 image (exploratory)
+
+- **Method (exploratory; one reader, not blind; no registered prediction).** CORONA DF041 tile d (26 September 1967) was registered to the rectified HEXAGON images by block matching (16–17 m). Photographs of the Netzer 2001 plan portfolio were corrected from their grid borders and placed on the 5 May 1978 image by the site grid, with one anchor and one rotation taken from plan 14. [Record](../sources/hexagon_registration_2026-11-11/README.md), notes 08–11.
+- **Jericho palaces.** Pools Complex (plan 14), Twin Palaces (26) and Northern Wing (35) agree to 5–15 m; Areas AA, AC and the Second Palace (plans 11, 12, 29) are probable only. The areas are not open on 1 December 1974 or in 1967. Nothing bears on a scroll entry.
+- **Kafrein.** No dam or reservoir on 26 September 1967; the Plateau Fort outline is present. The checklist has no record for the Plateau Fort.
+- **Corrections.** The first CORONA transform was about 330 m off at Kafrein (stated as 100–200 m); a window named Kafrein was Shunat Nimrin; a Nebi Musa size from the 1978 window (65 by 77 m) was wrong because the window cuts the compound; the grid square is 10 m, not 20 m as one note said.
+- **Change list.** [26 lines](../sources/hexagon_registration_2026-11-11/regional_checklist_change_list.csv), record numbers checked against the 9 November checklist, accepted by the owner. No level changes.
+- **Exposure.** The reader saw the Jericho palace plans and images, Nebi Musa, Deir Hajla and the Kafrein sites, with the project notes open. Nothing here is unseen-ground evidence.
+

@@ -1,0 +1,50 @@
+{
+ "image": "CORONA DS1101-2168DF041, tile d, 26 September 1967",
+ "crs": "EPSG:2039",
+ "form": "[E,N] = [x,y,1] @ A (tile pixels)",
+ "west": {
+  "A": [
+   [
+    2.1393690801848737,
+    0.3628650657528097
+   ],
+   [
+    0.1282937644508913,
+    -2.117663262002244
+   ],
+   [
+    201811.9247661194,
+    640967.5319501681
+   ]
+  ],
+  "fit": "341 blocks against HEXAGON F017b of 1 Dec 1974, rms 16 m",
+  "valid": "tile x 16500 to 23500",
+  "scales_m_per_px": [
+   2.17,
+   2.12
+  ]
+ },
+ "east": {
+  "A": [
+   [
+    2.0428526304228143,
+    0.414547604763138
+   ],
+   [
+    0.18289281606030794,
+    -2.0530309471930646
+   ],
+   [
+    203924.97293678156,
+    639253.9469339674
+   ]
+  ],
+  "fit": "136 blocks against HEXAGON A015c of 25 Jun 1974 (Kafrein window), rms 17 m",
+  "valid": "tile x 26900 to 29700, y 4300 to 7600",
+  "scales_m_per_px": [
+   2.08,
+   2.06
+  ]
+ },
+ "note": "The west transform is wrong by approximately 330 m at Kafrein. Use the east transform there. Between the two areas (Shunat Nimrin) there is no control."
+}
