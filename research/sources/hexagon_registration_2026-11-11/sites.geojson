@@ -99,12 +99,12 @@
    },
    "properties": {
     "name": "Nebi Musa",
-    "status": "Checked (position and setting)",
+    "status": "Checked (two dates; wall lengths agree with published values)",
     "type": "shrine compound",
     "error_m": 60,
     "position_source": "image, tile F017b",
-    "image": "F017b",
-    "note": "Walled compound approximately 65 by 85 m with a court, in a large cemetery; 30 m from the predicted place on the new full-size window; no plan test",
+    "image": "F017b, F007c",
+    "note": "Trapezoid on the image of 1 Dec 1974: north side approximately 66 to 70 m, west 67 m, east 66 m, south 53 m. Published wall lengths 74, 70, 68 and 55 m (Madain Project page; primary source not seen). The window of 5 May 1978 cuts the south part",
     "alt_names": ""
    }
   },
@@ -123,8 +123,8 @@
     "type": "monastery",
     "error_m": 50,
     "position_source": "image, tile F017b",
-    "image": "F017b",
-    "note": "Position, size and layout; compound 40 by 70 m in 1974",
+    "image": "F017b, F007c, DF041d",
+    "note": "Position, size and layout; compound 40 by 70 m in 1974. Same form on 5 May 1978: south block 39 by 37 m with dome mark, north court 26 by 34 m. Dark spot at this place on CORONA 26 Sep 1967",
     "alt_names": "Monastery of St Gerasimus, Qasr Hajla"
    }
   },
@@ -243,8 +243,8 @@
     "type": "fort (Iron Age II)",
     "error_m": 60,
     "position_source": "image, tile A015c (25 Jun 1974)",
-    "image": "A015c, A017e",
-    "note": "50.5 by 49.5 m; no cistern recorded",
+    "image": "A015c, A017e, DF041d",
+    "note": "50.5 by 49.5 m; no cistern recorded. Square outline also on CORONA 26 Sep 1967",
     "alt_names": "Tell al-Matabi (maps)"
    }
   },
@@ -300,11 +300,11 @@
    "properties": {
     "name": "Kafrein dam, centre of the crest",
     "status": "Checked",
-    "type": "dam (1967)",
+    "type": "dam (built after 26 September 1967)",
     "error_m": 30,
     "position_source": "elevation model",
-    "image": "A015c, A017e",
-    "note": "Control point; crest 469 m on the image, 480 m published",
+    "image": "A015c, A017e, DF041d",
+    "note": "Control point; crest 469 m on the image, 480 m published. No dam and no water on CORONA 26 Sep 1967",
     "alt_names": ""
    }
   },
@@ -384,7 +384,7 @@
     "error_m": 100,
     "position_source": "image, tile A015c",
     "image": "A015c",
-    "note": "Building not identified on the full-size window of 1 Dec 1974; two dark angular marks of 10 to 12 m with pits round them (modern by form)",
+    "note": "Building Possible on HEXAGON; Checked by form on APAAME frames",
     "alt_names": ""
    }
   },
@@ -439,12 +439,12 @@
    },
    "properties": {
     "name": "Tell Iktanu",
-    "status": "Checked (position); fort on the top Possible",
+    "status": "Probable",
     "type": "tell",
     "error_m": 40,
     "position_source": "elevation model; OpenBible point 60 m",
     "image": "A015c",
-    "note": "Long hill (approximately 400 m, north-east to south-west) north-west of the highway, with one rectangular outline of approximately 45 by 30 m on its top (image of 1 Dec 1974)",
+    "note": "Light oval hill north-west of the highway",
     "alt_names": ""
    }
   },
@@ -459,12 +459,12 @@
    },
    "properties": {
     "name": "Dark oval hill south of the highway",
-    "status": "Possible",
+    "status": "Seen (not a hill)",
     "type": "hill",
     "error_m": 80,
     "position_source": "image, tile A015c",
     "image": "A015c",
-    "note": "Possible second part of Iktanu; not confirmed",
+    "note": "Light on CORONA 26 Sep 1967, dark on 25 Jun 1974: plants of one season. Not the south hill of Iktanu",
     "alt_names": ""
    }
   },
@@ -585,6 +585,186 @@
     "position_source": "image, tile F018b east shore window",
     "image": "F018b",
     "note": "Probable mouth of Wadi Zarqa Maʿin",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4345,
+     31.8541
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, Pools Complex (two pools)",
+    "status": "Checked",
+    "type": "two pools with halls",
+    "error_m": 40,
+    "position_source": "image, tile F007c (5 May 1978)",
+    "image": "F007c",
+    "note": "Plan test with Netzer 2001 plan 14 (scale of the bar, one anchor, turn 13 degrees from the plan north); each pool approximately 18 by 14 m on the image",
+    "alt_names": "Hasmonean winter palaces, Area AB"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4367,
+     31.8522
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, northern wing of the third palace",
+    "status": "Checked",
+    "type": "palace wing",
+    "error_m": 40,
+    "position_source": "image, tile F007c",
+    "image": "F007c",
+    "note": "Plan test with Netzer 1975 fig. 2; agreement 10 to 20 m. Second test with Netzer 2001 plan 35 by the site grid; agreement 5 to 10 m",
+    "alt_names": "Herod, Area north of Wadi Qelt"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4349,
+     31.8533
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, Twin Palaces (Area AE)",
+    "status": "Checked",
+    "type": "excavated buildings",
+    "error_m": 50,
+    "position_source": "image, tile F007c",
+    "image": "F007c",
+    "note": "Plan test with Netzer 2001 plan 26 by the site grid (no free value; anchor and turn from plan 14); agreement 5 to 10 m on the image of 5 May 1978",
+    "alt_names": "Area AE"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.622,
+     31.9003
+    ]
+   },
+   "properties": {
+    "name": "Shunat Nimrin, road junction",
+    "status": "Probable",
+    "type": "village and road junction",
+    "error_m": 200,
+    "position_source": "image, CORONA DF041 d (26 Sep 1967), mean of two transforms",
+    "image": "DF041d",
+    "note": "Tell Nimrin not identified on the image",
+    "alt_names": "South Shuna"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4335,
+     31.854
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, Area AA (Buried Palace and Fortified Palace)",
+    "status": "Probable",
+    "type": "palace mound",
+    "error_m": 50,
+    "position_source": "image, tile F007c (5 May 1978)",
+    "image": "F007c",
+    "note": "Netzer 2001 plan 11 by the site grid; trenches and rooms inside the frame of the plan; agreement 10 to 20 m",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6682,
+     31.8163
+    ]
+   },
+   "properties": {
+    "name": "Tell Iktanu, lower south hill",
+    "status": "Probable",
+    "type": "hill (settlement in the literature)",
+    "error_m": 60,
+    "position_source": "elevation model (second summit, 18 m lower than the north hill)",
+    "image": "A015c, A017e",
+    "note": "South-east of the highway, approximately 450 m south-west of the north hill. Prag: a lower south hill with Area C and Site A; her plan not seen",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4351,
+     31.8534
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, Herod's Second Palace (Areas AG and AL)",
+    "status": "Probable",
+    "type": "palace",
+    "error_m": 50,
+    "position_source": "image, tile F007c (5 May 1978)",
+    "image": "F007c",
+    "note": "Netzer 2001 plan 29 by the site grid; excavated rooms inside the frame of the plan, east of the Twin Palaces",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4334,
+     31.8542
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, Area AC",
+    "status": "Probable",
+    "type": "excavated buildings",
+    "error_m": 50,
+    "position_source": "image, tile F007c",
+    "image": "F007c",
+    "note": "Netzer 2001 plan 12 by the site grid; west part of the palace mound",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4346,
+     31.8546
+    ]
+   },
+   "properties": {
+    "name": "Jericho palaces, Hasmonean Garden of the Pools Complex",
+    "status": "Possible",
+    "type": "garden enclosure",
+    "error_m": 50,
+    "position_source": "site grid of Netzer 2001 plan 25",
+    "image": "F007c",
+    "note": "Open ground north of the pools on the image; no test is possible",
     "alt_names": ""
    }
   }
