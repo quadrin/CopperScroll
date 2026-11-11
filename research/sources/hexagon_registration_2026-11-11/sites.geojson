@@ -1,0 +1,592 @@
+{
+ "type": "FeatureCollection",
+ "name": "copper_scroll_sites_2026-11-11",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4443,
+     31.871
+    ]
+   },
+   "properties": {
+    "name": "Tell es-Sultan",
+    "status": "Checked",
+    "type": "tell",
+    "error_m": 50,
+    "position_source": "image, tile F017b (1 Dec 1974)",
+    "image": "F017b",
+    "note": "Ancient Jericho. Mound approximately 270 by 150 m",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4367,
+     31.8506
+    ]
+   },
+   "properties": {
+    "name": "Tulul Abu el-ʿAlayiq, southern mound",
+    "status": "Checked",
+    "type": "palace complex",
+    "error_m": 50,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "Plan test with Netzer 1975 fig. 2; sunken garden wall, pool B107",
+    "alt_names": "Hasmonean and Herodian palaces"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4402,
+     31.8479
+    ]
+   },
+   "properties": {
+    "name": "Birket Musa",
+    "status": "Checked",
+    "type": "pool",
+    "error_m": 50,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "174 by 143 m on the image; Survey 172 by 144 m",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4289,
+     31.8746
+    ]
+   },
+   "properties": {
+    "name": "Quruntul, summit enclosure",
+    "status": "Checked",
+    "type": "enclosure (modern wall)",
+    "error_m": 80,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "Modern wall with the unfinished church; not the ancient fort (Meshel 1978)",
+    "alt_names": "Dok, Jebel Quruntul"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4317,
+     31.7867
+    ]
+   },
+   "properties": {
+    "name": "Nebi Musa",
+    "status": "Checked (position and setting)",
+    "type": "shrine compound",
+    "error_m": 60,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "Walled compound approximately 65 by 85 m with a court, in a large cemetery; 30 m from the predicted place on the new full-size window; no plan test",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.5014,
+     31.82
+    ]
+   },
+   "properties": {
+    "name": "Deir Hajla",
+    "status": "Checked",
+    "type": "monastery",
+    "error_m": 50,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "Position, size and layout; compound 40 by 70 m in 1974",
+    "alt_names": "Monastery of St Gerasimus, Qasr Hajla"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4598,
+     31.741
+    ]
+   },
+   "properties": {
+    "name": "Khirbet Qumran",
+    "status": "Checked",
+    "type": "settlement",
+    "error_m": 60,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "Plan test with Magen and Peleg 2007 fig. 4",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4525,
+     31.7159
+    ]
+   },
+   "properties": {
+    "name": "ʿEin Feshkha building",
+    "status": "Checked",
+    "type": "building",
+    "error_m": 60,
+    "position_source": "image, tile F017b",
+    "image": "F017b",
+    "note": "Plan tests with Humbert and Chambon pl. XLIII and Hirschfeld 2004 fig. 3",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.3659,
+     31.7192
+    ]
+   },
+   "properties": {
+    "name": "Hyrcania (Khirbet el-Mird)",
+    "status": "Checked",
+    "type": "fort with reservoirs and aqueducts",
+    "error_m": 50,
+    "position_source": "image, tile F018b; summit of the elevation model 28 m",
+    "image": "F018b",
+    "note": "Reservoirs and fort Checked with plans of Wright and Patrich; aqueduct course mostly not identified",
+    "alt_names": "Khirbet el-Mird"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.3314,
+     31.7051
+    ]
+   },
+   "properties": {
+    "name": "Mar Saba",
+    "status": "Checked",
+    "type": "monastery",
+    "error_m": 50,
+    "position_source": "image, tile F018b",
+    "image": "F018b",
+    "note": "Position only",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4429,
+     31.6819
+    ]
+   },
+   "properties": {
+    "name": "Khirbet Mazin",
+    "status": "Checked",
+    "type": "building at the shore",
+    "error_m": 50,
+    "position_source": "image, tile F018b (three-point transform with shift)",
+    "image": "F018b",
+    "note": "Compared with the orthophoto of HA 136 (2024)",
+    "alt_names": "Metzad Kidron, Qasr el-Yahud (south)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6844,
+     31.8416
+    ]
+   },
+   "properties": {
+    "name": "Plateau Fort",
+    "status": "Checked",
+    "type": "fort (Iron Age II)",
+    "error_m": 60,
+    "position_source": "image, tile A015c (25 Jun 1974)",
+    "image": "A015c, A017e",
+    "note": "50.5 by 49.5 m; no cistern recorded",
+    "alt_names": "Tell al-Matabi (maps)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6793,
+     31.8396
+    ]
+   },
+   "properties": {
+    "name": "Habbasa",
+    "status": "Checked",
+    "type": "fort with five cisterns",
+    "error_m": 50,
+    "position_source": "image, tile A017e (1 Dec 1974)",
+    "image": "A015c, A017e",
+    "note": "Row of roofless chambers, approximately 50 m; plan test with Prag and Barnes fig. 9",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6733,
+     31.8527
+    ]
+   },
+   "properties": {
+    "name": "Barakat",
+    "status": "Checked (form); Probable (position)",
+    "type": "fort",
+    "error_m": 80,
+    "position_source": "image, tile A015c",
+    "image": "A015c, A017e",
+    "note": "Grid reference in Prag and Barnes is 340 to 385 m south of this place (probable error in the paper)",
+    "alt_names": "Tell Barakat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6761,
+     31.8511
+    ]
+   },
+   "properties": {
+    "name": "Kafrein dam, centre of the crest",
+    "status": "Checked",
+    "type": "dam (1967)",
+    "error_m": 30,
+    "position_source": "elevation model",
+    "image": "A015c, A017e",
+    "note": "Control point; crest 469 m on the image, 480 m published",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6526,
+     31.8507
+    ]
+   },
+   "properties": {
+    "name": "Tell Kafrein",
+    "status": "Checked",
+    "type": "tell",
+    "error_m": 30,
+    "position_source": "elevation model; OpenBible point 30 m",
+    "image": "A015c, A017e",
+    "note": "Control point",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.674,
+     31.8407
+    ]
+   },
+   "properties": {
+    "name": "Tell el-Hammam, upper tell",
+    "status": "Checked",
+    "type": "tell",
+    "error_m": 50,
+    "position_source": "elevation model (middle of the ridge)",
+    "image": "A015c, A017e",
+    "note": "Control point; OpenStreetMap outline agrees",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6719,
+     31.8387
+    ]
+   },
+   "properties": {
+    "name": "Tree group at the foot of Tell el-Hammam",
+    "status": "Seen",
+    "type": "probable springs",
+    "error_m": 80,
+    "position_source": "image, tile A015c",
+    "image": "A015c",
+    "note": "Probable place of the warm springs",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6754,
+     31.863
+    ]
+   },
+   "properties": {
+    "name": "Umm Ḥadhar hill, dark patch",
+    "status": "Probable (hill)",
+    "type": "building with well-cistern (literature)",
+    "error_m": 100,
+    "position_source": "image, tile A015c",
+    "image": "A015c",
+    "note": "Building not identified on the full-size window of 1 Dec 1974; two dark angular marks of 10 to 12 m with pits round them (modern by form)",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6443,
+     31.8257
+    ]
+   },
+   "properties": {
+    "name": "Tell er-Rameh",
+    "status": "Checked",
+    "type": "tell",
+    "error_m": 30,
+    "position_source": "elevation model = published point; image 45 to 95 m",
+    "image": "A015c, A017e",
+    "note": "The round mound beside the straight road",
+    "alt_names": "Livias, Betharamphtha (usual identification)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6491,
+     31.8299
+    ]
+   },
+   "properties": {
+    "name": "Oval mound north-east of Tell er-Rameh",
+    "status": "Seen",
+    "type": "hill",
+    "error_m": 80,
+    "position_source": "image, tile A015c",
+    "image": "A015c, A017e",
+    "note": "Not Tell er-Rameh; no name",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6713,
+     31.8192
+    ]
+   },
+   "properties": {
+    "name": "Tell Iktanu",
+    "status": "Checked (position); fort on the top Possible",
+    "type": "tell",
+    "error_m": 40,
+    "position_source": "elevation model; OpenBible point 60 m",
+    "image": "A015c",
+    "note": "Long hill (approximately 400 m, north-east to south-west) north-west of the highway, with one rectangular outline of approximately 45 by 30 m on its top (image of 1 Dec 1974)",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6745,
+     31.8184
+    ]
+   },
+   "properties": {
+    "name": "Dark oval hill south of the highway",
+    "status": "Possible",
+    "type": "hill",
+    "error_m": 80,
+    "position_source": "image, tile A015c",
+    "image": "A015c",
+    "note": "Possible second part of Iktanu; not confirmed",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6762,
+     31.8217
+    ]
+   },
+   "properties": {
+    "name": "Road works beside the Dead Sea road",
+    "status": "Seen",
+    "type": "military works (20th century)",
+    "error_m": 80,
+    "position_source": "image, tile A015c",
+    "image": "A015c, A017e",
+    "note": "Not ancient",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6238,
+     31.5675
+    ]
+   },
+   "properties": {
+    "name": "Machaerus, citadel hill",
+    "status": "Checked",
+    "type": "fort with cisterns",
+    "error_m": 30,
+    "position_source": "elevation model summit (image position is 213 m west: relief displacement)",
+    "image": "F018c",
+    "note": "Identified on the image of 1974 before the excavations of 1978 to 1981",
+    "alt_names": "Mukawer"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4404,
+     31.8652
+    ]
+   },
+   "properties": {
+    "name": "Tell es-Samarat",
+    "status": "Possible (1974); Checked on the frames of 1918",
+    "type": "tell",
+    "error_m": 80,
+    "position_source": "direction and distance from Tell es-Sultan (Survey sheet): 210 degrees, 740 m",
+    "image": "F017b",
+    "note": "Oval area of approximately 60 by 140 m in the fields in 1974",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4388,
+     31.8723
+    ]
+   },
+   "properties": {
+    "name": "Sugar mill (Tawahin es-Sukkar)",
+    "status": "Possible (1974); Checked on the frames of 1918",
+    "type": "mill compound",
+    "error_m": 80,
+    "position_source": "direction and distance from Tell es-Sultan (Survey sheet): 285 degrees, 535 m",
+    "image": "F017b",
+    "note": "Buildings with trees in 1974; old compound not separated from farm buildings",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.5637,
+     31.5968
+    ]
+   },
+   "properties": {
+    "name": "ʿAin ez-Zara oasis (Callirrhoe)",
+    "status": "Probable",
+    "type": "oasis with excavated buildings (literature)",
+    "error_m": 150,
+    "position_source": "image, tile F018b east shore window (centre of the field area)",
+    "image": "F018b",
+    "note": "Farmed plain with spring courses and no shore road in 1974; the excavated buildings are not identified on the image",
+    "alt_names": "Callirrhoe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.5655,
+     31.62
+    ]
+   },
+   "properties": {
+    "name": "Canyon mouth with a round fan north of the oasis",
+    "status": "Probable",
+    "type": "wadi mouth",
+    "error_m": 150,
+    "position_source": "image, tile F018b east shore window",
+    "image": "F018b",
+    "note": "Probable mouth of Wadi Zarqa Maʿin",
+    "alt_names": ""
+   }
+  }
+ ]
+}
