@@ -10,14 +10,17 @@ export const SHEET_LENGTH_M = 2.4;
 export const SEGMENT_COUNT = 23;
 
 /**
- * Segments that carry each column, I to XII. I–X follow the radiograph
- * captions of Puech 2006 (research/text/letter_controls/controls_manifest.csv).
- * XI = 19–20 and XII = 21–23 are a layout assumption, not a verified map.
+ * Segments that carry each column, I to XII, from the radiograph captions of
+ * Brizemeure, Lacoudre and Puech 2006, plates CCCXXXIII–CCCLVI (I–X also in
+ * research/text/letter_controls/controls_manifest.csv; XI = 19–20 and
+ * XII = 21–23 read from the plates on 2026-11-11).
  */
 export const COLUMN_SEGMENTS: [number, number][] = [[1, 4], [5, 6], [7, 8], [9, 10], [10, 11], [11, 12], [13, 14], [15, 15], [16, 17], [17, 18], [19, 20], [21, 23]];
 
 
 export type StripBox = { segment: number; u0: number; u1: number; measured: boolean; columns: number[] };
+/** One strip of the registered model: lengths in metres, and the tangent angle (radians) of its cross-section at equal steps along the surface. */
+export type StripFit = { arc: number; chord: number; height: number; measured: boolean; tangent: number[] };
 export type ColumnBox = { index: number; u0: number; u1: number };
 export type ScrollLayout = { length: number; strips: StripBox[]; columns: ColumnBox[] };
 
@@ -27,13 +30,15 @@ export type ScrollLayout = { length: number; strips: StripBox[]; columns: Column
  * metres by segment, measured on photographs; the other strips get their mean.
  * All widths are then scaled together so the sheet keeps its ~2.4 m length:
  * the photographs show curved strips, so their widths are short.
+ * With `absolute`, the widths are lengths along the surface (the registered
+ * model) and are used as they are.
  */
-export function layoutScroll(widths: Record<number, number> = {}): ScrollLayout {
+export function layoutScroll(widths: Record<number, number> = {}, absolute = false): ScrollLayout {
   const measured = Object.entries(widths).filter(([s, w]) => +s >= 1 && +s <= SEGMENT_COUNT && w > 0);
   const measuredSum = measured.reduce((t, [, w]) => t + w, 0);
   const unmeasured = SEGMENT_COUNT - measured.length;
   const mean = measured.length ? measuredSum / measured.length : SHEET_LENGTH_M / SEGMENT_COUNT;
-  const scale = SHEET_LENGTH_M / (measuredSum + unmeasured * mean);
+  const scale = absolute ? 1 : SHEET_LENGTH_M / (measuredSum + unmeasured * mean);
   const fill = mean * scale;
   let u = 0;
   const strips: StripBox[] = [];
@@ -80,6 +85,24 @@ export function sheetPoint(u: number, unroll: number, length: number, core = 0.0
   return [length / 2 - up + (c * dx - sn * dz), -(sn * dx + c * dz)];
 }
 
+/**
+ * Cross-section of a curved strip, as [x, z] for n + 1 points from its right
+ * edge (start of the line) to its left edge. `tangent` is sampled from the left
+ * edge to the right edge of the photograph. `amount` 0 = flat, 1 = as measured.
+ * The chord is laid on z = 0 and the middle of the strip stands back from it,
+ * so the inscribed face is the hollow side, towards +z.
+ */
+export function stripProfile(tangent: number[], width: number, n: number, amount: number): [number, number][] {
+  const m = tangent.length - 1, ds = width / n, px = [0], pz = [0];
+  const at = (f: number) => { const t = Math.max(0, Math.min(m, f * m)), i = Math.min(m - 1, Math.floor(t)); return (tangent[i] + (tangent[i + 1] - tangent[i]) * (t - i)) * amount; };
+  for (let i = 0; i < n; i++) { const a = at((i + .5) / n); px.push(px[i] + ds * Math.cos(a)); pz.push(pz[i] + ds * Math.sin(a)); }
+  const turn = -Math.atan2(pz[n] - pz[0], px[n] - px[0]), c = Math.cos(turn), s = Math.sin(turn);
+  const pts = px.map((x, i) => [x * c - pz[i] * s, x * s + pz[i] * c] as [number, number]);
+  const mid = (pts[0][0] + pts[n][0]) / 2, edge = Math.max(pts[0][1], pts[n][1]);
+  // Left-to-right order becomes right-to-left, the order of the strip's vertices.
+  return pts.map(([x, z]) => [x - mid, z - edge] as [number, number]).reverse();
+}
+
 /** Light codes in the WSRP 1988 file names. Meanings are inferred; WSRP has not confirmed them. */
 export const LIGHT_NAMES: Record<string, string> = {
   RLT: "left top light", RCT: "centre top light", RRT: "right top light",
@@ -87,6 +110,9 @@ export const LIGHT_NAMES: Record<string, string> = {
   RT: "top light", RB: "bottom light", RET: "edge top light", REB: "edge bottom light",
   RCS: "centre side light", RBC: "bottom centre light", RTC: "top centre light",
   FRS: "fragments", RFR: "fragments",
+  // Layers of the registered model, all on one grid for each strip.
+  MT: "top light (three frames blended)", MB: "bottom light (three frames blended)", MR: "relief (top against bottom light)",
+  MN: "b&w negative, 1988", MF: "EDF facsimile", MA: "Allegro, 1955–56", MM: "Milik's hand copy on the relief", MX: "EDF radiograph",
 };
 
 export type FrameName = { ok: true; segment: number; light: string; key: string } | { ok: false; reason: "unrecognised" };
@@ -102,7 +128,7 @@ export function parseFrameName(name: string): FrameName {
 }
 
 /** Light preference when a strip has several frames. */
-export const LIGHT_ORDER = ["RCT", "RT", "RCB", "RB", "RLT", "RRT", "RLB", "RRB", "RET", "REB", "RTC", "RBC", "RCS", "FRS", "RFR"];
+export const LIGHT_ORDER = ["MT", "MB", "MR", "MN", "MF", "MA", "MM", "MX", "RCT", "RT", "RCB", "RB", "RLT", "RRT", "RLB", "RRB", "RET", "REB", "RTC", "RBC", "RCS", "FRS", "RFR"];
 export function pickFrame<T extends { light: string }>(frames: T[], wanted: string | null) {
   if (!frames.length) return null;
   if (wanted) { const hit = frames.find(f => f.light === wanted); if (hit) return hit; }
