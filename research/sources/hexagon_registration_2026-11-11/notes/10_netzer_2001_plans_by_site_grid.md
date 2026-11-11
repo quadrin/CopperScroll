@@ -1,5 +1,7 @@
 # Plans 11, 26 and 35 of Netzer 2001 on the image of 1978 by the site grid; Shunat Nimrin — 11 November 2026
 
+> Correction (same day, later): one square of the site grid is 10 m, not 20 m, and the northern wing is approximately 300 m from the anchor, not 350 m. The calculation used 10 m. See note 11.
+
 ## Result first
 
 1. **Plans 11, 26 and 35 of Netzer 2001 are now on the image of 5 May 1978.** I did not use flat scans. I used the site grid that is printed on the border of each plan.
