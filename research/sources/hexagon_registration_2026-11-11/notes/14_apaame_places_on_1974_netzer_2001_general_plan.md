@@ -57,6 +57,7 @@ Plan 1 has a 1000 m grid with no numbers. With Tell es-Sultan at about 192 / 142
 
 ## Not done
 
-- No clear second image for Karama Ruins 14 (weak).
+- Karama Ruins 14, addendum: the forward-camera frame of the same day (tile D3C1209-200214F017_c) shows the same round light feature with the same shadow and inner spot (block match 0.87 against 0.22; figure `figures/pair74_aft_forward_karama_ruins_14.jpg`). Status Checked on two exposures of one day; this shows that the feature is on the ground and not a film defect. The June 1974 image is weak.
+- All five places from the APAAME photographs are now Checked; for Suwwan this is for presence only.
 - Karama Ruins 16, Karama Rings 3 and Karama Ring 4 are west of the new window.
 - The half-square question of the Netzer grid.
