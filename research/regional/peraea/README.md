@@ -116,6 +116,25 @@ All other feature quotes were found on the cited page (the es-Salt row quotes th
 - Failed: https://megajordan.org/ (TLS: connection reset by peer; the http:// address worked); https://publication.doa.gov.jo/robots.txt (404, no robots file); https://www.getty.edu/projects/mega-jordan/ (404); English Wikipedia titles Callirrhoe, Tulul_adh-Dhahab, Gadara_(Peraea), Amathus_(Jordan), Tall_Jadur, Tell_Ammata, Tall_Iktanu (no such page). DAAHL and the IAA archive were unreachable through the proxy when another worker tried them (proxy log), and were not needed here.
 - Nothing was opened that shows the strip north of Tell es-Sultan or column XII of the scroll.
 
+## Position corrections of 11 November 2026 (exploratory; the frozen files are not changed)
+
+The satellite image work ([site table](../../sources/hexagon_registration_2026-11-11/sites.csv)) found that three gazetteer points are not at their sites. The frozen `gazetteer.csv`, `build_gazetteer.py`, `PLAN_v3.md` and `outputs_v3/` stay as they are, because PLAN_v3 does not permit a change of an input after a result. The corrections are in a separate table, [`gazetteer_position_corrections_2026-11-11.csv`](gazetteer_position_corrections_2026-11-11.csv), with the frozen value, the corrected value and the evidence for each site.
+
+| Site | Frozen point | Corrected point | Moved | What is at the frozen point |
+|---|---|---|---|---|
+| tall_al_kafrayn | 31.84972, 35.67861 | 31.8507, 35.6526 | 2,460 m | the east end of the Kafrein dam |
+| tell_nimrin | 31.90900, 35.63800 | 31.9010, 35.6251 | 1,508 m | a different mound (EAMENA-0184755, name BLEIBEL) |
+| kh_al_habbasa | 31.84457, 35.67959 | 31.8396, 35.6793 | 552 m | no structure on the two images of 1974 |
+
+Each corrected point has two sources: the registered HEXAGON images of 1974 and one EAMENA record (30 m, 40 m and 70 m from the corrected points). The point of tall_barakat (Ji and Lee 2002 grid reference) is 40 m from the fort on the images and is not changed.
+
+The three sites have no `w2b_place_id`, so only the sensitivity variant S2_broad uses them. [`scripts/run_s2_corrected_positions.py`](scripts/run_s2_corrected_positions.py) runs S2_broad again with the corrections applied in memory and writes [`exploratory/s2_corrected_positions_2026-11-11.json`](exploratory/s2_corrected_positions_2026-11-11.json). The run with the frozen points reproduces `results_v3.json` (difference 0). With the corrected points, the latent P(Koḥlit at transjordan) changes from 0.0143 to 0.0141, P(entry 60 at transjordan) from 0.0086 to 0.0082, and no entry changes by more than 0.0006 (total variation). This is a new exploratory variant. It is not a part of PLAN_v3 and makes no identification claim.
+
+```sh
+python3 -I -B research/regional/peraea/scripts/run_s2_corrected_positions.py --check
+python3 -I -B research/regional/peraea/tests/test_position_corrections.py
+```
+
 ## Run and test
 
 From the repository root (Python 3 with numpy and pyproj, which W2B already needs):
