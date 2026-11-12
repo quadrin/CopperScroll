@@ -42,16 +42,17 @@ Three site positions in `gazetteer.csv` were wrong and are corrected: tall_al_ka
 - The three sites have status `partial` and no `w2b_place_id`. Thus R0, R1 (V3-P) and S1, S3, S4, S5, S6 have the same inputs and the same results as before. Only S2 (broad) changes: P(entry 60 at transjordan) 0.0086 → 0.0082; latent 0.0143 → 0.0141; no entry changes by more than 0.0006 (total variation).
 - The hashes of `gazetteer.csv`, `build_gazetteer.py` and `additions_v3.json` (which records the gazetteer hash) in the table below are the hashes after the amendment. Before the amendment they were b7abb1e6…, 90887524… and e764fbee….
 - `scripts/run_s2_corrected_positions.py` compares S2 with the file of 9 October and with the amended file.
+- Correction of 12 November 2026: the source text of the three new points gave the date of the June image as 12 June 1974. The correct date is 25 June 1974 (bucket manifest of D3C1208-400636). Only the text of `coord_source` changed; no coordinate and no result changed. The hashes below are the hashes after this correction.
 
 ## Frozen inputs (SHA-256)
 
 | File | SHA-256 |
 |---|---|
 | research/regional/peraea/plan.json | 010fa981cd2967b8443a1a30566547332758276c96ff596c820f09138393e707 |
-| research/regional/peraea/gazetteer.csv | 2a0c82244cf53c63287f90f70d29672dd87120d0c2e762fd85d99d34b5a3174a |
-| research/regional/peraea/scripts/build_gazetteer.py | 452d365bcd040fb73512c0b19ab97002f427ede8d14d67f36db9793d01d6d019 |
+| research/regional/peraea/gazetteer.csv | a334fda6b7f06fd9a4556eecb3dfc9a5317c585ffdb4486ab47bf457d764946d |
+| research/regional/peraea/scripts/build_gazetteer.py | c4941d9b6433682ba4627c749e150ec34240e03fb79c8f88507bd4cda881601b |
 | W2B_model_v1/inputs_v3/build_inputs_v3.py | 99bd3622f9c4f93d6cbb75775b3541c5c84293e2315d92e27aeee07464aa2e19 |
-| W2B_model_v1/inputs_v3/additions_v3.json | c0fd03799a6b55e25d5276ab4cb154600d183d8fca8120ad96136094938fadab |
+| W2B_model_v1/inputs_v3/additions_v3.json | d4732bf2887573e6ceaa82588d086a75495d0c311c85374f3ea747b2aaf50ff7 |
 | W2B_model_v1/inputs_v3/places_v3.csv | 381894a6e383d8f763197048d751bc8c89a5506144b295b3b77d338cc9ad3b9c |
 | W2B_model_v1/inputs_v3/candidates_v3.csv | f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5 |
 | W2B_model_v1/inputs_v3/entries_v3.csv | 7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0 |
@@ -64,10 +65,10 @@ Three site positions in `gazetteer.csv` were wrong and are corrected: tall_al_ka
 ```json
 {"frozen_inputs_sha256": {
  "research/regional/peraea/plan.json": "010fa981cd2967b8443a1a30566547332758276c96ff596c820f09138393e707",
- "research/regional/peraea/gazetteer.csv": "2a0c82244cf53c63287f90f70d29672dd87120d0c2e762fd85d99d34b5a3174a",
- "research/regional/peraea/scripts/build_gazetteer.py": "452d365bcd040fb73512c0b19ab97002f427ede8d14d67f36db9793d01d6d019",
+ "research/regional/peraea/gazetteer.csv": "a334fda6b7f06fd9a4556eecb3dfc9a5317c585ffdb4486ab47bf457d764946d",
+ "research/regional/peraea/scripts/build_gazetteer.py": "c4941d9b6433682ba4627c749e150ec34240e03fb79c8f88507bd4cda881601b",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/build_inputs_v3.py": "99bd3622f9c4f93d6cbb75775b3541c5c84293e2315d92e27aeee07464aa2e19",
- "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/additions_v3.json": "c0fd03799a6b55e25d5276ab4cb154600d183d8fca8120ad96136094938fadab",
+ "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/additions_v3.json": "d4732bf2887573e6ceaa82588d086a75495d0c311c85374f3ea747b2aaf50ff7",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/places_v3.csv": "381894a6e383d8f763197048d751bc8c89a5506144b295b3b77d338cc9ad3b9c",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/candidates_v3.csv": "f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/entries_v3.csv": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0",
