@@ -1255,6 +1255,50 @@
     "note": "The plan of 1882 marks a spring ʿAin el-Melʿab at the east end of the theatre, with a stream to the north. On the images of 1 Dec 1974 and 25 Jun 1974, a dense group of trees is at this position; the spring is not visible. Entry 58 has 'the mouth of the spring'; this is a candidate position, not evidence for the entry. The plan also marks ʿAin el-Malhah 250 m south-west and ʿAin et-Tineh at the north-east bridge.",
     "altNames": "Ain el Melab"
    }
+  },
+  {
+   "type": "Feature",
+   "id": 58,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.458,
+     31.7414
+    ]
+   },
+   "properties": {
+    "name": "Qumran, straight line on the plateau (aqueduct channel line)",
+    "status": "Probable",
+    "group": "probable",
+    "kind": "channel line (plan fit, one anchor)",
+    "errorM": 30,
+    "source": "Plan of the Qumran aqueduct (Ilan and Amit 1989, fig. 1), fitted to tile F007c (5 May 1978) with one anchor, scale from the bar; position relative to the ruin",
+    "image": "F007c, F017b",
+    "note": "Straight light line approximately 270 m long from the cliff top to the north-west of the ruin; plan points 16 to 18 are on it to approximately 5 m. Also visible on the image of 1 Dec 1974. A path or a fence on the channel line can give the same picture. NEAEHL vol. 4 p. 1237 has the entrance of the aqueduct at the north-west corner of the ruin. Entry 21 has 'the head of the water conduit'; this is not evidence for the entry.",
+    "altNames": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 59,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4555,
+     31.7408
+    ]
+   },
+   "properties": {
+    "name": "Qumran aqueduct, basin below the waterfall (plan point 2)",
+    "status": "Not confirmed",
+    "group": "open",
+    "kind": "aqueduct basin (position from a plan of 1989)",
+    "errorM": 30,
+    "source": "Plan of the Qumran aqueduct (Ilan and Amit 1989, fig. 1), fitted to tile F007c (5 May 1978) with one anchor; 412 m west and 24 m south of the centre of the ruin",
+    "image": "F007c",
+    "note": "Inside the gorge: rock and shadow on the image. The basin is not visible. Candidate A for the head of the conduit of entry 21; candidate C is the channel entrance at the north-west corner of the ruin (31.7412 N, 35.4594 E). The image cannot decide between them.",
+    "altNames": ""
+   }
   }
  ]
 }

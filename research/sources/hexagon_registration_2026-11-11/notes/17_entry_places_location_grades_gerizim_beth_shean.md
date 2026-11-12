@@ -270,12 +270,41 @@ Sources (in the project archive): the plan of Beisan (Conder and Kitchener 1882,
 
 **What this means for entry 58.** A monumental fountain of the 1st century is not in these two sources. A natural spring at the theatre of the early 1st century is on the plan of 1882. Thus the "mouth of the spring" has one candidate with a position inside the city of the period. This is a lead. I did not check if the spring was there in antiquity, and I propose no change of the rating.
 
+## Addendum 9, 12 November 2026: Qumran, the aqueduct plan on the images of 1978 and 1974 (entry 21)
+
+**Result: the survey plan of the Qumran aqueduct fits the image of 5 May 1978 with one anchor. The channel line on the plateau is a straight line on the image, and the same line is on the image of 1 December 1974. Status of the line as the channel: Probable.**
+
+Sources (in the project archive): Ilan and Amit 1989, "The aqueduct of Qumran" (Hebrew), fig. 1; Stern (ed.) 1993, NEAEHL vol. 4, p. 1237 (plan of the phase Ib settlement).
+
+- Method: scale from the bar of the plan; north at the top; no turn and no stretch; one anchor, the corner of the cliff foot at the mouth of the gorge. Positions are relative to the ruin (Checked in the site table).
+
+| Plan part | On the image of 5 May 1978 | Status |
+|---|---|---|
+| Points 16 to 18, the channel on the plateau | A straight light line, approximately 270 m long, to the north-west of the ruin. The plan points are on it to approximately 5 m | Probable |
+| Points 12 to 15, the channel on the cliff | Rock and gullies. No line is clear | Not identified |
+| Points 2 to 11, the basin, the first channel, the tunnels | Inside the gorge: rock and shadow | Not visible |
+
+- Second date: the straight line and a north-south track that meets its west end are on tile F017b of 1 December 1974. Thus the line is permanent. This does not show that it is a channel. A path or a fence on the channel line can give the same picture.
+- The NEAEHL plan has the entrance of the aqueduct at the north-west corner of the ruin. This agrees with the direction of the line. The plan shows the ruin only.
+
+**The two candidates for "the head of the water conduit" (entry 21).**
+
+| Candidate | Position (WGS 84) | From the centre of the ruin | Error |
+|---|---|---|---|
+| A, the basin below the waterfall (plan point 2) | 31.7408 N, 35.4555 E | 412 m west, 24 m south | approximately 30 m |
+| C, the channel entrance at the north-west corner of the ruin | 31.7412 N, 35.4594 E | 34 m west, 26 m north | approximately 20 m |
+
+- The image cannot decide between A and C. No large stone is visible at A or at C; a stone of 2 m is 2 to 3 pixels.
+- Limits: one anchor; an error of the north arrow of the plan moves the far points. The image of 1974 was not registered again for this step.
+- No rating is changed. Entry 22 (the fissure and the reservoir) is not compared with a plan.
+- Figures: `F007c_may78_qumran_aqueduct_plan_points.jpg` (plan points drawn on the image; no part of the published drawing), `F017b_dec74_qumran_plateau_line.jpg`.
+
 ## Not done
 
 - No rating is changed in `phase3_places.csv` or `phase5_assessments.csv`.
 - The six area places (grade C) and the two grade E places (Jordan ford, Tekoa–Herodium area) were not looked for on images.
 - No Beth Shean plan was laid on an image by a transform. The springs were placed relative to the theatre.
-- Qumran (entries 21 and 22) is not compared with a plan in this note.
+- Qumran entry 22 is not compared with a plan in this note.
 - The grades are mine. A second reader did not check them.
 - Frames D3C1209-200214F012 and D3C1208-400636F009 are with the project owner. They are not in the repository.
 
@@ -285,7 +314,7 @@ In this folder:
 - `entry_places_location_assessment_2026-11-12.csv` (37 places: grade, result, offset, image evidence)
 - `entry_assessments_with_location_grade_2026-11-12.csv` (37 Phase 5 lines with the location grade and counts of EAMENA records by feature kind)
 - `beth_shean_frame_footprints_usgs_2026-11-12.csv` (ten frames: corners from the USGS catalogue, edges at the longitude of Beth Shean)
-- `sites.csv`, `sites.geojson`, `sites.kml` (57 places; seven new: three on Mount Gerizim, three at Beth Shean, one at Kh. Ibziq)
-- `figures/`: `F014a_dec74_gerizim_octagonal_church_and_enclosure_x3.jpg`, `F012b_dec74_beth_shean_tell_and_theatre.jpg`, `F009d_jun74_beth_shean_tell_and_theatre.jpg`, `F007c_may78_choziba_x1.4_marked.jpg`, `F012b_dec74_beth_shean_swp_springs_marked.jpg`
+- `sites.csv`, `sites.geojson`, `sites.kml` (59 places; nine new: three on Mount Gerizim, three at Beth Shean, one at Kh. Ibziq, two at Qumran)
+- `figures/`: `F014a_dec74_gerizim_octagonal_church_and_enclosure_x3.jpg`, `F012b_dec74_beth_shean_tell_and_theatre.jpg`, `F009d_jun74_beth_shean_tell_and_theatre.jpg`, `F007c_may78_choziba_x1.4_marked.jpg`, `F012b_dec74_beth_shean_swp_springs_marked.jpg`, `F007c_may78_qumran_aqueduct_plan_points.jpg`, `F017b_dec74_qumran_plateau_line.jpg`
 
 Not in the repository: the plan overlays (a published plan on a Wayback image), the Wayback image, the full-size windows and the EAMENA tables.
