@@ -1,5 +1,8 @@
 # Mandate 1:20,000 map regression (Palestine Open Maps)
 
+> **Retired, 30 October 2026 (owner's decision).** The SULTAN-1 blind-test rules for Tell es-Sultan are withdrawn. All Tell es-Sultan and Jericho material is open: read it normally, at any resolution, with no registration protocol, coded tiles, blind scorer or exposure log. This covers the Commons and LoC Matson photos (Drive `06 Imagery/Tell es-Sultan and Jericho photos – Commons and LoC Matson (2026-10-17)`, formerly "SULTAN-1 reserved – do not open"), BS Pal. 1032, the 1940s maps and RAF frames, and any Garstang, PEF or Nigro record. The text below is kept as a historical record and no longer governs work; earlier "exposed" labels for this material carry no weight. See [the retirement record](../preregistration/RETIRED_BLIND_RULES_2026-10-30.md), which also retires the other blind and held-area rules.
+
+
 **What it is.** A coded reading of nine Survey of Palestine 1:20,000 sheets (1940s) around the candidate places, with a check of their published georeferencing and a comparison with SWP sheet XVIII and 2025 imagery.
 **Main result.** The published tiles match the printed Palestine grid within 3–19 m (median 10 m, 46 intersections), and mapped symbols match modern features with a median of 15 m; the Tell es-Sultan registration is rejected (E_total 48.8 m), and the map prints no opening or grave in the strip north of the tell.
 **What stays unknown.** A 1:20,000 symbol dates nothing; the marginal legend was not read; 32 of 125 mapped features were not classed for 2025; the strip north of the tell remains untested for SULTAN-1.

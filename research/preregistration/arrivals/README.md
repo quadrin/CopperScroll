@@ -1,5 +1,8 @@
 # Arrival register: predictions frozen before requested items arrive
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 **What it is:** for each of 22 requested or wanted items, what every live model in the repository predicts the item will show, frozen and hashed before it arrives.
 **Main result:** none of the items has arrived. Four XII 10 image items tie at the top of the ranking (2.24 expected Koḥlit classes excluded each); Kochavi 1972 comes next (2.21 Koḥlit classes plus 1.55 chain models). The Tell es-Sultan records separate no registered class.
 **What stays unknown:** what the items will show. Whether any reply comes. Expected values use a declared convention, not probabilities.
@@ -77,7 +80,7 @@ Universe: 26 decision classes and 25 chain models outside the decision roster. E
 
 ### Items that separate nothing, and why
 
-- **Garstang Museum, PEF, Nigro.** These were requested for active question 2. Their chain links (SULTAN-1, -5, -6) are one-sided: they can confirm a mouth–tomb pair, but cannot contradict. A new pit in the strip is not one of the registered pit roles, so it separates no decision class. Photographs locate an opening but do not date it.
+- **Garstang Museum, PEF, Nigro.** *(30 October 2026: the SULTAN-1 blind-test rules are retired by the owner; these records are opened and read normally when they arrive, without the registration protocol.)* These were requested for active question 2. Their chain links (SULTAN-1, -5, -6) are one-sided: they can confirm a mouth–tomb pair, but cannot contradict. A new pit in the strip is not one of the registered pit roles, so it separates no decision class. Photographs locate an opening but do not date it.
 - **Høgenhaven.** One reader, not blinded, outside the protocol's two-reader design. The protocol maps any such reading to "not identifiable".
 - **Meinardus and Zuckerman.** Each is the named record for reopening a closed result: entry 29 St Andrew and R11. Neither changes a live class. For R11 the protocol's terminal rule still needs an authenticated crossing.
 - **Zertal vol. I.** It touches 6 main-set units. So k ≤ 6 while m ≥ 307, and the rarity verdict "not measurable" cannot change.
