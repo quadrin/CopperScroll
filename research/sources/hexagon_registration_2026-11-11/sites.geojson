@@ -439,12 +439,12 @@
    },
    "properties": {
     "name": "Tell Iktanu",
-    "status": "Probable",
+    "status": "Checked (position and form)",
     "type": "tell",
     "error_m": 40,
     "position_source": "elevation model; OpenBible point 60 m",
     "image": "A015c",
-    "note": "Light oval hill north-west of the highway. EAMENA record: EAMENA-0185948 (46 m)",
+    "note": "Light oval hill north-west of the highway. EAMENA record: EAMENA-0185948 (46 m). Fort on the summit: Prag 1989 fig. 6 has it at −130 m (elevation model −128 m); Glueck gave 42 by 35 by 35 by 20 m; the rectangular outline of approximately 45 by 30 m on the image agrees",
     "alt_names": ""
    }
   },
@@ -684,7 +684,7 @@
     "error_m": 50,
     "position_source": "image and elevation model: middle of the spur",
     "image": "A015c, A017e",
-    "note": "Long flat-topped spur, approximately 600 by 150 m, south-east of the highway, from south-west to north-east. Agrees with the description in Prag 2024 (Introduction) and with EAMENA-0184805 \"iktanu south\" (31.81589 N, 35.66924 E). Site plan (her Fig. 1.1) not seen",
+    "note": "Long flat-topped spur, approximately 600 by 150 m, south-east of the highway, from south-west to north-east. Agrees with the description in Prag 2024 (Introduction) and with EAMENA-0184805 \"iktanu south\" (31.81589 N, 35.66924 E). Site plan (her Fig. 1.1) not seen. Prag 1989 fig. 1 (contour plan of the south hill): long hill beside the Dead Sea–Amman road, top at −144 m (elevation model −145 m)",
     "alt_names": "Katf al-Hisan"
    }
   },
@@ -786,6 +786,66 @@
     "image": "A017e, DF041d",
     "note": "Same roads and walled compound in 1967 and 1974",
     "alt_names": "South Shuna"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6875,
+     31.8746
+    ]
+   },
+   "properties": {
+    "name": "Suwwan",
+    "status": "Probable",
+    "type": "rubble mound on a spur (possible building)",
+    "error_m": 60,
+    "position_source": "image, tile A017e (1 Dec 1974), Kafrein transform",
+    "image": "A017e",
+    "note": "Dark speckled patch approximately 25 by 30 m on a spur top between two gullies. Agrees in size and ground form with 17 APAAME photographs of 28 Oct 2014 (title Suwwan; Flickr list position 231 m away). Only one satellite image shows it; CORONA 1967 too light. No straight sides visible. No EAMENA record within 500 m",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6666,
+     31.7689
+    ]
+   },
+   "properties": {
+    "name": "Karama Ruin 5 (Ain al-Heri)",
+    "status": "Probable",
+    "type": "building of two parts on a spur",
+    "error_m": 30,
+    "position_source": "image, tile A017e (1 Dec 1974), window registered to the elevation model (155 blocks, 12 m)",
+    "image": "A017e",
+    "note": "Two joined rectangles with dark wall lines, approximately 22 by 36 m and 36 by 24 m, on a flat spur top above a gorge with vegetation. Same form on APAAME photographs of 24 Sep 2017 (title Karama Ruin 5 / Heri / Ain al-Heri; Flickr list position 137 m away). No EAMENA record within 500 m",
+    "alt_names": "Heri; Ain al-Heri"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6584,
+     31.7618
+    ]
+   },
+   "properties": {
+    "name": "el-Heri Tower",
+    "status": "Probable",
+    "type": "round stone structure",
+    "error_m": 30,
+    "position_source": "image, tile A017e (1 Dec 1974), window registered to the elevation model (155 blocks, 12 m)",
+    "image": "A017e",
+    "note": "One oval ring approximately 10 m across on open ground south of a small wadi. APAAME photographs of 24 Sep 2017 show a small round stone structure on a plateau (Flickr list position 104 m away). No EAMENA record within 500 m",
+    "alt_names": ""
    }
   }
  ]

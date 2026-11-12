@@ -35,12 +35,12 @@ The notes were written in steps, and later steps corrected earlier ones. Note 04
 
 | File | Content |
 |---|---|
-| `sites.csv`, `sites.geojson`, `sites.kml` | 39 places: status, type, WGS 84 position, error, source of the position, note |
+| `sites.csv`, `sites.geojson`, `sites.kml` | 42 places: status, type, WGS 84 position, error, source of the position, note |
 | `transforms.json` | Pixel-to-grid transforms (EPSG:2039) for each tile and window, with the height term where fitted |
 | `regional_checklist_change_list.csv` | 20 proposed additions to the records of the regional checklist. **The record numbers were read from a two-column PDF and are not checked** |
 | `scripts/` | Registration (`demtool.py`, `warp.py`, `reg.py`, `auto.py`, `reg2.py`), rectified chips and overlays (`chips.py`, `pairs.py`, `ov.py`), and the cut scripts that the owner ran on the full tiles |
-| `notes/` | The thirteen working notes, in order. They are written in simplified technical English |
-| `figures/` | Four date pairs: the Kafrein dam site (1967 and 1974); Nebi Musa (1974 and 1978); Barakat with the end of the Kafrein dam (June and December 1974); Tulul Abu el-ʿAlayiq (December 1974 and May 1978) |
+| `notes/` | The fourteen working notes, in order. They are written in simplified technical English |
+| `figures/` | Four date pairs: the Kafrein dam site (1967 and 1974); Nebi Musa (1974 and 1978); Barakat with the end of the Kafrein dam (June and December 1974); Tulul Abu el-ʿAlayiq (December 1974 and May 1978). Three enlarged chips of 1 December 1974: Suwwan, Karama Ruin 5 (Ain al-Heri), el-Heri Tower |
 
 The scripts have the paths of the session that made them; they are a record of the method, not a package.
 
@@ -48,5 +48,6 @@ The scripts have the paths of the session that made them; they are a record of t
 
 - HEXAGON and CORONA images: declassified United States government imagery, distributed by the USGS.
 - Elevation model: Copernicus GLO-30 (© DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018, provided under COPERNICUS by the European Union and ESA).
-- Plans compared: Netzer 1975 (IEJ 25), Prag and Barnes 1996 (Levant 28), Wright 1961 (Biblica 42), Patrich 1989. The overlays with these plans are not in the repository.
+- Plans compared: Netzer 1975 (IEJ 25), Prag and Barnes 1996 (Levant 28), Wright 1961 (Biblica 42), Patrich 1989, Netzer 2001 (Final Reports I). The overlays with these plans are not in the repository.
+- APAAME air photographs (CC BY-NC-ND) were read for note 14; they are not in the repository.
 - Status words: Checked (compared with a plan, a report or an independent position), Probable, Possible, Seen.
