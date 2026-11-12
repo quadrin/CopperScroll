@@ -8,6 +8,7 @@ import type { Entry, Place } from "./atlas-types";
 import type { ContextEvidenceView } from "./atlas-context-evidence";
 import { allSiteBounds, candidateAreas, candidateBounds } from "./atlas-geography";
 import { imagerySource } from "./atlas-imagery";
+import imageSites from "./atlas-image-sites.json";
 import { plansForPlace, sitePlans } from "./atlas-explorer-model";
 import SiteReference from "./atlas-site-reference";
 import { MapVideoReferences, MapSourceReferences, type MapPanel } from "./atlas-map-references";
@@ -33,6 +34,9 @@ const LandscapeView=lazy(()=>import("./atlas-landscape"));
 type Props = { inspection?:ContextEvidenceView|null; onInspect?:(view:ContextEvidenceView,record?:string)=>void; representation?: "model"|"source"|"walk"; planId?: string|null; featureId?: string|null; onFeature?: (id:string|null)=>void; onPlan?: (id:string)=>void; entry: Entry; places: Place[]; entries: Entry[]; focusId: string | null; focusNonce: number; visibleIds: string[]; mode: string; onMode: (mode: string) => void; onPlace: (id: string) => void; onEntry: (id: string) => void; mobileView: string; onText: () => void; onExploreSite?: () => void; onCamera?: (camera: MapCamera) => void; restoreCamera?: MapCamera; restoreNonce?: number; onRecord?: (id: string) => void; recordId?: string | null; scrollPhoto?: boolean; scrollColumn?: number; onScrollColumn?: (column: number) => void; onScrollPhoto?: (show: boolean, id?: string) => void; scroll3d?: boolean; onScroll3d?: (show: boolean) => void };
 const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
+// Places read on registered HEXAGON and CORONA images (research/sources/hexagon_registration_2026-11-11). A separate overlay: it changes no site pin.
+type ImageSite={name:string;status:string;group:string;kind:string;errorM:number|null;source:string;image:string;note:string;altNames:string};
+const imageSiteLayers=["image-sites-halo","image-sites-points"];
 function WalkingPerson({size=32}:{size?:number}){
   return <svg width={size} height={size} viewBox="0 0 28 36" aria-hidden="true" fill="#f5be24" stroke="#855512" strokeWidth="1.4" strokeLinejoin="round"><circle cx="14" cy="5" r="4"/><path d="M9 11h10l4 10-4 1-2-6v18h-4V23h-2v11H7V16l-2 6-4-1 5-10z"/></svg>;
 }
@@ -57,6 +61,9 @@ export default function AtlasMap(props:Props) {
   const [mapZoom,setMapZoom]=useState(10.3);
   const [basemap,setBasemap]=useState<"map"|"satellite">("map");
   const basemapRef=useRef(basemap);basemapRef.current=basemap;
+  const [imageSitesOn,setImageSitesOn]=useState(false);
+  const imageSitesRef=useRef(imageSitesOn);imageSitesRef.current=imageSitesOn;
+  const [imageSite,setImageSite]=useState<ImageSite|null>(null);
   const [backgroundUnavailable,setBackgroundUnavailable]=useState(false);
   const [imageryState,setImageryState]=useState("idle");
   const [siteQuery,setSiteQuery]=useState("");
@@ -177,6 +184,13 @@ export default function AtlasMap(props:Props) {
           map.addLayer({id:"precision-fill",type:"fill",source:"precision",paint:{"fill-color":["case",["get","selected"],"#357ea7","#6a8790"],"fill-opacity":["interpolate",["linear"],["zoom"],10,.22,15,.045,18,.015]}});
           map.addLayer({id:"precision-halo",type:"line",source:"precision",filter:["==",["get","selected"],true],paint:{"line-color":"#ffffff","line-width":7,"line-opacity":.8}});
           map.addLayer({id:"precision-line",type:"line",source:"precision",paint:{"line-color":["case",["get","selected"],"#2b6c94","#638393"],"line-opacity":.95,"line-width":["case",["get","selected"],2.5,1.5],"line-dasharray":[3,2]}});
+          map.addSource("image-sites",{type:"geojson",data:imageSites as unknown as Parameters<GeoJSONSource["setData"]>[0] & object});
+          const imageSitesVisibility=imageSitesRef.current?"visible":"none";
+          map.addLayer({id:"image-sites-halo",type:"circle",source:"image-sites",layout:{visibility:imageSitesVisibility},paint:{"circle-radius":["interpolate",["linear"],["zoom"],9,5,14,9],"circle-color":"#ffffff","circle-opacity":.9}});
+          map.addLayer({id:"image-sites-points",type:"circle",source:"image-sites",layout:{visibility:imageSitesVisibility},paint:{"circle-radius":["interpolate",["linear"],["zoom"],9,3,14,6],"circle-color":["match",["get","group"],"checked","#1f6f54","probable","#b7791f","seen","#5b6f8c","#8a8f98"],"circle-stroke-color":"#1d2b24","circle-stroke-width":1}});
+          map.on("click","image-sites-points",event=>{const p=event.features?.[0]?.properties;if(p)setImageSite({name:String(p.name),status:String(p.status),group:String(p.group),kind:String(p.kind),errorM:typeof p.errorM==="number"?p.errorM:null,source:String(p.source??""),image:String(p.image??""),note:String(p.note??""),altNames:String(p.altNames??"")})});
+          map.on("mouseenter","image-sites-points",()=>{map.getCanvas().style.cursor="pointer"});
+          map.on("mouseleave","image-sites-points",()=>{map.getCanvas().style.cursor=""});
           map.on("click","precision-fill",event=>{const id=event.features?.[0]?.properties?.placeId;if(typeof id==="string")latest.current.onPlace(id)});
           map.on("mouseenter","precision-fill",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","precision-fill",()=>{map.getCanvas().style.cursor=""});
@@ -225,11 +239,17 @@ export default function AtlasMap(props:Props) {
     const map=mapRef.current;if(!ready||!map)return;
     map.setLayoutProperty("satellite-imagery","visibility",basemap==="satellite"?"visible":"none");
     for(const layer of map.getStyle().layers){
-      if(["satellite-imagery","precision-fill","precision-halo","precision-line","source-site-detail"].includes(layer.id)||layer.type==="background")continue;
+      if(["satellite-imagery","precision-fill","precision-halo","precision-line","source-site-detail",...imageSiteLayers].includes(layer.id)||layer.type==="background")continue;
       map.setLayoutProperty(layer.id,"visibility",basemap==="satellite"?"none":"visible");
     }
     if(basemap==="satellite")setImageryState(value=>value==="idle"?"loading":value);
   },[basemap,ready]);
+
+  useEffect(()=>{
+    const map=mapRef.current;if(!ready||!map)return;
+    for(const id of imageSiteLayers)if(map.getLayer(id))map.setLayoutProperty(id,"visibility",imageSitesOn?"visible":"none");
+    if(!imageSitesOn)setImageSite(null);
+  },[imageSitesOn,ready]);
 
   useEffect(()=>{
     const map=mapRef.current;if(!ready||!map)return;
@@ -369,6 +389,7 @@ export default function AtlasMap(props:Props) {
         <button disabled={!ready} onClick={()=>{overview();optionsRef.current?.removeAttribute("open")}}>Show all sites</button>
         <button onClick={()=>onMode("landscape")}>Historical maps</button>
         {props.onInspect&&<><button onClick={()=>inspectEvidence("assessment")}>Assessment</button><button onClick={()=>inspectEvidence("compare")}>Compare locations</button></>}
+        <label className="pilot-option image-sites-option"><input type="checkbox" checked={imageSitesOn} onChange={e=>setImageSitesOn(e.target.checked)}/>Image-checked places · {imageSites.features.length}<small>Positions read on satellite images of 1967, 1974 and 1978. Green: checked. Amber: probable. Grey: not confirmed. These are not scroll candidates.</small></label>
         {mode==="3d"&&<label className="relief-option">Relief <span>{exaggeration.toFixed(1)}×</span><input aria-label="Terrain vertical exaggeration" type="range" min="1" max="3" step=".25" value={exaggeration} onChange={e=>setExaggeration(+e.target.value)}/></label>}
         {mode==="3d"&&terrainState==="unavailable"&&<p role="status">Elevation tiles are unavailable. Switch to Map or retry.</p>}
       </div></details></div>
@@ -390,6 +411,7 @@ export default function AtlasMap(props:Props) {
       <nav className="map-place-actions" aria-label="Explore selected site"><button disabled={!ready||selectedPlace?.lat==null} onClick={inspectSite}>Zoom to site</button><button className="map-primary-action" aria-expanded={!!panel} aria-controls="map-site-inspector" onClick={()=>setPanel(hasPlan?"plan":"sources")}>Inspect site</button></nav>
       {basemap==="satellite"&&<p className="map-imagery-note">Modern satellite imagery · resolution varies{mapZoom>19?" · enlarged beyond native tile detail":""}. Site pins show approximate locations.</p>}
     </aside>}
+    {!offMap&&!walking&&imageSitesOn&&imageSite&&<aside className="map-image-site-card" aria-label="Image-checked place"><button aria-label="Close" onClick={()=>setImageSite(null)}><X size={14}/></button><strong>{imageSite.name}</strong><span className={`image-site-status ${imageSite.group}`}>{imageSite.status}</span><p>{imageSite.kind}{imageSite.errorM!=null?` · position error approximately ${imageSite.errorM} m`:""}</p>{imageSite.note&&<p>{imageSite.note}</p>}<small>Position: {imageSite.source}{imageSite.image?` · images ${imageSite.image}`:""}. Satellite image work of 11 November 2026; one reader. Not a scroll candidate.</small></aside>}
     {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
     {!offMap&&ready&&((basemap==="satellite"&&imageryState==="unavailable")||(basemap==="map"&&backgroundUnavailable))&&<div className="map-status" role="status">{basemap==="satellite"?"Satellite imagery could not load. Try Map, or open the site plan and photos.":"The map background could not load. Site pins and plans remain available."}</div>}
     {!offMap&&error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
