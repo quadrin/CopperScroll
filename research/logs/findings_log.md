@@ -1689,3 +1689,9 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **EAMENA.** Records exist for 17 places of the site table; 13 lie within 100 m of our points. EAMENA's Tall Barakat point is 140 m west of the fort on the images at the same latitude, which does not support the grid reference in Prag and Barnes 1996; the source of the EAMENA point is unknown.
 - **No level changes.** Nothing bears on a scroll entry.
 
+## 11 November 2026 (night) — three places from APAAME photographs on the 1974 image; Netzer 2001 general plan (exploratory)
+
+- **Three places added (one reader, not blind).** Suwwan, Karama Ruin 5 (Ain al-Heri) and el-Heri Tower are known from APAAME air photographs and have no EAMENA record within 500 m. Each is found on the HEXAGON image of 1 December 1974 and is Probable; each is on one satellite image only. The site table has 42 places. [Record](../sources/hexagon_registration_2026-11-11/README.md), note 14.
+- **Registration.** A new window of tile A017e south of Tell Iktanu is registered to the elevation model (155 blocks, 12 m); the Kafrein transform was 74 m off there.
+- **Netzer 2001.** The general plan (Plan 2) and plans 15, 23 and 36 are on the image of 5 May 1978 with the site grid transform of note 10 and no new adjustment. Plan 36 agrees with Plan 35 to about 2 m.
+- **No level changes.** Nothing bears on a scroll entry.

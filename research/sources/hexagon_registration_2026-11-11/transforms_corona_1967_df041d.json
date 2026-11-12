@@ -82,5 +82,23 @@
   ],
   "frame": "pixels of A017e_dec74_shunat_nimrin_full_x19000_y19200.jpg (turned 180 degrees)",
   "fit": "26 blocks against the elevation model, rms 12 m; three sun directions agree to 10 m"
+ },
+ "hexagon_A017e_ain_al_heri_window": {
+  "A": [
+   [
+    0.922093513,
+    -0.0972451932
+   ],
+   [
+    -0.0108823343,
+    -0.830857034
+   ],
+   [
+    260926.074,
+    643090.294
+   ]
+  ],
+  "frame": "pixels (u, v) of A017e_dec74_kafrein_full_x12000_y12500.jpg (turned 180 degrees); for A017e_dec74_ain_al_heri_full_x14600_y1800.jpg (turned 180 degrees) use u = x + 400, v = y + 12700",
+  "fit": "155 blocks against the elevation model, rms 12 m; start shift 74 m east, 10 m south of the Kafrein transform; sun directions 160, 190 and 220 degrees agree"
  }
 }
