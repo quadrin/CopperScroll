@@ -4,14 +4,14 @@ Date: 2026-11-11. This note continues the first comparison of the site table wit
 
 ## Result first
 
-1. **Gazetteer positions.** The three wrong points are corrected in a separate table in `research/regional/peraea/`. The frozen files are not changed. The correction changes no entry result by more than 0.0006.
+1. **Gazetteer positions.** The three wrong points are corrected in `research/regional/peraea/gazetteer.csv`, with the permission of the owner. PLAN_v3 records the amendment. The file of 9 October is kept. Only the variant S2 changes, and no entry result changes by more than 0.0006.
 2. **ʿAin Duk** is found on two dates, 415 m from the entry-table point. Status: Probable. **Tell el-Qos** is in the built-up area of Jericho and no mound can be read. Status: Not confirmed.
 3. **Jerusalem** is on the image of 1 December 1974 (tile F017b). I registered a Jerusalem window. Of the 15 Jerusalem places, 11 are at a landmark or valley that the image shows; 2 are structures that I cannot identify; 1 is a large area; 1 has no coordinate. Tell el-Ful, north of the city, agrees also.
 4. **EAMENA.** 15 entry places are inside the area of the EAMENA table. 14 of them have a record within 500 m. For the three corrected sites east of the Jordan, EAMENA has a record 30 to 70 m from the image position. This is a second source for each correction.
 
 ## 1. The three gazetteer positions
 
-PLAN_v3 says that no input is changed after a result, and a test checks the SHA-256 of `gazetteer.csv` and `build_gazetteer.py`. Thus I did not change these files. I added a correction table and an exploratory run.
+PLAN_v3 says that no input is changed after a result. The owner permitted the change, because the three points are errors of fact. The amendment is written in PLAN_v3 with the old and new hashes, the old file is kept as `gazetteer_frozen_2026-10-09.csv`, and the outputs were written again.
 
 | Site | Frozen point | Corrected point | Moved | At the frozen point | Second source |
 |---|---|---|---|---|---|
@@ -20,9 +20,9 @@ PLAN_v3 says that no input is changed after a result, and a test checks the SHA-
 | kh_al_habbasa | 31.84457, 35.67959 | 31.8396, 35.6793 | 552 m | No structure on the two images of 1974 | EAMENA-0185957, 70 m |
 
 - The three sites have no `w2b_place_id`. Only the sensitivity variant S2_broad uses them.
-- The new script runs S2_broad two times. With the frozen points it gives the same numbers as `results_v3.json` (difference 0).
+- The new script runs S2_broad two times: with the file of 9 October and with the amended file. The amended run gives the same numbers as `results_v3.json` (difference 0). The primary run and the other variants do not use the three sites and are the same as before.
 - With the corrected points: latent P(Koḥlit at transjordan) 0.0143 → 0.0141; P(entry 60 at transjordan) 0.0086 → 0.0082; largest change of one entry 0.0005 (total variation).
-- The repository has 16 tests now (12 old, 4 new). All pass.
+- The repository has 18 tests for this folder now (12 old, 6 new). All pass.
 
 New finding: the frozen point of tell_nimrin is not a random error. It is the position of a different mound that EAMENA names BLEIBEL (Tell Bleibil).
 

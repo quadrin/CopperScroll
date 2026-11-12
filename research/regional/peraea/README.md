@@ -9,7 +9,7 @@ Exploratory work, 9 October 2026 UTC, by the peraea worker. No identification cl
 ## Freeze record
 
 - plan.json SHA-256 `010fa981cd2967b8443a1a30566547332758276c96ff596c820f09138393e707`, frozen 2026-10-09T22:12:02Z, before any site report was read.
-- PLAN_v3.md SHA-256 `32499a34abc1c0f1aba8bfec4173c332fcb9d249a8838018eba4582e1278bea6`, frozen 2026-10-09T23:00:45Z, before any model run on v3 inputs.
+- PLAN_v3.md SHA-256 `f2850378907afc6a2aab44d49c831aeda0b75887de55f054ff86ee35a2ec8e95`, frozen 2026-10-09T23:00:45Z, before any model run on v3 inputs.
 - Exposure before the plan freeze: one test search of the DoA archive for "Machaerus" (titles only, 22:08:32Z).
 - No input, rule or variant changed after the v3 run.
 
@@ -84,7 +84,7 @@ Two features worth a look, recorded without interpretation: at Machaerus a Hasmo
 - Entry 60's top states do not change (U_JER 0.184, U_JERICHO 0.069, U_QUMRAN 0.046, kh_qumran 0.032). The other proposals barely move (Tell es-Sultan 0.0196 in both; ʿEin Samiya 0.0167 to 0.0166).
 - The Koḥlit latent puts almost the same mass on transjordan (0.0145 to 0.0147). INFERENCE: the rise comes from the name-tie kernel (1-km scale). A 15-km blur gave the proxy a tiny self-affinity, so tied entries rarely sat at it. Precise sites remove that handicap. The kernel grid shows this: with the tie off (rho 0, K2) P(60 at transjordan) is 0.042 in both v2 and v3; with the tie on (rho 0.9) it is 0.0028 in v2 and 0.0136 in v3.
 - No entry has TV(v2, V3-P) above 0.01. Mean TV over all 61 entries: 0.0013. logml 7.648 to 7.634.
-- **R2 sensitivity** (entry 60, P(transjordan)): S1 cluster-merge (9 clusters) 0.0079; S2 broad (19 sites) 0.0086; S3 5-km sigma floor 0.0035; S4 split into 12 places with the Goranson odds shared 0.0485 (TV about 0.10 for every Koḥlit entry, mean TV 0.072 over all entries, logml 11.05). INFERENCE: S4's jump is the per-place background prior of 12 new states (the effect KERNEL_CORRECTION.md warns about), not new evidence. Under the Sinkhorn kernel the v2 proxy was boosted as an isolated place (0.089 order-only); v3 halves that (0.043). S6, XII 10 read "Janoaḥ": entries 4-19 rise from 0.0017-0.0027 to 0.0054-0.0068.
+- **R2 sensitivity** (entry 60, P(transjordan)): S1 cluster-merge (9 clusters) 0.0079; S2 broad (19 sites) 0.0082 (0.0086 before the position amendment of 11 November); S3 5-km sigma floor 0.0035; S4 split into 12 places with the Goranson odds shared 0.0485 (TV about 0.10 for every Koḥlit entry, mean TV 0.072 over all entries, logml 11.05). INFERENCE: S4's jump is the per-place background prior of 12 new states (the effect KERNEL_CORRECTION.md warns about), not new evidence. Under the Sinkhorn kernel the v2 proxy was boosted as an isolated place (0.089 order-only); v3 halves that (0.043). S6, XII 10 read "Janoaḥ": entries 4-19 rise from 0.0017-0.0027 to 0.0054-0.0068.
 - Reading (INFERENCE): replacing the blur with documented sites raises the Transjordan share about 3.5-fold but leaves it below 1% for every Koḥlit entry. The order and the other candidates still dominate. This identifies nothing.
 
 ## What stays unknown, and why
@@ -116,9 +116,9 @@ All other feature quotes were found on the cited page (the es-Salt row quotes th
 - Failed: https://megajordan.org/ (TLS: connection reset by peer; the http:// address worked); https://publication.doa.gov.jo/robots.txt (404, no robots file); https://www.getty.edu/projects/mega-jordan/ (404); English Wikipedia titles Callirrhoe, Tulul_adh-Dhahab, Gadara_(Peraea), Amathus_(Jordan), Tall_Jadur, Tell_Ammata, Tall_Iktanu (no such page). DAAHL and the IAA archive were unreachable through the proxy when another worker tried them (proxy log), and were not needed here.
 - Nothing was opened that shows the strip north of Tell es-Sultan or column XII of the scroll.
 
-## Position corrections of 11 November 2026 (exploratory; the frozen files are not changed)
+## Position amendment of 11 November 2026 (after the run, with the permission of the owner)
 
-The satellite image work ([site table](../../sources/hexagon_registration_2026-11-11/sites.csv)) found that three gazetteer points are not at their sites. The frozen `gazetteer.csv`, `build_gazetteer.py`, `PLAN_v3.md` and `outputs_v3/` stay as they are, because PLAN_v3 does not permit a change of an input after a result. The corrections are in a separate table, [`gazetteer_position_corrections_2026-11-11.csv`](gazetteer_position_corrections_2026-11-11.csv), with the frozen value, the corrected value and the evidence for each site.
+The satellite image work ([site table](../../sources/hexagon_registration_2026-11-11/sites.csv)) found that three gazetteer points were not at their sites. `gazetteer.csv` and `build_gazetteer.py` are amended, and `PLAN_v3.md` records the amendment and the new hashes. The file as frozen on 9 October is kept as [`gazetteer_frozen_2026-10-09.csv`](gazetteer_frozen_2026-10-09.csv). The evidence for each site is in [`gazetteer_position_corrections_2026-11-11.csv`](gazetteer_position_corrections_2026-11-11.csv). `features.csv` has the new site point for the four Habbasa features.
 
 | Site | Frozen point | Corrected point | Moved | What is at the frozen point |
 |---|---|---|---|---|
@@ -128,7 +128,7 @@ The satellite image work ([site table](../../sources/hexagon_registration_2026-1
 
 Each corrected point has two sources: the registered HEXAGON images of 1974 and one EAMENA record (30 m, 40 m and 70 m from the corrected points). The point of tall_barakat (Ji and Lee 2002 grid reference) is 40 m from the fort on the images and is not changed.
 
-The three sites have no `w2b_place_id`, so only the sensitivity variant S2_broad uses them. [`scripts/run_s2_corrected_positions.py`](scripts/run_s2_corrected_positions.py) runs S2_broad again with the corrections applied in memory and writes [`exploratory/s2_corrected_positions_2026-11-11.json`](exploratory/s2_corrected_positions_2026-11-11.json). The run with the frozen points reproduces `results_v3.json` (difference 0). With the corrected points, the latent P(Koḥlit at transjordan) changes from 0.0143 to 0.0141, P(entry 60 at transjordan) from 0.0086 to 0.0082, and no entry changes by more than 0.0006 (total variation). This is a new exploratory variant. It is not a part of PLAN_v3 and makes no identification claim.
+The three sites have status `partial` and no `w2b_place_id`. Thus the primary run V3-P and the variants S1, S3, S4, S5 and S6 are the same as before; `outputs_v3/` was written again and only the S2 (broad) numbers changed. [`scripts/run_s2_corrected_positions.py`](scripts/run_s2_corrected_positions.py) runs S2 with the file of 9 October and with the amended file and writes [`exploratory/s2_corrected_positions_2026-11-11.json`](exploratory/s2_corrected_positions_2026-11-11.json): latent P(Koḥlit at transjordan) 0.0143 → 0.0141, P(entry 60 at transjordan) 0.0086 → 0.0082, and no entry changes by more than 0.0006 (total variation). No identification claim.
 
 ```sh
 python3 -I -B research/regional/peraea/scripts/run_s2_corrected_positions.py --check
@@ -147,4 +147,4 @@ python3 -I -B research/regional/peraea/scripts/run_v3.py --tables
 python3 -I -B -m unittest discover -s research/regional/peraea/tests -t research/regional/peraea/tests
 ```
 
-The run takes about 20 s and refuses to start if a frozen input changed; it stops if R0 fails. The 12 tests check the plan hashes, the three schemas (including 12-word quotes and citations that resolve to `sources.csv`), that both builders reproduce the committed files, that the switched-off build equals inputs_v2, that only the transjordan components change, that the runner reproduces v2, and that two runs are identical and match `results_v3.json`.
+The run takes about 20 s and refuses to start if a frozen input changed; it stops if R0 fails. The 12 tests of `test_peraea.py` check the plan hashes, the three schemas (including 12-word quotes and citations that resolve to `sources.csv`), that both builders reproduce the committed files, that the switched-off build equals inputs_v2, that only the transjordan components change, that the runner reproduces v2, and that two runs are identical and match `results_v3.json`.

@@ -1,4 +1,5 @@
 {
+ "amended_S2_reproduces_results_v3_max_abs_diff": 0.0,
  "corrected_sites": {
   "kh_al_habbasa": {
    "corrected": [
@@ -34,7 +35,6 @@
    "moved_m": 1508
   }
  },
- "frozen_S2_reproduces_results_v3_max_abs_diff": 0.0,
  "kohlit_entries_P_transjordan": {
   "11": {
    "corrected": 0.00691572,
@@ -61,7 +61,7 @@
   "corrected": 0.01414111,
   "frozen": 0.01428785
  },
- "label": "exploratory, added 2026-11-11 after the frozen v3 run; not a part of PLAN_v3",
+ "label": "S2_broad with the gazetteer of 9 October 2026 (frozen) and with the amended gazetteer (corrected)",
  "logml": {
   "corrected": 7.63244351,
   "frozen": 7.63361822

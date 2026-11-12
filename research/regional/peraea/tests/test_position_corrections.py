@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Tests for the position corrections of 2026-11-11 (exploratory; the frozen gazetteer is not changed).
+"""Tests for the position amendment of 2026-11-11 (gazetteer.csv amended; the file of 9 October is kept).
 
     python3 -I -B research/regional/peraea/tests/test_position_corrections.py
 """
 import csv
+import hashlib
 import math
 import subprocess
 import sys
@@ -29,11 +30,21 @@ class Corrections(unittest.TestCase):
     def setUpClass(cls):
         cls.cor = rows(PERAEA / "gazetteer_position_corrections_2026-11-11.csv")
         cls.gaz = {r["site_id"]: r for r in rows(PERAEA / "gazetteer.csv")}
+        cls.old = {r["site_id"]: r for r in rows(PERAEA / "gazetteer_frozen_2026-10-09.csv")}
 
-    def test_frozen_values_are_the_gazetteer_values(self):
+    def test_file_of_9_october_is_kept(self):
+        self.assertEqual(hashlib.sha256((PERAEA / "gazetteer_frozen_2026-10-09.csv").read_bytes()).hexdigest(),
+                         "b7abb1e6e52d514c605fd3cf4ea2560b367e8a4b0f36897c0745bbbe54d537fe")
+
+    def test_old_and_new_values(self):
         for c in self.cor:
-            g = self.gaz[c["site_id"]]
-            self.assertEqual((float(c["frozen_lat"]), float(c["frozen_lon"])), (float(g["lat"]), float(g["lon"])))
+            o, g = self.old[c["site_id"]], self.gaz[c["site_id"]]
+            self.assertEqual((float(c["frozen_lat"]), float(c["frozen_lon"])), (float(o["lat"]), float(o["lon"])))
+            self.assertEqual((float(c["corrected_lat"]), float(c["corrected_lon"])), (float(g["lat"]), float(g["lon"])))
+
+    def test_only_three_rows_changed(self):
+        changed = sorted(k for k in self.old if self.old[k] != self.gaz[k])
+        self.assertEqual(changed, sorted(c["site_id"] for c in self.cor))
 
     def test_distances(self):
         for c in self.cor:

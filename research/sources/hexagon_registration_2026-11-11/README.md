@@ -26,7 +26,7 @@
 | Tell Iktanu: the south hill is the flat-topped spur of approximately 600 by 150 m south-east of the highway (middle 31.8166 N, 35.6701 E) | notes 11, 13 | Description in Prag (Introduction) and an EAMENA record agree; her site plan not seen |
 | Tell Nimrin: oval mound at 31.9010 N, 35.6251 E; the topographic map of 1989 (Flanagan and McCreery 1990, fig. 4) agrees to approximately 10 m | notes 12, 13 | One reader |
 | EAMENA records exist for 17 places of the site table; 13 are within 100 m of our points. EAMENA puts Tall Barakat at the latitude of the fort on the image, not 340 m south | note 13 | The source of the EAMENA points is not known; records not read one by one |
-| Entry places compared with the images: ʿAin Duk is at the head of the irrigated plots, 415 m from the entry-table point (two dates, Probable); Tell el-Qos is not confirmed; in Jerusalem (tile F017b, new window) 11 of 15 entry places are at a landmark or valley that the image shows. Three points of the Peraea gazetteer are corrected in a separate table | note 15 | One reader; Jerusalem on one date; one control point for the Jerusalem window |
+| Entry places compared with the images: ʿAin Duk is at the head of the irrigated plots, 415 m from the entry-table point (two dates, Probable); Tell el-Qos is not confirmed; in Jerusalem (tile F017b, new window) 11 of 15 entry places are at a landmark or valley that the image shows. Three points of the Peraea gazetteer are corrected in the gazetteer (amendment recorded in PLAN_v3) | note 15 | One reader; Jerusalem on one date; one control point for the Jerusalem window |
 
 ## Corrections to earlier statements of the same day
 
