@@ -94,10 +94,16 @@ The earlier note said that the camps were "not looked for". The citadel was alre
 - Correct: 25 June 1974 (the manifest of the image set in the bucket; the other notes of the project already use this date).
 - Effect: only the text of the column `coord_source` changed. No coordinate and no result changed. The hashes in PLAN_v3 are updated, and PLAN_v3 records the correction. 18 tests pass.
 
+## Addendum, later on 12 November 2026: the two Machaerus rectangles on a second date
+
+- Image: 25 June 1974, aft camera, tile D3C1208-400636A016_c (the film label on the tile reads "25 JUN 74 AFT").
+- The citadel summit with its ring of pits, the rectangle north-west and the rectangle south-west are all visible. Their places relative to the citadel agree with the image of 1 December 1974 (approximately 440 m and 520 m on the unregistered June image; 460 m and 550 m on the registered December image).
+- The status of the two lines in the site table is now **Checked** for the presence and the form of the rectangles. That they are Roman siege camps stays an interpretation (probable). The June window is not registered.
+- The two ʿAsla cistern records (EAMENA-0117902 and EAMENA-0187280) are 60 m apart and describe one feature: an enclosure with a cistern on the plateau, period unknown, no description text. The lead stays weak.
+- Figure: `figures/A016c_jun74_machaerus_two_rectangles_and_citadel_marked.jpg`.
+
 ## Not done
 
-- The EAMENA descriptions of the two ʿAsla cistern records are not read.
-- The two Machaerus rectangles are on one date. The June 1974 frames can have them; I did not look.
 - The Kidron monuments and the Tombs of the Kings are not compared with published plans.
 - Karama Ruins 15, Rings 3 and Ring 4 stay with no result.
 
