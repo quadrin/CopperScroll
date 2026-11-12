@@ -90,3 +90,12 @@
  .atlas-shell.unified-atlas .unified-surface .map-status{top:128px;right:68px;max-width:none}
 }
 @media(max-width:380px){.atlas-site-nav.atlas-site-nav .atlas-site-brand{font-size:15px}.atlas-site-nav.atlas-site-nav{gap:8px}.atlas-site-nav.atlas-site-nav>nav{gap:8px}.atlas-site-nav.atlas-site-nav>nav>a{font-size:11px}}
+
+.map-image-site-card{position:absolute;left:12px;top:66px;z-index:6;width:min(340px,calc(100vw - 24px));max-height:46dvh;overflow:auto;padding:12px 34px 12px 12px;background:#fffcf5;border:1px solid #c4ccb9;border-radius:6px;box-shadow:0 5px 20px #30291420;font:13px/1.45 Arial,sans-serif;color:#2f3d33}
+.map-image-site-card>button{position:absolute;right:6px;top:6px;width:28px;height:28px;display:grid;place-items:center;border:0;background:transparent;cursor:pointer;color:inherit;border-radius:4px}
+.map-image-site-card>button:hover{background:#eee8db}
+.map-image-site-card strong{display:block;font-size:14px}
+.map-image-site-card p{margin:6px 0 0}
+.map-image-site-card small{display:block;margin-top:8px;font-size:11px;color:#6b705f}
+.image-site-status{display:inline-block;margin-top:4px;padding:1px 7px;border-radius:10px;font-size:11px;color:#fff;background:#8a8f98}
+.image-site-status.checked{background:#1f6f54}.image-site-status.probable{background:#b7791f}.image-site-status.seen{background:#5b6f8c}

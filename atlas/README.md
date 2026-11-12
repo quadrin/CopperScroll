@@ -22,6 +22,10 @@ The access-controlled build adds an image library (`media/index.json`, built by 
 
 `.github/workflows/protected-atlas.yml` decrypts the private sets with the `WSRP_MEDIA_KEY` secret, builds the library and the site (`vite.protected.config.ts`) and deploys `dist-protected/` to Cloudflare Pages (`copper-scroll-photos`), where Cloudflare Access lets in approved emails only. The public GitHub Pages build never reads any of it, and `scripts/check-pages-payload.mjs` fails if a `media/`, `wsrp/` or `.enc` file reaches its output. A local test: `WSRP_MEDIA_KEY=… node scripts/wsrp-media.mjs decrypt`, `python3 -I ../tools/build_scroll_media.py protected-media/library --private protected-media`, then `corepack pnpm exec vite build --config vite.protected.config.ts`. Set `VITE_WSRP_PHOTO_SITE` when building the public site to link the photo version from the 3D view's notes.
 
+## Image-checked places (overlay)
+
+**Options → Image-checked places** shows the 48 places of the satellite image work of 11 November 2026 (`../research/sources/hexagon_registration_2026-11-11/sites.csv`): positions read on registered HEXAGON images of 1974 and 1978 and CORONA images of 1967. Green is checked, amber is probable or possible, blue-grey is seen, grey is not confirmed. A click opens a card with the status, the position error, the note and the source of the position. The overlay is off by default, stays visible on Satellite, and adds no scroll candidate, rating or site pin. `python3 -I research/build_image_sites.py` writes `app/atlas-image-sites.json` from the table (`--check` compares). The source is in `app/atlas-map.tsx`.
+
 ## Run locally
 
 Use Node.js 24 and pnpm 11.25.0 (the version pinned in `package.json`). From the repository root:

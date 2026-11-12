@@ -38,7 +38,7 @@ New finding: the frozen point of tell_nimrin is not a random error. It is the po
 
 - The two dates give the same ground position to 15 m. The entry-table point is 415 m west-north-west of it. Its stated precision is approximately 300 m.
 - Status: **Probable**. The image shows where the watered land starts. It does not show water.
-- I did not change `phase3_places.csv`. The entries that use ʿAin Duk refer to an area of springs, and 415 m does not change an entry assessment. You must decide if the point is to be moved.
+- The entries that use ʿAin Duk refer to an area of springs, and 415 m does not change an entry assessment. The point in `phase3_places.csv` was moved later on the same day (see the addendum).
 
 **Tell el-Qos (entry 30).** The place is on the registered frames F017b (1974) and F007c (1978).
 
@@ -110,11 +110,25 @@ Four new lines (48 places now): ʿAin Duk, head of the spring gardens (Probable)
 
 ## Not done
 
-- `phase3_places.csv` is not changed (ʿAin Duk 415 m, Ramat Raḥel 136 m, Tell el-Qos 165 m). These are your decisions.
 - Jerusalem is checked on one date only. The image of 5 May 1978 (F007c) also shows the city; I looked at it but did not register it.
 - The Kidron monuments and the Tombs of the Kings are not identified as structures. A larger scale and the published plans are necessary.
 - The EAMENA comparison uses distance only. I did not read the 577 descriptions for scroll features (cisterns, channels, tombs) near each entry place. The water-feature table (cisterns, reservoirs, aqueducts) is the next step for that.
 - The ten landmark coordinates of the control test are published page coordinates. I wrote them from memory and did not look them up again. An error of 20 to 30 m in one of them is possible.
+
+## Addendum, later on 11 November 2026: three entry-table points moved; atlas layer
+
+The owner decided to move the three points. `tables/phase3_places.csv` and the atlas copy now have:
+
+| Place | Old point | New point | Moved | Source of the new point |
+|---|---|---|---|---|
+| ain_duk | 31.8976, 35.4177 | 31.8963, 35.4218 | 415 m | Head of the irrigated plots on the images of 1974 and 1978 |
+| tell_el_qos | 31.8551, 35.4656 | 31.85377, 35.4648 | 165 m | EAMENA-0117188; not confirmed on the images |
+| ramat_rahel | 31.73999, 35.21899 | 31.74036, 35.21762 | 136 m | Excavated area on the image of 1974 |
+
+- The old value and its source are in the `coord_source` column of each line.
+- No candidate, rating or entry assessment is changed.
+- Older frozen copies of the place table are not changed and keep the old points: the model inputs `places_v0` to `places_v3`, `research/measurements/sequence/places.csv`, and the tables of earlier regional rounds that give distances from these points.
+- The atlas has a new overlay, "Image-checked places" (Options menu, off by default), with the 48 places of `sites.csv`. It is built by `atlas/research/build_image_sites.py`. The overlay adds no scroll candidate.
 
 ## Files
 
