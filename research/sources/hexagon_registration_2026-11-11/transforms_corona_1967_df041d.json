@@ -136,5 +136,23 @@
   ],
   "frame": "for A014c_jun74_suwwan_full_x13900_y5000.jpg (tile D3C1208-400636A014_c, x 13900, y 5000, 4500 by 4500, turned 180 degrees) use u = x + 917, v = y - 3226",
   "fit": "25 blocks against the elevation model, rms 30 m. Start: the A015c Kafrein transform with the frame offset A014 = A015 + (2317, -16226) pixels in tile c (image match 0.33 against 0.06)"
+ },
+ "hexagon_F007d_may_1978_karama_west_window": {
+  "A": [
+   [
+    0.820904,
+    -0.118483
+   ],
+   [
+    -0.082813,
+    -0.823946
+   ],
+   [
+    249908.034,
+    643372.071
+   ]
+  ],
+  "frame": "tile pixels of D3C1214-200439F007_d (not turned); valid near the window x 10500, y 11000, 3600 by 5000",
+  "fit": "18 blocks of 500 m matched against the December 1974 west window on a 2 m ground grid, rms 16 m. The first transform of this tile was about 170 m off here"
  }
 }
