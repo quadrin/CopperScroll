@@ -35,7 +35,7 @@ The notes were written in steps, and later steps corrected earlier ones. Note 04
 
 | File | Content |
 |---|---|
-| `sites.csv`, `sites.geojson`, `sites.kml` | 42 places: status, type, WGS 84 position, error, source of the position, note |
+| `sites.csv`, `sites.geojson`, `sites.kml` | 44 places: status, type, WGS 84 position, error, source of the position, note |
 | `transforms.json` | Pixel-to-grid transforms (EPSG:2039) for each tile and window, with the height term where fitted |
 | `regional_checklist_change_list.csv` | 20 proposed additions to the records of the regional checklist. **The record numbers were read from a two-column PDF and are not checked** |
 | `scripts/` | Registration (`demtool.py`, `warp.py`, `reg.py`, `auto.py`, `reg2.py`), rectified chips and overlays (`chips.py`, `pairs.py`, `ov.py`), and the cut scripts that the owner ran on the full tiles |
