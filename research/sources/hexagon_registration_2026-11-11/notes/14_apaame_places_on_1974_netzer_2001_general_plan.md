@@ -30,7 +30,7 @@ Figures: `figures/suwwan_hexagon_1974-12-01_x4.jpg`, `figures/karama_ruin_5_ain_
 
 ### Second image (June 1974)
 
-Karama Ruin 5 (Ain al-Heri) and el-Heri Tower are also on HEXAGON tile D3C1208-400636A015_c of June 1974, with the same form at the same place. Their status is Checked: two satellite images of different dates, and photographs of 2017 with the same form. This does not give the age or the function. Karama Ruins 14 is a faint light patch with one dark spot on the June image (status stays Probable). Suwwan is at the edge of the June tile, outside the image. Karama Ruins 16 was not matched on the June image. Figures: `figures/pair74_dec_jun_karama_ruin_5_ain_al_heri.jpg`, `figures/pair74_dec_jun_el_heri_tower.jpg` (December on the left, June on the right, 4 times enlarged).
+Karama Ruin 5 (Ain al-Heri) and el-Heri Tower are also on HEXAGON tile D3C1208-400636A015_c of June 1974, with the same form at the same place. Their status is Checked: two satellite images of different dates, and photographs of 2017 with the same form. This does not give the age or the function. Karama Ruins 14 is a faint light patch with one dark spot on the June image (status stays Probable). Suwwan is at the edge of the June tile, outside the image. Karama Ruins 16 was not matched on the June image, but it is on HEXAGON tile D3C1214-200439F007_d of 5 May 1978: the same knoll with a ring wall, clearer than in 1974 (status Checked; figure `figures/pair_dec74_may78_karama_ruins_16.jpg`). The first transform of that tile is 170 m off there; the pair was aligned by image matching (two blocks agree) and then by eye. Suwwan is north of the 1978 strip and was not found on the June frames A014 and A016 (tile c). Figures: `figures/pair74_dec_jun_karama_ruin_5_ain_al_heri.jpg`, `figures/pair74_dec_jun_el_heri_tower.jpg` (December on the left, June on the right, 4 times enlarged).
 
 ## 2. Window south of Tell Iktanu
 
@@ -57,6 +57,6 @@ Plan 1 has a 1000 m grid with no numbers. With Tell es-Sultan at about 192 / 142
 
 ## Not done
 
-- No second image for Suwwan, Karama Ruins 14 (weak) and Karama Ruins 16.
+- No second image for Suwwan and Karama Ruins 14 (weak).
 - Karama Ruins 16, Karama Rings 3 and Karama Ring 4 are west of the new window.
 - The half-square question of the Netzer grid.
