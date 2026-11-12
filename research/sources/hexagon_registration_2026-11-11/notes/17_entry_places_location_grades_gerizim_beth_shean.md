@@ -247,11 +247,35 @@ Sources that I used are in the project Drive and bucket: Magen 2008 (JSP 8), NEA
 - I read the introduction of Mazor and Najjar and searched its text for "spring". I did not read the 308 pages. The text search in Tsafrir and Foerster found no "spring"; the text layer of that file is possibly incomplete.
 - The SWP plan of Beisan is in the list of illustrations. I did not find and read the plan page.
 
+## Addendum 8, 12 November 2026: Beth Shean, the springs on the plan of 1882 and the city of the 1st century
+
+**Result: the plan of Beisan of the Survey of Western Palestine marks three springs at the city. One is at the theatre. On the two images of 1974, a dense group of trees is at its position. Status: Possible.**
+
+Sources (in the project archive): the plan of Beisan (Conder and Kitchener 1882, after p. 104), as reproduced in Mazor and Najjar 2007, Fig. 1.1; Mazor and Najjar 2007, chapter 1; Tsafrir and Foerster 1997.
+
+| Spring on the plan of 1882 | Position on the plan | On the images of 1974 |
+|---|---|---|
+| ʿAin el-Melʿab | At the east end of the theatre ("El Akud"), with a stream that goes north to the main stream | A dense group of trees at the east end of the stage building, on the two dates. The spring is not visible. Possible. Position 32.5016 N, 35.5024 E, error approximately 40 m |
+| ʿAin el-Malhah, with a mill | Approximately 250 m south-west of the theatre | Trees and a road. Not identified |
+| ʿAin et-Tineh | At the ruined bridge north-east of the mound (Jisr el-Maktuʿa) | Not looked for |
+
+- The position of ʿAin el-Melʿab is from a plan of 1882, placed relative to the theatre. The plan is a sketch. The error is approximately 40 m.
+- The name means "spring of the theatre" (melʿab: theatre, playing ground). The Phase 5 line of entry 58 cites this spring from the text of the Survey.
+
+**The city in the 1st century CE (Mazor and Najjar 2007, chapter 1).**
+
+- The civic centre was first laid out in the early 1st century CE in the ʿAmal basin, south of Nahal Harod: an agora with a basilica and two temples, a theatre south of the agora, a bathhouse, and paved streets (their Plan 1.3).
+- The nymphaea and the colonnaded streets are of the 2nd century. Tsafrir and Foerster date the large nymphaeum to the 2nd century, with a rebuilding in the late 4th century.
+- Spring water came to the city by aqueducts. Tsafrir and Foerster cite a count of at least four main aqueducts for the Roman and Byzantine periods.
+
+**What this means for entry 58.** A monumental fountain of the 1st century is not in these two sources. A natural spring at the theatre of the early 1st century is on the plan of 1882. Thus the "mouth of the spring" has one candidate with a position inside the city of the period. This is a lead. I did not check if the spring was there in antiquity, and I propose no change of the rating.
+
 ## Not done
 
 - No rating is changed in `phase3_places.csv` or `phase5_assessments.csv`.
 - The six area places (grade C) and the two grade E places (Jordan ford, Tekoa–Herodium area) were not looked for on images.
-- No Beth Shean plan was laid on an image.
+- No Beth Shean plan was laid on an image by a transform. The springs were placed relative to the theatre.
+- Qumran (entries 21 and 22) is not compared with a plan in this note.
 - The grades are mine. A second reader did not check them.
 - Frames D3C1209-200214F012 and D3C1208-400636F009 are with the project owner. They are not in the repository.
 
@@ -261,7 +285,7 @@ In this folder:
 - `entry_places_location_assessment_2026-11-12.csv` (37 places: grade, result, offset, image evidence)
 - `entry_assessments_with_location_grade_2026-11-12.csv` (37 Phase 5 lines with the location grade and counts of EAMENA records by feature kind)
 - `beth_shean_frame_footprints_usgs_2026-11-12.csv` (ten frames: corners from the USGS catalogue, edges at the longitude of Beth Shean)
-- `sites.csv`, `sites.geojson`, `sites.kml` (56 places; six new: three on Mount Gerizim, two at Beth Shean, one at Kh. Ibziq)
-- `figures/`: `F014a_dec74_gerizim_octagonal_church_and_enclosure_x3.jpg`, `F012b_dec74_beth_shean_tell_and_theatre.jpg`, `F009d_jun74_beth_shean_tell_and_theatre.jpg`, `F007c_may78_choziba_x1.4_marked.jpg`
+- `sites.csv`, `sites.geojson`, `sites.kml` (57 places; seven new: three on Mount Gerizim, three at Beth Shean, one at Kh. Ibziq)
+- `figures/`: `F014a_dec74_gerizim_octagonal_church_and_enclosure_x3.jpg`, `F012b_dec74_beth_shean_tell_and_theatre.jpg`, `F009d_jun74_beth_shean_tell_and_theatre.jpg`, `F007c_may78_choziba_x1.4_marked.jpg`, `F012b_dec74_beth_shean_swp_springs_marked.jpg`
 
 Not in the repository: the plan overlays (a published plan on a Wayback image), the Wayback image, the full-size windows and the EAMENA tables.
