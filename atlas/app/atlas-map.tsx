@@ -36,7 +36,7 @@ const INITIAL = { center: [35.367, 31.82] as [number,number], zoom: 10.3 };
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
 // Places read on registered HEXAGON and CORONA images (research/sources/hexagon_registration_2026-11-11). A separate overlay: it changes no site pin.
 type ImageSite={name:string;status:string;group:string;kind:string;errorM:number|null;source:string;image:string;note:string;altNames:string};
-const imageSiteLayers=["image-sites-halo","image-sites-points"];
+const imageSiteLayers=["image-sites-halo","image-sites-points","image-sites-labels"];
 function WalkingPerson({size=32}:{size?:number}){
   return <svg width={size} height={size} viewBox="0 0 28 36" aria-hidden="true" fill="#f5be24" stroke="#855512" strokeWidth="1.4" strokeLinejoin="round"><circle cx="14" cy="5" r="4"/><path d="M9 11h10l4 10-4 1-2-6v18h-4V23h-2v11H7V16l-2 6-4-1 5-10z"/></svg>;
 }
@@ -188,6 +188,8 @@ export default function AtlasMap(props:Props) {
           const imageSitesVisibility=imageSitesRef.current?"visible":"none";
           map.addLayer({id:"image-sites-halo",type:"circle",source:"image-sites",layout:{visibility:imageSitesVisibility},paint:{"circle-radius":["interpolate",["linear"],["zoom"],9,5,14,9],"circle-color":"#ffffff","circle-opacity":.9}});
           map.addLayer({id:"image-sites-points",type:"circle",source:"image-sites",layout:{visibility:imageSitesVisibility},paint:{"circle-radius":["interpolate",["linear"],["zoom"],9,3,14,6],"circle-color":["match",["get","group"],"checked","#1f6f54","probable","#b7791f","seen","#5b6f8c","#8a8f98"],"circle-stroke-color":"#1d2b24","circle-stroke-width":1}});
+          // Names show at close zoom only, and only when the basemap style has glyphs (the terrain fallback has none).
+          if(map.getStyle().glyphs)map.addLayer({id:"image-sites-labels",type:"symbol",source:"image-sites",minzoom:11.5,layout:{visibility:imageSitesVisibility,"text-field":["get","name"],"text-font":["Noto Sans Regular"],"text-size":11,"text-anchor":"top","text-offset":[0,0.8],"text-max-width":9,"text-optional":true},paint:{"text-color":"#1d2b24","text-halo-color":"#fffcf5","text-halo-width":1.5}});
           map.on("click","image-sites-points",event=>{const p=event.features?.[0]?.properties;if(p)setImageSite({name:String(p.name),status:String(p.status),group:String(p.group),kind:String(p.kind),errorM:typeof p.errorM==="number"?p.errorM:null,source:String(p.source??""),image:String(p.image??""),note:String(p.note??""),altNames:String(p.altNames??"")})});
           map.on("mouseenter","image-sites-points",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","image-sites-points",()=>{map.getCanvas().style.cursor=""});
@@ -389,7 +391,7 @@ export default function AtlasMap(props:Props) {
         <button disabled={!ready} onClick={()=>{overview();optionsRef.current?.removeAttribute("open")}}>Show all sites</button>
         <button onClick={()=>onMode("landscape")}>Historical maps</button>
         {props.onInspect&&<><button onClick={()=>inspectEvidence("assessment")}>Assessment</button><button onClick={()=>inspectEvidence("compare")}>Compare locations</button></>}
-        <label className="pilot-option image-sites-option"><input type="checkbox" checked={imageSitesOn} onChange={e=>setImageSitesOn(e.target.checked)}/>Image-checked places · {imageSites.features.length}<small>Positions read on satellite images of 1967, 1974 and 1978. Green: checked. Amber: probable. Grey: not confirmed. These are not scroll candidates.</small></label>
+        <label className="pilot-option image-sites-option"><input type="checkbox" checked={imageSitesOn} onChange={e=>setImageSitesOn(e.target.checked)}/>Image-checked places · {imageSites.features.length}<small>Positions read on satellite images of 1967, 1974 and 1978. Green: checked. Amber: probable. Grey: not confirmed. Names show at close zoom. These are not scroll candidates.</small></label>
         {mode==="3d"&&<label className="relief-option">Relief <span>{exaggeration.toFixed(1)}×</span><input aria-label="Terrain vertical exaggeration" type="range" min="1" max="3" step=".25" value={exaggeration} onChange={e=>setExaggeration(+e.target.value)}/></label>}
         {mode==="3d"&&terrainState==="unavailable"&&<p role="status">Elevation tiles are unavailable. Switch to Map or retry.</p>}
       </div></details></div>
