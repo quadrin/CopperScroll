@@ -4,7 +4,7 @@ Date: 11 November 2026. Exploratory, one reader, not blind. Status words: Checke
 
 ## Result first
 
-1. Three places that are known from APAAME air photographs, and that have no EAMENA record within 500 m, are found on the HEXAGON image of 1 December 1974: Suwwan, Karama Ruin 5 (Ain al-Heri) and el-Heri Tower. Each is Probable. The site table now has 42 places.
+1. Three places that are known from APAAME air photographs, and that have no EAMENA record within 500 m, are found on the HEXAGON image of 1 December 1974: Suwwan, Karama Ruin 5 (Ain al-Heri) and el-Heri Tower. Each is Probable. The site table now has 42 places (44 with the addendum in section 1).
 2. A new window of tile A017e south of Tell Iktanu is registered to the elevation model (155 blocks, 12 m).
 3. The general plan of Netzer 2001 (Plan 2) and the plans 15, 23 and 36 are put on the image of 5 May 1978 with the site grid transform of note 10. No new adjustment was made.
 4. Plan 1 of Netzer 2001 is a small-scale map. Its grid agrees with the Palestine grid to 80 m at two controls.
@@ -23,7 +23,8 @@ The photographs are those that the EAMENA database lists for the region (APAAME,
 - Each place agrees in form and ground with the photographs (2014 for Suwwan, 2017 for the other two).
 - Each place is on one satellite image only. The CORONA film of 26 September 1967 is too light at Suwwan and does not include the other two.
 - Karama Ruin 5 has the same form in 1974 and in 2017.
-- One more title, Karama Ruins 14: a small round feature, about 11 m across, at 31.7689 N, 35.6727 E. Possible. It is not in the site table.
+- Addendum (same day): two more titles are Probable and are in the site table, which now has 44 places. Karama Ruins 14: a round feature, about 11 m across, at 31.7689 N, 35.6727 E; the photographs of 2017 show a ring of stones on a ploughed plateau near a gorge edge. Karama Ruins 16: a round light feature, about 18 m across, on a flat-topped knoll above a scarp, at 31.7660 N, 35.6302 E; the photographs show a ring on such a knoll. It is in a second window (x 18400, y 2000) with its own transform (79 blocks, 10 m).
+- No result for Karama Ruins 15, Karama Rings 3 and Karama Ring 4. Thin stone rings of 10 m are at the limit of the image.
 
 Figures: `figures/suwwan_hexagon_1974-12-01_x4.jpg`, `figures/karama_ruin_5_ain_al_heri_hexagon_1974-12-01_x5.jpg`, `figures/el_heri_tower_hexagon_1974-12-01_x6.jpg`.
 

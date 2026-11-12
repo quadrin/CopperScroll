@@ -100,5 +100,23 @@
   ],
   "frame": "pixels (u, v) of A017e_dec74_kafrein_full_x12000_y12500.jpg (turned 180 degrees); for A017e_dec74_ain_al_heri_full_x14600_y1800.jpg (turned 180 degrees) use u = x + 400, v = y + 12700",
   "fit": "155 blocks against the elevation model, rms 12 m; start shift 74 m east, 10 m south of the Kafrein transform; sun directions 160, 190 and 220 degrees agree"
+ },
+ "hexagon_A017e_karama_west_window": {
+  "A": [
+   [
+    0.960753,
+    -0.108497
+   ],
+   [
+    -0.000708,
+    -0.840801
+   ],
+   [
+    260759.579,
+    643239.84
+   ]
+  ],
+  "frame": "pixels (u, v) of the Kafrein window frame; for A017e_dec74_karama_west_full_x18400_y2000.jpg (turned 180 degrees) use u = x - 3000, v = y + 12800",
+  "fit": "79 blocks against the elevation model, rms 10 m. The scale along the image lines is 4 percent larger than in the Ain al-Heri window, thus each window needs its own transform"
  }
 }
