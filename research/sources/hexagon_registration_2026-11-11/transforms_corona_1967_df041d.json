@@ -118,5 +118,23 @@
   ],
   "frame": "pixels (u, v) of the Kafrein window frame; for A017e_dec74_karama_west_full_x18400_y2000.jpg (turned 180 degrees) use u = x - 3000, v = y + 12800",
   "fit": "79 blocks against the elevation model, rms 10 m. The scale along the image lines is 4 percent larger than in the Ain al-Heri window, thus each window needs its own transform"
+ },
+ "hexagon_A014c_june_1974_suwwan_window": {
+  "A": [
+   [
+    1.167971,
+    -0.134602
+   ],
+   [
+    -0.193924,
+    -0.933902
+   ],
+   [
+    261261.677,
+    642012.126
+   ]
+  ],
+  "frame": "for A014c_jun74_suwwan_full_x13900_y5000.jpg (tile D3C1208-400636A014_c, x 13900, y 5000, 4500 by 4500, turned 180 degrees) use u = x + 917, v = y - 3226",
+  "fit": "25 blocks against the elevation model, rms 30 m. Start: the A015c Kafrein transform with the frame offset A014 = A015 + (2317, -16226) pixels in tile c (image match 0.33 against 0.06)"
  }
 }
