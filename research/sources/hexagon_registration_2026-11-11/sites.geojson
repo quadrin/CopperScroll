@@ -1007,6 +1007,126 @@
     "note": "Double line, approximately 44 m by 30 m, at the edge of a ridge above the wadi, 550 m west-south-west of the citadel summit. Also on the image of 25 June 1974 (aft camera, tile A016c): the same rectangle at the same place relative to the citadel. The camp letter of the published siege plan is not assigned. South of the scroll region.",
     "alt_names": ""
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.27331,
+     32.19983
+    ]
+   },
+   "properties": {
+    "name": "Mount Gerizim, octagonal church of Mary Theotokos",
+    "status": "Checked",
+    "type": "church in a fortified enclosure",
+    "error_m": 30,
+    "position_source": "coordinate of the CORPS database (ITM 225.95 / 678.48); identified on tile F014a (1 Dec 1974) and on a modern image",
+    "image": "F014a",
+    "note": "Octagon with concentric rings inside a rectangular enclosure. Inner ring approximately 30 m; enclosure approximately 75 m west to east (database: church 30 by 37.4 m, enclosure 71 by 56 m). The registration to the elevation model puts it 166 m away (height effect at the summit); used as control point. Entry 57 place: table point 110 m north.",
+    "alt_names": "Jebel et-Tur"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.27388,
+     32.19982
+    ]
+   },
+   "properties": {
+    "name": "Mount Gerizim, monumental eastern staircase (plan part 34)",
+    "status": "Probable",
+    "type": "staircase",
+    "error_m": 15,
+    "position_source": "general plan of the precinct (Magen 2008, JSP 8, Fig. 14) fitted to a modern image of 29 Oct 2026 with five control points; position relative to the church",
+    "image": "modern image",
+    "note": "Two or three parallel east-west lines, approximately 30 m long and 18 to 20 m apart, inside the plan outline (plan: approximately 21 by 31 m; report: up to 23 by 34 m). Single steps are not visible. Excavated after 1982; not visible in 1974. Entry 57 has 'the steps'; this is a position for a feature of that kind, not evidence for the entry.",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.27564,
+     32.20546
+    ]
+   },
+   "properties": {
+    "name": "Mount Gerizim, enclosure on the northern spur",
+    "status": "Probable",
+    "type": "walled enclosure in a forest clearing",
+    "error_m": 80,
+    "position_source": "image, tile F014a (1 Dec 1974), with the control point at the church",
+    "image": "F014a",
+    "note": "Approximately 100 m across, 560 m north-north-east of the entry table point, above Nablus. Probable: Tell er-Ras. Not compared with the plans of Bull 1967 and 1968.",
+    "alt_names": "Tell er-Ras"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.5029,
+     32.50419
+    ]
+   },
+   "properties": {
+    "name": "Beth Shean, mound (Tell el-Husn), summit",
+    "status": "Checked",
+    "type": "tell with excavation trenches",
+    "error_m": 40,
+    "position_source": "image, tile b of frame D3C1209-200214F012 (1 Dec 1974), registered to the elevation model (local residual 18 m)",
+    "image": "F012b, F009d",
+    "note": "Oval mound approximately 250 by 200 m above the bend of Nahal Harod; trenches on the summit. Also on tile d of frame D3C1208-400636F009 (25 Jun 1974), linked to the December image. Entry 58 place: table point on the mound, 60 m from the summit centre. Nahal Harod north of the mound checked with the site plan of NEAEHL vol. 5 p. 1624.",
+    "alt_names": "Tel Bet She'an; Beisan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.50155,
+     32.50135
+    ]
+   },
+   "properties": {
+    "name": "Beth Shean, Roman theatre",
+    "status": "Checked",
+    "type": "theatre",
+    "error_m": 40,
+    "position_source": "image, tile b of frame D3C1209-200214F012 (1 Dec 1974)",
+    "image": "F012b, F009d",
+    "note": "Semicircular structure 300 m south-south-west of the mound; agrees with the site plan of NEAEHL vol. 5 p. 1624. Also on the image of 25 Jun 1974.",
+    "alt_names": "Scythopolis"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.39662,
+     32.36846
+    ]
+   },
+   "properties": {
+    "name": "Kh. Ibziq, oval mound with buildings",
+    "status": "Probable",
+    "type": "mound with a wall or terrace line",
+    "error_m": 80,
+    "position_source": "image, tile F013c (1 Dec 1974), registered to the elevation model (residual 40 m), no control point",
+    "image": "F013c",
+    "note": "Approximately 170 m across, three or four standing buildings on its west side; a field of small walled cells 230 m east-south-east. 80 m from the entry table point (entry 59, possible). Which of the two survey ruins (Upper, Lower) this is, is not known.",
+    "alt_names": "Bezek"
+   }
   }
  ]
 }
