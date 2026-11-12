@@ -94,11 +94,28 @@ The earlier note said that the camps were "not looked for". The citadel was alre
 - Correct: 25 June 1974 (the manifest of the image set in the bucket; the other notes of the project already use this date).
 - Effect: only the text of the column `coord_source` changed. No coordinate and no result changed. The hashes in PLAN_v3 are updated, and PLAN_v3 records the correction. 18 tests pass.
 
+## Addendum, later on 12 November 2026: the two Machaerus rectangles on a second date
+
+- Image: 25 June 1974, aft camera, tile D3C1208-400636A016_c (the film label on the tile reads "25 JUN 74 AFT").
+- The citadel summit with its ring of pits, the rectangle north-west and the rectangle south-west are all visible. Their places relative to the citadel agree with the image of 1 December 1974 (approximately 440 m and 520 m on the unregistered June image; 460 m and 550 m on the registered December image).
+- The status of the two lines in the site table is now **Checked** for the presence and the form of the rectangles. That they are Roman siege camps stays an interpretation (probable). The June window is not registered.
+- The two ʿAsla cistern records (EAMENA-0117902 and EAMENA-0187280) are 60 m apart and describe one feature: an enclosure with a cistern on the plateau, period unknown, no description text. The lead stays weak.
+- Figure: `figures/A016c_jun74_machaerus_two_rectangles_and_citadel_marked.jpg`.
+
+## Addendum 2, 12 November 2026: the two Jerusalem structures compared with published measurements
+
+| Structure | Published | On the image of 5 May 1978 | Result |
+|---|---|---|---|
+| Kidron monuments | Avigad 1954, fig. 25 (fold-out plan; measured on a photograph of the sheet, error 5% or more): centre of the "Tomb of Absalom" to centre of the "Tomb of Zechariah" approximately 70 m; the monuments are in one line on the east side of the valley path, Absalom at the north | The two free-standing monuments are 69 m apart, on the east side of the valley bed, the pyramid monument at the south | Agrees. Status: Checked for the pair. The Bene Hezir tomb between them is a rock front and is not visible from above |
+| Tombs of the Kings | Court approximately 27 m by 25 to 26 m, sunk 8.5 to 9 m into the rock; staircase 9 m wide and 30 m long, south of the court; a rock wall between the staircase and the court (general descriptions; Vincent and Steve 1954 pl. 89 and Kon 1947 are not held) | A square sunk area, approximately 30 m by 27 m (the edges are in shadow, error 3 m), with deep shadow along its south side; immediately south of it a light strip, approximately 25 m long and 7 to 9 m wide, that ends in a dark hollow at its east end. The entry point is at the wall between the two | Agrees in form, size and arrangement. Status: Checked for the court and the staircase. The scholarly plan is not held, so this is a comparison with published dimensions and not with a plan |
+
+Correction: the first text of this note said "a sunk area approximately 60 m by 25 m immediately south-east" of the entry point. At 6 times enlargement the features are different: the court is the square north-west of the point, and the staircase is the light strip beside the point.
+
+The atlas overlay shows the names of the places from zoom 11.5.
+
 ## Not done
 
-- The EAMENA descriptions of the two ʿAsla cistern records are not read.
-- The two Machaerus rectangles are on one date. The June 1974 frames can have them; I did not look.
-- The Kidron monuments and the Tombs of the Kings are not compared with published plans.
+- The Tombs of the Kings are not compared with a scholarly plan (Vincent and Steve 1954 pl. 89; Kon 1947). The project does not hold one.
 - Karama Ruins 15, Rings 3 and Ring 4 stay with no result.
 
 ## Files
