@@ -40,7 +40,7 @@ The notes were written in steps, and later steps corrected earlier ones. Note 04
 | `regional_checklist_change_list.csv` | 20 proposed additions to the records of the regional checklist. **The record numbers were read from a two-column PDF and are not checked** |
 | `scripts/` | Registration (`demtool.py`, `warp.py`, `reg.py`, `auto.py`, `reg2.py`), rectified chips and overlays (`chips.py`, `pairs.py`, `ov.py`), and the cut scripts that the owner ran on the full tiles |
 | `notes/` | The fourteen working notes, in order. They are written in simplified technical English |
-| `figures/` | Four date pairs: the Kafrein dam site (1967 and 1974); Nebi Musa (1974 and 1978); Barakat with the end of the Kafrein dam (June and December 1974); Tulul Abu el-ʿAlayiq (December 1974 and May 1978). Three enlarged chips of 1 December 1974: Suwwan, Karama Ruin 5 (Ain al-Heri), el-Heri Tower |
+| `figures/` | Four date pairs: the Kafrein dam site (1967 and 1974); Nebi Musa (1974 and 1978); Barakat with the end of the Kafrein dam (June and December 1974); Tulul Abu el-ʿAlayiq (December 1974 and May 1978). Three enlarged chips of 1 December 1974: Suwwan, Karama Ruin 5 (Ain al-Heri), el-Heri Tower. Two pairs December and June 1974: Karama Ruin 5, el-Heri Tower |
 
 The scripts have the paths of the session that made them; they are a record of the method, not a package.
 

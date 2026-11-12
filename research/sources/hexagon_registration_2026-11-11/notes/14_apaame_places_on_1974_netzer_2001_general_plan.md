@@ -28,6 +28,10 @@ The photographs are those that the EAMENA database lists for the region (APAAME,
 
 Figures: `figures/suwwan_hexagon_1974-12-01_x4.jpg`, `figures/karama_ruin_5_ain_al_heri_hexagon_1974-12-01_x5.jpg`, `figures/el_heri_tower_hexagon_1974-12-01_x6.jpg`.
 
+### Second image (June 1974)
+
+Karama Ruin 5 (Ain al-Heri) and el-Heri Tower are also on HEXAGON tile D3C1208-400636A015_c of June 1974, with the same form at the same place. Their status is Checked: two satellite images of different dates, and photographs of 2017 with the same form. This does not give the age or the function. Karama Ruins 14 is a faint light patch with one dark spot on the June image (status stays Probable). Suwwan is at the edge of the June tile, outside the image. Karama Ruins 16 was not matched on the June image. Figures: `figures/pair74_dec_jun_karama_ruin_5_ain_al_heri.jpg`, `figures/pair74_dec_jun_el_heri_tower.jpg` (December on the left, June on the right, 4 times enlarged).
+
 ## 2. Window south of Tell Iktanu
 
 - Window: tile A017e, x 14600, y 1800, 4000 by 4500 pixels, turned 180 degrees.
@@ -53,6 +57,6 @@ Plan 1 has a 1000 m grid with no numbers. With Tell es-Sultan at about 192 / 142
 
 ## Not done
 
-- No second image for the three new places.
+- No second image for Suwwan, Karama Ruins 14 (weak) and Karama Ruins 16.
 - Karama Ruins 16, Karama Rings 3 and Karama Ring 4 are west of the new window.
 - The half-square question of the Netzer grid.
