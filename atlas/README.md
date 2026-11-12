@@ -24,7 +24,7 @@ The access-controlled build adds an image library (`media/index.json`, built by 
 
 ## Image-checked places (overlay)
 
-**Options → Image-checked places** shows the 50 places of the satellite image work of 11 November 2026 (`../research/sources/hexagon_registration_2026-11-11/sites.csv`): positions read on registered HEXAGON images of 1974 and 1978 and CORONA images of 1967. Green is checked, amber is probable or possible, blue-grey is seen, grey is not confirmed. The names show from zoom 11.5. A click opens a card with the status, the position error, the note and the source of the position. The overlay is off by default, stays visible on Satellite, and adds no scroll candidate, rating or site pin. `python3 -I research/build_image_sites.py` writes `app/atlas-image-sites.json` from the table (`--check` compares). The source is in `app/atlas-map.tsx`.
+**Options → Image-checked places** shows the 59 places of the satellite image work of 11 and 12 November 2026 (`../research/sources/hexagon_registration_2026-11-11/sites.csv`): positions read on registered HEXAGON images of 1974 and 1978 and CORONA images of 1967. Green is checked, amber is probable or possible, blue-grey is seen, grey is not confirmed. The names show from zoom 11.5. A click opens a card with the status, the position error, the note and the source of the position. The overlay is off by default, stays visible on Satellite, and adds no scroll candidate, rating or site pin. `python3 -I research/build_image_sites.py` writes `app/atlas-image-sites.json` from the table (`--check` compares). The source is in `app/atlas-map.tsx`.
 
 ## Run locally
 
