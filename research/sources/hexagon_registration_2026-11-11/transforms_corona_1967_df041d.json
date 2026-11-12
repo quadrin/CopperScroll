@@ -154,5 +154,69 @@
   ],
   "frame": "tile pixels of D3C1214-200439F007_d (not turned); valid near the window x 10500, y 11000, 3600 by 5000",
   "fit": "18 blocks of 500 m matched against the December 1974 west window on a 2 m ground grid, rms 16 m. The first transform of this tile was about 170 m off here"
+ },
+ "hexagon_F017b_jerusalem_window": {
+  "A_with_height": [
+   [
+    1.10574,
+    -0.135728
+   ],
+   [
+    -0.244968,
+    -0.912589
+   ],
+   [
+    223904.833,
+    648154.969
+   ],
+   [
+    0.524557,
+    0.113577
+   ]
+  ],
+  "h0": 519.91,
+  "shift_after": [
+   -46.3,
+   -13.2
+  ],
+  "form": "[E, N] = [x, y, 1, h - h0] @ A_with_height + shift_after; h = ground height in metres (Copernicus GLO-30)",
+  "frame": "tile pixels of D3C1209-200214F017_b; valid near the window x 0, y 13500, 8000 by 9000",
+  "fit": "141 blocks against the elevation model, rms 30 m without the height term and 18 m with it. The blocks are in the hills east of the city. One control (Dome of the Rock, 31.77806, 35.23528) gives shift_after; nine other landmarks are then right to approximately 30 m"
+ },
+ "hexagon_F017b_to_F016b_frame_link": {
+  "B": [
+   [
+    0.990121,
+    0.043983
+   ],
+   [
+    0.001391,
+    0.969243
+   ],
+   [
+    1395.497,
+    16613.555
+   ]
+  ],
+  "form": "[x16, y16] = [x17, y17, 1] @ B",
+  "fit": "51 blocks of 600 px in the overlap of D3C1209-200214F017_b and F016_b, rms 8 px; used north of the film edge of F017_b for ʿAin Duk"
+ },
+ "hexagon_F007c_to_F006c_frame_link": {
+  "B": [
+   [
+    0.982461,
+    -0.020826
+   ],
+   [
+    0.006703,
+    0.961338
+   ],
+   [
+    -958.296,
+    21495.038
+   ]
+  ],
+  "form": "[x6, y6] = [x7, y7, 1] @ B",
+  "fit": "11 blocks of 600 px in the overlap of D3C1214-200439F007_c and F006_c, rms 10 px; used for ʿAin Duk"
  }
 }

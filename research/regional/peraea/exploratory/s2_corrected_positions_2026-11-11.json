@@ -1,0 +1,94 @@
+{
+ "amended_S2_reproduces_results_v3_max_abs_diff": 0.0,
+ "corrected_sites": {
+  "kh_al_habbasa": {
+   "corrected": [
+    31.8396,
+    35.6793
+   ],
+   "frozen": [
+    31.84457,
+    35.67959
+   ],
+   "moved_m": 552
+  },
+  "tall_al_kafrayn": {
+   "corrected": [
+    31.8507,
+    35.6526
+   ],
+   "frozen": [
+    31.84972,
+    35.67861
+   ],
+   "moved_m": 2460
+  },
+  "tell_nimrin": {
+   "corrected": [
+    31.901,
+    35.6251
+   ],
+   "frozen": [
+    31.909,
+    35.638
+   ],
+   "moved_m": 1508
+  }
+ },
+ "kohlit_entries_P_transjordan": {
+  "11": {
+   "corrected": 0.00691572,
+   "frozen": 0.00733365
+  },
+  "15": {
+   "corrected": 0.00785812,
+   "frozen": 0.00831186
+  },
+  "19": {
+   "corrected": 0.00856006,
+   "frozen": 0.00900847
+  },
+  "4": {
+   "corrected": 0.00769044,
+   "frozen": 0.00813806
+  },
+  "60": {
+   "corrected": 0.00818496,
+   "frozen": 0.0086476
+  }
+ },
+ "kohlit_latent_P_transjordan": {
+  "corrected": 0.01414111,
+  "frozen": 0.01428785
+ },
+ "label": "S2_broad with the gazetteer of 9 October 2026 (frozen) and with the amended gazetteer (corrected)",
+ "logml": {
+  "corrected": 7.63244351,
+  "frozen": 7.63361822
+ },
+ "max_total_variation_corrected_vs_frozen": {
+  "entry": "60",
+  "tv": 0.00053024
+ },
+ "s2_sites": [
+  "machaerus",
+  "kh_ataruz",
+  "callirrhoe",
+  "kh_al_mukhayyat",
+  "madaba",
+  "tall_hisban",
+  "iraq_al_amir",
+  "kh_as_sur",
+  "umm_hadar",
+  "tall_barakat",
+  "tulul_adh_dhahab_w",
+  "kharrar",
+  "tell_er_rameh",
+  "tall_el_hammam",
+  "kh_al_habbasa",
+  "tall_al_umayri",
+  "tell_nimrin",
+  "kh_sar",
+  "tall_al_kafrayn"
+ ]
+}

@@ -34,15 +34,24 @@ Model: `W2B_model_v1/scripts/joint_model_v1.py`, imported unchanged, `cfg_with()
 
 Descriptive only. There is no decision threshold: the numbers are model outputs under stated assumptions, not probabilities that Koḥlit lay in Peraea. All runs are reported whatever they show. Outputs go to `W2B_model_v1/outputs_v3/`; numbers rounded to 8 decimals.
 
+## Amendment of 11 November 2026 (after the run; with the permission of the owner)
+
+Three site positions in `gazetteer.csv` were wrong and are corrected: tall_al_kafrayn (moved 2,460 m), tell_nimrin (1,508 m) and kh_al_habbasa (552 m). The evidence is in `gazetteer_position_corrections_2026-11-11.csv`. The file as frozen on 9 October is kept as `gazetteer_frozen_2026-10-09.csv` (SHA-256 b7abb1e6e52d514c605fd3cf4ea2560b367e8a4b0f36897c0745bbbe54d537fe).
+
+- This is a change of an input after a result. It is a correction of an error of fact (the points were not at the sites). No rule, variant, sigma or site list is changed.
+- The three sites have status `partial` and no `w2b_place_id`. Thus R0, R1 (V3-P) and S1, S3, S4, S5, S6 have the same inputs and the same results as before. Only S2 (broad) changes: P(entry 60 at transjordan) 0.0086 → 0.0082; latent 0.0143 → 0.0141; no entry changes by more than 0.0006 (total variation).
+- The hashes of `gazetteer.csv`, `build_gazetteer.py` and `additions_v3.json` (which records the gazetteer hash) in the table below are the hashes after the amendment. Before the amendment they were b7abb1e6…, 90887524… and e764fbee….
+- `scripts/run_s2_corrected_positions.py` compares S2 with the file of 9 October and with the amended file.
+
 ## Frozen inputs (SHA-256)
 
 | File | SHA-256 |
 |---|---|
 | research/regional/peraea/plan.json | 010fa981cd2967b8443a1a30566547332758276c96ff596c820f09138393e707 |
-| research/regional/peraea/gazetteer.csv | b7abb1e6e52d514c605fd3cf4ea2560b367e8a4b0f36897c0745bbbe54d537fe |
-| research/regional/peraea/scripts/build_gazetteer.py | 908875245716d7bfe6690bbd8f37a76e08374dcf0d4fb2712c602f46cb11d01e |
+| research/regional/peraea/gazetteer.csv | 2a0c82244cf53c63287f90f70d29672dd87120d0c2e762fd85d99d34b5a3174a |
+| research/regional/peraea/scripts/build_gazetteer.py | 452d365bcd040fb73512c0b19ab97002f427ede8d14d67f36db9793d01d6d019 |
 | W2B_model_v1/inputs_v3/build_inputs_v3.py | 99bd3622f9c4f93d6cbb75775b3541c5c84293e2315d92e27aeee07464aa2e19 |
-| W2B_model_v1/inputs_v3/additions_v3.json | e764fbee9abd86548751f7442358c76221b8e16e2ddde63a6732a20d6bd9d527 |
+| W2B_model_v1/inputs_v3/additions_v3.json | c0fd03799a6b55e25d5276ab4cb154600d183d8fca8120ad96136094938fadab |
 | W2B_model_v1/inputs_v3/places_v3.csv | 381894a6e383d8f763197048d751bc8c89a5506144b295b3b77d338cc9ad3b9c |
 | W2B_model_v1/inputs_v3/candidates_v3.csv | f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5 |
 | W2B_model_v1/inputs_v3/entries_v3.csv | 7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0 |
@@ -55,10 +64,10 @@ Descriptive only. There is no decision threshold: the numbers are model outputs 
 ```json
 {"frozen_inputs_sha256": {
  "research/regional/peraea/plan.json": "010fa981cd2967b8443a1a30566547332758276c96ff596c820f09138393e707",
- "research/regional/peraea/gazetteer.csv": "b7abb1e6e52d514c605fd3cf4ea2560b367e8a4b0f36897c0745bbbe54d537fe",
- "research/regional/peraea/scripts/build_gazetteer.py": "908875245716d7bfe6690bbd8f37a76e08374dcf0d4fb2712c602f46cb11d01e",
+ "research/regional/peraea/gazetteer.csv": "2a0c82244cf53c63287f90f70d29672dd87120d0c2e762fd85d99d34b5a3174a",
+ "research/regional/peraea/scripts/build_gazetteer.py": "452d365bcd040fb73512c0b19ab97002f427ede8d14d67f36db9793d01d6d019",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/build_inputs_v3.py": "99bd3622f9c4f93d6cbb75775b3541c5c84293e2315d92e27aeee07464aa2e19",
- "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/additions_v3.json": "e764fbee9abd86548751f7442358c76221b8e16e2ddde63a6732a20d6bd9d527",
+ "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/additions_v3.json": "c0fd03799a6b55e25d5276ab4cb154600d183d8fca8120ad96136094938fadab",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/places_v3.csv": "381894a6e383d8f763197048d751bc8c89a5506144b295b3b77d338cc9ad3b9c",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/candidates_v3.csv": "f8d70eb7fda81a8cbbc07bfaa22a8c48785dc423e73e0d989139c717cf51b2a5",
  "research/agent_review_2026-10-07/wave2/W2B_model_v1/inputs_v3/entries_v3.csv": "7fa03e97ed46e6b4bcb550538be815bc99b7a5c2b08700c11551586d3b2c31b0",
