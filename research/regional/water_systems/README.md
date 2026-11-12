@@ -4,6 +4,19 @@
 **Main result.** 2,043 installation rows (1,437 merged units) give no full match for entries 22 and 29 in any branch. Entry 29's best units lack only "northern". For the other entries the clause combinations are either common (an aqueduct whose head is recorded; a reservoir with a way in) or met by two or three units that the repository already knew: only the Naʿaran aqueduct comes from the north; only Qumran, Doq and Netzer's dry fall in the Jericho estate are waterfalls by a conduit bend; only the Hyrcania cisterns are fed by channels from a trunk wadi.\
 **What stays unknown.** Most clauses are UNKNOWN for most rows, because surveys rarely record them: m ≫ k in every branch, so rarity is not measurable. No online ASI sheet covers Jericho, the Qumran–Feshkha shore or the upper ʿArrub/Biyar sources. The walled Old City of Jerusalem is covered only by a few WBADB excavation rows. Several listed pages were not read this session (see Sources).
 
+**Corrections, 6 November 2026 (owner-approved data fixes).** `corrections_2026-11-06.csv` lists 105 field changes (104 applied, 1 already correct). They come from the side-quest cards C1b-1/2, B2-1 and C3-1 (round 1, reviewed by R4 and R5, also listed in `errata_2026-11-06.csv`) and C3 card 1 (round 2, reviewed by RR5). They correct:
+- Hisham's Palace (J15) and St Andrew's piscine (J19);
+- the duplicate Mar Saba cistern (S4146 → ASI 109/7/95);
+- eight wrong `dup_of` links and nine false "same site as ASI 108/2" notes;
+- the Artas–Herodium aqueduct head and destination, the Lower Herodium pools, and the ten Solomon's Pools rows. These had been placed on hill-top ruins 0.3–1.2 km from the installations; they now use OSM points checked against the published plans.
+
+`scripts/corrections.py` applies the list. `build_water.py` now calls it, so a rebuild keeps the corrections. The derived tables (merged units, scores, counts, headline, and the IAA and phase-4 views) were regenerated. Effects:
+- merged units go from 1,437 to 1,439;
+- aqueduct merged units 283 → 284, reservoir/pool rows 378 → 379 and units 264 → 266, cistern units 652 → 651;
+- **no k_match value changes in any entry, branch or date rule.**
+
+The 11 October figures quoted below are the pre-correction values.
+
 Exploratory, 11 October 2026 UTC (10 October Los Angeles). No identification claim. No registered result, outcome count or closed test changes; the closed entry 29 results stand. Labels: EVIDENCE (the source says it), INFERENCE (our reasoning), CLAIM (an author's assertion without a field record). Unknown stays unknown.
 
 ## Freeze record
