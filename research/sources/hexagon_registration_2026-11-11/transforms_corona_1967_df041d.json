@@ -218,5 +218,33 @@
   ],
   "form": "[x6, y6] = [x7, y7, 1] @ B",
   "fit": "11 blocks of 600 px in the overlap of D3C1214-200439F007_c and F006_c, rms 10 px; used for ʿAin Duk"
+ },
+ "hexagon_F007c_may_1978_jerusalem_window": {
+  "A_with_height": [
+   [
+    0.780194,
+    -0.119083
+   ],
+   [
+    -0.108397,
+    -0.801813
+   ],
+   [
+    222339.043,
+    647471.345
+   ],
+   [
+    -0.067202,
+    0.166998
+   ]
+  ],
+  "h0": 507.0,
+  "shift_after": [
+   -7.0,
+   17.7
+  ],
+  "form": "[E, N] = [x, y, 1, h - h0] @ A_with_height + shift_after; h = ground height in metres (Copernicus GLO-30)",
+  "frame": "tile pixels of D3C1214-200439F007_c; valid near the window x 0, y 13500, 9000 by 10000",
+  "fit": "30 blocks against the elevation model (sun azimuth 150, altitude 62), rms 7 m with the height term. The blocks are in the hills east of the city. One control (Dome of the Rock) gives shift_after (19 m); nine other landmarks are then right to approximately 30 m. Independent of the 1974 window"
  }
 }

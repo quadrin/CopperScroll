@@ -9,7 +9,7 @@ Exploratory work, 9 October 2026 UTC, by the peraea worker. No identification cl
 ## Freeze record
 
 - plan.json SHA-256 `010fa981cd2967b8443a1a30566547332758276c96ff596c820f09138393e707`, frozen 2026-10-09T22:12:02Z, before any site report was read.
-- PLAN_v3.md SHA-256 `f2850378907afc6a2aab44d49c831aeda0b75887de55f054ff86ee35a2ec8e95`, frozen 2026-10-09T23:00:45Z, before any model run on v3 inputs.
+- PLAN_v3.md SHA-256 `30d3355abfbd34532416c633cba9bd0347d128b41064b1d7bec5ebcfaa56ea4c`, frozen 2026-10-09T23:00:45Z, before any model run on v3 inputs.
 - Exposure before the plan freeze: one test search of the DoA archive for "Machaerus" (titles only, 22:08:32Z).
 - No input, rule or variant changed after the v3 run.
 

@@ -943,8 +943,8 @@
     "type": "control point",
     "error_m": 15,
     "position_source": "published coordinate; the Jerusalem window of F017b is registered to the elevation model (141 blocks, 18 m with a height term) and then moved 48 m to put this point right",
-    "image": "F017b",
-    "note": "With this one control, nine other landmarks with published coordinates (gates of the Old City, al-Aqsa, Holy Sepulchre, Church of All Nations) are at their places on the image, to approximately 30 m.",
+    "image": "F017b, F007c",
+    "note": "With this one control, nine other landmarks with published coordinates (gates of the Old City, al-Aqsa, Holy Sepulchre, Church of All Nations) are at their places on the image, to approximately 30 m. The image of 5 May 1978 (F007c) is registered independently (30 blocks, 7 m with a height term; moved 19 m to this point): the same nine landmarks are at their places.",
     "alt_names": ""
    }
   },
@@ -963,9 +963,49 @@
     "type": "hilltop with a rectangular structure",
     "error_m": 40,
     "position_source": "image, tile F017b (1 Dec 1974), Jerusalem window",
-    "image": "F017b",
-    "note": "Terraced hill with a rectangular structure on the top. The entry-table point (Pleiades 749935552) is 8 m away.",
+    "image": "F017b, F007c",
+    "note": "Terraced hill with a rectangular structure on the top. The entry-table point (Pleiades 749935552) is 8 m away. On the image of 5 May 1978 the point is approximately 35 m east of the centre of the large building on the summit.",
     "alt_names": "Gibeah"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6194,
+     31.5695
+    ]
+   },
+   "properties": {
+    "name": "Machaerus, rectangle north-west of the citadel",
+    "status": "Probable",
+    "type": "rectangular enclosure with rounded corners (probable Roman siege camp)",
+    "error_m": 30,
+    "position_source": "image, tile F018c (1 Dec 1974), Machaerus transform with height term",
+    "image": "F018c",
+    "note": "Double line, approximately 65 m by 30 m, at the edge of a ridge above the wadi, 460 m west-north-west of the citadel summit. One date. The camp letter of the published siege plan is not assigned. South of the scroll region.",
+    "alt_names": ""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6186,
+     31.565
+    ]
+   },
+   "properties": {
+    "name": "Machaerus, rectangle south-west of the citadel",
+    "status": "Probable",
+    "type": "rectangular enclosure with rounded corners (probable Roman siege camp)",
+    "error_m": 30,
+    "position_source": "image, tile F018c (1 Dec 1974), Machaerus transform with height term",
+    "image": "F018c",
+    "note": "Double line, approximately 44 m by 30 m, at the edge of a ridge above the wadi, 550 m west-south-west of the citadel summit. One date. The camp letter of the published siege plan is not assigned. South of the scroll region.",
+    "alt_names": ""
    }
   }
  ]
