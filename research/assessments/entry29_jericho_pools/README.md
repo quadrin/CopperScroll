@@ -148,6 +148,8 @@ Before confirmatory distance measurement, specify each permitted row's candidate
 | Exact A(B)101 east-wall contact/aperture, profile and connected collector | Unestablished in inspected records; no located Plan 14 sheet or identified field section | Potential dependency; source coverage and prior exposure unverified. |
 | Detailed Plans 15/23 | Not located in the supplied scan; earlier western/Stage 7 control roles already known | Phase-control gaps; holdout eligibility unverified. |
 
+*(Correction, 6 Nov 2026: Plans 14, 15 and 23 were later photographed at the NLI on 21 Oct 2026; see "Plan 14 (EVIDENCE, sheet photo)" below and `netzer2001-first-pass.md`, "Portfolio sheets photographed — 22 October 2026". The two rows above describe the state before that; [corrections log](https://github.com/quadrin/CopperScroll/blob/claude/corrections-2026-11-06/research/corrections/2026-11-06_sidequest_corrections.md).)*
+
 **No verified holdout exists.** Failure to locate Plans 14/15/23 in the 408-page scan establishes an access gap, not an affirmative nonexposure record. Trümper derivatives and Netzer's publications share the excavation lineage. Original [Plans 17–22](../../assets/plans/netzer2001/README.md) are archived; the [cycle14 manifest](../../assets/plans/netzer2001-cycle14/figure_manifest.json) distinguishes inspected targets, additional text and retained contextual figures. Unanalyzed archived content may have been encountered. The two 2001 publications and Trümper's odd printed Plan-20 page credit also require exact bibliographic reconciliation. A newly obtained file or original sheet supplies no automatic independence or unseen observation.
 
 ### Next evidence trigger and stopping point
@@ -488,6 +490,8 @@ Activity adds **one authored catalogue-record scope and one combined individual-
 ## Meinardus scan sources and reported preview coverage — 6 October 2026
 
 The user supplied a bounded search/holding report, not new article images. This supplement records its provenance and a concrete scan specification. **Meinardus183–184 remains unread here**; no installation identity, construction date, dimensions or hydraulic contact is established. The earlier J19 result remains **not identifiable from available evidence**. Catalogue access resolves a supplier route, not the archaeological dependency.
+
+*(Correction, 6 Nov 2026: the article is in Drive, unread until now: `08 Working files/Unsorted source scans/2026-10-25 13-43.pdf` (Drive `1ZkTJ3CH9cQQJes09KRuq3Ht1s3jetwjt`) and `2026-10-25 13-50.pdf` (`1TsTaWy7aLgWuOO5KbAQdoUg8gQpY1oZ8`) hold BSAC XVIII pp. 181–193 with the plates and the Pl. I plan. EVIDENCE (side-quest A5-1, review R3): p. 183 describes the piscine, 5.25 × 3.40 × 1.90 m, nine steps, 16 jars set in the walls, dated Herodian by association only; p. 184 places four cisterns relative to it; p. 181 gives the location (north bank of the Qelt, about 1 km S of the Anthimos church; side-quest C1b-2). Pp. 194–196 (plates?) not checked. [corrections log](https://github.com/quadrin/CopperScroll/blob/claude/corrections-2026-11-06/research/corrections/2026-11-06_sidequest_corrections.md).)*
 
 ### Independently inspected public metadata
 

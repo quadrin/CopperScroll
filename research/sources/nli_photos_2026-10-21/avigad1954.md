@@ -2,7 +2,7 @@
 
 Source: N. Avigad, *מצבות קדומות בנחל קדרון* / *Ancient Monuments in the Kidron Valley* (Bialik Institute, Jerusalem 1954). Hebrew text with an English summary. NLI copy: the English title page carries the oval stamp of the Jewish National and University Library. **No shelf mark is visible in any photo.** The title-page photo shows no date; 1954 comes from the photo index.
 
-Photos: 28 HEIC originals, IMG_0720–0747, taken 21 Oct 2026, 18:12–18:17. IMG_0771.MOV was skipped. Each file's Drive ID, SHA-256, capture time and page are in [avigad1954_originals.csv](avigad1954_originals.csv). All 28 SHA-256 values were recomputed from the originals and match. The images are not in the repo.
+Photos: 28 HEIC originals, IMG_0720–0747, taken 21 Oct 2026, 18:12–18:17. IMG_0771.MOV was skipped. *(Correction, 6 Nov 2026: IMG_0771.MOV (Drive `1fB9t4MEtwtELxDjQgG0JWWhY0-E7sgd9`) is the motion half of a Live Photo; at 10 fps, frame 14 shows p. [74] and frame 16 shows p. [75] with Fig. 41 (side-quest A5-2, review R3). A Hebrew reader should confirm the measures on p. 74; its lower lines are blurred. [corrections log](https://github.com/quadrin/CopperScroll/blob/claude/corrections-2026-11-06/research/corrections/2026-11-06_sidequest_corrections.md).)* Each file's Drive ID, SHA-256, capture time and page are in [avigad1954_originals.csv](avigad1954_originals.csv). All 28 SHA-256 values were recomputed from the originals and match. The images are not in the repo.
 
 ## How this was done
 
@@ -233,7 +233,7 @@ Nothing under rule 1 (no Copper Scroll image or reading appears). Nothing under 
 
 ## Still missing
 
-- Pp. 74–75 (the start of the nefesh reconstruction argument, between the photos of pp. 72–73 and 76–77).
+- Pp. 74–75 (the start of the nefesh reconstruction argument, between the photos of pp. 72–73 and 76–77). *(6 Nov 2026: found as frames 14 and 16 of IMG_0771.MOV; see the correction at the top. Not yet transcribed here.)*
 - Ch. 5 Zechariah, pp. 80–90: the corridor and stair question, the "unfinished tomb", and whether a tomb is hidden to the east.
 - Ch. 6 Absalom, pp. 91–133, and ch. 7 Jehoshaphat, pp. 134–138: plans, the arcosolia chamber, the entrance above it, the stair to Jehoshaphat.
 - Hebrew summary, p. 139.
