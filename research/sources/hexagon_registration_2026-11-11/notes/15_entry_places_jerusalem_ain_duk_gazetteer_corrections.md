@@ -4,12 +4,12 @@ Date: 2026-11-11. This note continues the first comparison of the site table wit
 
 ## Result first
 
-1. **Gazetteer positions.** The three wrong points are corrected in a separate table in the repository (pull request 109, not merged). The frozen files are not changed. The correction changes no entry result by more than 0.0006.
+1. **Gazetteer positions.** The three wrong points are corrected in a separate table in `research/regional/peraea/`. The frozen files are not changed. The correction changes no entry result by more than 0.0006.
 2. **ʿAin Duk** is found on two dates, 415 m from the entry-table point. Status: Probable. **Tell el-Qos** is in the built-up area of Jericho and no mound can be read. Status: Not confirmed.
 3. **Jerusalem** is on the image of 1 December 1974 (tile F017b). I registered a Jerusalem window. Of the 15 Jerusalem places, 11 are at a landmark or valley that the image shows; 2 are structures that I cannot identify; 1 is a large area; 1 has no coordinate. Tell el-Ful, north of the city, agrees also.
 4. **EAMENA.** 15 entry places are inside the area of the EAMENA table. 14 of them have a record within 500 m. For the three corrected sites east of the Jordan, EAMENA has a record 30 to 70 m from the image position. This is a second source for each correction.
 
-## 1. The three gazetteer positions (pull request 109)
+## 1. The three gazetteer positions
 
 PLAN_v3 says that no input is changed after a result, and a test checks the SHA-256 of `gazetteer.csv` and `build_gazetteer.py`. Thus I did not change these files. I added a correction table and an exploratory run.
 
@@ -110,7 +110,6 @@ Four new lines (48 places now): ʿAin Duk, head of the spring gardens (Probable)
 
 ## Not done
 
-- Pull request 109 is not merged. Write "merge pull request 109" if you agree.
 - `phase3_places.csv` is not changed (ʿAin Duk 415 m, Ramat Raḥel 136 m, Tell el-Qos 165 m). These are your decisions.
 - Jerusalem is checked on one date only. The image of 5 May 1978 (F007c) also shows the city; I looked at it but did not register it.
 - The Kidron monuments and the Tombs of the Kings are not identified as structures. A larger scale and the published plans are necessary.
