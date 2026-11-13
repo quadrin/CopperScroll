@@ -29,6 +29,7 @@
 | Entry places compared with the images: ʿAin Duk is at the head of the irrigated plots, 415 m from the entry-table point (two dates, Probable); Tell el-Qos is not confirmed; in Jerusalem (tile F017b, new window) 11 of 15 entry places are at a landmark or valley that the image shows. Three points of the Peraea gazetteer are corrected in the gazetteer (amendment recorded in PLAN_v3) | note 15 | One reader; Jerusalem on one date; one control point for the Jerusalem window |
 | Jerusalem on a second date (5 May 1978, registered independently): the same ten landmarks and the same entry-place results; two monuments in the Kidron valley and a sunk area at the Tombs of the Kings are visible. Machaerus: two rectangles with rounded corners west of the citadel (Probable siege camps). EAMENA water records agree with Phase 5 in 8 of 10 clear cases | note 16 | One reader; the rectangles are on one date; camp letters not assigned |
 | All 37 entry places graded for location (A 19, B 7, C 6, D 3, E 2); 14 of 16 medium matches at a confirmed or agreeing position. Gerizim: octagonal church confirmed, eastern staircase Probable on a modern image with the JSP 8 plan. Beth Shean: mound and theatre on two new frames of 1974. Kh. Ibziq: Probable. Choziba: place confirmed, conduit not located | note 17 | One reader; no feature of an entry is confirmed; no rating changed |
+| 13 November: two location grades updated. Wadi Qumran C to B (plate XXIX of Humbert and Chambon 1994 on the image of 1978; the point was not moved). Kh. Ibziq B to A (the south ruin is Kh. Ibziq Upper of Zertal 2008; two dates). Offsets and dates corrected for Kh. Qumran, Gerizim and Tell es-Sultan. Grades now: A 20, B 7, C 5, D 3, E 2 | note 18; edit log | One reader; a location grade is not evidence for a deposit; no rating, candidate or match strength changed |
 
 ## Corrections to earlier statements of the same day
 
@@ -42,7 +43,8 @@ The notes were written in steps, and later steps corrected earlier ones. Note 04
 | `transforms.json` | Pixel-to-grid transforms (EPSG:2039) for each tile and window, with the height term where fitted |
 | `regional_checklist_change_list.csv` | 20 proposed additions to the records of the regional checklist. **The record numbers were read from a two-column PDF and are not checked** |
 | `scripts/` | Registration (`demtool.py`, `warp.py`, `reg.py`, `auto.py`, `reg2.py`), rectified chips and overlays (`chips.py`, `pairs.py`, `ov.py`), and the cut scripts that the owner ran on the full tiles |
-| `notes/` | The seventeen working notes, in order. They are written in simplified technical English |
+| `edit_log_location_grades_and_image_statuses.md` | Each change of a location grade, an image field or an image status word after 12 November, with the earlier value and the reason (owner's rule of 13 November 2026) |
+| `notes/` | The eighteen working notes, in order. They are written in simplified technical English |
 | `figures/` | Four date pairs: the Kafrein dam site (1967 and 1974); Nebi Musa (1974 and 1978); Barakat with the end of the Kafrein dam (June and December 1974); Tulul Abu el-ʿAlayiq (December 1974 and May 1978). Three enlarged chips of 1 December 1974: Suwwan, Karama Ruin 5 (Ain al-Heri), el-Heri Tower. Two pairs December and June 1974: Karama Ruin 5, el-Heri Tower |
 
 The scripts have the paths of the session that made them; they are a record of the method, not a package.
