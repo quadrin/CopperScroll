@@ -22,7 +22,7 @@ Grades of the 37 entry places: A 20, B 7, C 5, D 3, E 2 (12 November: A 19, B 7,
 
 - The Wadi Qumran point. A move to the gorge mouth (31.74094 N, 35.45529 E) makes grade A possible; the reading of "below Kh. Qumran" decides this.
 - A second place row for Tell er-Ras (entry 57).
-- Entry 59: Zertal 2008 writes that the identification of Kh. Ibziq with biblical Bezek is unfounded by the survey results and prefers Kh. Salhab. The location grade says only that the table point is at the ruin named Kh. Ibziq.
+- Entry 59 (text corrected on 13 November, after the merge of the first version): Zertal 2008 (chapter 3, pp. 105–107) puts the Bezek of Saul (Iron Age I) at Kh. Salhab and holds that the name moved to Kh. Ibziq at approximately the end of the Iron Age; he takes the two Bezek villages of Eusebius as the Lower and Upper ruins. For a text of the 1st century CE this supports the name at Kh. Ibziq. The first version of this note gave only the first half. The location grade says only that the table point is at the ruin named Kh. Ibziq.
 
 ## Limits
 

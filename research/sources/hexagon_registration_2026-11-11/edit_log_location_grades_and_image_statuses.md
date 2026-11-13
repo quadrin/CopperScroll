@@ -54,3 +54,9 @@ Grades after the changes: A 20, B 7, C 5, D 3, E 2 (12 November: A 19, B 7, C 6,
 - 13 November, step 13: a quadrangle at the north foot of Gerizim was taken as the Police Barracks. Replaced (B6).
 - 13 November, step 17: the Sartaba plan was placed with its scale bar. Replaced (B7).
 - 13 November, step 20: Kh. Yanun "Not confirmed". Replaced (B10) after the survey description was read. The lesson: for a survey "khirbeh", read the site description before the image is judged; many such ruins have no wall outline at 1 m for each pixel.
+
+## D. Corrections of statements (not of a value)
+
+| No. | Date | Where | Earlier statement | Corrected statement | Why |
+|---|---|---|---|---|---|
+| D1 | 13 Nov, later | Note 18 and the findings-log entry of 13 November (pull request 121) | "Zertal 2008 writes that the identification of Kh. Ibziq with biblical Bezek is unfounded by the survey results and prefers Kh. Salhab." | Zertal puts the Bezek of Saul (Iron Age I) at Kh. Salhab, and holds that the name moved to Kh. Ibziq at approximately the end of the Iron Age; the two Bezek villages of Eusebius are the Lower and Upper ruins. For the 1st century CE the name is at Kh. Ibziq | The site entry (printed p. 197) was read and the discussion in chapter 3 (pp. 105–107) was not. The earlier statement was true but left out the half that matters for a Roman-period text. No value depends on it |
