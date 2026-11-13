@@ -76,6 +76,16 @@ Grades after the changes: A 21, B 7, C 5, D 3, E 2 in 38 rows (12 November: A 19
 | B41 | 13 Nov, later | Mill Tahunet el-Fusayil | not examined | Possible | Small bright object at the printed position on one date | step 32 |
 | B42 | 13 Nov, later | Kh. ʿAujah el-Foqa | Checked (B1) | Checked, with the survey grid | Zertal and Bar 2019, site 143, grid 1879/1504: my point is in the cell; size agrees | step 32 |
 | B43 | 13 Nov, later | Atlas map point of Tell esh-Sheikh Diyab | 32.0491 N, 35.4324 E (second issue) | 32.0466 N, 35.4299 E | Follows B35 | step 32 |
+| B44 | 13 Nov, later | Reservoir of Tell esh-Sheikh Diyab | Probable at 190.78/161.45 (B36) | **Checked** at 190.73/161.44 | Modern image: square basin of 45 m with walls, south of a bare round mound; the 1974 marks fall on it to 10 m | step 33 |
+| B45 | 13 Nov, later | Rujm Abu Mukheir | not examined | Checked at 189.81/162.53 | Modern image: round structure with concentric rings; round dark feature at the same place in 1974; book: round tower of 17.2 m | step 33 |
+| B46 | 13 Nov, later | ʿAujah flour mill | not examined | Checked at 188.16/150.46 | Building in 1974 and ruin on the modern image, 10 m from the printed position | step 33 |
+| B47 | 13 Nov, later | Qanat Musa; circle of Archelais aqueduct A | not examined | Probable | Line south from the branching place; round feature at 18849/15086 | step 33 |
+| B48 | 13 Nov, later | Kh. Beiyudhat (Archelais) | not examined | Probable at 194.75/152.50 | Road crosses the site at the printed centre; field of excavated walls east of the road on the modern image | step 33 |
+| B49 | 13 Nov, later | Tell esh-Sheikh Diyab (2), site 21 | not examined | Not confirmed | Slope with a track at the printed grid | step 33 |
+| B50 | 13 Nov, later | Kh. Ibziq (Lower) | Checked (B15) | **Probable** | Blind check: the second reader put it 171 m away with medium-low confidence and named a second place that fits | step 34 |
+| B51 | 13 Nov, later | Khurbet Fusayil, chain wells | Checked for 320 m (B40) | Checked for 185 m; the east 110 m is mine only | Blind check: nine rings from 192.33/159.34 to 192.48/159.28 | step 34 |
+| B52 | 13 Nov, later | Tell esh-Sheikh Diyab; fort of Khurbet Fusayil; square of step 16 as modern; Kh. Ibziq (Upper) enclosure | Checked / withdrawn (B35, B34, B37, B14) | no change; confirmed by a blind second reader to 35 m, 9 m, 7 m and 31 m | Blind check | step 34 |
+| B53 | 13 Nov, later | Reservoir of the tell | Checked (B44) | Checked, on the modern image only; on the 1974 images it is not resolved (second reader: low confidence, 70 m) | Blind check | step 34 |
 
 ## C. Earlier thinking that is kept for the record
 
