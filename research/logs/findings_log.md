@@ -1779,3 +1779,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **No level changes.** No rating, candidate, match strength or table value is changed. These places are not entry places of the location table.
 - **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
 
+## 13 November 2026 (decision) — entries 20, 57 and 59: three owner decisions on places (no level changes)
+
+- **Decision (owner).** (1) Entry 57: Tell er-Ras gets its own row in the location table, because it is 650 m north of the Gerizim row point and outside the 500 m of that row. (2) Entry 20: the Wadi Qumran point is not moved; the reading of "below Kh. Qumran" decides first. (3) Entry 59: Kh. Ibziq stays possible, medium.
+- **Reasons.** EVIDENCE: Tell er-Ras is fixed on two HEXAGON dates at 32.2066 N, 35.2745 E (Survey of Palestine 1:20,000 map at 36 m). The gorge mouth of Wadi Qumran has an image position (31.74094 N, 35.45529 E), but the lower wadi east of the ruin is also "below Kh. Qumran". For Kh. Ibziq, the Upper ruin is confirmed on the images as Zertal's site 44; his argument puts the name there from the end of the Iron Age; no Early Roman feature is published at the ruin.
+- **How it is recorded.** One new row `tell_er_ras` in `entry_places_location_assessment_2026-11-12.csv` (grade A; no rating of its own); rows A14 to A16 of the edit log; note 18.
+- **Not changed.** `ratings.csv` and `ratings.json` (entry 57 keeps its rating on the `gerizim` candidate, with its Tell er-Ras branch in `decisive_next`; entry 59 keeps its `decisive_next`), `entry_assessments_with_location_grade_2026-11-12.csv`, `sites.csv` (its row for the northern spur still has the position of 12 November, 170 m from the platform).
+- **Status of the evidence.** Exploratory; one reader, not blind. A location grade is not evidence for a deposit.
+
