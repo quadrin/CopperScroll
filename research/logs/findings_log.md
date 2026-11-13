@@ -1769,3 +1769,13 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Fields corrected.** Offsets, image dates and image evidence of `kh_qumran` (94 m, 3 dates), `gerizim` (45 m; Tell er-Ras is 650 m north of the row point) and `tell_es_sultan` (130 m to the mound centre).
 - **No level changes.** No rating, candidate, match strength, coordinate or outcome-ledger value is changed. Open for the owner: the Wadi Qumran point; a second place row for Tell er-Ras.
 - **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
+
+## 13 November 2026 (later) — image statuses after the plans of the Manasseh survey, volume 5: Tell esh-Sheikh Diyab at a new place; fort of Phasaelis (exploratory; no level changes)
+
+- **Method (one reader, not blind; no registered prediction).** Sheets XII, XV and XVIII of the Survey of Western Palestine (1880) were registered by their frames (SWP longitudes are 500 m too far west against eight image places). Plans of Zertal and Bar 2019 (volume 5: fig. 81, Tell esh-Sheikh Diyab; fig. 105, Kh. Fusayil) were laid on the HEXAGON images of 1974 with their own scale and north and one anchor. The images and plans are in the owner's Drive; nothing is copied here.
+- **Tell esh-Sheikh Diyab.** EVIDENCE: the tell is at approximately 32.0466 N, 35.4299 E (plan overlay on a knoll with a shadow of 8 to 9 m; Israel grid 1907/1614 and UTM grid of the book in the same cell; positions of the book's Appendix D on the two sides of the reservoir). The square "Fasael pool" of the notes of 13 November (32.0487 N, 35.4324 E) is a modern compound with a tank and is withdrawn. The reservoir of the tell is Probable, not resolved.
+- **Kh. Fusayil (Phasaelis).** EVIDENCE: the fort of 70 by 70 m is at 32.0282 N, 35.4427 E (overlay on two dates); a line of chain wells east of it is on the two dates.
+- **Corrections of statements of the same day** are in the edit log, rows D2 to D5 (among them: a status "Checked by position" for the tell at the old place was withdrawn after one hour; a statement that volume 5 was not held was wrong).
+- **No level changes.** No rating, candidate, match strength or table value is changed. These places are not entry places of the location table.
+- **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
+
