@@ -24,6 +24,14 @@ Grades of the 37 entry places: A 20, B 7, C 5, D 3, E 2 (12 November: A 19, B 7,
 - A second place row for Tell er-Ras (entry 57).
 - Entry 59 (text corrected on 13 November, after the merge of the first version): Zertal 2008 (chapter 3, pp. 105–107) puts the Bezek of Saul (Iron Age I) at Kh. Salhab and holds that the name moved to Kh. Ibziq at approximately the end of the Iron Age; he takes the two Bezek villages of Eusebius as the Lower and Upper ruins. For a text of the 1st century CE this supports the name at Kh. Ibziq. The first version of this note gave only the first half. The location grade says only that the table point is at the ruin named Kh. Ibziq.
 
+## Owner's decisions of 13 November 2026 (later)
+
+- **Entry 57:** a second place row, `tell_er_ras`, is added to the location table (grade A; 32.2066 N, 35.2745 E). It has no rating of its own.
+- **Entry 20:** the Wadi Qumran point is not moved.
+- **Entry 59:** Kh. Ibziq stays possible, medium.
+
+The table has 38 rows now: A 21, B 7, C 5, D 3, E 2.
+
 ## Limits
 
 One reader. Survey grids are to 100 m. A location grade is not evidence for a deposit, a reading or a date. `sites.csv`, the site layer of the atlas application and the figures are not changed by this note; the positions of the image places of 13 November are in the owner's project notes (image linking, steps 1 to 26).

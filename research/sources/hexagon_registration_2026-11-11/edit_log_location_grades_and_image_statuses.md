@@ -23,8 +23,11 @@ Status of the table: the rows of section A are the changes of this pull request 
 | A11 | 13 Nov | tell_es_sultan | offset; evidence | 83 m; "mound on the images" | 130 m to the mound centre; overlay of Kenyon 1981 fig. 1, Trench II 17 m from the point | Height model; plan overlay | steps 11, 21, 23 |
 | A12 | 13 Nov, later | ibziq (59) | location grade | B, "agrees with area (Probable)" (A10) | **A, "confirmed (Kh. Ibziq Upper of the survey)"** | Row A10 said what A needs: a published description that agrees with one field. Zertal 2008 (site 44) gives it: grid 1878/1971, 435 m, a large ruin on a slope with the tomb of Nebi Hizqin and houses on its upper part, and the road at the bottom. The image has a walled hilltop enclosure with standing buildings, cells on the slope east of it, and the road. Grid 150 m; height 437 m against 435 m; two dates. The table point is 80 m from the enclosure | step 26 |
 | A13 | 13 Nov, later | ibziq | evidence | "which of the two survey ruins this is, is not known" | south ruin = Upper (site 44); north ruin = Lower (site 42) | Lower: grid 1881/1980 (120 m from my point), 375 m against 373 m, spur between two ravines, road beside it | step 26 |
+| A14 | 13 Nov, owner's decision | tell_er_ras (57) | row | none (A8: not added) | **row added**, grade A, point 32.2066 N, 35.2745 E | The owner decided: Tell er-Ras is 650 m from the gerizim point, too far for one row. The row has no rating of its own; entry 57 keeps its rating on the gerizim candidate | owner, 13 Nov |
+| A15 | 13 Nov, owner's decision | wadi_qumran (20) | point | not moved (A3) | **stays not moved** | The owner decided: the reading of "below Kh. Qumran" is a text question and comes first | owner, 13 Nov |
+| A16 | 13 Nov, owner's decision | ibziq (59) | candidate and strength | possible, medium | **stays possible, medium** | The owner decided to keep it. Zertal's full argument supports the name at Kh. Ibziq for the 1st century CE; no Early Roman feature is published at the Upper ruin. The test in `ratings.csv` (a dated drain or channel at Upper Ibziq) stays the next step | owner, 13 Nov |
 
-Grades after the changes: A 20, B 7, C 5, D 3, E 2 (12 November: A 19, B 7, C 6, D 3, E 2).
+Grades after the changes: A 21, B 7, C 5, D 3, E 2 in 38 rows (12 November: A 19, B 7, C 6, D 3, E 2 in 37 rows).
 
 ## B. Image status words
 
