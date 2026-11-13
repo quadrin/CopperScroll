@@ -83,6 +83,10 @@ revised_candidates={'40':[{'placeId':'beth_horon','status':'possible','confidenc
 # as in the Phase 5 index. Kh. Salhab (Zertal site 23), Zertal's biblical Bezeq, is added at low.
 revised_confidence={}
 revised_candidate_confidence={}
+# 12 November 2026, owner decision on record conflicts C63 and C65: entry 51 has no preferred place.
+# The west-bank south-east corner (Milik) and the east-bank Kidron monuments (Jeremias; Bene Ḥezir) are both 'possible, low'.
+# The Phase 3 index is kept as the Phase 3 record; the Phase 5 index row carries the lowered confidence.
+no_preferred={'51'}
 # The Phase 5 index lists Zertal among the main sources, so no source is added here.
 # 29 September 2026, second run (source_extractions_2026-09-29.md): Magen's NEAEHL entry (57), Garbrecht & Peleg 1994 (31; 16, 29, 35),
 # HA 40 and the Salhab search (59), Jeremias and DJD III (40). Evidence texts updated; no confidence changes.
@@ -129,7 +133,7 @@ corrected_text={
 '55':("The editors report a double pool at St Anne’s, with a smaller northern basin, in use in the 1st century (John 5:2; Milik DJD III pp. 271–272; Høgenhaven p. 84). They rely on excavation reports not read in the repository (Vincent and Abel 1926; Jeremias 1949/1966).","The smaller basin follows Milik’s and Puech’s reading לימומית; the Text tab reads “on the right”. The text may describe two pools without naming Bethesda; the 2026 plate check shows what looks like a ḥet where Milik’s Bethesda needs a taw. The nearby Strouthion twin pool prevents a unique match on that feature alone."),
 '54':("Both Jerusalem candidates rest on entry order; no name places the tomb in Jerusalem. Only generic tombs are recorded near either (ASI 102/420; 102/407, 102/424).","Under the Jericho reading, the regional tomb lane scored Puech’s branch in the Jericho region, not in Jerusalem. No tomb at either candidate fits the owner phrase (54-L, 54-M: 0 matches). No repository source proposes Gethsemane; Allegro put this tomb among the common graves on the Kidron’s east bank (1960 p. 93)."),
 '52':("The Kidron’s east side is a west-facing rock slope with rock-cut tombs (Milik DJD III pp. 270–271; Avni & Greenhut 1996, abstract). At the Silwan necropolis anchor the survey records Iron Age II monuments and kokhim “apparently from the Herodian period” (ASI 102/420).","No source locates Zadok’s court or garden, so “opposite” has no fixed point. No rock with a great slab at its base is recorded; the tomb lane never meets the garden clause. The 1st-century CE monument that Zias dates (Absalom’s Tomb) stands at the Kidron monuments, north of this anchor."),
-'51':("Rock-cut tombs of the Second Temple period are reported in the Kidron generally (Avni & Greenhut 1996, abstract only). Milik places Zadok’s tomb on the west bank below the south-east corner, from texts and traditions (DJD III pp. 270–271). At the angle itself Warren found debris and masonry, no tombs (1871 pp. 135–141).","The only recorded pillared-porch tomb nearby, Bene Ḥezir, stands on the east bank (Kloner–Zissu pp. 143–146). Phase 5 infers that the tomb type fits Jeremias’s east-bank placement better than Milik’s. No tomb is named Zadok. The slope south of the corner was a 1st-century CE refuse dump (HA-ESI 136). Lefkovits reads “ossuary”, not “stoa”."),
+'51':("Rock-cut tombs of the Second Temple period are reported in the Kidron generally (Avni & Greenhut 1996, abstract only). Milik places Zadok’s tomb on the west bank below the south-east corner, from texts and traditions (DJD III pp. 270–271). At the angle itself Warren found debris and masonry, no tombs (1871 pp. 135–141).","The only recorded pillared-porch tomb nearby, Bene Ḥezir, stands on the east bank (Kloner–Zissu pp. 143–146). Phase 5 infers that the tomb type fits Jeremias’s east-bank placement better than Milik’s. No tomb is named Zadok. The slope south of the corner was a 1st-century CE refuse dump (HA-ESI 136). Lefkovits reads “ossuary”, not “stoa”. Neither bank is preferred: the two places are rated equal (decision of 12 November 2026)."),
 '49':("The tunnel outlet and surrounding pools supply a compatible water-installation setting. Szanton distinguishes the smaller Silwan pool from Birkat el-Hamra.","Siloam needs a supplied word; the plates lean to Puech’s waw without deciding it. No period trough is established. Conduit L103 is conditionally excluded as Puech’s hollowed stone and as built before a 69/70 CE coin; Milik’s pipe branch survives."),
 '48':("The standing Kidron monument is dated to the first century CE by its architectural style (Zias 2023; Kloner–Zissu pp. 142–143).","Its earliest surviving labels name Zacharias. A first-century association with Absalom remains unestablished. Its original entrance is in the south wall; the western opening is a later breach (Kloner–Zissu p. 142). The entry asks only for its west side."),
 '47':("ASI 102/486 records an undated ancient well at ʿEn Rogel (Bir Ayyub). No basin is recorded within 1 km, and no black stone or entrance is reported.","Bir Ayyub depends on Puech’s “valley of Job” (2015 p. 89), whose antiquity he says needs checking (n. 392); the Text tab shows Wolters’s “Valley of Zered(?)”, and Lefkovits reads “Pure Valley”."),
@@ -196,7 +200,7 @@ for r in rows('phase3_site_index.csv'):
     confidence=revised_confidence.get(eid,confidence)
     candidates=[]
     for pid in ids:
-        preferred=pid==r['best_place_id']
+        preferred=pid==r['best_place_id'] and eid not in no_preferred
         conf=confidence if preferred else 'medium' if (eid,pid) in [('17','buqeia'),('18','asla'),('30','jericho_area'),('59','ibziq')] else 'low'
         conf=revised_candidate_confidence.get((eid,pid),conf)
         status='preferred' if preferred else 'weak' if pid=='tell_el_qos' else 'possible'
@@ -208,7 +212,7 @@ for r in rows('phase3_site_index.csv'):
     if eid in reading_notes: caution=reading_notes[eid]+' '+caution
     if eid=='54': evidence+=' If the tomb was reserved for priests, Puech names the tomb of the Benê Ḥezîr in the Kidron valley as one possibility (2015 p. 101). That tomb stands at the Kidron monuments, which are not a candidate for this entry.'
     candidates+=revised_candidates.get(eid,[])
-    entries.append({'id':eid,'title':title,'hebrew':hebrew,'description':description,'lines':r['col_line'],'status':r['status'],'confidence':confidence,'region':places[ids[0]]['region'] if ids else 'unplaced','candidates':candidates,'evidence':evidence,'caution':caution,'landmark':primary['landmark_types_required'] if primary else '', 'period':primary['period'] if primary else 'Not established in the public archaeology index','sources':primary['main_sources'] if primary else 'Phase 3 site index; Phase 2 landmark lexicon','featured':eid in ['21','31','32','49']})
+    entries.append({'id':eid,'title':title,'hebrew':hebrew,'description':description,'lines':r['col_line'],'status':'possible only' if eid in no_preferred else r['status'],'confidence':confidence,'region':places[ids[0]]['region'] if ids else 'unplaced','candidates':candidates,'evidence':evidence,'caution':caution,'landmark':primary['landmark_types_required'] if primary else '', 'period':primary['period'] if primary else 'Not established in the public archaeology index','sources':primary['main_sources'] if primary else 'Phase 3 site index; Phase 2 landmark lexicon','featured':eid in ['21','31','32','49']})
 for entry in entries:
     if entry['id'] in corrected_period:
         entry['period']=corrected_period[entry['id']]

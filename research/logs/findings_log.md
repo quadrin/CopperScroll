@@ -1741,3 +1741,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Status.** Possible. It is a lead from texts only; no excavated find connects the name Zadok with the Bene Ḥezir tomb.
 - **No level changes.** The ratings of entry 51 (`jer_se_corner`, `jer_kidron_mon`) and conflicts C63 and C65 are not changed. They stay an owner decision.
 - **Exposure.** The reader had the scroll text, the project notes and the tomb catalogue open. Nothing here is unseen-ground evidence.
+
+## 12 November 2026 (night, decision) — entry 51: no preferred place (record conflicts C63 and C65)
+
+- **Decision (owner).** Entry 51 has no preferred place. The west-bank place at the south-east corner (`jer_se_corner`, before: preferred, medium) and the Kidron monuments (`jer_kidron_mon`, possible, low) are now both possible, low. The entry status is "possible only" and its confidence is low. `jer_south_wall` is not changed (C66 stays open).
+- **Reasons.** EVIDENCE: the component ratings give the two places the same weakest level (1, "weak"); the feature level is 1 at the corner (no tomb recorded: Warren; Kloner and Zissu) and 2 at the monuments (Bene Ḥezir, porch with two columns). INFERENCE: each bank has one clear problem. West bank: no tomb. East bank: the tomb is not below the corner of the portico (XI 2), the inscription has no Zadok, entry 52 fits less simply, and Jeremias's argument depends on the disputed removal of tombs before 70 CE. Phase 5 already wrote "the bank is left open".
+- **How it is recorded.** `no_preferred` in `atlas/research/build_atlas.py`; the Phase 5 index row (both copies): possible, low, LOWERED; the reason in `tables/phase5_assessments.csv`; `ratings.json` and `ratings.csv` (atlas columns of `jer_se_corner` only; no component level is changed); `record_conflicts.md` (C63, C65 decided). The Phase 3 tables are kept as the Phase 3 record.
+- **Not changed.** Entries 50 and 52 use the same anchor and are not changed here: entry 50 was "possible only, low" before, and entry 52 keeps `jer_kidron_east` at low.
+- **Status of the evidence.** Exploratory; one reader, not blind. This is a lowering of confidence, not a test result.
