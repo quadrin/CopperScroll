@@ -55,3 +55,7 @@ This note is beside the registered count. It does not change the count, a match,
 ## Correction (14 November 2026, later)
 
 The first text of this note named "Bull" as the source for Tananir. The source of the Tananir unit (E99) in the count is Boling 1975, pp. 36, 57–60, 65, 84 (figs 2 and 13). Bull excavated Tell er-Ras on Mount Gerizim, which is a different site. No value depended on this.
+
+## Addition (14 November 2026, later): Tananir
+
+Boling 1975 (added to Drive by the owner) places the Tananir building. With its location plan put on the grid by Tell Balata and Tell er-Ras, the building is at PG 176.88/179.58 (Probable, about 50 m), 82 m north of the database point. From there, E92 is at 336.3° and 874 m. **E99 now holds** (it was "not decided"). Three units stay not decided: S845, S1032 and S843. See `sources-added-2026-11-14-and-tananir-…`.
