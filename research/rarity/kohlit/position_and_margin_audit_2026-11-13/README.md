@@ -55,3 +55,12 @@ With image positions and the excavation report (Hizmi 2016): the large pool (cis
 - Under the count's own reference point: one of the four branch B matches holds with a measured pool, two fail, one is not testable. No number of the count is changed.
 
 - `fourth_pass_2026-11-14_two_of_three_units.md` with `kohlit_two_of_three_margins_and_images_2026-11-14.csv` and `margin_by_unit_point_move.py`: the 22 other two-of-three units. For each, the distance the unit point can move before a positional condition fails. 14 units have 130 m or more (or words only). Of the 6 with 85 m or less, the images decide none against the count: E334 and S3961 hold; S845 (5 m, a tie on the sector edge), S1032 (15 m), E99 (50 m) and S843 (75 m) are not decided. No number of the count is changed.
+
+Notes of 14 November 2026, later (no number of the count is changed):
+
+- `eighth_note_2026-11-14_glueck_1951_fig_130.md`: Glueck 1951 fig. 130 on the grid; Tell Abu Sidreh Checked at 203.12/177.93 (unit S857's database point is about 700 m off); the 1943 road at Kh. es-Saleh. Its result for S845 ("holds, Probable") was reversed the same day; read it with the ninth note.
+- `ninth_note_2026-11-14_blind_second_reading.md` with `ninth_note_blind_reader_answers_not_edited.md`: a blind second reader confirmed the tell and did not confirm the road place at the wadi or the Roman camp of Kh. el-Gharur. S845 is again not decided.
+- `tenth_note_2026-11-14_udala_on_the_images.md`: Tell er-Ras near ʿAwarta Checked; the 1,000 m limit goes through the tell; S1032 not decided. Kallai's entry for the tell is in `…/20_other_methods_2026-11-13/29_held_sources_opened_2026-11-14.md`.
+- `eleventh_note_2026-11-14_gharur_modern_image.md`: a ruin of about 125 × 66 m on the modern image, 14 m from the 1974 centre; not a blind test; S845 not changed.
+- `twelfth_note_2026-11-14_zertal_vol1_page_check.md`: the 14 Zertal volume 1 entries checked on the real pages; all agree with the reading of 17 October.
+- State: of the 22 two-of-three units, 20 hold and 2 are not decided (S845, S1032); none fails.
