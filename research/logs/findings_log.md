@@ -1805,3 +1805,10 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **No level changes.** No rating, candidate, match strength or table value is changed.
 - **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
 
+## 14 November 2026 — Koḥlit branch B matches with measured positions; blind second reading at I 12 (exploratory; no level changes)
+
+- **Koḥlit, branch B, with measured positions (outside the protocol).** EVIDENCE: from the database points, Tulul Abu el-ʿAlaiq holds (Birket Musa centre 4.1° inside, 74% of the pool inside); Tell esh-Sheikh Dhiab fails (point 1 km off); Kypros fails (the birkeh south of Beit Jabr et-Tahtani is at 37–38°; it is inside only from the summit ruin); el-Muntar is not testable. Notes in `research/rarity/kohlit/position_and_margin_audit_2026-11-13/`.
+- **Line I 12 (entry 4).** A blind second reader (not told the text, line or question) saw one letter with a base and a right side before ק, low confidence. Lean to the closed-letter reading: low. The reader recognised the object; blind to the question, not to the text.
+- **Correction.** The CT3 left-light frames do not register at I 12 (edit log D10).
+- **No level changes.** No rating, candidate, match strength or count is changed.
+
