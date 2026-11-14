@@ -5,8 +5,13 @@ import {contextHash,type InspectionView} from './atlas-context-routes';
 import './atlas-site-nav.css';
 import './atlas-mobile.css';
 import './atlas-clean.css';
+const env=(import.meta.env as unknown as Record<string,string|undefined>|undefined)??{};
+// Field notes live on the access-controlled site (Cloudflare Pages behind Cloudflare Access). The public build links there.
+export const PROTECTED_BUILD=env.VITE_PROTECTED_BUILD==='1';
+export const PHOTO_SITE=env.VITE_WSRP_PHOTO_SITE??'https://copper-scroll-photos.pages.dev/';
+export const FIELD_NOTES=PROTECTED_BUILD||!PHOTO_SITE?'#field-notes':PHOTO_SITE+'#field-notes';
 export type AtlasSection='map'|'scroll'|'introduction'|'notes';
-export function sectionRoutes(entry:string,place?:string|null){const query=place?'?'+new URLSearchParams({place}).toString():'';return {introduction:'#what-is-the-copper-scroll',map:entryHash(entry,'2d')+query,scroll:entryHash(entry,'scroll')+query,compare:contextHash(entry,'compare',place),notes:'#field-notes'};}
+export function sectionRoutes(entry:string,place?:string|null){const query=place?'?'+new URLSearchParams({place}).toString():'';return {introduction:'#what-is-the-copper-scroll',map:entryHash(entry,'2d')+query,scroll:entryHash(entry,'scroll')+query,compare:contextHash(entry,'compare',place),notes:FIELD_NOTES};}
 export default function AtlasSiteNav({entry,active,record,place}:{entry:string;active:AtlasSection;record?:string|null;place?:string|null}){
  const routes=sectionRoutes(entry,place),menu=useRef<HTMLDetailsElement>(null);
  useEffect(()=>{
