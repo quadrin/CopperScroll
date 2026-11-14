@@ -4,7 +4,7 @@
 //   corepack pnpm exec vite build --config vite.protected.config.ts
 // Output: dist-protected/, deployed to Cloudflare Pages behind Cloudflare Access
 // by .github/workflows/protected-atlas.yml. Never publish it on GitHub Pages.
-import { cpSync, existsSync } from "node:fs";
+import { cpSync, existsSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
@@ -12,6 +12,8 @@ import react from "@vitejs/plugin-react";
 const here = fileURLToPath(new URL(".", import.meta.url));
 const out = `${here}dist-protected`;
 const media = `${here}protected-media/library`;
+// Figures of the Field notes page (decrypted set private-media/field-notes-2026-11).
+const fieldNotes = `${here}protected-media/field-notes-2026-11`;
 
 // The image library lives outside public/, so the GitHub Pages build can
 // never copy them; only this build adds them to its output.
@@ -21,6 +23,11 @@ const addPhotographs: Plugin = {
   closeBundle() {
     if (!existsSync(`${media}/index.json`)) throw new Error("protected-media/library is missing: decrypt, then run tools/build_scroll_media.py");
     cpSync(media, `${out}/media`, { recursive: true });
+    if (existsSync(fieldNotes)) {
+      cpSync(fieldNotes, `${out}/media/field-notes`, { recursive: true });
+      const files = readdirSync(fieldNotes).filter(name => name.endsWith(".webp")).sort();
+      writeFileSync(`${out}/media/field-notes/index.json`, JSON.stringify({ files }) + "\n");
+    }
   },
 };
 

@@ -1,0 +1,50 @@
+.atlas-field-notes{min-height:100vh;background:#fbf8f1;color:#2b2a26}
+.atlas-field-notes main{max-width:1080px;margin:0 auto;padding:48px 28px 96px;font:16px/1.65 Georgia,'Times New Roman',serif}
+.fn-head{border-bottom:1px solid #d9cfbd;padding-bottom:28px;margin-bottom:12px}
+.fn-kicker{font:600 12px/1.4 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a6a43;margin:0 0 8px}
+.fn-head h1{font:400 44px/1.1 Georgia,serif;margin:0 0 14px}
+.fn-lede{max-width:760px;font-size:18px;color:#44413a;margin:0 0 16px}
+.fn-summary{margin:0 0 20px;padding-left:20px;color:#55514a;font-size:15px}
+.fn-toc{display:flex;flex-wrap:wrap;gap:8px}
+.fn-toc a{font:13px/1.4 Arial,sans-serif;color:#254e62;border:1px solid #c9d3d6;border-radius:999px;padding:5px 12px;text-decoration:none;background:#fff}
+.fn-toc a:hover{background:#eef3f4}
+.fn-section{padding-top:36px;scroll-margin-top:16px}
+.fn-section h2{font:400 28px/1.2 Georgia,serif;margin:0 0 8px}
+.fn-intro{color:#5d5950;font-size:15px;margin:0 0 16px;max-width:780px}
+.fn-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.fn-card{background:#fff;border:1px solid #e3dbcc;border-radius:4px;padding:18px 20px}
+.fn-card h3{font:600 17px/1.35 Georgia,serif;margin:6px 0 8px}
+.fn-card p{margin:0 0 10px;font-size:15px;color:#3a3832}
+.fn-card-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.fn-date{font:12px/1.4 Arial,sans-serif;color:#8b8578}
+.fn-links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0}
+.fn-links a{display:inline-flex;align-items:center;gap:2px;font:13px/1.5 Arial,sans-serif;color:#254e62;text-decoration:underline;text-underline-offset:2px}
+.fn-chip{display:inline-block;font:600 11px/1.6 Arial,sans-serif;padding:1px 8px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+.fn-good{background:#e4efe4;color:#2f5b33;border-color:#c7dcc8}
+.fn-mid{background:#eef2e2;color:#56622c;border-color:#d8dfbf}
+.fn-info{background:#e5eef3;color:#264f66;border-color:#c8d8e2}
+.fn-weak{background:#f6eedc;color:#7a5a1f;border-color:#e6d5ad}
+.fn-bad{background:#f5e3de;color:#843a2a;border-color:#e6c4bb}
+.fn-neutral{background:#efefec;color:#55554f;border-color:#dcdcd6}
+.fn-table-wrap{overflow-x:auto;border:1px solid #e3dbcc;border-radius:4px;background:#fff}
+.fn-table{width:100%;border-collapse:collapse;font:14px/1.5 Arial,sans-serif;color:#33322d}
+.fn-table th{text-align:left;font-weight:600;background:#f4efe4;padding:9px 12px;border-bottom:1px solid #e3dbcc;white-space:nowrap}
+.fn-table td{padding:9px 12px;border-bottom:1px solid #efe9dd;vertical-align:top}
+.fn-table tr:last-child td{border-bottom:0}
+.fn-num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.fn-corr{list-style:none;margin:0 0 12px;padding:0;font-size:15px}
+.fn-corr li{display:flex;gap:14px;padding:7px 0;border-bottom:1px solid #ece5d7}
+.fn-corr .fn-num{font:600 13px/1.6 Arial,sans-serif;color:#8a6a43;min-width:32px}
+@media(max-width:700px){.atlas-field-notes main{padding:32px 18px 72px}.fn-head h1{font-size:34px}.fn-table td,.fn-table th{padding:8px}}
+.fn-private{font:12px/1.5 Arial,sans-serif;color:#7a6f5c;margin:0 0 10px}
+.fn-private a{color:#254e62}
+.fn-figs{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:6px;margin:0 0 12px}
+.fn-fig{padding:0;border:1px solid #e3dbcc;background:#f4efe4;border-radius:3px;cursor:zoom-in;aspect-ratio:1;overflow:hidden}
+.fn-fig img{width:100%;height:100%;object-fit:cover;display:block}
+.fn-fig:focus-visible{outline:2px solid #23586c;outline-offset:2px}
+.fn-lightbox{position:fixed;inset:0;z-index:100;background:rgba(20,18,14,.86);display:flex;align-items:center;justify-content:center;padding:24px}
+.fn-lightbox figure{margin:0;max-width:min(1400px,96vw);max-height:94vh;display:flex;flex-direction:column;gap:10px;background:#fbf8f1;padding:14px;border-radius:4px}
+.fn-lightbox img{max-width:100%;max-height:78vh;object-fit:contain}
+.fn-lightbox figcaption{font:15px/1.5 Georgia,serif;color:#2b2a26}
+.fn-lightbox figcaption span{display:block;font:12px/1.5 Arial,sans-serif;color:#7a6f5c;margin-top:4px}
+.fn-lightbox button{align-self:flex-end;font:13px Arial,sans-serif;border:1px solid #c9d3d6;background:#fff;border-radius:3px;padding:6px 12px;cursor:pointer}
