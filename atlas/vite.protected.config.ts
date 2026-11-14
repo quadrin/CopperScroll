@@ -10,6 +10,8 @@ import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 
 const here = fileURLToPath(new URL(".", import.meta.url));
+// Marks this build as the access-controlled site (import.meta.env.VITE_PROTECTED_BUILD): its navbar keeps Field notes on the same site.
+process.env.VITE_PROTECTED_BUILD = "1";
 const out = `${here}dist-protected`;
 const media = `${here}protected-media/library`;
 // Figures of the Field notes page (decrypted set private-media/field-notes-2026-11).
