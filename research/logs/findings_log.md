@@ -1795,3 +1795,13 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Entries 21, 31, 35, 57, 32, 46.** No entry is decided. The limits are the reading (21, 31), the published record (35, 57) and plan details (32, 46), not the positions.
 - **No level changes.** No rating, candidate, match strength or table value is changed.
 - **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
+
+## 13 November 2026 (evening) — other methods: scroll photograph stack, distances on plans, water lines, names with coordinates, Bavarian air photographs of 1918 (exploratory; no level changes)
+
+- **Method (one reader, not blind; no registered prediction).** Notes in `research/sources/hexagon_registration_2026-11-11/notes/20_other_methods_2026-11-13/`.
+- **Air photographs of 1918.** EVIDENCE: on BS Pal. 1037 (2 July 1918) pool A(B)101 of Netzer's Pools Complex is an open hollow of about 20 × 35 m at its plan place; on BS Pal. 1042 (27 March 1918) a military camp fills and surrounds Birket Musa. A two-stage fit (rough by hand, then edge matching) puts 1918 frames on HEXAGON 1978 to about 3 m.
+- **Names.** EVIDENCE: on 1,909 sites with exact positions, likeness of names to the scroll's names is at chance level, as in October.
+- **Kidron (entry 35).** The lower gorge mouth (191.11 / 120.60) has a tree and no identified cairn; no edition puts the entry there. The "largest drop" of the height-model note is withdrawn (edit log D8).
+- **No level changes.** No rating, candidate, match strength or table value is changed.
+- **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
+
