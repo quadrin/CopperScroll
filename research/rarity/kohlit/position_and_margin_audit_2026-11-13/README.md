@@ -1,0 +1,49 @@
+# Position and margin audit of the Koḥlit count (13 November 2026)
+
+**This is a note beside the registered count. It changes no number of the count.** The count's protocol takes the database points as they are and uses only its five sources. This audit uses sources outside the protocol (satellite images of 1974 and 1978, a modern image, SWP sheet XVIII registered by its frame, Zertal and Bar 2019, Hizmi 2016). One reader, not blind; the reader knew the candidates. Exploratory.
+
+## What was done
+
+1. The unit points and feature points of the four branch B matches of the main set, and of Tell es-Sultan, were compared with image positions.
+2. For every matched condition of every unit (primary variant, with the Nigro catalogue) the margin to the sector edge and to the distance limit was computed from `feature_audit/features_behind_matches.csv`. Result: `margin_audit.csv` (120 rows). The thresholds used below (10° and 900 m) are the auditor's choice.
+
+## Results
+
+### Branch B, main set (k = 4 in the count)
+
+| Unit | Database point against the image | Bearing to the pool of C1 (east sector 45° to 135°) | Result |
+|---|---|---|---|
+| Tell esh-Sheikh Dhiab (S6040), 190900/162500 | 1,010 m north of the tell. The tell is at approximately 190750/161500 (plan overlay of Zertal and Bar 2019, fig. 81; two printed grids; a second reader at 35 m). The second database row for the tell (S1537, 190800/161500) is at the right place and is UNKNOWN on all conditions | From the tell: 39°, 1,031 m to row E181; the pit row S1454 is at 1,882 m. The reservoir of the tell is 63 m away at 198° | Does not hold at the true place |
+| Tulul Abu el-ʿAlaiq (S2539) | On the southern mound, to approximately 30 m | 132° to the centre of Birket Musa (a rectangle of approximately 184 × 158 m at 191.74/139.45 on the image of 1978; SWP sign at 105 m). From the northern mound: 144° | Holds from the southern mound, 3° inside |
+| Kypros (S2589) | Approximately 150 m south-east of the summit ruin | 52° (Nigro catalogue point), 40° (SWP sign), 14° (grid of Meshel 1978 for Beit Jabr et-Tahtani) | Not stable |
+| el-Muntar (S3137) | Not checked (no image cover) | 45.0°, on the edge; 50 m more to the north for the reservoir gives 42.7° | Fragile by construction |
+
+Tell es-Sultan (E334, pre-70 set only): the spring reservoir is at 117°, 89 m from the mound centre (plan overlay of Kenyon 1981, fig. 1). Its second condition stays UNKNOWN.
+
+### The 26 units with two of three conditions
+
+| Group | Units |
+|---|---|
+| A matched condition within 10° of a sector edge or over 900 m | 10 |
+| Pit and grave from the same database row | 10 (3 of them also in the first group) |
+| The grave is a sheikh's tomb | 3 |
+| Does not hold at the true place | 1 |
+| None of the above | 8: Tell Qaʿun, Qarn Sartaba, Kh. el-Khudriya, Tell Maryam, Tell es-Samrat, Tulul Abu el-ʿAlaiq, Naḥal Mikhmas, S2594 |
+
+Of the 52 matched conditions of the 26 units, the source dates 9 in the window, 3 before it and 40 not at all.
+
+### Khurbet Fusayil (unit S1579, UNKNOWN on all conditions in the count)
+
+With image positions and the excavation report (Hizmi 2016): the large pool (cistern of Area N, 30 × 41 m) is in the north sector (3° to 19°, 334 to 396 m, from three reference points), and the pits (chain wells) are in the east sector (109° to 115°). No pool is known in the east sector and no pit in the north sector.
+
+## How to read this
+
+- It agrees with the count's own conclusion (m ≫ k; rarity is not measurable) and gives one more reason: a sector of 90° with points good to 50 or 100 m is coarse at distances under 1 km.
+- The matches are not a list of rivals of equal standing: one is a database error, several are edge cases, and in ten units two conditions are one row.
+- It does not make any candidate stronger. No test here was blind.
+
+## Limits
+
+- The positions of rows E181 and S1454 are computed from the distances and bearings printed in `stage2/RESULTS.md`; the database file is not in the repository.
+- The Hebrew volume that the database cites for S6040 and S1537 (Bar 2008) was not read.
+- The images are private study copies and are not in the repository.

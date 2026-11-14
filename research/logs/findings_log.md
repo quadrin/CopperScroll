@@ -1787,3 +1787,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Not changed.** `ratings.csv` and `ratings.json` (entry 57 keeps its rating on the `gerizim` candidate, with its Tell er-Ras branch in `decisive_next`; entry 59 keeps its `decisive_next`), `entry_assessments_with_location_grade_2026-11-12.csv`, `sites.csv` (its row for the northern spur still has the position of 12 November, 170 m from the platform).
 - **Status of the evidence.** Exploratory; one reader, not blind. A location grade is not evidence for a deposit.
 
+## 13 November 2026 (later) — four entry tests with the image positions; position and margin audit of the Koḥlit count (exploratory; no level changes)
+
+- **Method (one reader, not blind; no registered prediction).** Entries with a feature of a kind present at an excavated place, or with a located name, were compared with image positions, published plans and one excavation report (Hizmi 2016 for Khurbet Fusayil). The unit points of the Koḥlit count were compared with image positions. Note 19 and `research/rarity/kohlit/position_and_margin_audit_2026-11-13/`.
+- **Koḥlit count.** EVIDENCE: the database point of unit S6040 (Tell esh-Sheikh Dhiab) is 1,010 m north of the tell; at the tell the unit has no pool in the east sector and no pit in the north sector within 1,000 m. Two more branch B matches depend on a bearing within 7° of the sector edge. The registered count is not changed (its protocol takes the database points as they are).
+- **Khurbet Fusayil.** EVIDENCE: the excavated cistern of Area N (30 × 41 m) is north of the ruin and the chain wells are east of it: the reverse of entries 11 and 19.
+- **Entries 21, 31, 35, 57, 32, 46.** No entry is decided. The limits are the reading (21, 31), the published record (35, 57) and plan details (32, 46), not the positions.
+- **No level changes.** No rating, candidate, match strength or table value is changed.
+- **Exposure.** The reader knew the candidates and the scroll text. Nothing here is unseen-ground evidence.
