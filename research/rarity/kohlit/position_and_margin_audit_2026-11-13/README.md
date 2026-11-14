@@ -47,3 +47,10 @@ With image positions and the excavation report (Hizmi 2016): the large pool (cis
 - The positions of rows E181 and S1454 are computed from the distances and bearings printed in `stage2/RESULTS.md`; the database file is not in the repository.
 - The Hebrew volume that the database cites for S6040 and S1537 (Bar 2008) was not read.
 - The images are private study copies and are not in the repository.
+
+## Second and third pass (14 November 2026)
+
+- `second_pass_2026-11-14_birket_musa_as_area.md`: Tulul Abu el-ʿAlaiq, Birket Musa measured on two images: centre 4.1° inside the east sector, 74% of the pool inside.
+- `third_pass_2026-11-14_kypros_el_muntar.md`: Kypros, the birkeh south of Beit Jabr et-Tahtani measured (SWP sheet XVIII and a basin on HEXAGON 1978): 37–38° from the database point (outside), 51–54° from the summit ruin (inside). el-Muntar: not resolvable on the image of December 1974.
+- Under the count's own reference point: one of the four branch B matches holds with a measured pool, two fail, one is not testable. No number of the count is changed.
+
