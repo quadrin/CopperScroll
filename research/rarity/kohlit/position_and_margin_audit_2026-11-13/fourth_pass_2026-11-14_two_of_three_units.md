@@ -26,7 +26,7 @@ This note is beside the registered count. It does not change the count, a match,
 ## What this means for the count
 
 - No unit was found to fail.
-- Four units (S845, S1032, E99, S843) rest on a margin that is smaller than the precision of the points. Their two-of-three status cannot be confirmed or removed with the data that we have. Each one needs a surveyed position of the unit and of the feature (the survey plans of Zertal, Gophna and Porat, Kallai, Finkelstein et al., Bull).
+- Four units (S845, S1032, E99, S843) rest on a margin that is smaller than the precision of the points. Their two-of-three status cannot be confirmed or removed with the data that we have. Each one needs a surveyed position of the unit and of the feature (the survey records of Zertal, Gophna and Porat, Kallai and Finkelstein et al., and the Tananir excavation report of Boling 1975).
 - E334 now rests on 7 m for C3s. It keeps two of three because C1 is from words.
 - S845 is the weakest: the match is a tie on the sector edge, made by rounding.
 
@@ -51,3 +51,15 @@ This note is beside the registered count. It does not change the count, a match,
 
 - This note and `kohlit_two_of_three_margins_and_images_2026-11-14.csv`: repository folder `research/rarity/kohlit/position_and_margin_audit_2026-11-13/`, the project and Drive.
 - Image crops: workspace only (private).
+
+## Correction (14 November 2026, later)
+
+The first text of this note named "Bull" as the source for Tananir. The source of the Tananir unit (E99) in the count is Boling 1975, pp. 36, 57–60, 65, 84 (figs 2 and 13). Bull excavated Tell er-Ras on Mount Gerizim, which is a different site. No value depended on this.
+
+## Addition (14 November 2026, later): Tananir
+
+Boling 1975 (added to Drive by the owner) places the Tananir building. With its location plan put on the grid by Tell Balata and Tell er-Ras, the building is at PG 176.88/179.58 (Probable, about 50 m), 82 m north of the database point. From there, E92 is at 336.3° and 874 m. **E99 now holds** (it was "not decided"). Three units stay not decided: S845, S1032 and S843. See `sources-added-2026-11-14-and-tananir-…`.
+
+## Addition (14 November 2026, later): survey records for S843, S845, S1032
+
+S843 Kh. edh-Dhraʿ **holds** (margin 135 m): its feature S836 is the Roman camp of Zertal 2008, site 259, measured on the 1974 image. S845 Kh. es-Saleh and S1032 Udala stay **not decided**: the survey sources give points that are on the two sides of the limit. Of the 22 units, 20 hold and 2 are not decided. See `sixth-note-…-saleh-dhra-gharur-udala`.
