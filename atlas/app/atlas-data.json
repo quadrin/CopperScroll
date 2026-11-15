@@ -1476,6 +1476,11 @@
           "placeId": "gerizim",
           "status": "preferred",
           "confidence": "medium"
+        },
+        {
+          "placeId": "jericho_gerizim",
+          "status": "possible",
+          "confidence": "low"
         }
       ],
       "evidence": "The mountain name provides the geographical anchor. Magen distinguishes the eastern monumental staircase, the southern seven-step flight, the 15-step flight at E1, and the courtyard cistern in Area P building IV. These are separate installations.",
@@ -1980,6 +1985,18 @@
       "note": "",
       "source": "Pleiades 678147",
       "shortName": "Mount Gerizim"
+    },
+    {
+      "id": "jericho_gerizim",
+      "name": "Jericho “Gerizim”: the two mounds at the outlet of Wadi Qelt (Cypros / Tell el-ʿAqaba and Nuseib ʿUweishira)",
+      "shortName": "Jericho “Gerizim” · Wadi Qelt outlet",
+      "lat": 31.8489,
+      "lon": 35.42647,
+      "precision": "~450 m (two mounds 840 m apart; the point is between them)",
+      "kind": "area",
+      "region": "jericho",
+      "note": "A Gerizim (and Ebal) near Jericho is attested in Jewish and Christian tradition (y. Sotah 7:3; b. Sotah 33b; Sifre on Deut 11:30; Eusebius, Onomasticon; the Madaba map). Allegro 1960 (pp. 75–76) put the scroll’s Gerizim at Cypros (Tell el-ʿAqaba), with Taurus as Ebal; Eshel (Sefer HaShomronim 2002 p. 201; Eshel and Safrai 2002; Eshel 2015 p. 127) names both mounds, Tell el-ʿAqaba and Nuseib ʿUweishira. Which mound is not fixed. Candidate only under the Jericho tradition; Jebel et-Tur is the preferred candidate.",
+      "source": "Allegro 1960 pp. 75–76 (research/history/allegro1960_treasure_extracted.md, item 58); Eshel in Stern and Eshel (eds) 2002 p. 201; Cypros summit PG 190.44/139.165 (hexagon notes 31, 43); Nuseib ʿUweishira pool point 31.85266 N 35.42679 E (WBADB E360 / HA 59–60 p. 38)"
     },
     {
       "id": "beth_shean",
