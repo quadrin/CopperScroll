@@ -6126,21 +6126,23 @@
   },
   "F": {
    "level": 1,
-   "basis": "Only generic water installations are reported at the two mounds. Cypros: Allegro saw a tower, a well blocked with rubble and rock-cut cisterns lower down (p. 76); Meshel and Amit record cisterns and pools fed by the Wadi Qelt aqueducts (the preserved cistern is about 17 × 7 m and 8 m deep). Nuseib ʿUweishira: a stepped pool (HA 59–60 p. 38) and a ritual bath among meagre Herodian-period finds below a Byzantine monastery (Netzer 2006 p. 207). The stepped pool joins a step to a water installation, but its form, size and an 'upper' relation are not recorded. Between 1 and 2, so 1.",
+   "basis": "Cypros: Allegro saw a tower, a well blocked with rubble and rock-cut cisterns lower down (p. 76); Meshel and Amit record cisterns and pools fed by the Wadi Qelt aqueducts (the preserved cistern is about 17 × 7 m and 8 m deep). Nuseib ʿUweishira: a specific stepped pool, locus 16, below room 14 in fabric that the plan marks as Herodian (Netzer and Birger 1990, SBF 36, pp. 194–196, Fig. 7), coated with grey lime plaster (Netzer 1978, Yeriho, pp. 58–59), on the summit building; HA 59–60 (1976) p. 38 reports it as a stepped water pool below the Byzantine building and gives no size. The site also has a cistern under the central court (only its top exposed), a round plastered cistern with a vertical opening on the north shoulder (Meshel 1978, Yeriho, p. 45, point 11) and a cistern in a valley north of the site (1990 n. 11). The pool has the entry's step and is the highest of the four installations ('upper' is an inference, not a published relation), but it is a stepped pool, not a pit, and its size and section are not published. Between 1 and 2, so 1 (compare entry 1, Jisr Abu Ghabush). 15 Nov 2026: this text replaces the text of 14 Nov, which said that the pool's form is not recorded (edit log D27); the level is not changed.",
    "sources": [
     "research/history/allegro1960_treasure_extracted.md (p. 76)",
     "research/sources/hexagon_registration_2026-11-11/notes/20_other_methods_2026-11-13/31_meshel_amit_points_26_to_40_cypros_2026-11-14.md",
+    "research/assessments/evidence_components/sources/entry57_nuseib_stepped_pool_2026-11-15.md (HA 59–60 p. 38 read in full; Netzer 1978 pp. 58–59, Meshel 1978 pp. 45–47, Netzer and Birger 1990 pp. 191–200 and Fig. 7, Netzer 2001 p. 72, read 5 Nov 2026)",
     "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.md (Nuseib Uweishira ritual-bath notice; Netzer 2006 p. 207)",
     "research/regional/water_systems/water.csv (HAESI-HA59-038-nuseib-uweishira-reservoir_pool-50)"
    ]
   },
   "D": {
    "level": 2,
-   "basis": "F is 1, so D rates the site and cannot exceed 2. Cypros was a Hasmonean–Herodian fortress in use in the window and was destroyed by the rebels in 66 CE (War 2.484); Allegro takes the Zealot hold until 68 CE as his terminus (n. 298). Nuseib ʿUweishira has Herodian-period finds (Netzer 2006 p. 207). The dates of the cisterns and of the stepped pool themselves are not known.",
+   "basis": "F is 1, so D rates the site and cannot exceed 2. Cypros was a Hasmonean–Herodian fortress in use in the window and was destroyed by the rebels in 66 CE (War 2.484); Allegro takes the Zealot hold until 68 CE as his terminus (n. 298). Nuseib ʿUweishira has Herodian-period finds (Netzer 2006 p. 207); the 1990 plan marks the fabric of the stepped pool as Herodian, but this is the excavators' attribution, and HA 59–60 p. 38 says the earlier layer is not yet dated. The dates of the cisterns and of the stepped pool themselves are not known.",
    "sources": [
     "research/history/allegro1960_treasure_extracted.md (n. 298)",
     "research/assessments/evidence_components/sources/entry57_jericho_gerizim_2026-11-14.md",
-    "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.md (Netzer 2006 p. 207)"
+    "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.md (Netzer 2006 p. 207)",
+    "research/assessments/evidence_components/sources/entry57_nuseib_stepped_pool_2026-11-15.md"
    ]
   },
   "U": {
@@ -6150,12 +6152,13 @@
     "research/progress/outcome_ledger.json (no record)"
    ]
   },
-  "decisive_next": "Which mound: a reading of the ancient sources that names one (the Madaba map label and Eusebius' wording), then a specific pit beside a step on that mound, for example the form, size and position of the Nuseib ʿUweishira stepped pool, or a stepped cistern at Cypros in the excavation reports (Netzer; Meshel and Amit).",
+  "decisive_next": "Which mound: a reading of the ancient sources that names one (the Madaba map label and Eusebius' wording). For Nuseib ʿUweishira: the size and section of the stepped pool (locus 16), for example in Netzer, Qardom 28–30 (1983) pp. 118–119 (not read), and the owner's view whether a stepped pool counts as the entry's pit; for Cypros: a stepped cistern in the excavation reports (Netzer; Meshel and Amit).",
   "flags": [
    "Added 14 November 2026 at the owner's request as the Jericho-tradition candidate (Allegro 1960; Eshel 2002, 2015); one place for both mounds because the sources do not fix one."
   ],
   "review": [
-   "14 Nov 2026: new candidate (owner decision), rated from Allegro 1960 and the Sefer HaShomronim note"
+   "14 Nov 2026: new candidate (owner decision), rated from Allegro 1960 and the Sefer HaShomronim note",
+   "15 Nov 2026: F and D basis text rewritten from the full Nuseib record (HA 1976 read in full; Netzer 1978, 1990, 2001, Meshel 1978); no level changed (edit log D27)"
   ],
   "weakest": 1,
   "label": "weak",

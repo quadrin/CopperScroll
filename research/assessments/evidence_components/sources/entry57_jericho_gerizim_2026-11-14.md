@@ -20,10 +20,14 @@ y. Sotah 7:3 (21c); b. Sotah 33b; Eusebius, *Onomasticon* §307 (Melamed 1978 p.
 | Mound | Position used | Water installations reported | Date |
 |---|---|---|---|
 | Cypros (Tell el-ʿAqaba), south of the Wadi Qelt outlet | summit PG 190.44/139.165 (hexagon notes 31 and 43) | cisterns and pools fed by the Wadi Qelt aqueducts (Meshel and Amit); the preserved cistern is about 17 × 7 m and 8 m deep; Allegro's blocked well and rock-cut cisterns | Hasmonean–Herodian fortress; destroyed by the rebels in 66 CE (Josephus, *War* 2.484) |
-| Nuseib ʿUweishira, north of the outlet, about 840 m from Cypros | pool point 31.85266 N, 35.42679 E (WBADB E360; HA 59–60 p. 38) | a stepped pool (HA 59–60 p. 38); a ritual bath among meagre Herodian-period finds below a Byzantine monastery (Netzer 2006 p. 207) | Herodian-period finds; Hasmonean construction is an inference (regional inventory of 6 Oct) |
+| Nuseib ʿUweishira, north of the outlet, about 840 m from Cypros | pool point 31.85266 N, 35.42679 E (WBADB E360; HA 59–60 p. 38) | a stepped pool (HA 59–60 p. 38); a ritual bath among meagre Herodian-period finds below a Byzantine monastery (Netzer 2006 p. 207). **15 Nov:** the pool is locus 16, plastered, on the summit building; three cisterns also (see `entry57_nuseib_stepped_pool_2026-11-15.md`) | Herodian-period finds; Hasmonean construction is an inference (regional inventory of 6 Oct) |
 
 The atlas point (31.8489 N, 35.42647 E) is between the two mounds.
 
 ## Ratings (rubric levels; see `ratings.json`)
 
 R 3 (same words as the Jebel et-Tur row) · P 1 (an editorial identification against the plain-sense Samaritan mountain; no fixed mound) · F 1 (generic water installations; the Nuseib stepped pool has a step but no recorded form, size or "upper" relation; between 1 and 2, so 1) · D 2 (F is 1; both sites occupied in the window) · U untested. **Weak — P, F.**
+
+## Correction, 15 November 2026
+
+The F line above says that the Nuseib stepped pool has "no recorded form". That is wrong: Netzer and Birger 1990 (Fig. 7, locus 16) and Netzer 1978 (grey lime plaster) record its form and place; the size is still not published. The F and D basis texts in `ratings.json` were rewritten on 15 November; the levels are not changed (F 1, D 2). Detail: `entry57_nuseib_stepped_pool_2026-11-15.md`; edit log D27.
