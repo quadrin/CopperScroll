@@ -33,6 +33,10 @@ LEV={'F3':'Full – every page read as an image','F2':'Full – text/OCR, figure
 
 # rules: (pattern on normalised name, code, how read, figures, pages read, coordinator checks, evidence note)
 R=[
+("taylor 2023",'F2','text of all 43 PDF pages; 100+ claims extracted; figs 8.1–8.7 viewed','figs 8.1–8.7','all (printed 293–334)','','taylor23_pages.csv and taylor23_claims.csv (Drive, 1 Nov); row was N until 14 Nov (audit missed the record)'),
+("brooke (&|and) davies",'P1','Eshel ch. 6 (pp. 92–107) read in full; place passages of Puech ch. 5, Fidler ch. 14, Wolters ch. 22 read; other chapters keyword screen for place names','—','pp. 92–107 full; others in part','','sources-and-images note 14 Nov (night)'),
+("milik 1960 the copper document",'F1','text (Drive extraction), translation and commentary','—','all (ADAJ 4–5, pp. 137–155)','','sources-and-images note 14 Nov (night)'),
+("wolters 1988 the fifth cache",'F1','text (JSTOR OCR; columns scrambled, argument read)','facsimiles not viewed','all (RevQ 13, pp. 167–176)','','sources-and-images note 14 Nov (night)'),
 ("prag 2008|mazar (and )?mazar 1989|new studies on jerusalem 19|pef qs 1892",'N','mentions only','','','','unread audit 9 Nov'),
 ("magen bijovsky (and )?tzionit|gerizim excavations iii|jsp ?19",'P1','catalogue entries','—','Cat. 346 (card B4-1)','','new-material-pass 9 Nov'),
 ("^zertal manasseh hill country survey$|^kenyon excavations at jericho$|^atiqot 41 2002|^esi excavations and surveys in israel$|^ha hadashot arkheologiyot$|^hadashot reports$|^ciip corpus|^cpj corpus|^porten (&|and) yardeni aramaic ostraca|^ilan lexicon",'M','folder with several sources','','','','see the rows of the single volumes and the notes'),
