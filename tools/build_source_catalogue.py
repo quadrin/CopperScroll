@@ -33,6 +33,11 @@ LEV={'F3':'Full – every page read as an image','F2':'Full – text/OCR, figure
 
 # rules: (pattern on normalised name, code, how read, figures, pages read, coordinator checks, evidence note)
 R=[
+("wolters 1987 notes",'F1','text (JSTOR text layer)','—','all (RevQ 12, pp. 589–596)','','wolters-papers note 14 Nov (night)'),
+("wolters 1988 the last treasure",'F1','text (JSTOR text layer); facsimile fig. 1 not viewed','fig. 1 not viewed','all (JBL 107, pp. 419–429)','','wolters-papers note 14 Nov (night)'),
+("wolters 1990 apocalyptic",'F1','text (JSTOR text layer)','—','all (JNES 49, pp. 145–154)','','wolters-papers note 14 Nov (night)'),
+("wolters 1990 the copper scroll and the vocabulary",'F1','text (JSTOR text layer)','—','all (RevQ 14, pp. 483–495)','','wolters-papers note 14 Nov (night)'),
+("wolters1996|wolters 1996",'P2','library photographs read as images: pp. [6]–23 and 32–53 (cols I–XI); pp. 24–31 and col. XII not photographed','—','[6]–23, 32–53','','wolters-papers note 14 Nov (night)'),
 ("taylor 2023",'F2','text of all 43 PDF pages; 100+ claims extracted; figs 8.1–8.7 viewed','figs 8.1–8.7','all (printed 293–334)','','taylor23_pages.csv and taylor23_claims.csv (Drive, 1 Nov); row was N until 14 Nov (audit missed the record)'),
 ("brooke (&|and) davies",'P1','Eshel ch. 6 (pp. 92–107) read in full; place passages of Puech ch. 5, Fidler ch. 14, Wolters ch. 22 read; other chapters keyword screen for place names','—','pp. 92–107 full; others in part','','sources-and-images note 14 Nov (night)'),
 ("milik 1960 the copper document",'F1','text (Drive extraction), translation and commentary','—','all (ADAJ 4–5, pp. 137–155)','','sources-and-images note 14 Nov (night)'),
