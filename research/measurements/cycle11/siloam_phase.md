@@ -6,7 +6,7 @@ Inspected 2 October 2026, UTC. This thread compares the proposed earlier pool ph
 
 Nahshon Szanton, Filip Vukosavović and Itamar Berko, *New archaeological discoveries in the excavations of Birket al-Hamra in Jerusalem*, in Eyal Meiron (ed.), *City of David: Studies of Ancient Jerusalem*, 25th Annual Conference (2024), printed pp. 23*–42*. [English PDF](https://cityofdavid.org.il/wp-content/uploads/2025/12/New-archaeological-discoveries-in-the-excavations-of-Birket-al-Hamra-in-Jerusalem.pdf).
 
-Fresh text scope: pp. 31*–36*, especially 33*–35*. The authors distinguish older W114/W185A from later staircase construction. W114 has successive plaster coatings. Their p. 33*, note 3, explicitly leaves the W114/dam contact unresolved because excavation stopped at depth and incoming water. Page 34* tentatively attaches Greenhut–Mazor’s dam-top pool to the proposed early phase using Boaretto’s 520–200 BCE summary. Pages 34*–35* discuss that small southeastern receiving pool separately from Birket al-Hamra and the tunnel-mouth Silwan pool. No L105/L105A foundation contact or Ariel coin-20 assessment accompanies the proposal.
+Fresh text scope: pp. 31*–36*, especially 33*–35*. The authors distinguish older W114/W185A from later staircase construction. W114 has successive plaster coatings. Their p. 33*, note 3, explicitly leaves the W114/dam contact unresolved because excavation stopped at depth and incoming water. Page 34* tentatively attaches Greenhut–Mazor’s small Early Roman pool (the dated plaster coat L108 is on the lower downstream dam face, below that pool's floor; see the addition of 15 November) to the proposed early phase using Boaretto’s 520–200 BCE summary. Pages 34*–35* discuss that small southeastern receiving pool separately from Birket al-Hamra and the tunnel-mouth Silwan pool. No L105/L105A foundation contact or Ariel coin-20 assessment accompanies the proposal.
 
 The original PDF binary still returned HTTP 403. Web text supports this assessment; screenshot calls supplied text placeholders rather than usable image payloads. No figure was independently image-checked from that report.
 
@@ -41,3 +41,12 @@ Two unchanged original JPEGs are archived with origin, credit, licence and SHA-2
 Missing original: the 2024 English report linked above.
 
 Missing original/appendix: [Regev et al. main PDF](https://pmc.ncbi.nlm.nih.gov/articles/PMC12415248/pdf/pnas.202510396.pdf) and [Supporting Information](https://www.pnas.org/doi/suppl/10.1073/pnas.2510396122/suppl_file/pnas.2510396122.sapp.pdf). The appendix is the remaining methodological dependency.
+
+## Addition, 15 November 2026: RTT 6089 conflicts with the 2025 dam date
+
+- **Numbers (checked at source).** RTT 6089, charcoal from plaster coat L108, 2300 ± 55 BP (Boaretto 2020, ʿAtiqot 101 p. 79 and graph p. 80). The 2025 PNAS dam study combines four dates to 2622 ± 10 BP (R_Combine, Fig. 2; recomputed 2622.3 ± 9.8, agreement test T = 7.46 < 7.81). Gap 322 ± 55.9 radiocarbon years = **5.8σ**. Calibrated: 520–190 BC against 809–792 BC (IntCal20; agrees with the published ranges within 1–5 years).
+- **Old wood cannot explain it.** Old wood makes a date too old; L108 is too young. So L108 is a later re-plastering, intrusive carbon, a mislabelled sample, a lab outlier, or W1 is not the same wall as W001/W114 (Probable that it is; no section joins the 2009 trial pit to the 2023–24 walls).
+- **Where L108 is.** A yellowish plaster coat on the lower east face of the dam wall W1, below the floor of the small Early Roman pool (Greenhut and Mazor 2020 p. 75*, Plan 1 section 2–2). The fills against it (L107, L109) hold only Iron II pottery. The small pool itself is dated 66–70 CE by coins in its foundation.
+- **A misattribution in Szanton, Vukosavović and Berko 2024 (p. 34*).** They give the 520–200 BCE date to the small pool "on top of the ancient dam wall"; the dated plaster is below that pool's floor. The PNAS paper (2025) cites RTT 6089 once and does not discuss the conflict.
+- **Status.** RTT 6089 is **conflicting, unresolved**. Do not use it as a phase date. The conflict with the Iron II pottery is known (both 2020 papers); the 5.8σ conflict with the 2025 dates is not in print as far as the searches found. A draft letter to the authors is in the thread note (Drive `par-T10-NOTE-2026-11-15.md`); not sent.
+- No candidate, coordinate or grade changes.

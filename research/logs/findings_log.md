@@ -1827,3 +1827,14 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Correction.** The `jericho_gerizim` F basis of 14 November said the pool's form is not recorded. The F and D basis texts are rewritten; F stays 1 (a stepped pool is not clearly the entry's pit; compare entry 1), D stays 2. F 2 is possible on another reading and is left to the owner. Edit log D27.
 - **Erratum.** Two WBADB rows citing "Hirschfeld 1983" were wrongly linked as `dup_of` ASI Map 108/2 rows 29–38 km away (Nuseib, Zawayat). Their results are UNKNOWN or FAIL only, so no match count or outcome changes. The link rule is fixed in `build_survey.py`; the tables are not rebuilt. Erratum in `research/regional/water_systems/README.md`; edit log D28.
 - **No level changes.** No rating, candidate, match strength or count is changed.
+
+## 15 November 2026 — ten odd-find threads followed in parallel (status words and text corrections; no level change)
+
+- **Wadi Qelt arched structure:** the aqueduct bridge of the ʿAin es-Sultan canal Qanāt el-Qasab (1930 Survey of Palestine town plan, 1:1250; 1918 British 1:40,000 map "Aqueduct"); Checked; built before 1918; not ancient. Edit log B130.
+- **Tell el-Qos (entry 30):** the 1941 "mound" is threshing-floor ground on the 1930 town plan; as a tell Not confirmed; grade and point unchanged. B131.
+- **Nuseib ʿUweishira moat:** Probable on the 1974 stereo images, 22–28 m wide, 9–11 m below the summit. B132.
+- **Warren's "tank or rock-cut tomb" (entry 9 context):** examined in 1869 (PEF QS 1869–70 p. 148), a small plastered tank; entry 9 F basis text and atlas item updated; F stays 0. D29.
+- **Siloam RTT 6089:** 5.8σ younger than the 2025 dam date; marked conflicting, unresolved; a misattribution in Szanton et al. 2024 p. 34*. `research/measurements/cycle11/siloam_phase.md`.
+- **Others:** Wadi en-Nahla C14 Not confirmed, C13 Possible (B133); ʿIraq el-Badr placed to a 1944 Mandate square and a scarp (B134); Qumran east-dump crack 4–6 m east of L71, not cutting it (D31); Ḥorbat Ha-Gardi citation corrected (D30); Abel 1922 already held (D32).
+- Note: `research/sources/hexagon_registration_2026-11-11/notes/20_other_methods_2026-11-13/63_ten_odd_find_threads_2026-11-15.md`.
+- **No level changes.** No rating, candidate, match strength or count is changed.

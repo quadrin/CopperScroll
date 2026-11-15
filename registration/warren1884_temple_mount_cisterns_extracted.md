@@ -182,3 +182,7 @@ The book itself was read from the owner's NLI photos of 21 Oct ([record](../rese
 - **INFERENCE (Fig. 10, ±5 m).** No. 23's centre is about 25–27 m west of the gate's west face, consistent with the 25–30 m above and Warren Plate VI's 30.0 m.
 - **EVIDENCE (p. 2).** Theoderich (Crusader period) puts "an ancient and ruined cistern" between the Golden Gate and the fifteen steps of the platform; no distance. INFERENCE: this fits No. 23's position; it is a medieval tradition.
 - **Still unread:** Ch. 6 (pp. 225–234, the dating argument), catalogue Nos. 20–48 (including No. 23 and No. 28 = W5), and Conduit 23's text.
+
+## Addition, 15 November 2026: the "tank or rock-cut tomb" was examined in 1869
+
+The 1884 volume (p. 142) copies Warren's letter of May 1869: the tank "was crossed" and "the examination of this was reserved". Warren's later letters, headed 22 December 1869, report the result (PEF *Quarterly Statement* 1869–70, p. 148; read on the page image): the tank was examined; it is 5 ft 4 in × 2 ft 2 in and about 5 ft high (about 1.6 × 0.7 × 1.5 m), plastered inside, with a flat stone roof; Warren took it to be for water, and a cylindrical tile lay near it. The ring cut in the scarp was a few feet away. No orientation or fill is given. Plates IV, VI and XI do not draw it. Position: 143 ft − 18 ft 6 in = 124.5 ft (37.9 m) east of the gate front on the perpendicular from its south end. Its top is about 2,312–2,314 ft on the old Ordnance Survey datum, about 25 m below the gate sill (2,396 ft). Line 152 above ("unexamined") is superseded. Edit log D29.
