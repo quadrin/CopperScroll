@@ -1812,3 +1812,11 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Correction.** The CT3 left-light frames do not register at I 12 (edit log D10).
 - **No level changes.** No rating, candidate, match strength or count is changed.
 
+## 14 November 2026 (decision) — entry 57: a second candidate, the Jericho "Gerizim" at the outlet of Wadi Qelt (one candidate added; no level change to existing rows)
+
+- **Decision.** The owner approved adding the Jericho "Gerizim" as a candidate for entry 57 (14 November 2026), as one place for the two mounds that the sources name: Cypros (Tell el-ʿAqaba) and Nuseib ʿUweishira.
+- **Basis.** EVIDENCE: Allegro 1960 pp. 75–76 puts the scroll's Gerizim at Cypros; Eshel (Sefer HaShomronim 2002 p. 201; Eshel 2015 p. 127) names both mounds and cites the Jewish and Christian tradition of a Gerizim near Jericho (y. and b. Sotah; Sifre; Eusebius; the Madaba map). The ancient sources were not read for this row.
+- **Rating.** R 3, P 1, F 1, D 2, U untested; label weak, limited by P and F. Sources and reasons: `research/assessments/evidence_components/sources/entry57_jericho_gerizim_2026-11-14.md`.
+- **Not changed.** The `gerizim` (Jebel et-Tur) row keeps all its levels and stays preferred. No match strength, count or ledger record is changed.
+- **Exposure.** The rater knew the scroll text and the other candidate. The rating is from published records, not from new ground evidence.
+

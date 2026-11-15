@@ -6095,6 +6095,76 @@
   ]
  },
  {
+  "entry": "57",
+  "lines": "XII 4-5",
+  "candidate": "jericho_gerizim",
+  "candidate_name": "Jericho “Gerizim”: the two mounds at the outlet of Wadi Qelt (Cypros / Tell el-ʿAqaba and Nuseib ʿUweishira)",
+  "atlas_status": "possible",
+  "atlas_confidence": "low",
+  "anchor_words": [
+   "הר גריזין",
+   "המעלא",
+   "השיח העליונא"
+  ],
+  "R": {
+   "level": 3,
+   "limiting_word": "השיח / השית / השוחה (pit)",
+   "basis": "The same anchor words as the Jebel et-Tur row: Gerizim is agreed (the engraved גויזין is a spelling variant), 'step' is read by Milik, Puech and Lefkovits, and every edition reads a pit or shaft. The reading does not depend on which Gerizim is meant.",
+   "sources": [
+    "text/readings.json e57-gerizim, e57-step, e57-upper-pit",
+    "tables/phase5_assessments.csv line 34 (landmark_disputed)",
+    "tables/landmark_lexicon_index.csv lines 3-4, 108"
+   ]
+  },
+  "P": {
+   "level": 1,
+   "basis": "A Gerizim (and Ebal) near Jericho is attested in tradition: y. Sotah 7:3 and b. Sotah 33b, Sifre on Deut 11:30 ('near the Jordan'), Eusebius' Onomasticon and the Madaba map (Eshel 2015 n. 59; Sefer HaShomronim pp. 201, 498). The tradition does not fix a mound: Allegro chose Cypros (Tell el-ʿAqaba) with Taurus as Ebal; Eshel names Tell el-ʿAqaba and Nuseib ʿUweishira. Placing the scroll's Gerizim here is an editorial identification (Allegro 1960; Eshel 2002, 2015) against the Samaritan mountain, which the editions take as the plain sense (Milik, Puech, Lefkovits). A live alternative of more weight, and no fixed mound, so 1.",
+   "sources": [
+    "research/history/allegro1960_treasure_extracted.md (item 58; pp. 75–76)",
+    "research/assessments/evidence_components/sources/entry57_jericho_gerizim_2026-11-14.md (Eshel 2002 p. 201; Eshel 2015 p. 127 nn. 59–60; Dexinger p. 498)"
+   ]
+  },
+  "F": {
+   "level": 1,
+   "basis": "Only generic water installations are reported at the two mounds. Cypros: Allegro saw a tower, a well blocked with rubble and rock-cut cisterns lower down (p. 76); Meshel and Amit record cisterns and pools fed by the Wadi Qelt aqueducts (the preserved cistern is about 17 × 7 m and 8 m deep). Nuseib ʿUweishira: a stepped pool (HA 59–60 p. 38) and a ritual bath among meagre Herodian-period finds below a Byzantine monastery (Netzer 2006 p. 207). The stepped pool joins a step to a water installation, but its form, size and an 'upper' relation are not recorded. Between 1 and 2, so 1.",
+   "sources": [
+    "research/history/allegro1960_treasure_extracted.md (p. 76)",
+    "research/sources/hexagon_registration_2026-11-11/notes/20_other_methods_2026-11-13/31_meshel_amit_points_26_to_40_cypros_2026-11-14.md",
+    "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.md (Nuseib Uweishira ritual-bath notice; Netzer 2006 p. 207)",
+    "research/regional/water_systems/water.csv (HAESI-HA59-038-nuseib-uweishira-reservoir_pool-50)"
+   ]
+  },
+  "D": {
+   "level": 2,
+   "basis": "F is 1, so D rates the site and cannot exceed 2. Cypros was a Hasmonean–Herodian fortress in use in the window and was destroyed by the rebels in 66 CE (War 2.484); Allegro takes the Zealot hold until 68 CE as his terminus (n. 298). Nuseib ʿUweishira has Herodian-period finds (Netzer 2006 p. 207). The dates of the cisterns and of the stepped pool themselves are not known.",
+   "sources": [
+    "research/history/allegro1960_treasure_extracted.md (n. 298)",
+    "research/assessments/evidence_components/sources/entry57_jericho_gerizim_2026-11-14.md",
+    "research/assessments/entry29_jericho_pools/regional_inventory_2026-10-06.md (Netzer 2006 p. 207)"
+   ]
+  },
+  "U": {
+   "value": "untested",
+   "basis": "No registered comparison against controls covers this candidate.",
+   "sources": [
+    "research/progress/outcome_ledger.json (no record)"
+   ]
+  },
+  "decisive_next": "Which mound: a reading of the ancient sources that names one (the Madaba map label and Eusebius' wording), then a specific pit beside a step on that mound, for example the form, size and position of the Nuseib ʿUweishira stepped pool, or a stepped cistern at Cypros in the excavation reports (Netzer; Meshel and Amit).",
+  "flags": [
+   "Added 14 November 2026 at the owner's request as the Jericho-tradition candidate (Allegro 1960; Eshel 2002, 2015); one place for both mounds because the sources do not fix one."
+  ],
+  "review": [
+   "14 Nov 2026: new candidate (owner decision), rated from Allegro 1960 and the Sefer HaShomronim note"
+  ],
+  "weakest": 1,
+  "label": "weak",
+  "limited_by": [
+   "P",
+   "F"
+  ]
+ },
+ {
   "entry": "58",
   "lines": "XII 6-7",
   "candidate": "beth_shean",
