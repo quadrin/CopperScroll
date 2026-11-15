@@ -151,6 +151,7 @@ Grades after the changes: A 21, B 7, C 5, D 3, E 2 in 38 rows (12 November: A 19
 | B115 | 14 Nov, later | Coüasnon plans of Periods II and III (figs. 55, 56) | not used | same frame as fig. 54 to 1 px; the fig. 54 transform applies | page frame lines | old air photographs 12 |
 | B116 | 14 Nov, later | Frame BS Pal. 1036-f | Probable, by the camp in Birket Musa; "covers about E 191.1–192.8" (B113) | Probable (no change); centred near Birket Musa, west edge about E 190.9; the frame arrow is about 30° off true north | the four corners of the square; the bearing of Wadi Qelt | old air photographs 13 |
 | B117 | 14 Nov, later | RAF vertical frame PS30 5089 (680 Squadron, 15 March 1945) | not known | **registered** to HEXAGON 1978: 127 of 327 blocks, 4.9 m rms; Cypros inside the frame; on the public copy (4.8 m for each pixel) the summit is not resolved; the two pits of B103 are not tested | Hebrew University catalogue copy (IIIF) | RAF 1945 note |
+| B118 | 14 Nov, later | Cypros, two pits east of the summit (190.527/139.153) | Probable pools or cisterns; one date (5 May 1978) (B103) | **Probable (no change); two dates, three frames**: two dark hollows with light rims on the forward and aft frames of 1 Dec 1974; a grid of small cells west of the summit on the same frames looks like an excavation in progress | aft frame A017 f found and fitted (6.9 m); depth not measured (stereo matching fails at the place) | height-model check note |
 
 ## C. Earlier thinking that is kept for the record
 
