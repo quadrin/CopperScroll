@@ -371,3 +371,23 @@ The [pool-reading phase review](entry46_phase_review_2026-10-12/README.md) adds 
 ## New source relations, 14 October 2026 UTC
 
 [Four newly read water articles](../../sources/new_batch_2026-10-13/water_evidence.md) separate observed cistern/inlet contacts from proposed siphons and disputed whole-line dating. [The dissertation's Deir Sam’an comparison](../../sources/new_batch_2026-10-13/root_water_scope.md) supplies surveyed connected reservoirs alongside separately supplied pools, and distinguishes modern working hydraulics from reconstructed ancient operation. These are exposed exploratory comparative sources. Their site locations and phase evidence do not supply Atara's pool/channel contact or justify changes to the frozen regional scoring.
+
+## Erratum, 15 November 2026: two wrong WBADB ↔ ASI links (Hirschfeld 1983)
+
+**Error.** `build_survey.py` links a WBADB row to ASI Map 108/2 (Herodium; Hirschfeld 1985) when its `Survey_Ref` starts "Hirschfeld <year>, Site N". The plan (§7) means Hirschfeld's ASI map, but the pattern accepts any year. Eleven WBADB rows cite "Hirschfeld 1983, Site N", a different list with its own site numbers. Two of them were marked `dup_of` an ASI 108/2 row of the same number and type, and so were left out of the merged counts:
+
+| Row | Place | Linked to | Distance |
+|---|---|---|---|
+| `WBADB-S2313-aqueduct` | Zawayat | ASI 108/2/28 ʿEin es-Sakhari | about 38 km |
+| `WBADB-S2514-reservoir_pool` | Nusib ʿUweishira (Nuseib ʿUweishira) | ASI 108/2/17 Kh. Khureitun | about 29 km |
+
+The other nine "Hirschfeld 1983" rows got a link note only (their ASI record has no row of the same type); none of them is a `dup_of`. Every "Hirschfeld 1985" row that is a `dup_of` was checked: each is at 0 km from its ASI record.
+
+**Effect on the frozen results.** In `scores.csv` the two rows have 34 cell results: 22 UNKNOWN and 12 FAIL, no MATCH. If they were counted, N would rise by 1 in these cells, with no change to any `k_match`:
+
+- S2313: entry 21 (eight S branches, UNKNOWN); entry 32 (O-built|K-Qelt, UNKNOWN).
+- S2514: entry 22 (UNKNOWN); entry 29 (Q-Kidron and Q-Cypros FAIL; Q-any and Q-Jericho UNKNOWN); entry 42 (UNKNOWN); entry 46 (Ramat Rahel and ʿEin Kerem branches FAIL; B-any UNKNOWN).
+
+No outcome and no headline match count changes. The closed entry 29 result stands.
+
+**What was changed.** `scripts/build_survey.py` now accepts only "Hirschfeld 1985, Site N" for the ASI 108/2 link, so a future build is correct. `water.csv`, `survey_rows.csv`, `scores.csv` and `counts.csv` were **not** rebuilt (the WBADB workbook and ASI cache are not in the repository), so they still hold the two wrong `dup_of` values; this erratum is the record. S2514 is the same site as `WBADB-E360-reservoir_pool` (same WBADB point, excavation record) and as `HAESI-HA59-038-nuseib-uweishira-reservoir_pool-50`. Found in the entry 57 stepped-pool check (`research/assessments/evidence_components/sources/entry57_nuseib_stepped_pool_2026-11-15.md`).

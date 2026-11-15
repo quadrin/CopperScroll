@@ -1820,3 +1820,10 @@ Twelve articles were downloaded from JSTOR with the owner's login, at the owner'
 - **Not changed.** The `gerizim` (Jebel et-Tur) row keeps all its levels and stays preferred. No match strength, count or ledger record is changed.
 - **Exposure.** The rater knew the scroll text and the other candidate. The rating is from published records, not from new ground evidence.
 
+
+## 15 November 2026 — entry 57: the Nuseib ʿUweishira stepped pool; water-table erratum (text corrections only; no level change)
+
+- **Check.** HA 59–60 (1976) p. 38 was read in full: a stepped water pool below the Byzantine building, no size; the earlier layer not yet dated; the western moat perhaps of that layer. Records of 5 November (Netzer 1978, Netzer and Birger 1990 Fig. 7, Netzer 2001, Meshel 1978) make the pool a specific feature: locus 16, stepped, plastered, on the summit building. Sources: `research/assessments/evidence_components/sources/entry57_nuseib_stepped_pool_2026-11-15.md`.
+- **Correction.** The `jericho_gerizim` F basis of 14 November said the pool's form is not recorded. The F and D basis texts are rewritten; F stays 1 (a stepped pool is not clearly the entry's pit; compare entry 1), D stays 2. F 2 is possible on another reading and is left to the owner. Edit log D27.
+- **Erratum.** Two WBADB rows citing "Hirschfeld 1983" were wrongly linked as `dup_of` ASI Map 108/2 rows 29–38 km away (Nuseib, Zawayat). Their results are UNKNOWN or FAIL only, so no match count or outcome changes. The link rule is fixed in `build_survey.py`; the tables are not rebuilt. Erratum in `research/regional/water_systems/README.md`; edit log D28.
+- **No level changes.** No rating, candidate, match strength or count is changed.

@@ -276,7 +276,7 @@ def dedup(wrows, wmeta, ameta, arows):
         target = None
         mk = re.search(r'Kloner \d{4}, Site \[([0-9/]+)\] (\d+)', ref)
         mp = re.search(r'(?<!and )Patrich \d{4}, Site (\d+)', ref)
-        mh = re.match(r'\s*Hirschfeld \d{4}, Site (\d+)', ref)
+        mh = re.match(r'\s*Hirschfeld 1985, Site (\d+)', ref)  # ASI 108/2 only; "Hirschfeld 1983" is a different list (erratum 15 Nov 2026)
         if mk:
             target = f'{mk.group(1)}/{mk.group(2)}'
         elif mp:
