@@ -58,3 +58,7 @@
 - Session: `/home/claude/cs/lic/`.
 
 No rating or candidate was changed.
+
+## Correction, 14 November 2026, later
+
+13 old Hadashot map references read as Palestine Grid were converted with the wrong grid code (EPSG 28193 in place of 28191). Fixed: 8 permits moved; the project-area count (202) is unchanged. The corrected table is on Drive as "licence_register_2004_2016_matched_to_hadashot (corrected grid, replaces earlier).csv". Publications of the Jerusalem water-works permits: see the note `west-bank-licences-1968-2007-…` (Reich and Shukron 2021, Table 2.1).
