@@ -641,9 +641,11 @@ _e(28, "19106/14203", num="VIII/28 'Cave of the Sandal'", ftype="cave", src=f"{S
    notes="Opening count and facing not given in this record (relevant to chain link S2430-2).")
 _e(29, "19109/14205", num="VIII/29 'Cave of the Prutah'", ftype="small cave", src=f"{S8} pp. 146, 149",
    n_open=2, open_basis="stated number: a northern opening (towards the step below VIII/28) and a southern opening (to the cliff)",
+   facings="m_north:N;m_south:S",
+   facing_basis="word in text: 'a northern opening, facing (הפונה) the ledge at the foot of VIII/28' and a southern one opening onto the cliff (English summary p. 122); position words read as facing, INFERENCE (as AMENDMENT_1); added 6 Nov 2026, round-2 D1-1",
    north="decided", north_basis="the source names a northern and a southern opening",
    period="EB and Early Roman sherds; prutah of year 2 of the Great Revolt (67/8 CE)", piw="yes+other", exc="sounded (1.5 x 1.5 m test square)",
-   exposure="exposed-repo", notes="No compass facing for either opening (relevant to chain link S2430-2).")
+   exposure="exposed-repo", notes="Facings from the text's position words (round-2 D1-1, 6 Nov 2026); relevant to chain link S2430-2.")
 _e(30, "19076/14202", ftype="natural cave", src=f"{S8} p. 146", n_open=1, open_basis="stated (its oval opening)", period="no finds")
 _ex(31, "elongated natural niche", "19067/14198", "146")
 _ex(32, "two natural clefts", "19067/14196", "146")
@@ -837,18 +839,20 @@ R(ROWS, "A41:XI/16", num="XI/16", src=f"{S11} p. 194, Plan 5, Fig. 10", lineage=
   piw="yes", exc="cleaned (a cut cell); earlier digging (spoil in front)", read=T11)
 X(EXCL, "A41:XI/17", num="XI/17", src=f"{S11} p. 194", ftype="burrow (מחילה), no exact grid", reason="not a cave by the source's type word", read=T11)
 R(ROWS, "A41:XI/18", num="XI/18", src=f"{S11} pp. 194-195, Plan 6, Figs. 11-12", lineage=LIN, grid="19345/12851", n_open=1,
-  open_basis="stated (its opening, 1.2 x 0.7 m, blocked by collapse)", res=4, plan="Plan 6 (p. 194)",
+  open_basis="stated (its opening, 1.2 x 0.7 m, blocked by collapse)", res=16, facings="cave:NNE",
+  facing_basis="plan: Plan 6 north arrow puts the mouth normal at about 6-45 deg true; Fig. 11 views the entrances 'looking south-west' (added 6 Nov 2026, side-quest round-2 D1-1)", plan="Plan 6 (p. 194)",
   period="a Roman lid-bowl of the type used to cover 'scroll jars' (Hasmonean and Herodian parallels at Jericho)", piw="yes",
   exc="excavated fully to 0.7 m, not to bedrock (L-605, per the Index)", exposure=PO, read=T11,
-  notes="Below cave Q2 excavated by de Vaux (XI/19). Named in the Kohlit chain (link QUMRAN-1) without its content.")
+  notes="Below cave Q2 excavated by de Vaux (XI/19). Named in the Kohlit chain (link QUMRAN-1). Facing read from Plan 6 on 6 Nov 2026 (round-2 D1-1).")
 R(ROWS, "A41:XI/19", num="XI/19 = 1952 cave 19 = 2Q", src=f"{S11} pp. 195-196, Plan 7, Figs. 11, 13", lineage=LIN,
   ftype="large cave, two storeys", grid="19343/12391", coord_ok=False, where="centre of the lower fault cliff above Horbat Qumran (Region XI); Map XI near N 128.9", cbasis="printed grid (evidently a misprint: Map XI plots it near N 128.9; see notes)",
   n_open=1, open_basis="stated (the cave's opening leads to the lower storey)", res=4, plan="Plan 7 (p. 196)",
   period="Early Roman sherds from earlier spoil ('scroll jar', lid-bowl, cooking pot)", piw="yes", exc="excavated before (1952); niches and corridor cleaned (L-606)",
   exposure="exposed-repo", read=T11, other_ids="DJD3:19 (stated: identified from old photographs as Baillet-Milik-de Vaux cave 19)",
   notes="MERGE: same cave as DJD III site 19 (2Q), by the source's statement.")
-R(ROWS, "A41:XI/20", num="XI/20 (perhaps 1952 cave 20)", src=f"{S11} pp. 196-197, Fig. 14", lineage=LIN, ftype="natural cave", grid="19335/12838",
-  n_open=1, open_basis="stated (a wide high opening)", res=4,
+R(ROWS, "A41:XI/20", num="XI/20 (perhaps 1952 cave 20)", src=f"{S11} pp. 196-197, Plan 8, Fig. 14", lineage=LIN, ftype="natural cave", grid="19335/12838",
+  n_open=1, open_basis="stated (a wide high opening)", res=4, plan="Plan 8 (p. 197)", facings="cave:S",
+  facing_basis="plan: Plan 8 north arrow; the wide opening is on the south side (added 6 Nov 2026, side-quest round-2 D1-1)",
   period="Early Roman sherds outside the opening; a 14th-c. Mamluk jug at a hearth in the opening", piw="yes+other",
   exc="excavated (L-606; not to bedrock)", exposure="exposed-repo", read=T11,
   other_ids="perhaps DJD3:20 ('it seems this cave should be identified with cave 20', hedged)",
