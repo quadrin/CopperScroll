@@ -6,7 +6,7 @@ N. Avigad, "A Depository of Inscribed Ossuaries in the Kidron Valley", *Israel E
 
 ## The tomb
 
-- **Evidence (p. 1).** Found on 10 November 1941 in the Hebrew University's search for Jewish tombs in the Kidron Valley; excavated by E. L. Sukenik with Avigad. Serial No. XXX. Only a short note appeared before (BASOR 88, 1942, p. 38; *Kedem* 1, 1942, p. 104).
+- **Evidence (p. 1).** Found on 10 November 1941 in the Hebrew University's search for Jewish tombs in the Kidron Valley; excavated by E. L. Sukenik with Avigad. Serial No. XXXI *(corrected 6 Nov 2026 from "XXX" after the page image; side-quest B3)*. Only a short note appeared before (BASOR 88, 1942, p. 38; *Kedem* 1, 1942, p. 104).
 - **Evidence (p. 1).** The tomb is "south of Silwan village at a site named Karm esh-Sheikh on the south-western slope of the Kidron Valley". The entrance, 0.97 × 0.58 m, was closed by a stopper-shaped stone with a marginal draft and a rough boss. The tomb was found intact.
 - **Evidence (pp. 1–2, Fig. 1).** One rectangular chamber, 3.1 × 4.65 m and 1.15 m high, with a rectangular standing pit (2.1 × 2.9 m, 1 m deep). The pit leaves three shelves 0.8–1 m wide along the walls, but not along the entrance wall. A rock partition and a row of built stones divide the pit. The pit walls and door jambs have poor mud-and-lime plaster.
 - **Evidence (p. 2).** "This kind of single tomb-chamber with shelves and no *kokhim* is rather rare among ossuary-tombs."
