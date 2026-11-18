@@ -1,5 +1,8 @@
 # Entry 25 aspect rule and IV/17 target declarations
 
+> **Retired, 30 October 2026 (owner's decision).** Every blind-reading, reserve, held-area and "do not open" rule in the project is withdrawn; all material is visible and may be read normally. See [the retirement record](../RETIRED_BLIND_RULES_2026-10-30.md). The text below is kept as a historical record; where it gates access, it no longer applies.
+
+
 **What it is:** two rules frozen before the L-656 field file or the IAA cave records arrive: how to score an Entry 25 mouth facing, and the model choices the eight IV/17 coverage branches need.
 **Main result:** both rules are frozen and hashed (below). A mouth-facing FAIL at IV/17 would remove Entry 25 classes c02, c03 and c05; a PASS removes none. No real record was scored.
 **What stays unknown:** what the L-656 file or the IAA records will show, and whether they will come. The sectors, tolerances and zone sizes are declared assumptions, not estimates.
