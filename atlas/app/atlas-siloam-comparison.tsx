@@ -41,7 +41,7 @@ export default function SiloamComparison() {
     <div aria-live="polite"><p>{feature.observation}</p><p><b>Open question</b> {feature.unresolved}</p>
       {source && <a href={source.url} target="_blank" rel="noreferrer">{source.title} · {source.locator}</a>}
     </div>
-    {photo && <figure><img src={imageRoot + photo.web} alt={photo.alt} loading="lazy"/><figcaption><a href={photo.sourceUrl} target="_blank" rel="noreferrer">{photo.date} · {photo.author}</a> · <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a></figcaption></figure>}
+    {photo && <figure><img src={imageRoot + photo.web} alt={photo.alt} loading="lazy"/><figcaption><a href={photo.sourceUrl} target="_blank" rel="noreferrer">{photo.date} · {photo.author}</a> · {photo.licenseUrl ? <a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a> : photo.license}</figcaption></figure>}
     <p className="siloam-frame-note">The map pin marks the pool complex. The plan below shows L103 and the small receiver in excavation coordinates.</p>
   </section>;
 }

@@ -2,14 +2,15 @@ name: Atlas release verification
 on:
   push:
     branches: [atlas-overlay-verification-20261124]
-    paths-ignore: ["atlas-site/**", "index.html"]
 permissions:
-  contents: write
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -31,8 +32,3 @@ jobs:
         run: |
           corepack pnpm run build:pages
           bash scripts/check-pages-build.sh "$RUNNER_TEMP/release-check"
-      - name: Save verified static assets on the verification branch
-        run: |
-          git add -- atlas-site index.html
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Build checked Atlas Pages assets"
-          git push origin HEAD:refs/heads/atlas-overlay-verification-20261124
