@@ -13,3 +13,12 @@ export function filterCandidateRows<T extends {candidate:KBRecord;result?:KBReco
   return true;
  });
 }
+
+/** Compare only assignments evaluated for the same reading and date window. */
+export function rankLinkedAssignments<T extends {result?:KBRecord}>(rows:T[]):T[]{
+ const counts=(row:T,status:string)=>(row.result?.payload.checks||[]).filter((check:{status:string})=>check.status===status).length;
+ return [...rows].sort((a,b)=>{
+  if(!a.result||!b.result)return Number(Boolean(b.result))-Number(Boolean(a.result));
+  return counts(a,'contradicted')-counts(b,'contradicted') || counts(b,'compatible')-counts(a,'compatible');
+ });
+}

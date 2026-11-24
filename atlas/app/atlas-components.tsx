@@ -40,6 +40,7 @@ export function EvidenceComponents({ entryId, placeId }: { entryId: string; plac
       {keys.map(k => <div key={k} className={row.limitedBy.includes(k) ? "limit" : ""}><dt>{names[k]}<span>{row.levels[k]}/3<Pips level={row.levels[k]} /></span></dt><dd>{row.basis[k]}{k === "R" && row.limitingWord && <em> Limiting word: <span lang="he">{row.limitingWord}</span>.</em>}</dd></div>)}
       <div><dt>Uniqueness<span>{row.u}</span></dt><dd>{row.basis.U}</dd></div>
     </dl>
+    {entryId === "57" && placeId === "gerizim" && <p className="ec-method"><a href="https://github.com/quadrin/CopperScroll/blob/main/research/sources/hexagon_registration_2026-11-11/edit_log_location_grades_and_image_statuses.md#L256-L257" target="_blank" rel="noreferrer">Source review of Magen’s plan and phases (D35–D36)<ExternalLink size={12} aria-hidden="true" /></a></p>}
     {row.next && <p className="ec-next"><strong>Would change it:</strong> {row.next}</p>}
     <p className="ec-method">Each part is rated 0–3 from the repository's records; the weakest part sets the label. None counts as an identification without all four at 3 and a test against controls. <a href={componentLinks.rubric} target="_blank" rel="noreferrer">Rubric<ExternalLink size={12} aria-hidden="true" /></a> · <a href={componentLinks.table} target="_blank" rel="noreferrer">All ratings<ExternalLink size={12} aria-hidden="true" /></a></p>
   </section>;

@@ -1,4 +1,5 @@
 "use client";
+import SiloamNavigation from "./atlas-siloam-navigation";
 import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ChevronDown, Search, X } from "lucide-react";
 import AtlasMap from "./atlas-map";
@@ -117,7 +118,7 @@ export default function Atlas(){
   try{void Promise.resolve(context.registerTool({name:"navigate_scroll_entry",title:"Explore a Copper Scroll entry",description:"Select an entry and its candidate sites.",inputSchema:{type:"object",properties:{entryId:{type:"string",enum:entries.map(e=>e.id)}},required:["entryId"],additionalProperties:false},execute:async(input:{entryId:string})=>{const e=entries.find(e=>e.id===input.entryId);if(!e)throw Error("Unknown entry");navigate({entryId:e.id,placeId:primaryPlace(e.id),mode:"site",workbench:null,planId:plansForPlace(primaryPlace(e.id))[0]?.id??null,featureId:null});return {entryId:e.id,title:e.title};}},{signal:controller.signal})).catch(()=>{});}catch{}return()=>controller.abort();
  },[navigate]);
  const canBack=depth>0||!["2d","3d"].includes(state.mode)||!!state.featureId||!!state.workbench;
- return <main className="atlas-shell unified-atlas" data-mode={state.mode}>
+ return <SiloamNavigation state={state} navigate={navigate}><main className="atlas-shell unified-atlas" data-mode={state.mode}>
   <a className="skip-link" href="#explore-surface">Skip to exploration</a>
   <AtlasSiteNav entry={entry.id} active={['scroll','scene'].includes(state.mode)?'scroll':'map'} record={state.recordId} place={state.placeId}/>
   {state.mode!=="scroll"&&<div className="atlas-explorer-bar" aria-label="Current passage and place">
@@ -145,5 +146,5 @@ export default function Atlas(){
    {state.inspection&&<ContextSheet entryId={entry.id} entryTitle={entry.title} placeId={state.placeId} placeName={place?.shortName} view={state.inspection} record={state.recordId} onView={view=>inspect(view)} onRecord={key=>inspect('record',key)} onClose={()=>navigate({inspection:null,recordId:null})}/>}
    {browse&&<aside className="unified-browser" aria-label="Find entries"><header><h2>Find an entry or place</h2><button aria-label="Close search" onClick={()=>setBrowse(false)}><X size={18}/></button></header><input autoFocus aria-label="Search entries and places" placeholder="Qumran, Siloam, 29…" value={query} onChange={e=>setQuery(e.target.value)}/><select aria-label="Filter region" value={region} onChange={e=>setRegion(e.target.value)}><option value="all">All regions</option><option value="jericho">Jericho &amp; Qumran</option><option value="jerusalem">Jerusalem</option><option value="region">Judean hills &amp; north</option><option value="unplaced">Unplaced</option></select><nav aria-label="Entry results">{matches.map(e=><button key={e.id} aria-current={e.id===entry.id?"true":undefined} onClick={()=>chooseEntry(e.id)}><span>{e.id}</span><div><strong>{e.title}</strong><small>{e.candidates[0]?byPlace[e.candidates[0].placeId].shortName:"Location unresolved"}</small></div></button>)}{matches.length===0&&<p>No matching entry. Try another place name.</p>}</nav></aside>}
   </div>
- </main>;
+ </main></SiloamNavigation>;
 }

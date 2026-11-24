@@ -162,7 +162,7 @@
     "jericho-early~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 22631,
+   "bytes": 22271,
    "blockSize": 0.25,
    "origin": [
     -225,
@@ -201,7 +201,13 @@
     "stone_brick_slab[type=bottom]": 801,
     "stone_bricks": 4932
    },
-   "quads": 3890
+   "quads": 3873,
+   "displayCut": {
+    "feature": "A(B)99-ch-N",
+    "sourceSha256": "b0c03866418bc1df885994f1636dd5437e6b3dc5baba931e354d3d4ef2773dcd",
+    "eastGridPlane": 147,
+    "note": "Plan 15 comparison. Terminal block faces trimmed at display export. The exposed end takes its material and light from the saved faces of the cut branch."
+   }
   },
   "jericho-late": {
    "file": "jericho-late.bin.gz",
@@ -213,7 +219,7 @@
     "jericho-late~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 22635,
+   "bytes": 22275,
    "blockSize": 0.25,
    "origin": [
     -225,
@@ -252,7 +258,13 @@
     "stone_brick_slab[type=bottom]": 801,
     "stone_bricks": 4932
    },
-   "quads": 3890
+   "quads": 3873,
+   "displayCut": {
+    "feature": "A(B)99-ch-N",
+    "sourceSha256": "e79dc11fb8f4fb24a1f31fe28e40290e0b0cbfd0ee88990fc444babc9be4b082",
+    "eastGridPlane": 147,
+    "note": "Plan 15 comparison. Terminal block faces trimmed at display export. The exposed end takes its material and light from the saved faces of the cut branch."
+   }
   },
   "siloam-receiver": {
    "file": "siloam-receiver.bin.gz",
@@ -830,7 +842,7 @@
     "jericho-late~ring2"
    ],
    "terrainPlace": null,
-   "bytes": 73837,
+   "bytes": 71875,
    "blockSize": 0.25,
    "origin": [
     -239,
@@ -870,7 +882,13 @@
     "smooth_stone_slab[type=top]": 1,
     "stone": 2309048
    },
-   "quads": 13123
+   "quads": 13106,
+   "displayCut": {
+    "feature": "A(B)99-ch-N",
+    "sourceSha256": "618198efc806de4aa9361fc07a4d0769b83516a32a1700b86c2c600310cf09f2",
+    "eastGridPlane": 203,
+    "note": "Plan 15 comparison. Terminal block faces trimmed at display export. The exposed end takes its material and light from the saved faces of the cut branch."
+   }
   },
   "jericho-late@herodian": {
    "file": "jericho-late@herodian.bin.gz",
@@ -2222,7 +2240,7 @@
     "jericho-early~ring2.bare"
    ],
    "terrainPlace": null,
-   "bytes": 22648,
+   "bytes": 22287,
    "blockSize": 0.25,
    "origin": [
     -225,
@@ -2261,7 +2279,13 @@
     "stone_brick_slab[type=bottom]": 801,
     "stone_bricks": 4932
    },
-   "quads": 3890
+   "quads": 3873,
+   "displayCut": {
+    "feature": "A(B)99-ch-N",
+    "sourceSha256": "440dd33f8a8fc203e2c153c0ef7385784b7c4763ec9ba28bf48da7871fd2b936",
+    "eastGridPlane": 147,
+    "note": "Plan 15 comparison. Terminal block faces trimmed at display export. The exposed end takes its material and light from the saved faces of the cut branch."
+   }
   },
   "jericho-late@stage6.bare": {
    "file": "jericho-late@stage6.bare.bin.gz",
@@ -2276,7 +2300,7 @@
     "jericho-late~ring2.bare"
    ],
    "terrainPlace": null,
-   "bytes": 73858,
+   "bytes": 71895,
    "blockSize": 0.25,
    "origin": [
     -239,
@@ -2316,7 +2340,13 @@
     "smooth_stone_slab[type=top]": 1,
     "stone": 2309048
    },
-   "quads": 13123
+   "quads": 13106,
+   "displayCut": {
+    "feature": "A(B)99-ch-N",
+    "sourceSha256": "cf70c8a1ecc38bc23d0d50b4ec594da51e8f5baadaf8e7dc8594d04723345cd7",
+    "eastGridPlane": 203,
+    "note": "Plan 15 comparison. Terminal block faces trimmed at display export. The exposed end takes its material and light from the saved faces of the cut branch."
+   }
   },
   "jericho-late@herodian.bare": {
    "file": "jericho-late@herodian.bare.bin.gz",
@@ -2388,7 +2418,7 @@
     "jericho-late~ring2.bare"
    ],
    "terrainPlace": null,
-   "bytes": 22650,
+   "bytes": 22288,
    "blockSize": 0.25,
    "origin": [
     -225,
@@ -2427,7 +2457,13 @@
     "stone_brick_slab[type=bottom]": 801,
     "stone_bricks": 4932
    },
-   "quads": 3890
+   "quads": 3873,
+   "displayCut": {
+    "feature": "A(B)99-ch-N",
+    "sourceSha256": "de5602d0289213c42efdf593783901631ad2bb19628f93cfac2d3182bb7af5c0",
+    "eastGridPlane": 147,
+    "note": "Plan 15 comparison. Terminal block faces trimmed at display export. The exposed end takes its material and light from the saved faces of the cut branch."
+   }
   },
   "gerizim-precinct.bare": {
    "file": "gerizim-precinct.bare.bin.gz",

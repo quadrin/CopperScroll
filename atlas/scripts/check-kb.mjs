@@ -8,7 +8,7 @@ import ts from 'typescript';
 const require=createRequire(import.meta.url);
 function compile(path,extras='',deps={}){
  const file=new URL(path,import.meta.url);const module={exports:{}};
- const compiled=ts.transpileModule(readFileSync(file,'utf8').replaceAll('import.meta.env?.BASE_URL',JSON.stringify('/CopperScroll/atlas-site/'))+extras,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
+ const compiled=ts.transpileModule(readFileSync(file,'utf8').replaceAll('import.meta.env', '({BASE_URL: "/CopperScroll/atlas-site/"})')+extras,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
  const localRequire=id=>id in deps?deps[id]:id.endsWith('.css')?{}:require(id);
  new Function('require','module','exports',compiled)(localRequire,module,module.exports);return module.exports;
 }
@@ -35,7 +35,9 @@ const filters=compile('../app/atlas-kb-filters-model.ts');
 const catalogue=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
 const nav=compile('../app/atlas-navigation.ts');
 const contextRoutes=compile('../app/atlas-context-routes.ts');
-const siteNav=compile('../app/atlas-site-nav.tsx','',{'./atlas-navigation':nav,'./atlas-context-routes':contextRoutes});
+const siloamReading=compile('../app/atlas-siloam-reading.ts');
+const siloamNav=compile('../app/atlas-siloam-navigation.tsx','',{'./atlas-siloam-reading':siloamReading});
+const siteNav=compile('../app/atlas-site-nav.tsx','',{'./atlas-navigation':nav,'./atlas-context-routes':contextRoutes,'./atlas-siloam-navigation':siloamNav});
 const components=compile('../app/atlas-kb.tsx','',{'./atlas-kb-model':model,'./atlas-kb-filters-model':filters});
 const render=(c,props)=>renderToStaticMarkup(createElement(c,props));
 const onSelect=()=>{};
@@ -86,13 +88,30 @@ assert.deepEqual(components.searchEvidenceRecords(data.records,'a-record-that-do
 const recordSearch=render(components.RecordSearch,{i,onSelect});assert.ok(recordSearch.includes('Search all records'));assert.ok(recordSearch.includes('outside this passage'));
 
 // One immutable snapshot/index serves map and reader context panels.
-const contextual=compile('../app/atlas-context-evidence.tsx','',{'./atlas-kb-model':model,'./atlas-kb':components,'./atlas-components':{EvidenceComponents:()=>null},'./atlas-data.json':catalogue,'./atlas-kb.json':data});
+const secacahData=JSON.parse(readFileSync(new URL('../app/atlas-secacah-comparison.json',import.meta.url),'utf8'));
+const secacah=compile('../app/atlas-secacah-comparison.tsx','',{'./atlas-secacah-comparison.json':secacahData});
+const contextual=compile('../app/atlas-context-evidence.tsx','',{'./atlas-kb-model':model,'./atlas-kb':components,'./atlas-secacah-comparison':secacah,'./atlas-components':{EvidenceComponents:()=>null},'./atlas-data.json':catalogue,'./atlas-kb.json':data});
 const loading=contextual.loadContextEvidence(),sameLoading=contextual.loadContextEvidence();assert.equal(loading,sameLoading);
 const cached=await loading;assert.equal(await contextual.loadContextEvidence(),cached);
 const contextProps={entryId:'25',view:'compare',onView(){},onRecord(){}};
 const contextComparison=render(contextual.default,contextProps);
 assert.ok(contextComparison.includes('One retained reading and period across every candidate and control.'));assert.ok(contextComparison.includes('permit L-656'));
 assert.ok(!contextComparison.includes('<main'));assert.ok(!contextComparison.includes('Atlas sections'));assert.ok(!contextComparison.includes('Browse all entries'));assert.ok(!contextComparison.includes('<img'));
+const e21=render(contextual.default,{...contextProps,entryId:'21'});
+assert.ok(e21.includes('The conduit head at Secacah') && e21.includes('Naʿaran') && e21.includes('Qumran'));
+assert.deepEqual(secacahData['S-open|F-flow'].map(row=>row.result),['MATCH','FAIL']);
+assert.deepEqual(secacahData['S-stone|N-side'].map(row=>row.result),['UNKNOWN','UNKNOWN']);
+for(const entryId of ['4','11','15','16','19','60']){
+ const grouped=render(contextual.default,{...contextProps,entryId});
+ assert.ok(grouped.includes('Koḥlit across entries') && grouped.includes('Comparison branch') && grouped.includes('Marjama'));
+}
+const poolPitCandidates=model.entryContext(i,'11').filter(r=>r.kind==='hypothesis');
+const poolPitChoice=model.comparisonChoices(i,poolPitCandidates).find(choice=>choice.branch==='branch/RB-M'&&choice.window==='early');
+assert.ok(poolPitChoice);
+const ranked=filters.rankLinkedAssignments(model.comparisonRows(i,poolPitCandidates,poolPitChoice.key));
+const firstConflict=ranked.findIndex(row=>row.result?.payload.checks.some(c=>c.status==='contradicted'));
+assert.ok(firstConflict>0);
+assert.ok(ranked.slice(firstConflict).every(row=>!row.result||row.result.payload.checks.some(c=>c.status==='contradicted')));
 const missingRecord=render(contextual.default,{...contextProps,view:'record',record:'observation/does-not-exist'});
 assert.ok(missingRecord.includes('This evidence record is unavailable'));assert.ok(!missingRecord.includes('RECORD INSPECTOR'));
 const actualRecord=render(contextual.default,{...contextProps,view:'record',record:'observation/icrc2017-native-plan'});
@@ -125,13 +144,13 @@ const missing=controls.find(r=>r.candidate.key==='hypothesis/A41:XII/53');assert
 const iv17=filters.filterCandidateRows(compared,'IV17','all');assert.equal(iv17.length,1);assert.equal(iv17[0],compared.find(r=>r.candidate.id==='iv17'));
 console.log('Filter checks passed: exact-branch candidate subsets, explicit missing results and source assignments.');
 
-// Two primary destinations; research tools open within the selected passage.
+// Verify all shared navigation links and passage context.
 const routes=siteNav.sectionRoutes('25');assert.equal(routes.map,'#entry-25/2d');assert.equal(routes.scroll,'#entry-25/scroll');
 for(const active of ['map','scroll']){
  const html=render(siteNav.default,{entry:'25',active});
  for(const label of ['Atlas sections','Map','Scroll','Research tools'])assert.ok(html.includes(label));
  assert(html.includes('<details'));assert(!html.includes('More sections'));
- const primary=html.match(/<nav aria-label="Atlas sections">(.*?)<\/nav>/)?.[1];assert(primary&&!primary.includes('Evidence'));assert.equal((primary.match(/<a /g)||[]).length,2);
+ const primary=html.match(/<nav aria-label="Atlas sections">(.*?)<\/nav>/)?.[1];assert(primary&&!primary.includes('Evidence'));for(const href of [routes.introduction,routes.map,routes.scroll,routes.notes])assert.ok(primary.includes('href="'+href+'"'));
  assert.equal((html.match(/aria-current="page"/g)||[]).length,1);
 }
 console.log('Shared navigation checks passed: geographic map route, selected-entry context, direct section access and one active section.');

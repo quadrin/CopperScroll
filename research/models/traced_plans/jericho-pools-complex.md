@@ -122,3 +122,12 @@ Thus the atlas plan `jericho-late`, which shows Fig. 22 with the "Joined basin" 
 
 - Overlays on the Netzer plans are derived from IES-copyright scans (a research extract that the user authorized). Check before any public reuse.
 - Overlays on the Trümper figures are CC BY-NC 3.0, with attribution to Trümper and Netzer.
+
+
+## Northern pool walk · 24 November 2026
+
+Netzer, *Hasmonean and Herodian Palaces at Jericho*, vol. I (2001), pp. 82–85, describes the Stage 6 channels from tank A(B)99. The folded [Plan 15](https://drive.google.com/file/d/1ozeSGXTBAoxosjkd_Gl1Rwrod3Pf7Pww/view) shows two edges on the northern branch, followed by about 2.1 m of a single line to the wall. It depicts several phases together. Applying this length to the last segment of the Plan 20 centreline places the model end near (−2.293, 15.906) in plan metres. This is an approximate display transfer. The enlargement and the published account give no phase-controlled receiving aperture. The Herodian joining of the pools removed the main conduit reach between them (p. 78); the report gives no corresponding event for the last northern branch contact.
+
+The walk opens west of the northern basin and turns with the registered plan. The phase comparison retains the visitor’s location and heading, resolving the standing height against the selected model. Its cropped plan is Trümper 2018 fig. 22, with the approximate end marked using the figure transform recorded in the trace. Stage 6 and the Herodian single basin share this local frame.
+
+For the October Minecraft exports the revision clips only the northern branch faces to the nearest block boundary and closes the exposed section with the cut branch’s face material and light. The terrain, pool wall and recorded server readback remain intact. `atlas/scripts/minecraft/trim-jericho-branch.mjs` reproduces these display files from the original `atlas/public/minecraft` directory at revision `941f422c`; each revised index row records its source SHA-256. A future server build takes the revised line directly.

@@ -68,15 +68,31 @@ records='''1|Valley of Achor|עמק עכור|A ruin and a flight of steps in the
 59|Bezek?|הבזך|A great conduit; the Bezek reading competes with other readings.
 60|The final Kohlit entry|כחלת|A pit, tomb and opening associated with Kohlit; Lefkovits also reads Janoah.'''
 descriptions={r.split('|')[0]:r.split('|')[1:] for r in records.splitlines()}
+# The November site review added a separate two-mound alternative for E57.
+# Keep the owner's Jericho assessment alongside the Samaritan mountain.
+jericho_gerizim = {
+    "id": "jericho_gerizim",
+    "name": "Jericho “Gerizim”: the two mounds at the outlet of Wadi Qelt (Cypros / Tell el-ʿAqaba and Nuseib ʿUweishira)",
+    "shortName": "Jericho “Gerizim” · Wadi Qelt outlet",
+    "lat": 31.8489,
+    "lon": 35.42647,
+    "precision": "~450 m (two mounds 840 m apart; the point is between them)",
+    "kind": "area",
+    "region": "jericho",
+    "note": "A Gerizim (and Ebal) near Jericho is attested in Jewish and Christian tradition (y. Sotah 7:3; b. Sotah 33b; Sifre on Deut 11:30; Eusebius, Onomasticon; the Madaba map). Allegro 1960 (pp. 75–76) put the scroll’s Gerizim at Cypros (Tell el-ʿAqaba), with Taurus as Ebal; Eshel (Sefer HaShomronim 2002 p. 201; Eshel and Safrai 2002; Eshel 2015 p. 127) names both mounds, Tell el-ʿAqaba and Nuseib ʿUweishira. Which mound is not fixed. Candidate only under the Jericho tradition; Jebel et-Tur is the preferred candidate.",
+    "source": "Allegro 1960 pp. 75–76 (research/history/allegro1960_treasure_extracted.md, item 58); Eshel in Stern and Eshel (eds) 2002 p. 201; Cypros summit PG 190.44/139.165 (hexagon notes 31, 43); Nuseib ʿUweishira pool point 31.85266 N 35.42679 E (WBADB E360 / HA 59–60 p. 38)"
+}
 places={}
 for r in rows('phase3_places.csv'):
     places[r['place_id']]={'id':r['place_id'],'name':r['name'],'lat':float(r['lat']) if r['lat'] else None,'lon':float(r['lon']) if r['lon'] else None,'precision':r['precision'],'kind':r['kind'],'region':r['map_group'],'note':r['note'],'source':r['coord_source']}
+    if r['place_id'] == 'gerizim':
+        places['jericho_gerizim'] = jericho_gerizim
 short_names={'kh_qumran':'Khirbet Qumran','wadi_qumran':'Wadi Qumran','doq':'Jebel Qarantal / Doq','choziba':'Choziba · Wadi Qelt','jer_siloam':'Silwan pool & tunnel outlet','jer_bethesda':'Bethesda · St Anne’s','ramat_rahel':'Ramat Rahel','gerizim':'Mount Gerizim','beth_shean':'Beth Shean / Scythopolis','nuweimeh':'Wadi Nuweimeh','ain_duk':'Ain Duk springs','tell_es_sultan':'Tell es-Sultan','jericho_area':'Jericho oasis','jericho_palaces':'Jericho royal palaces','hyrcania':'Hyrcania / Khirbet el-Mird','mar_saba':'Kidron gorge · Mar Saba','natuf':'Ain en-Natuf · Khareitun','ibziq':'Khirbet Ibziq','buqeia':'Buqeia plateau','jer_east_gate':'Eastern gate & wall','jer_kidron_mon':'Kidron monuments','jer_kidron_east':'Silwan necropolis','jer_temple':'Temple enclosure','jer_se_corner':'Southeastern Temple slope','jer_south_wall':'Southern Temple wall','jer_baqa':'Baqa plain','jer_shaveh':'Shaveh / King’s Valley','jer_bir_ayyub':'Bir Ayyub / En-Rogel','jer_tyropoeon':'Tyropoeon valley','jer_tombs_kings':'Tombs of the Kings','jer_gethsemane':'Gethsemane','tell_el_ful':'Tell el-Ful','asla':'Asla area','kuteif':'Wadi Kuteif','jordan_ford':'Lower Jordan crossing','tekoa_herodium':'Tekoa–Herodium sector','tell_el_qos':'Tell el-Qos','jer_givati':'Givati building · City of David'}
-for k,p in places.items(): p['shortName']=short_names[k]
+for k,p in places.items(): p.setdefault('shortName', short_names.get(k, p['name']))
 # Revisions after Phase 3 (the Phase 3 tables keep their original assessment).
 # 29 September 2026: entry40_bethhoron_review.md adds Beth-Horon as a possible place for entry 40.
 places['beth_horon']={'id':'beth_horon','name':'Upper Beth-Horon (Beit ʿUr el-Foqa)','lat':31.88530,'lon':35.11341,'precision':'~300 m','kind':'point','region':'region','note':'Village anchor from the IAA Benjamin survey (sites 28/143). Lower Beth-Horon (Beit ʿUr et-Taḥta) is equally compatible and has the only tomb with pottery of the period. Not a feature location.','source':'IAA survey, Ramallah–Benjamin map 83/1, sites 28 and 143','shortName':'Upper Beth-Horon · Beit Ur'}
-revised_candidates={'40':[{'placeId':'beth_horon','status':'possible','confidence':'low'}],'59':[{'placeId':'kh_salhab','status':'possible','confidence':'low'}]}
+revised_candidates={'57':[{'placeId':'jericho_gerizim','status':'possible','confidence':'low'}], '40':[{'placeId':'beth_horon','status':'possible','confidence':'low'}],'59':[{'placeId':'kh_salhab','status':'possible','confidence':'low'}]}
 # 29 September 2026: source_leads_2026-09-29.md (Zertal 2008, Manasseh Hill Country Survey Vol. 2) lowered
 # Kh. Ibziq for entry 59 from medium to low. Later the same day, entry59_bezek_review.md read HA 40 (1971) p. 22:
 # a kokhim tomb of the 1st-2nd centuries CE at Kh. Ibziq. That restores the period evidence, so Ibziq is medium again,
@@ -119,7 +135,7 @@ specific={
 '48':('The standing Kidron monument has first-century architectural features.','Its earliest surviving labels name Zacharias. A first-century association with Absalom remains unestablished.'),
 '49':('The tunnel outlet and surrounding pools supply a compatible water-installation setting. Szanton distinguishes the smaller Silwan pool from Birkat el-Hamra.','Siloam depends on a supplied word; the 2026 plate check shows the disputed letter as a waw-shaped stroke, which leans to Puech without deciding it. Lefkovits reads no Siloam name. The trough remains unverified; overall confidence stays medium and conditional.'),
 '55':('The Bethesda complex supplies double pools and a smaller basin in the relevant period.','The smaller basin follows Milik’s and Puech’s reading לימומית; the Text tab reads “on the right”. The text may describe two pools without naming Bethesda; the 2026 plate check shows what looks like a ḥet where Milik’s Bethesda needs a taw. The nearby Strouthion twin pool prevents a unique match on that feature alone.'),
-'57':('The mountain name provides the geographical anchor. Magen distinguishes the eastern monumental staircase, the southern seven-step flight, the 15-step flight at E1, and the courtyard cistern in Area P building IV. These are separate installations.','The city was destroyed about 110 BCE. A later Hasmonean garrison is reported, but feature-specific use of the stairs or cistern in the scroll’s period remains unverified. Festus specimen K35264 (58/59 CE) is catalogued at P5178, basket 51777; the total of three is a type count, not three coins demonstrated at that locus. Its architectural and deposition contexts remain unknown. No specific step or upper pit is identified.'),
+'57':('Magen’s fig. 267 places Cistern 2 just inside the east gate of the Hellenistic precinct, at the head of the eastern monumental staircase. The large pool west of the church belongs to Justinian’s fortress.','The city was destroyed about 110 BCE. A later Hasmonean garrison is reported, but feature-specific use of the stairs or cistern in the scroll’s period remains unverified. Festus specimen K35264 (58/59 CE) is catalogued at P5178, basket 51777; the total of three is a type count, not three coins demonstrated at that locus. Its architectural and deposition contexts remain unknown. No specific step or upper pit is identified.'),
 '58':('Perennial springs and period water installations fit the regional setting at Beth Shean.','The scroll’s final mem differs from the usual nun in Beth Shean. No evidence selects the particular spring.'),
 '59':('Zertal identifies Eusebius’s two villages called Bezek, 17 miles from Neapolis, with the two Ibziq sites. A kokhim tomb excavated at Kh. Ibziq in 1971 held pottery of the 1st–2nd centuries CE, which fits Puech’s alternative “burial chamber” reading in type. Zertal places the older Bezeq at nearby Kh. Salhab.','Zertal’s survey reports cisterns and burial caves but no conduit at either Ibziq site, and few Early Roman sherds on the surface. No conduit is reported at Kh. Salhab either. The place name depends on Puech’s reading הבזך, which Allegro and Lefkovits share; the Text tab shows הבור, “the cistern”, the reading of Wilmot and Wise.'),
 }
@@ -225,7 +241,7 @@ for entry in entries:
         entry['candidates'].sort(key=lambda c: c['placeId'] != 'abu_saraj_iv17')
         entry['sources'] += '; Sion 2002, ʿAtiqot 41 pp. 61–64, Plan 5 p. 63; existing IV/17 assessment (2 October 2026)'
     if entry['id']=='57':
-        entry['sources'] += '; Magen 2008 plan p. 1743; catalogue-methodology correction (1 October 2026)'
+        entry['sources'] += '; Magen 2008, JSP 8, fig. 267 (printed p. 143), pp. 267–268; Gerizim corrections D35–D36'
     if entry['id']=='39':
         entry['landmark'] = 'an underground chamber facing east, in a terrace'
     if entry['id']=='54':
@@ -234,7 +250,7 @@ for entry in entries:
         entry['period'] = 'Tested pools Hasmonean (Jericho 103–67 BCE, joined under Herod; Hyrcania, abandoned after Herod)'
         entry['sources'] += '; Trümper 2018 pp. 280–286; Netzer 1983 pp. 101, 105–106; Patrich 1989 pp. 255–256, Fig. 22; Patrich 2002 p. 336; entry-29 assessments (2 October 2026)'
 out={'snapshot':'e3b51ce6523e947fe217a630d64fa16486fc3c7c','reviewDate':'12 October 2026','entries':entries,'places':list(places.values())}
-assert len(entries)==61 and len(places)==41
+assert len(entries)==61 and len(places)==42
 assert all(c['placeId'] in places for e in entries for c in e['candidates'])
 (root.parent/'app/atlas-data.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
 print(f'Built {len(entries)} entries and {len(places)} places; {sum(p["lat"] is not None for p in places.values())} mapped anchors.')

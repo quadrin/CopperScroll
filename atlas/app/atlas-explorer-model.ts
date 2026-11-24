@@ -1,3 +1,4 @@
+import {isSiloamReading, isSiloamSubject, type SiloamReading, type SiloamSubject} from "./atlas-siloam-reading";
 import planData from "./atlas-site-plans.json";
 import atlasData from "./atlas-data.json";
 import { entryHash, parseAtlasHash } from "./atlas-navigation";
@@ -16,6 +17,7 @@ export type ExplorerState = {
  siteView: "plan" | "photo"; highlightId?: string | null; scrollPhoto: boolean; scroll3d?: boolean; workbench: string | null; recordId: string | null;
  representation?: "model" | "source" | "walk"; modelCamera?: ModelCamera;
  explicitPlace?: boolean;
+ siloamReading?: SiloamReading; siloamSubject?: SiloamSubject;
  inspection?:InspectionView|null;
  camera?: Camera; viewport?: Viewport; photoViewport?: Viewport; scrollTop?: number; scrollColumn?: number;
 };
@@ -28,6 +30,11 @@ export function explorerHash(s: ExplorerState) {
  const base=s.mode === "site" && s.planId?`#entry-${s.entryId}/site/${s.planId}${s.featureId ? `/${s.featureId}` : ""}${s.siteView === "photo" ? "/photo" : s.representation ? "/"+s.representation : ""}`:entryHash(s.entryId,s.mode)+(s.mode==='scroll'&&s.scrollPhoto?'/photo':s.mode==='scroll'&&s.scroll3d?'/3d':'');
  const params=new URLSearchParams();
  if(s.explicitPlace&&s.placeId&&(["2d","3d","landscape","dossier","ground","scroll"].includes(s.mode)||s.inspection))params.set('place',s.placeId);
+ if(s.entryId==="49" && s.siloamReading && (s.mode==="scroll" || s.mode==="site" && s.planId==="siloam-receiver")){
+  params.set("reading",s.siloamReading);
+  if(s.siloamSubject)params.set("subject",s.siloamSubject);
+  if(s.mode==="scroll" && s.featureId && sitePlans.find(p=>p.id==="siloam-receiver")?.features.some(f=>f.id===s.featureId)) params.set("feature",s.featureId);
+ }
  if(s.inspection){params.set('inspect',s.inspection);if(s.recordId)params.set('record',s.recordId);}
  return base+(params.size?'?'+params.toString():'');
 }
@@ -38,15 +45,19 @@ export function explorerFromHash(hash: string, primaryPlace: (id: string) => str
   const parts=hash.split("?");if(parts.length!==2)return null;
   const params=new URLSearchParams(parts[1]);
   const keys=[...params.keys()],placeId=params.get("place"),inspection=params.get('inspect'),record=params.get('record');
-  if(!keys.length||new Set(keys).size!==keys.length||keys.some(key=>!['place','inspect','record'].includes(key)))return null;
+  if(!keys.length||new Set(keys).size!==keys.length||keys.some(key=>!['place','inspect','record','reading','subject','feature'].includes(key)))return null;
   if(params.has('place')&&(!placeId||!atlasData.places.some(place=>place.id===placeId)))return null;
   if(params.has('inspect')&&!isInspectionView(inspection))return null;
   if(params.has('record')&&(!inspection||!record))return null;
   const parsed=explorerFromHash(parts[0],primaryPlace);
   if(!parsed)return null;
-  if(!inspection&&!["2d","3d","landscape","dossier","ground","scroll"].includes(parsed.mode))return null;
+  const reading=params.get("reading"),subject=params.get("subject"),feature=params.get("feature");
+  if(params.has("reading") && (!isSiloamReading(reading) || parsed.entryId!=="49" || (placeId && placeId!=="jer_siloam") || !(parsed.mode==="scroll" || (parsed.mode==="site" && parsed.planId==="siloam-receiver")))) return null;
+  if(params.has("subject") && (!reading || !isSiloamSubject(subject)))return null;
+  if(params.has("feature") && (!reading || parsed.mode!=="scroll" || !sitePlans.find(p=>p.id==="siloam-receiver")?.features.some(f=>f.id===feature)))return null;
+  if(!reading&&!inspection&&!["2d","3d","landscape","dossier","ground","scroll"].includes(parsed.mode))return null;
   if(placeId&&parsed.mode==='site'&&!sitePlans.find(plan=>plan.id===parsed.planId)?.placeIds.includes(placeId))return null;
-  return {...parsed,...(placeId?{placeId,explicitPlace:true,planId:parsed.mode==='site'?parsed.planId:plansForPlace(placeId)[0]?.id??null}:{}),inspection:isInspectionView(inspection)?inspection:null,recordId:record};
+  return {...parsed,...(isSiloamReading(reading)?{siloamReading:reading}:{}),...(isSiloamSubject(subject)?{siloamSubject:subject}:{}),...(feature?{featureId:feature}:{}),...(placeId?{placeId,explicitPlace:true,planId:parsed.mode==='site'?parsed.planId:plansForPlace(placeId)[0]?.id??null}:{}),inspection:isInspectionView(inspection)?inspection:null,recordId:record};
  }
  const overview=hash.match(/^#entry-((?:[1-9]|[1-5]\d|60|12a))\/site$/);
  if(overview)return archaeologyForPlace(overview[1],primaryPlace(overview[1]));

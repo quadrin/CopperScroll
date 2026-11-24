@@ -1,0 +1,14 @@
+.map-site-caption .jericho-walk { position: relative; font: 14px/1.45 Arial, sans-serif; color: #28343b; }
+.map-site-caption .jericho-walk summary { cursor: pointer; color: #245b7c; }
+.map-site-caption .jericho-walk-card { position: absolute; top: calc(100% + .5rem); left: 0; width: min(21rem, 55vw); max-height: min(58vh, 35rem); overflow: auto; overscroll-behavior: contain; padding: .8rem; background: #fff; border: 1px solid #cbd3d9; box-shadow: 0 3px 10px #18293322; }
+.map-site-caption .jericho-walk-phases { display: flex; gap: .3rem; }
+.atlas-shell.unified-atlas .map-surface>.map-site-caption .jericho-walk-phases button { padding: .35rem .45rem; border: 1px solid #cbd3d9; text-decoration: none; }
+.atlas-shell.unified-atlas .map-surface>.map-site-caption .jericho-walk-phases button[aria-pressed=true] { background: #244e6b; color: #fff; }
+.jericho-walk-card p, .jericho-walk-card figure { margin: .6rem 0 0; }
+.jericho-walk-card svg { display: block; width: 100%; max-height: 13rem; background: #f8f8f5; }
+.jericho-walk-card figcaption, .jericho-walk-card .jericho-walk-citations { font-size: .79rem; line-height: 1.4; }
+@media (max-width: 700px) {
+  .map-site-caption .jericho-walk { position: static; }
+  .map-site-caption .jericho-walk-card { left: 0; width: min(20rem, calc(100vw - 4rem)); max-height: 45vh; }
+}
+.map-place-panel .jericho-walk-link { display: inline-block; margin-top: .5rem; font-size: .85rem; color: #245b7c; }

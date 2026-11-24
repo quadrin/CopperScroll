@@ -113,6 +113,23 @@ def render_atlas(rows):
     return json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n"
 
 
+def render_secacah_comparison():
+    """Project the recorded E21 tests for the two conduits into the atlas."""
+    ledger = ROOT / "research/regional/water_systems/manual_review_2026-10-12/verified_merged_scores.csv"
+    conduits = {"G-NAARAN-AQ": "Naʿaran", "G-QUMRAN-AQ": "Qumran"}
+    branches = ("S-open|F-flow", "S-stone|N-side", "S-pool|N-side")
+    grouped = {branch: [] for branch in branches}
+    with ledger.open(encoding="utf-8", newline="") as source:
+        for row in csv.DictReader(source):
+            branch, unit = row["branch"], row["unit_id"]
+            if row["entry"] == "21" and branch in grouped and unit in conduits:
+                grouped[branch].append({"site": conduits[unit], "result": row["overall"]})
+    for branch, results in grouped.items():
+        if {r["site"] for r in results} != set(conduits.values()) or len(results) != len(conduits):
+            raise ValueError(f"Incomplete or repeated E21 comparison records for {branch}")
+    return json.dumps(grouped, ensure_ascii=False, indent=2) + "\n"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
@@ -131,7 +148,8 @@ def main():
     if errors:
         print("\n".join(errors), file=sys.stderr)
         sys.exit(1)
-    outputs = {CSV_OUT: render_csv(rows), ATLAS_OUT: render_atlas(rows)}
+    outputs = {CSV_OUT: render_csv(rows), ATLAS_OUT: render_atlas(rows),
+               ATLAS_OUT.with_name("atlas-secacah-comparison.json"): render_secacah_comparison()}
     if a.merge:
         outputs[RATINGS] = json.dumps(rows, ensure_ascii=False, indent=1) + "\n"
     if a.check:

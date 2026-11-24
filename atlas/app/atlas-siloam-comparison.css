@@ -1,0 +1,13 @@
+.siloam-comparison{padding:12px 16px;border-bottom:1px solid #d5dccb;color:#344b37;font:14px/1.5 var(--sans,Arial,sans-serif)}
+.siloam-comparison header{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.siloam-comparison h3{font:20px/1.2 Georgia,serif;margin:3px 0}
+.siloam-comparison p{margin:8px 0}
+.siloam-comparison label{display:block;font-weight:600}
+.siloam-comparison select,.siloam-comparison header button,.reader-branches .siloam-open-map{padding:7px 10px;min-height:40px;border:1px solid #adbba7;border-radius:4px;background:#f5f7f1;color:#304a37;font:inherit;cursor:pointer}
+.siloam-comparison header button{flex:none}
+.siloam-comparison select{display:block;max-width:100%;width:100%;margin:4px 0}
+.siloam-comparison a{text-decoration:underline;text-underline-offset:2px}
+.siloam-comparison figure{margin:10px 0}
+.siloam-comparison figure img{display:block;max-height:190px;width:100%;object-fit:contain;background:#e8ebdf}
+.siloam-comparison figcaption,.siloam-comparison .siloam-frame-note{font-size:12px}
+@media(max-width:700px){.siloam-comparison select{font-size:16px}.siloam-comparison figure img{max-height:140px}}

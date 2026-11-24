@@ -71,6 +71,14 @@ Descriptions are short factual editorial paraphrases, not quoted translations. H
 
 Current pins use the gazetteer's site anchors. Filled areas with dashed outlines show their approximate positional precision. Each geometry should state whether it represents a site anchor, an observed feature footprint or a modeled candidate area. The selected candidate is shaded copper, other candidates sage, in both map dimensions. Selection fits the shaded area, including small archaeological anchors. The current Siloam coordinate anchors the pool complex; individual pool, outlet and trough candidates require their own feature records. The public index contains a subset of the candidates discussed in the unpublished full assessment.
 
+### Plan and aerial overlays
+
+Open **Layers** on the geographic map. Choose a flight or survey and a registered plan, then adjust their opacity independently. **Fit coverage** shows the extent of the imagery. **Fit plan** returns to the excavation. The plan selector groups the current site's sheets first. **Inspect site → Overlay site plan on map** opens a site's registered plan directly.
+
+The imagery catalogue includes the RAF mosaic, CAST's CORONA pass, local CORONA and HEXAGON windows, and GeoMOLG's 2018 and 2023 orthophoto services. Each record gives its source, date and alignment limits. Provider-hosted tiles depend on upstream availability. **Mapped research observations** adds dated features, positions and sheet boundaries. Selecting a feature opens its source and spatial qualification.
+
+The excavation overlays come from reviewed registrations. Siloam uses the published survey grid, while the Gerizim outline uses the precinct fit. The source figure and ground control determine which details can be mapped. Run `node scripts/check-research-layers.mjs` to check assets, geographic bounds and layer controls.
+
 ## The Scroll view
 
 **Read the scroll** in the top navigation replaces the map with the whole text of the scroll. A compact column selector provides all twelve columns. The default reading surface is a narrow vertical copper-inspired column, labelled as an edition-based transcription in modern Hebrew type. Each line gives its number and clickable Hebrew; **English translation** reveals or hides the project translation. **Image & sources** opens the existing image coverage and source panel. Entry headings select that entry in the register, map and field note while the view stays on the scroll. Selecting an entry elsewhere brings its lines into view. Words and underlined phrases open the same reading cards as the field note. `#entry-21/scroll` opens the view at an entry; `#scroll` opens it at the current one. The field note's **Read in context** link also switches to this view.
