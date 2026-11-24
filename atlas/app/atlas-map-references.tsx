@@ -5,7 +5,7 @@ import siteMedia from './atlas-site-media.json';
 import type {SitePlan} from './atlas-explorer-model';
 import type {Entry} from './atlas-types';
 import type {ContextEvidenceView} from './atlas-context-evidence';
-export type MapPanel='plan'|'photos'|'sources'|'history'|null;
+export type MapPanel='plan'|'photos'|'sources'|'history'|'layers'|null;
 type SiteVideo={id:string;title:string;channel?:string;note:string};
 type SiteModel={uid:string;title:string;author:string;license:string;downloadable:boolean;faces:number;note:string};
 const curatedVideos=siteMedia.videos as Record<string,SiteVideo[]>;

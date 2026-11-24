@@ -5,6 +5,7 @@ import {ArrowLeft} from 'lucide-react';
 import {index,entryContext,type KBData,type KBIndex} from './atlas-kb-model';
 import {Comparison,Graph,Inspector,Requirements,Names,Impact,Sources,ReadingAlternatives,Targets,RecordSearch} from './atlas-kb';
 import {EvidenceComponents} from './atlas-components';
+import {SecacahComparison} from './atlas-secacah-comparison';
 import catalogue from './atlas-data.json';
 import type {Entry} from './atlas-types';
 import './atlas-context-evidence.css';
@@ -36,6 +37,11 @@ export default function ContextEvidence({entryId,view,record,placeId,onView,onRe
  if(!i)return <div className="kb-context-evidence"><p className="kb-loading" role="status">Loading evidence…</p></div>;
  const entry=i.by.get('entry/'+entryId),context=entryContext(i,entryId),candidates=context.filter(item=>item.kind==='hypothesis');
  if(!entry)return <div className="kb-context-evidence"><p role="status">This passage is unavailable in the evidence register.</p></div>;
+ const linkedKohlit=['4','11','15','16','19','60'].includes(entryId);
+ // Entries 11 and 60 share the eight named pool/pit assignments in the register.
+ const comparisonCandidates=linkedKohlit
+   ? entryContext(i,'11').filter(item=>item.kind==='hypothesis')
+   : candidates;
  const selected=record?i.by.get(record):undefined;
  const assessment=(catalogue.entries as Entry[]).find(item=>item.id===entryId);
  const assessedPlace=placeId||assessment?.candidates[0]?.placeId;
@@ -44,7 +50,7 @@ export default function ContextEvidence({entryId,view,record,placeId,onView,onRe
  const contentView=view==='record'?previousView.current:view;
  return <div className="kb-context-evidence" data-evidence-view={view}>
   <div hidden={view==='record'}>
-  {contentView==='compare'&&<><Comparison key={entryId} i={i} candidates={candidates} onSelect={select}/><Targets i={i} context={context} onSelect={select}/></>}
+  {contentView==='compare'&&<>{entryId==='21'?<SecacahComparison/>:<Comparison key={entryId} i={i} candidates={comparisonCandidates} linkedKohlit={linkedKohlit} onSelect={select}/>}<Targets i={i} context={context} onSelect={select}/></>}
   {contentView==='assessment'&&<><section className="kb-context-assessment">{assessment?<><p>{assessment.description}</p>{assessedPlace&&<EvidenceComponents entryId={entryId} placeId={assessedPlace}/>}<p>{assessment.evidence}</p><p>{assessment.caution}</p></>:<p>No candidate assessment is recorded for this passage.</p>}</section><Targets i={i} context={context} onSelect={select}/></>}
   {contentView==='readings'&&<ReadingAlternatives i={i} context={context} onSelect={select}/>}
   {contentView==='names'&&<Names i={i} onSelect={select}/>}

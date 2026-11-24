@@ -1,6 +1,6 @@
 "use client";
 
-import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Map, Minus, Mountain, Plus, X, ArrowLeft } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Map as LibreMap, Marker, StyleSpecification, GeoJSONSource } from "maplibre-gl";
@@ -8,17 +8,19 @@ import type { Entry, Place } from "./atlas-types";
 import type { ContextEvidenceView } from "./atlas-context-evidence";
 import { allSiteBounds, candidateAreas, candidateBounds } from "./atlas-geography";
 import { imagerySource } from "./atlas-imagery";
+import ResearchLayers, {fitResearchBounds, registeredPlansAt, researchExtent} from "./atlas-research-layers";
 import imageSites from "./atlas-image-sites.json";
 import { plansForPlace, sitePlans } from "./atlas-explorer-model";
 import SiteReference from "./atlas-site-reference";
 import { MapVideoReferences, MapSourceReferences, type MapPanel } from "./atlas-map-references";
 import WalkReferences from "./atlas-walk-references";
+import JerichoWalk from "./atlas-jericho-walk";
 import WalkMeasureCard from "./atlas-walk-measure-card";
 import WalkTouchControls from "./atlas-walk-touch";
 import type { MeasurePoint } from "./atlas-walk-measure";
 import { ancientGround, ancientGroundAssumption, ancientGroundCaption, ancientGroundPads, hasAncientGround } from "./atlas-ancient-ground";
 import type { MapSiteRuntime } from "./atlas-map-site-layer";
-import type { WalkController } from "./atlas-map-walk";
+import type { WalkController, WalkCamera } from "./atlas-map-walk";
 import "./atlas-map-unified.css";
 import { terrainOnlyStyle, terrainFallback } from "./atlas-terrain-style";
 import {configureAtlasMapWorkers} from "./atlas-map-runtime";
@@ -71,6 +73,12 @@ export default function AtlasMap(props:Props) {
   const optionsRef=useRef<HTMLDetailsElement>(null);
   const [panel,setPanel]=useState<MapPanel>(mode==="site"?"plan":null);
   useEffect(()=>{if(props.inspection)setPanel(null);},[props.inspection]);
+  const [activeSheet,setActiveSheet]=useState("");
+  const [layerSummary,setLayerSummary]=useState("");
+  const openResearchLayers=useCallback(()=>setPanel("layers"),[]);
+  useEffect(()=>{
+    if(entry.id==="49"&&plan?.id==="siloam-receiver"&&siteRepresentation==="source")setActiveSheet("siloam-pool-excavation");
+  },[entry.id,plan?.id,siteRepresentation]);
   const [siteState,setSiteState]=useState("loading");
   const siteRuntime=useRef<MapSiteRuntime|null>(null);
   const walker=useRef<WalkController|null>(null);
@@ -81,6 +89,8 @@ export default function AtlasMap(props:Props) {
   const [modelStyle,setModelStyle]=useState<"minecraft"|"smooth">(()=>{try{return typeof window!=="undefined"&&localStorage.getItem("atlas-model-style")==="smooth"?"smooth":"minecraft";}catch{return "minecraft";}});
   const [siteStyle,setSiteStyle]=useState<"minecraft"|"smooth"|null>(null),[siteRegistered,setSiteRegistered]=useState<false|"outlines"|"imagery">(false);
   const rejoinWalk=useRef(false);
+  const [poolPlanOpen,setPoolPlanOpen]=useState(false);
+  const phaseCamera=useRef<{plan:string;camera:WalkCamera}|null>(null);
   // Feature signs at eye level, on by default.
   const [signsOn,setSignsOn]=useState(true);
   // The measuring tool at eye level (atlas-walk-measure.ts), off by default. Points belong to the plan they were picked on.
@@ -97,6 +107,23 @@ export default function AtlasMap(props:Props) {
   const [localFeature,setLocalFeature]=useState<string|null>(props.featureId??null);
   const [planViewport,setPlanViewport]=useState<{x:number;y:number;zoom:number}>({x:0,y:0,zoom:1});
   const restoring=useRef(false);
+  const siloamCamera=useRef<MapCamera|null>(null);
+  const viewingSiloamSource=entry.id==="49"&&plan?.id==="siloam-receiver"&&siteRepresentation==="source";
+  useEffect(()=>{
+    const map=mapRef.current;
+    if(!ready||!viewingSiloamSource||!map)return;
+    if(props.restoreCamera)map.jumpTo(props.restoreCamera);
+    else if(siloamCamera.current)map.jumpTo(siloamCamera.current);
+    else{
+      const sheet=registeredPlansAt("jer_siloam").find(p=>p.id==="siloam-pool-excavation");
+      if(sheet)fitResearchBounds(map,researchExtent(sheet.corners));
+    }
+    const remember=()=>{
+      const c=map.getCenter();siloamCamera.current={center:[c.lng,c.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()};
+    };
+    remember();map.on("moveend",remember);
+    return ()=>{map.off("moveend",remember);};
+  },[ready,viewingSiloamSource]);
   const [coordinates,setCoordinates]=useState("31.820° N · 35.367° E");
   const reduced=useRef(false);
   function syncTerrainCamera(map:LibreMap){
@@ -119,7 +146,7 @@ export default function AtlasMap(props:Props) {
     if(mode==="site")setPanel(plan&&!modelAvailable?"plan":props.representation==="model"||props.representation==="walk"?null:"plan");
     else if(plan&&!modelAvailable&&(mode==="2d"||mode==="3d"))setPanel("plan");
   },[plan?.id,modelAvailable]);
-  useEffect(()=>{walker.current?.stop();walker.current=null;setWalking(false);},[focusId,plan?.id]);
+  useEffect(()=>{phaseCamera.current=null;setPoolPlanOpen(false);walker.current?.stop();walker.current=null;setWalking(false);},[focusId,plan?.id]);
   useEffect(()=>()=>{walker.current?.stop();walker.current=null;},[]);
   useEffect(()=>{
     const close=(e:PointerEvent)=>{for(const panel of [optionsRef.current,sitesRef.current])if(!panel?.contains(e.target as Node))panel?.removeAttribute("open");};
@@ -155,7 +182,7 @@ export default function AtlasMap(props:Props) {
         map.addControl(new lib.ScaleControl({maxWidth:100,unit:"metric"}),"bottom-left");
         map.on("moveend",event=>{syncTerrainCamera(map);const p=map.getCenter();setCoordinates(`${p.lat.toFixed(3)}° N · ${p.lng.toFixed(3)}° E`);setMapZoom(map.getZoom());if(!map.getCanvas().dataset.walkPosition)latest.current.onCamera?.({center:[p.lng,p.lat],zoom:map.getZoom(),bearing:map.getBearing(),pitch:map.getPitch()});
           // Camera restoration and panel padding must not undo an explicit site choice.
-          if(event.originalEvent&&map.getZoom()>=16&&!walker.current){
+          if(event.originalEvent&&map.getZoom()>=16&&!walker.current&&!map.getCanvas().dataset.archiveOverlay){
             const distance=(place:Place)=>place.lat==null||place.lon==null?Infinity:Math.hypot((place.lon-p.lng)*Math.cos(p.lat*Math.PI/180),place.lat-p.lat)*111320;
             const focused=places.find(place=>place.id===latest.current.focusId);
             if(!focused||distance(focused)>250){const nearby=places.filter(place=>plansForPlace(place.id).some(plan=>plan.kind!=="survey-map")).sort((a,b)=>distance(a)-distance(b))[0];if(nearby&&distance(nearby)<150&&nearby.id!==latest.current.focusId)latest.current.onPlace(nearby.id);}
@@ -166,7 +193,7 @@ export default function AtlasMap(props:Props) {
           const source=(e as unknown as {sourceId?:string}).sourceId;
           if(source==="terrain" || source==="hillshade")setTerrainState("unavailable");
           if(source==="satellite")setImageryState("unavailable");
-          if(source&&source!=="terrain"&&source!=="hillshade"&&source!=="satellite"&&source!=="precision")setBackgroundUnavailable(true);
+          if(source&&!source.startsWith("atlas-research-")&&source!=="terrain"&&source!=="hillshade"&&source!=="satellite"&&source!=="precision")setBackgroundUnavailable(true);
         });
         timeout=setTimeout(()=>{if(!gone&&!map.loaded())setError("Map tiles are taking longer than expected. The place register remains available.")},20000);
         // Source failures must not prevent the gazetteer and zoom controls loading.
@@ -193,7 +220,7 @@ export default function AtlasMap(props:Props) {
           map.on("click","image-sites-points",event=>{const p=event.features?.[0]?.properties;if(p)setImageSite({name:String(p.name),status:String(p.status),group:String(p.group),kind:String(p.kind),errorM:typeof p.errorM==="number"?p.errorM:null,source:String(p.source??""),image:String(p.image??""),note:String(p.note??""),altNames:String(p.altNames??"")})});
           map.on("mouseenter","image-sites-points",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","image-sites-points",()=>{map.getCanvas().style.cursor=""});
-          map.on("click","precision-fill",event=>{const id=event.features?.[0]?.properties?.placeId;if(typeof id==="string")latest.current.onPlace(id)});
+          map.on("click","precision-fill",event=>{const research=map.getStyle().layers.filter(l=>"source" in l&&l.source==="atlas-research-observations").map(l=>l.id);if(research.length&&map.queryRenderedFeatures(event.point,{layers:research}).length)return;const id=event.features?.[0]?.properties?.placeId;if(typeof id==="string")latest.current.onPlace(id)});
           map.on("mouseenter","precision-fill",()=>{map.getCanvas().style.cursor="pointer"});
           map.on("mouseleave","precision-fill",()=>{map.getCanvas().style.cursor=""});
           for(const place of places){
@@ -241,7 +268,7 @@ export default function AtlasMap(props:Props) {
     const map=mapRef.current;if(!ready||!map)return;
     map.setLayoutProperty("satellite-imagery","visibility",basemap==="satellite"?"visible":"none");
     for(const layer of map.getStyle().layers){
-      if(["satellite-imagery","precision-fill","precision-halo","precision-line","source-site-detail",...imageSiteLayers].includes(layer.id)||layer.type==="background")continue;
+      if(layer.id.startsWith("atlas-research-")||["satellite-imagery","precision-fill","precision-halo","precision-line","source-site-detail",...imageSiteLayers].includes(layer.id)||layer.type==="background")continue;
       map.setLayoutProperty(layer.id,"visibility",basemap==="satellite"?"none":"visible");
     }
     if(basemap==="satellite")setImageryState(value=>value==="idle"?"loading":value);
@@ -273,7 +300,7 @@ export default function AtlasMap(props:Props) {
   },[mode,ready,offMap]);
   useEffect(()=>{const map=mapRef.current;if(ready&&mode==="3d"&&map){map.setTerrain({source:"terrain",exaggeration});syncTerrainCamera(map);}},[exaggeration,ready,mode]);
   useEffect(()=>{
-    const map=mapRef.current;if(!ready||!map||focusNonce===0||offMap)return;
+    const map=mapRef.current;if(!ready||!map||focusNonce===0||offMap||viewingSiloamSource)return;
     const p=places.find(p=>p.id===focusId);
     const bounds=p?candidateBounds(p):null;
     if(bounds){
@@ -297,12 +324,13 @@ export default function AtlasMap(props:Props) {
       const ground=ancient?ancientGround(plan.id):null,pads=ground?ancientGroundPads(ground,patch?.centreElevation):null;
       // A bare build stands for the view only if it was built with the pads the view has now.
       const build=ancient&&loaded&&JSON.stringify(loaded.pads??null)!==JSON.stringify(pads)?null:loaded;
-      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{if(ground){runtime.model.assumptions.unshift(ancientGroundAssumption(ground,!!pads));setAncientApplied(!!pads);}siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteUnits(runtime.model.units);setSiteRegistered(runtime.model.landscape.registered?(runtime.model.landscape.registeredBy??"outlines"):false);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(latest.current.focusNonce>0||latest.current.mode==="site")runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined,pads:pads??undefined}));
+      map.addLayer(createMapSiteLayer(map,plan,selectedPlace!,runtime=>{if(ground){runtime.model.assumptions.unshift(ancientGroundAssumption(ground,!!pads));setAncientApplied(!!pads);}siteRuntime.current=runtime;setSiteState("ready");setSiteStyle(runtime.style);setSiteUnits(runtime.model.units);setSiteRegistered(runtime.model.landscape.registered?(runtime.model.landscape.registeredBy??"outlines"):false);if(latest.current.representation==="walk"||rejoinWalk.current){rejoinWalk.current=false;void enterWalk();}else if(!viewingSiloamSource&&!map.getCanvas().dataset.archiveOverlay&&(latest.current.focusNonce>0||latest.current.mode==="site"))runtime.focus();},message=>setSiteState(message),build,{layer:planLayer,terrain:patch??undefined,context:context??undefined,pads:pads??undefined}));
     }).catch(()=>{if(!cancelled)setSiteState("Source model could not load.");});
     return()=>{cancelled=true;walker.current?.stop();walker.current=null;siteRuntime.current=null;if(mapRef.current===map&&map.getLayer("source-site-detail"))map.removeLayer("source-site-detail");};
   },[ready,plan?.id,focusId,modelAvailable,offMap,modelStyle,planLayer,ancient]);
   function chooseLayer(id:string){
     if(!plan||id===planLayer)return;
+    phaseCamera.current=plan.id==="jericho-late"&&walker.current?{plan:plan.id,camera:walker.current.camera()}:null;
     rejoinWalk.current=!!walker.current;setWalking(false);setLayerChoice(choice=>({...choice,[plan.id]:id}));
   }
   function chooseStyle(style:"minecraft"|"smooth"){
@@ -339,13 +367,15 @@ export default function AtlasMap(props:Props) {
   },[panel,props.inspection,ready,walking]);
   useEffect(()=>{const close=(event:KeyboardEvent)=>{if(event.key!=="Escape")return;if(walker.current)stopWalk();else setPanel(null);};const reset=()=>overview();window.addEventListener("keydown",close);window.addEventListener("atlas:overview",reset);return()=>{window.removeEventListener("keydown",close);window.removeEventListener("atlas:overview",reset);};},[ready]);
   function selectFeature(id:string|null){setLocalFeature(id);props.onFeature?.(id);if(!walking)siteRuntime.current?.focus(id??undefined);}
-  function stopWalk(){walker.current?.stop();walker.current=null;setWalking(false);}
+  function stopWalk(){walker.current?.stop();walker.current=null;setWalking(false);setPoolPlanOpen(false);}
   function inspectEvidence(view:ContextEvidenceView){stopWalk();setPanel(null);optionsRef.current?.removeAttribute("open");props.onInspect?.(view);}
   async function enterWalk(at?:[number,number]){
     const map=mapRef.current,site=siteRuntime.current;if(!map||!site){setDropMessage(selectedPlace?.lat==null?"This site has no established map location. Explore its source plan here, or select a mapped site such as Qumran to walk around.":"This site has no source-based 3D coverage yet. Explore its photos and references here.");return;}
     if(walker.current)stopWalk();
     const {startMapWalk}=await import("./atlas-map-walk");if(mapRef.current!==map||siteRuntime.current!==site)return;
-    setPanel(null);setDropMessage("");setWalking(true);try{walker.current=startMapWalk(map,site,setWalkPosition,at,{onPick:pickPoint});}catch(error){setWalking(false);setDropMessage(error instanceof Error?error.message:"This spot has no clear standing space.");}
+    const saved=phaseCamera.current;
+    phaseCamera.current=null;
+    setPanel(null);setDropMessage("");setWalking(true);try{walker.current=startMapWalk(map,site,setWalkPosition,at,{onPick:pickPoint,resume:saved?.plan===plan?.id?saved?.camera:undefined});}catch(error){setWalking(false);setDropMessage(error instanceof Error?error.message:"This spot has no clear standing space.");}
   }
 
   function mapPadding(map:LibreMap){
@@ -373,11 +403,12 @@ export default function AtlasMap(props:Props) {
   return <section data-inspection={props.inspection??undefined} data-walking={walking} data-site-state={siteState} data-site-plan={plan?.id??""} className={`map-surface ${offMap?"ground-mode":""} ${mode==="scroll"?"scroll-mode":""} ${mode==="scene"?"scene-mode":""}`} onDragOver={e=>e.preventDefault()} aria-label={mode==="scroll"?"The text of the scroll":mode==="landscape"?"Historical landscapes":mode==="dossier"?"Place dossier":"Interactive candidate map"}>
     <div ref={container} className="map-canvas" aria-hidden={offMap} inert={offMap} data-basemap={basemap} data-site-labels={mapZoom>=15} data-modern-layer-count={modernLayerCount??"loading"} data-map-zoom={mapZoom.toFixed(3)} data-map-center={coordinates} aria-label="Geographic map of the Copper Scroll candidate sites" />
     <div className="map-paper-overlay" />
-    {!offMap&&modelAvailable&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><span>{walking?"Eye level":"3D site"} · {siteRegistered==="imagery"?"image-aligned":siteRegistered?"outline-aligned":"approximate alignment"}</span><button onClick={()=>setPanel("sources")}>Model &amp; sources</button></div>}
+    {!offMap&&modelAvailable&&(!layerSummary||walking)&&(mapZoom>=15.5||walking)&&<div className="map-site-caption"><span>{walking?"Eye level":"3D site"} · {siteRegistered==="imagery"?"image-aligned":siteRegistered?"outline-aligned":"approximate alignment"}</span><button onClick={()=>setPanel("sources")}>Model &amp; sources</button>{walking&&plan?.id==="jericho-late"&&<JerichoWalk layer={planLayer} onLayer={chooseLayer} open={poolPlanOpen} setOpen={setPoolPlanOpen}/>}</div>}
     {!offMap&&<div className="map-coordinate-readout" aria-label="Map center coordinates">{coordinates}</div>}
     {!offMap&&<div className="map-toolbar">
       <Tabs value={mode==="3d"?"3d":basemap==="satellite"?"satellite":"2d"} onValueChange={value=>{stopWalk();if(value!=="3d")setBasemap(value==="satellite"?"satellite":"map");onMode(value==="3d"?"3d":"2d")}} className="map-mode"><TabsList aria-label="Map display"><TabsTrigger value="2d"><Map size={14}/>Map</TabsTrigger><TabsTrigger value="satellite">Satellite</TabsTrigger><TabsTrigger value="3d"><Mountain size={15}/>Terrain</TabsTrigger></TabsList></Tabs>
       <div className="map-toolbar-menus">
+      <button className="map-layers-trigger" aria-expanded={panel==="layers"} onClick={()=>setPanel(panel==="layers"?null:"layers")}>Layers</button>
       <details ref={sitesRef} className="map-options map-sites"><summary aria-label="Browse all sites">Sites · {mappedPlaces.length}</summary><div>
         <label className="map-site-search">Find a site<input aria-label="Search map sites" type="search" placeholder="Qumran, Siloam…" value={siteQuery} onChange={e=>setSiteQuery(e.target.value)}/></label>
         <button disabled={!ready} onClick={()=>{overview();sitesRef.current?.removeAttribute("open")}}>Show all {mappedPlaces.length} mapped sites</button>
@@ -389,6 +420,7 @@ export default function AtlasMap(props:Props) {
         <button disabled={!ready} onClick={()=>{fitEntry();optionsRef.current?.removeAttribute("open")}}>Fit candidate area</button>
         <button disabled={!ready} onClick={()=>{mapRef.current?.easeTo({bearing:0,duration:reduced.current?0:500});optionsRef.current?.removeAttribute("open")}}>Reset north</button>
         <button disabled={!ready} onClick={()=>{overview();optionsRef.current?.removeAttribute("open")}}>Show all sites</button>
+        <button onClick={()=>{openResearchLayers();optionsRef.current?.removeAttribute("open")}}>Plans &amp; aerial imagery</button>
         <button onClick={()=>onMode("landscape")}>Historical maps</button>
         {props.onInspect&&<><button onClick={()=>inspectEvidence("assessment")}>Assessment</button><button onClick={()=>inspectEvidence("compare")}>Compare locations</button></>}
         <label className="pilot-option image-sites-option"><input type="checkbox" checked={imageSitesOn} onChange={e=>setImageSitesOn(e.target.checked)}/>Image-checked places · {imageSites.features.length}<small>Positions read on satellite images of 1967, 1974 and 1978. Green: checked. Amber: probable. Grey: not confirmed. Names show at close zoom. These are not scroll candidates.</small></label>
@@ -411,13 +443,22 @@ export default function AtlasMap(props:Props) {
     {!offMap&&!walking&&!props.inspection&&<aside className="map-place-panel" aria-label="Selected site">
       <div className="map-place-summary"><div className="map-place-title"><strong>{selectedPlace?.shortName??"Location unresolved"}</strong><span>{selectedPlace?.lat==null?"No mapped coordinate":`Location uncertainty · ${selectedPlace.precision}`}</span>{selectedFeature&&<output className="map-selected-feature" aria-label="Selected site feature">{selectedFeature.label}</output>}</div></div>
       <nav className="map-place-actions" aria-label="Explore selected site"><button disabled={!ready||selectedPlace?.lat==null} onClick={inspectSite}>Zoom to site</button><button className="map-primary-action" aria-expanded={!!panel} aria-controls="map-site-inspector" onClick={()=>setPanel(hasPlan?"plan":"sources")}>Inspect site</button></nav>
-      {basemap==="satellite"&&<p className="map-imagery-note">Modern satellite imagery · resolution varies{mapZoom>19?" · enlarged beyond native tile detail":""}. Site pins show approximate locations.</p>}
+      {focusId==="jericho_palaces"&&<a className="jericho-walk-link" href="#entry-29/site/jericho-late/walk">Walk the northern pool channel</a>}
+      {layerSummary&&<button className="map-active-layer-note" onClick={openResearchLayers}>{layerSummary}</button>}
+      {!layerSummary&&basemap==="satellite"&&<p className="map-imagery-note">Modern satellite imagery · resolution varies{mapZoom>19?" · enlarged beyond native tile detail":""}. Site pins show approximate locations.</p>}
     </aside>}
     {!offMap&&!walking&&imageSitesOn&&imageSite&&<aside className="map-image-site-card" aria-label="Image-checked place"><button aria-label="Close" onClick={()=>setImageSite(null)}><X size={14}/></button><strong>{imageSite.name}</strong><span className={`image-site-status ${imageSite.group}`}>{imageSite.status}</span><p>{imageSite.kind}{imageSite.errorM!=null?` · position error approximately ${imageSite.errorM} m`:""}</p>{imageSite.note&&<p>{imageSite.note}</p>}<small>Position: {imageSite.source}{imageSite.image?` · images ${imageSite.image}`:""}. Satellite image work of 11 November 2026; one reader. Not a scroll candidate.</small></aside>}
     {!offMap&&!ready&&!error&&<div className="map-status" role="status">Unfolding the map…</div>}
     {!offMap&&ready&&((basemap==="satellite"&&imageryState==="unavailable")||(basemap==="map"&&backgroundUnavailable))&&<div className="map-status" role="status">{basemap==="satellite"?"Satellite imagery could not load. Try Map, or open the site plan and photos.":"The map background could not load. Site pins and plans remain available."}</div>}
     {!offMap&&error&&<div className="map-status" role="status">{error}<button onClick={()=>setRetry(v=>v+1)}>Retry map</button></div>}
-    {!offMap&&panel&&!props.inspection&&<aside id="map-site-inspector" className={`map-inline-panel map-panel-${panel}`} aria-label="Site reference panel"><header>{panel==="history"?<strong>Historical maps</strong>:<nav aria-label="Site reference views">{([['plan','Plan'],['photos','Photos'],['sources','Sources']] as const).map(([id,label])=><button key={id} aria-pressed={panel===id} onClick={()=>setPanel(id)} disabled={id==='plan'&&!plan}>{label}</button>)}</nav>}<button aria-label="Close site reference panel" onClick={()=>setPanel(null)}><X size={19}/></button></header><div className="map-inspector-context"><strong>{selectedPlace?.shortName??"Unplaced locality"}</strong><span>{selectedPlace?.lat==null?"Location unestablished":`Location uncertainty · ${selectedPlace.precision}`}</span>{selectedFeature&&<output aria-label="Selected site feature">Selected · {selectedFeature.label}</output>}{props.onInspect&&<nav className="map-context-actions" aria-label="Passage evidence"><button onClick={()=>inspectEvidence("assessment")}>Assessment</button><button onClick={()=>inspectEvidence("compare")}>Compare locations</button></nav>}</div><div className="map-inline-body">
+    <ResearchLayers map={ready?mapRef.current:null} site={focusId} visible={!offMap&&!walking&&!props.inspection&&panel==="layers"} plan={activeSheet} setPlan={setActiveSheet} open={openResearchLayers} close={()=>setPanel(null)} onSummary={setLayerSummary}/>
+    {!offMap&&panel&&panel!=="layers"&&!props.inspection&&<aside id="map-site-inspector" className={`map-inline-panel map-panel-${panel}`} aria-label="Site reference panel"><header>{panel==="history"?<strong>Historical maps</strong>:<nav aria-label="Site reference views">{([['plan','Plan'],['photos','Photos'],['sources','Sources']] as const).map(([id,label])=><button key={id} aria-pressed={panel===id} onClick={()=>setPanel(id)} disabled={id==='plan'&&!plan}>{label}</button>)}</nav>}<button aria-label="Close site reference panel" onClick={()=>setPanel(null)}><X size={19}/></button></header><div className="map-inspector-context"><strong>{selectedPlace?.shortName??"Unplaced locality"}</strong><span>{selectedPlace?.lat==null?"Location unestablished":`Location uncertainty · ${selectedPlace.precision}`}</span>{selectedFeature&&<output aria-label="Selected site feature">Selected · {selectedFeature.label}</output>}{props.onInspect&&<nav className="map-context-actions" aria-label="Passage evidence"><button onClick={()=>inspectEvidence("assessment")}>Assessment</button><button onClick={()=>inspectEvidence("compare")}>Compare locations</button></nav>}</div><div className="map-inline-body">
+      {panel==="plan"&&registeredPlansAt(focusId).length>0&&<button className="map-plan-overlay-button" onClick={()=>{
+        const sheets=registeredPlansAt(focusId);
+        const sheet=sheets.find(item=>item.id===plan?.id)??sheets[0];
+        setActiveSheet(sheet.id);openResearchLayers();
+        fitResearchBounds(mapRef.current,researchExtent(sheet.corners));
+      }}>Overlay site plan on map</button>}
       {panel==="plan"&&plan&&<SiteReference place={selectedPlace} plan={plan} featureId={localFeature} restoreNonce={props.restoreNonce??0} viewport={planViewport} onViewport={setPlanViewport} onFeature={selectFeature} onPlan={id=>props.onPlan?.(id)} onRead={id=>{onEntry(id);onMode("scroll");}}/>}
       {panel==="photos"&&<><GroundView key={focusId} place={selectedPlace} entry={entry} places={places} onPlace={onPlace}/><MapVideoReferences key={focusId} placeId={focusId}/></>}
       {panel==="sources"&&<>{modelSettings}<MapSourceReferences key={plan?.id??focusId} plan={plan} placeId={focusId} assumptions={siteRuntime.current?.model.assumptions??[]} entry={entry} onInspect={props.onInspect?inspectEvidence:undefined}/></>}

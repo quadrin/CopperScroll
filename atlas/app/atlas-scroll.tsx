@@ -4,6 +4,7 @@ import { Fragment, lazy, Suspense, useEffect, useMemo, useRef, useState } from "
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import PhotoReader from "./atlas-photo";
 import photo from "./atlas-photo-data.json";
+import {useSiloamNavigation} from "./atlas-siloam-navigation";
 import ReaderBranches from "./atlas-reader-branches";
 import { isPhotographHash, mappedWordsForEntry, PHOTO_COLUMN, photoTarget } from "./atlas-reader-model";
 import "./atlas-reader.css";
@@ -40,6 +41,7 @@ function entryHeads(rows: Row[], carried: string | undefined) {
 }
 
 export default function ScrollView({ entry, entries, onEntry, photograph: photoOpen, onPhotograph, column: externalColumn, onColumn, object3d, onObject3d, onInspect }: Props) {
+  const siloam=useSiloamNavigation();
   const { data, failed, lineWords, notesFor } = useScrollText();
   const [photograph, setPhotograph] = useState(() => typeof window !== "undefined" && isPhotographHash(window.location.hash));
   useEffect(()=>{if(photoOpen!==undefined)setPhotograph(photoOpen)},[photoOpen]);
@@ -169,7 +171,7 @@ export default function ScrollView({ entry, entries, onEntry, photograph: photoO
       {rows.map(r => {
         const selected = r.owner.includes(entry.id);
         return <Fragment key={r.ref}>
-          {heads[r.ref].map(h => <Fragment key={`entry-${h.id}`}>{heading(h.id, h.continued, h.midLine)}{h.id === entry.id && col === entryCol && ["31", "49"].includes(entry.id) && <details className="reader-disclosure"><summary>Compare readings</summary><ReaderBranches key={entry.id} entryId={entry.id}/></details>}</Fragment>)}
+          {heads[r.ref].map(h => <Fragment key={`entry-${h.id}`}>{heading(h.id, h.continued, h.midLine)}{h.id === entry.id && col === entryCol && ["31", "49"].includes(entry.id) && <details className="reader-disclosure" open={entry.id==="49" && siloam?.reading ? true : undefined}><summary>Compare readings</summary><ReaderBranches key={entry.id} entryId={entry.id}/></details>}</Fragment>)}
           <div className={`scroll-row ${selected ? "in-entry" : ""} ${sel?.line === r.ref ? "active" : ""}`}>
             <p className="scroll-en" hidden={!english}>{r.tr.map((s, i) => typeof s === "string" ? <Fragment key={i}>{s}</Fragment> : <button key={i} type="button" className={sel?.note === s[1] ? "st-nt on" : "st-nt"} onClick={() => setSel(sel?.note === s[1] ? null : { line: r.ref, note: s[1] })}>{s[0]}</button>)}</p>
             <span className="scroll-no" aria-label={`Line ${r.ref}`}>{r.no}</span>

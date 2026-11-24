@@ -225,6 +225,13 @@
    "northArrowPx": null,
    "transform": null,
    "residual": "Published dimensions used only as checks: early pools about 18 x 13 m each, about 4 m apart (1983 p. 101); joined pool about 32 x 18 m (1983 p. 106), 32 x 18.3 m (1989 n. 19), central pair each about 13 x 18.3 m (1989 Fig. 12 caption as recorded)."
+  },
+  {
+   "id": "netzer2001-plan15",
+   "citation": "Netzer 2001, Vol. I, folded Plan 15 (Stages 2–6, with later dotted walls); pp. 82–85",
+   "asset": "https://drive.google.com/file/d/1ozeSGXTBAoxosjkd_Gl1Rwrod3Pf7Pww/view",
+   "licence": "Owner-held photograph; source link only",
+   "residual": "Only the approximate terminal length transfers to Plan 20. No independent registration of Plan 15 to this model."
   }
  ],
  "layers": [
@@ -4383,8 +4390,8 @@
       15.945
      ],
      [
-      -0.199,
-      15.75
+      -2.293,
+      15.906
      ]
     ],
     "closed": false,
@@ -4401,9 +4408,9 @@
     "value": null,
     "basis": "unknown"
    },
-   "source": "netzer2001-plan20",
-   "locator": "Plan 20, printed p. 97",
-   "note": "text p. 84: built on top of and into the earlier channel along the northern sidewall of the Naaran conduit; supplied the northern pool; preserved along almost its entire length. Levels 100.31 (head) and 100.15 (bend) printed on it"
+   "source": "netzer2001-plan20 + netzer2001-plan15",
+   "locator": "Plan 20, printed p. 97; folded Plan 15, northern terminal",
+   "note": "text p. 84: built on top of and into the earlier channel along the northern sidewall of the Naaran conduit; supplied the northern pool; preserved along almost its entire length. Levels 100.31 (head) and 100.15 (bend) printed on it The original Plan 20 centreline ended at [-0.199, 15.75]. Folded Plan 15 shows a single line for approximately the last 2.1 m to the pool wall. The display trims 2.1 m from the traced line; that approximate endpoint is a comparison between the two drawings. No receiving aperture, bed level or destruction phase is established."
   },
   {
    "id": "P20-ch-01",
@@ -9217,5 +9224,13 @@
    ],
    "note": "Marker for the plan feature 'complex': the middle of the pools."
   }
- ]
+ ],
+ "walkStart": {
+  "at": [
+   -5.6,
+   13.1
+  ],
+  "bearing": 115,
+  "note": "A display viewpoint west of the northern basin looking along the Stage 6 terminal. Bearing relative to the plan, before geographic registration."
+ }
 }

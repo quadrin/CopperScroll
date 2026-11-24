@@ -5,7 +5,7 @@ import type {MapSiteRuntime} from './atlas-map-site-layer';
 // A fixed camera, e.g. a photo's viewpoint: eye in the site frame, bearing clockwise from north, pitch above
 // the horizon, vertical field of view. While one is set, walking and looking are frozen.
 export type WalkCamera={eye:[number,number,number];bearing:number;pitch:number;fov:number};
-export type WalkOptions={onPick?:(clientX:number,clientY:number)=>boolean};
+export type WalkOptions={resume?:WalkCamera;onPick?:(clientX:number,clientY:number)=>boolean};
 export type WalkController={keys:Set<string>;press:(key:string)=>void;release:(key:string)=>void;toggleSprint:()=>void;toggleCrouch:()=>void;toggleFly:()=>void;reset:()=>void;stop:()=>void;position:()=>[number,number,number];stance:()=>{sprinting:boolean;sprintEnabled:boolean;crouched:boolean;grounded:boolean;flying:boolean};setView:(view:WalkCamera|null)=>void;camera:()=>WalkCamera};
 export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[number,number,number])=>void,start?:[number,number],options:WalkOptions={}):WalkController {
  const before={center:map.getCenter(),zoom:map.getZoom(),pitch:map.getPitch(),bearing:map.getBearing(),padding:map.getPadding(),elevation:map.getCenterElevation()};
@@ -18,7 +18,10 @@ export function startMapWalk(map:Map,site:MapSiteRuntime,onChange:(position:[num
   if(site.model.walkStart){bearing=site.model.walkStart.bearing;pitch=site.model.walkStart.pitch;return site.model.walkStart.position;}
   const entrance=site.model.markers.get('D')??site.model.markers.get('north-mouth');return [entrance?.x??0,entrance?entrance.z+10:site.span*.35];
  }
- const at=initial(),body=new WalkCharacter(()=>site.collisionWorld(),new Vector3(at[0],0,at[1]));
+ const startAt=initial(),resume=options.resume;
+ const at=resume?[resume.eye[0],resume.eye[2]]:startAt;
+ if(resume){bearing=resume.bearing;pitch=90+resume.pitch;viewFov=resume.fov;}
+ const body=new WalkCharacter(()=>site.collisionWorld(),new Vector3(at[0],0,at[1]));
  let walkingView:{center:LngLat;zoom:number;pitch:number;bearing:number;elevation:number}|undefined,lastBase=NaN;
  // Only enter the walking state after a full body fits on modeled ground.
  canvas.dataset.walkPosition=body.eye.toArray().join(',');

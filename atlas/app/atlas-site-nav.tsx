@@ -1,5 +1,6 @@
 "use client";
 import {useEffect,useRef} from 'react';
+import {useSiloamNavigation} from "./atlas-siloam-navigation";
 import {entryHash} from './atlas-navigation';
 import {contextHash,type InspectionView} from './atlas-context-routes';
 import './atlas-site-nav.css';
@@ -13,6 +14,7 @@ export const FIELD_NOTES=PROTECTED_BUILD||!PHOTO_SITE?'#field-notes':PHOTO_SITE+
 export type AtlasSection='map'|'scroll'|'introduction'|'notes';
 export function sectionRoutes(entry:string,place?:string|null){const query=place?'?'+new URLSearchParams({place}).toString():'';return {introduction:'#what-is-the-copper-scroll',map:entryHash(entry,'2d')+query,scroll:entryHash(entry,'scroll')+query,compare:contextHash(entry,'compare',place),notes:FIELD_NOTES};}
 export default function AtlasSiteNav({entry,active,record,place}:{entry:string;active:AtlasSection;record?:string|null;place?:string|null}){
+ const siloam=useSiloamNavigation();
  const routes=sectionRoutes(entry,place),menu=useRef<HTMLDetailsElement>(null);
  useEffect(()=>{
   const close=(event:PointerEvent)=>{if(menu.current&&!menu.current.contains(event.target as Node))menu.current.open=false;};
@@ -21,5 +23,5 @@ export default function AtlasSiteNav({entry,active,record,place}:{entry:string;a
   return()=>{document.removeEventListener('pointerdown',close);document.removeEventListener('keydown',escape);};
  },[]);
  const tools:[InspectionView,string][]=[['graph','Connection graph'],['tests','Saved tests'],['impact','Change impact'],['sources','Source catalogue'],['names','Names & attestations']];
- return <header className="atlas-site-nav"><a className="atlas-site-brand" href="#home" aria-label="Copper Scroll home">Copper Scroll</a><nav aria-label="Atlas sections"><a className="atlas-intro-link" href={routes.introduction} aria-current={active==='introduction'?'page':undefined}>What is the Copper Scroll?</a>{(['map','scroll'] as const).map(id=><a key={id} href={routes[id]} aria-current={active===id?'page':undefined}>{id==='map'?'Map':'Scroll'}</a>)}<a href={routes.notes} aria-current={active==='notes'?'page':undefined}>Field notes</a></nav><details ref={menu} className="atlas-research-menu"><summary>Research tools</summary><div>{tools.map(([view,label])=><a key={view} href={contextHash(entry,view,place,view==='impact'?record:null,view==='names'?'scroll':active==='scroll'?'scroll':'2d')} onClick={()=>{if(menu.current)menu.current.open=false;}}>{label}</a>)}<a href={'#workbench/relationships?entry='+entry} onClick={()=>{if(menu.current)menu.current.open=false;}}>Feature workbench</a><a href="#changelog" onClick={()=>{if(menu.current)menu.current.open=false;}}>Changelog</a></div></details></header>;
+ return <header className="atlas-site-nav"><a className="atlas-site-brand" href="#home" aria-label="Copper Scroll home">Copper Scroll</a><nav aria-label="Atlas sections"><a className="atlas-intro-link" href={routes.introduction} aria-current={active==='introduction'?'page':undefined}>What is the Copper Scroll?</a>{(['map','scroll'] as const).map(id=><a key={id} href={siloam?.reading ? (id==='map' ? siloam.mapHref : siloam.scrollHref) : routes[id]} onClick={event=>{if(!siloam?.reading || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button!==0)return;event.preventDefault();if(id==='map')siloam.inspect();else siloam.read();}} aria-current={active===id?'page':undefined}>{id==='map'?'Map':'Scroll'}</a>)}<a href={routes.notes} aria-current={active==='notes'?'page':undefined}>Field notes</a></nav><details ref={menu} className="atlas-research-menu"><summary>Research tools</summary><div>{tools.map(([view,label])=><a key={view} href={contextHash(entry,view,place,view==='impact'?record:null,view==='names'?'scroll':active==='scroll'?'scroll':'2d')} onClick={()=>{if(menu.current)menu.current.open=false;}}>{label}</a>)}<a href={'#workbench/relationships?entry='+entry} onClick={()=>{if(menu.current)menu.current.open=false;}}>Feature workbench</a><a href="#changelog" onClick={()=>{if(menu.current)menu.current.open=false;}}>Changelog</a></div></details></header>;
 }

@@ -1,0 +1,38 @@
+name: Atlas release verification
+on:
+  push:
+    branches: [atlas-overlay-verification-20261124]
+    paths-ignore: ["atlas-site/**", "index.html"]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install pinned dependencies
+        working-directory: atlas
+        run: corepack enable && corepack pnpm install --frozen-lockfile
+      - name: Check types, routes, layers and models
+        working-directory: atlas
+        run: |
+          corepack pnpm exec tsc --noEmit --incremental false
+          node scripts/check-research-layers.mjs
+          node scripts/check-explorer.mjs
+          node scripts/check-interface.mjs
+          node scripts/check-kb.mjs
+          node scripts/check-minecraft.mjs
+          node scripts/check-walk-physics.mjs
+      - name: Build and validate Pages payload
+        working-directory: atlas
+        run: |
+          corepack pnpm run build:pages
+          bash scripts/check-pages-build.sh "$RUNNER_TEMP/release-check"
+      - name: Save verified static assets on the verification branch
+        run: |
+          git add -- atlas-site index.html
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Build checked Atlas Pages assets"
+          git push origin HEAD:refs/heads/atlas-overlay-verification-20261124

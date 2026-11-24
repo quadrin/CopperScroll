@@ -7,7 +7,7 @@ const nav=module('../app/atlas-navigation.ts');
 const contextRoutes=module('../app/atlas-context-routes.ts');
 const plans=JSON.parse(readFileSync(new URL('../app/atlas-site-plans.json',import.meta.url),'utf8'));
 const {entries,places}=JSON.parse(readFileSync(new URL('../app/atlas-data.json',import.meta.url),'utf8'));
-const model=module('../app/atlas-explorer-model.ts',{'./atlas-navigation':nav,'./atlas-site-plans.json':plans,'./atlas-data.json':{entries,places},'./atlas-context-routes':contextRoutes});
+const model=module('../app/atlas-explorer-model.ts',{'./atlas-siloam-reading':module('../app/atlas-siloam-reading.ts'),'./atlas-navigation':nav,'./atlas-site-plans.json':plans,'./atlas-data.json':{entries,places},'./atlas-context-routes':contextRoutes});
 const primary=id=>entries.find(e=>e.id===id)?.candidates[0]?.placeId??null;
 assert.equal(new Set(plans.map(p=>p.id)).size,plans.length);
 let roundtrips=0;
@@ -74,3 +74,16 @@ assert.equal(contextRoutes.legacyEvidenceTarget('#kb?entry=18&view=names'),'#ent
 const legacy=contextRoutes.legacyEvidenceTarget('#kb?entry=25&record=source/inventory-sion-iv17&detail=1');
 assert.equal(model.explorerFromHash(legacy,primary)?.recordId,'source/inventory-sion-iv17');
 console.log('Contextual views and canonical record IDs round-trip in Map/Scroll; old Evidence bookmarks redirect without losing records.');
+
+for (const [reading, subject, featureId] of [
+ ['outlet-siloam','tunnel-mouth',null], ['displayed-baths','stepped-basin',null],
+ ['water-closet-jehu','receiver','L102'], ['outlet-siloam','conduit','L103'],
+]) {
+ for (const mode of ['scroll','site']) {
+  const state={...model.archaeologyForPlace('49','jer_siloam'),mode,representation:'source',featureId,siloamReading:reading,siloamSubject:subject};
+  const restored=model.explorerFromHash(model.explorerHash(state),primary);
+  assert.ok(restored);assert.equal(restored.siloamReading,reading);assert.equal(restored.siloamSubject,subject);assert.equal(restored.featureId,featureId);
+ }
+}
+for (const hash of ['#entry-29/scroll?reading=displayed-baths','#entry-49/site/qumran-ilan/source?reading=outlet-siloam','#entry-49/scroll?subject=conduit','#entry-49/scroll?reading=outlet-siloam&feature=unknown','#entry-49/scroll?reading=unknown','#entry-49/scroll?reading=outlet-siloam&place=kh_qumran']) assert.equal(model.explorerFromHash(hash,primary),null,hash);
+console.log('Siloam reading, subject and plan-feature routes round-trip and reject unrelated entries, places and features.');

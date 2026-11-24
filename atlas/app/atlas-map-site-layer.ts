@@ -78,7 +78,7 @@ export function createMapSiteLayer(map:Map,plan:SitePlan,place:Place,onReady:(ru
     setFeature(id){model?.root.traverse(o=>{const mesh=o as T.Mesh;if(!mesh.material)return;for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material]){const mat=m as T.MeshStandardMaterial;if(mat.emissive){mat.emissive.set(mesh.userData.featureId===id?'#aa6c31':'#000000');mat.emissiveIntensity=.2;}}});map.triggerRepaint();}
    };map.on('terrain',terrainChanged);map.on('sourcedata',terrainLoaded);onReady(runtime);map.triggerRepaint();
   }catch(e){onFailure(e instanceof Error?e.message:'Site geometry could not load.');}},
-  render(_gl,args){if(!map.getCanvas().dataset.walkPosition){signs?.update(null);measure?.update(null);lastProjection=null;}if(!renderer||!model||!runtime||map.getZoom()<15.5)return;
+  render(_gl,args){if(!map.getCanvas().dataset.walkPosition){signs?.update(null);measure?.update(null);lastProjection=null;}if(!renderer||!model||!runtime||map.getZoom()<15.5||(!map.getCanvas().dataset.walkPosition&&map.getCanvas().dataset.archiveOverlay))return;
    const base=baseElevation(),o=MercatorCoordinate.fromLngLat(anchor,base+.2);
    // Terrain loading can update the camera after the current frame's matrix was
    // prepared. Draw a follow-up frame so the model and map use the same height.

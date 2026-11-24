@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 
+import {useSiloamNavigation} from "./atlas-siloam-navigation";
+import {isSiloamReading} from "./atlas-siloam-reading";
+
 const repo = "https://github.com/quadrin/CopperScroll/blob/main/";
 type Branch = { id: string; label: string; editor: string; hebrew?: string; paraphrase: string; requirement: string; consequence: string; references: string[] };
 const branches: Record<string, Branch[]> = {
@@ -48,17 +51,19 @@ const branches: Record<string, Branch[]> = {
 
 /** Local exploration of retained readings; it does not change research confidence. */
 export default function ReaderBranches({ entryId }: { entryId: string }) {
+  const siloam = useSiloamNavigation();
   const choices = branches[entryId];
   const [selected, setSelected] = useState(choices?.[0]?.id);
   if (!choices) return null;
-  const branch = choices.find(b => b.id === selected) ?? choices[0];
+  const branch = choices.find(b => b.id === (entryId === "49" ? siloam?.reading ?? selected : selected)) ?? choices[0];
   return <section className="reader-branches" aria-label={`Reading alternatives for entry ${entryId}`}>
     <div className="reader-branches-heading"><span className="small-caps">Entry {entryId} · reading alternatives</span><span>Edition-based</span></div>
-    <div className="reader-branch-tabs" role="group" aria-label="Choose a retained reading">{choices.map(choice => <button key={choice.id} type="button" aria-pressed={choice.id === branch.id} onClick={() => setSelected(choice.id)}><strong>{choice.label}</strong><small>{choice.editor}</small></button>)}</div>
+    <div className="reader-branch-tabs" role="group" aria-label="Choose a retained reading">{choices.map(choice => <button key={choice.id} type="button" aria-pressed={choice.id === branch.id} onClick={() => {setSelected(choice.id); if (entryId === "49" && isSiloamReading(choice.id)) siloam?.select(choice.id);}}><strong>{choice.label}</strong><small>{choice.editor}</small></button>)}</div>
     <div className="reader-branch-result" aria-live="polite">
       {branch.hebrew && <p className="reader-branch-hebrew" dir="rtl" lang="he">{branch.hebrew}</p>}
       <p className="reader-branch-paraphrase"><span>Project paraphrase of this reading</span>{branch.paraphrase}</p>
       <dl><dt>Required feature</dt><dd>{branch.requirement}</dd><dt>Effect on the map</dt><dd>{branch.consequence}</dd></dl>
+      {entryId === "49" && siloam && <button type="button" className="siloam-open-map" onClick={() => siloam.inspect()}>Compare this reading on the map</button>}
       <p className="reader-branch-citations">{branch.references.join(" · ")}. <a href={`${repo}text/readings.json`} target="_blank" rel="noreferrer">Edition apparatus</a></p>
       <p className="reader-branch-limit">The original-photo target is unresolved. {entryId === "31" ? "The mapped Doq and ‘under’ words do not adjudicate the disputed landmark." : "Column X has no aligned original photograph in this reader."} <a href={`${repo}research/text/plate_check.md`} target="_blank" rel="noreferrer">Image audit</a></p>
     </div>
