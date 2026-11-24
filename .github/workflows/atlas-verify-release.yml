@@ -1,0 +1,34 @@
+name: Atlas release verification
+on:
+  push:
+    branches: [atlas-overlay-verification-20261124]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install pinned dependencies
+        working-directory: atlas
+        run: corepack enable && corepack pnpm install --frozen-lockfile
+      - name: Check types, routes, layers and models
+        working-directory: atlas
+        run: |
+          corepack pnpm exec tsc --noEmit --incremental false
+          node scripts/check-research-layers.mjs
+          node scripts/check-explorer.mjs
+          node scripts/check-interface.mjs
+          node scripts/check-kb.mjs
+          node scripts/check-minecraft.mjs
+          node scripts/check-walk-physics.mjs
+      - name: Build and validate Pages payload
+        working-directory: atlas
+        run: |
+          corepack pnpm run build:pages
+          bash scripts/check-pages-build.sh "$RUNNER_TEMP/release-check"
