@@ -15,25 +15,17 @@ jobs:
             atlas
             text
             research/shared_tools
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-      - name: Build the root-hosted atlas from the public source
-        working-directory: atlas
+      - name: Export current atlas application and map assets
         run: |
-          corepack enable
-          corepack pnpm install --frozen-lockfile
-          VITE_PRIVATE_INTRO=1 corepack pnpm exec vite build --config vite.pages.config.ts --base / --outDir "$RUNNER_TEMP/hosted-bundle"
-          node scripts/check-research-layers.mjs
-      - name: Package the source, inputs and build
-        run: |
-          git archive --format=tar HEAD atlas text > "$RUNNER_TEMP/source.tar"
-          tar -czf "$RUNNER_TEMP/bundle.tgz" -C "$RUNNER_TEMP/hosted-bundle" .
-          gzip "$RUNNER_TEMP/source.tar"
+          git archive --format=tar.gz -o "$RUNNER_TEMP/app.tgz" HEAD atlas/app atlas/components atlas/lib atlas/pages atlas/hooks atlas/registration atlas/scripts atlas/text
+          git archive --format=tar.gz -o "$RUNNER_TEMP/public.tgz" HEAD atlas/public
       - uses: actions/upload-artifact@v4
         with:
-          name: hosted-atlas-inputs
-          path: |
-            ${{ runner.temp }}/source.tar.gz
-            ${{ runner.temp }}/bundle.tgz
+          name: hosted-atlas-app
+          path: ${{ runner.temp }}/app.tgz
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hosted-atlas-public
+          path: ${{ runner.temp }}/public.tgz
           retention-days: 1
