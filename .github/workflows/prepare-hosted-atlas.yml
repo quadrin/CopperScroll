@@ -1,0 +1,39 @@
+name: Prepare hosted atlas source
+on:
+  push:
+    branches: [atlas-hosted-sync-20261124]
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            atlas
+            text
+            research/shared_tools
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Build the root-hosted atlas from the public source
+        working-directory: atlas
+        run: |
+          corepack enable
+          corepack pnpm install --frozen-lockfile
+          VITE_PRIVATE_INTRO=1 corepack pnpm exec vite build --config vite.pages.config.ts --base / --outDir "$RUNNER_TEMP/hosted-bundle"
+          node scripts/check-research-layers.mjs
+      - name: Package the source, inputs and build
+        run: |
+          git archive --format=tar HEAD atlas text > "$RUNNER_TEMP/source.tar"
+          tar -czf "$RUNNER_TEMP/bundle.tgz" -C "$RUNNER_TEMP/hosted-bundle" .
+          gzip "$RUNNER_TEMP/source.tar"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hosted-atlas-inputs
+          path: |
+            ${{ runner.temp }}/source.tar.gz
+            ${{ runner.temp }}/bundle.tgz
+          retention-days: 1
