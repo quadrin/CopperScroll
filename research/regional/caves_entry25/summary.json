@@ -1,5 +1,5 @@
 {
- "N_rows": 635,
+ "N_rows": 634,
  "N_min": 605,
  "cluster_records": 30,
  "cluster_stated_members": 84,
@@ -8,32 +8,32 @@
  "counts": {
   "B-PILLAR|both-mouths|primary": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
-    "fail": 201,
-    "unknown": 433,
+    "fail": 202,
+    "unknown": 431,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 618,
+      "unknown": 617,
       "fail": 3,
       "match": 14
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -42,8 +42,8 @@
    "min": {
     "N": 605,
     "all-match": 1,
-    "fail": 189,
-    "unknown": 415,
+    "fail": 190,
+    "unknown": 414,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -60,8 +60,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -80,32 +80,32 @@
   },
   "B-PILLAR|both-mouths|s_open_ge2": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
-    "fail": 195,
-    "unknown": 439,
+    "fail": 196,
+    "unknown": 437,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 618,
+      "unknown": 617,
       "fail": 3,
       "match": 14
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 187,
       "match": 36
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -114,8 +114,8 @@
    "min": {
     "N": 605,
     "all-match": 1,
-    "fail": 183,
-    "unknown": 421,
+    "fail": 184,
+    "unknown": 420,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -132,8 +132,8 @@
       "match": 36
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -152,32 +152,32 @@
   },
   "B-PILLAR|both-mouths|s_pillar_between": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
-    "fail": 202,
-    "unknown": 432,
+    "fail": 203,
+    "unknown": 430,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 621,
+      "unknown": 620,
       "fail": 9,
       "match": 5
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -186,8 +186,8 @@
    "min": {
     "N": 605,
     "all-match": 1,
-    "fail": 190,
-    "unknown": 414,
+    "fail": 191,
+    "unknown": 413,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -204,8 +204,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -224,32 +224,32 @@
   },
   "B-PILLAR|both-mouths|s_singular_unknown": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
-    "fail": 116,
-    "unknown": 518,
+    "fail": 117,
+    "unknown": 516,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 618,
+      "unknown": 617,
       "fail": 3,
       "match": 14
      },
      "c3": {
-      "unknown": 497,
+      "unknown": 496,
       "fail": 110,
       "match": 28
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 524,
+      "unknown": 523,
       "fail": 102,
       "match": 9
      }
@@ -258,8 +258,8 @@
    "min": {
     "N": 605,
     "all-match": 1,
-    "fail": 110,
-    "unknown": 494,
+    "fail": 111,
+    "unknown": 493,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -276,8 +276,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -296,32 +296,32 @@
   },
   "B-PILLAR|cave|primary": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
     "fail": 198,
-    "unknown": 436,
+    "unknown": 435,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 618,
+      "unknown": 617,
       "fail": 3,
       "match": 14
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -348,8 +348,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -368,32 +368,32 @@
   },
   "B-PILLAR|cave|s_open_ge2": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
     "fail": 190,
-    "unknown": 444,
+    "unknown": 443,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 618,
+      "unknown": 617,
       "fail": 3,
       "match": 14
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 187,
       "match": 36
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -420,8 +420,8 @@
       "match": 36
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -440,32 +440,32 @@
   },
   "B-PILLAR|cave|s_pillar_between": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
     "fail": 199,
-    "unknown": 435,
+    "unknown": 434,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 621,
+      "unknown": 620,
       "fail": 9,
       "match": 5
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -492,8 +492,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -512,32 +512,32 @@
   },
   "B-PILLAR|cave|s_singular_unknown": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 1,
     "fail": 120,
-    "unknown": 514,
+    "unknown": 513,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 618,
+      "unknown": 617,
       "fail": 3,
       "match": 14
      },
      "c3": {
-      "unknown": 497,
+      "unknown": 496,
       "fail": 110,
       "match": 28
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 524,
+      "unknown": 523,
       "fail": 102,
       "match": 9
      }
@@ -564,8 +564,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -584,31 +584,31 @@
   },
   "B-TERRACE|both-mouths|primary": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
-    "fail": 198,
-    "unknown": 437,
+    "fail": 199,
+    "unknown": 435,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -617,8 +617,8 @@
    "min": {
     "N": 605,
     "all-match": 0,
-    "fail": 187,
-    "unknown": 418,
+    "fail": 188,
+    "unknown": 417,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -634,8 +634,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -654,31 +654,31 @@
   },
   "B-TERRACE|both-mouths|s_open_ge2": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
-    "fail": 192,
-    "unknown": 443,
+    "fail": 193,
+    "unknown": 441,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 187,
       "match": 36
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -687,8 +687,8 @@
    "min": {
     "N": 605,
     "all-match": 0,
-    "fail": 181,
-    "unknown": 424,
+    "fail": 182,
+    "unknown": 423,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -704,8 +704,8 @@
       "match": 36
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -724,31 +724,31 @@
   },
   "B-TERRACE|both-mouths|s_pillar_between": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
-    "fail": 198,
-    "unknown": 437,
+    "fail": 199,
+    "unknown": 435,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -757,8 +757,8 @@
    "min": {
     "N": 605,
     "all-match": 0,
-    "fail": 187,
-    "unknown": 418,
+    "fail": 188,
+    "unknown": 417,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -774,8 +774,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -794,31 +794,31 @@
   },
   "B-TERRACE|both-mouths|s_singular_unknown": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
-    "fail": 113,
-    "unknown": 522,
+    "fail": 114,
+    "unknown": 520,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 497,
+      "unknown": 496,
       "fail": 110,
       "match": 28
      },
      "c4": {
-      "unknown": 629,
-      "fail": 5,
+      "unknown": 627,
+      "fail": 6,
       "match": 1
      },
      "c5": {
-      "unknown": 524,
+      "unknown": 523,
       "fail": 102,
       "match": 9
      }
@@ -827,8 +827,8 @@
    "min": {
     "N": 605,
     "all-match": 0,
-    "fail": 108,
-    "unknown": 497,
+    "fail": 109,
+    "unknown": 496,
     "by_clause": {
      "c1": {
       "match": 579,
@@ -844,8 +844,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 599,
-      "fail": 5,
+      "unknown": 598,
+      "fail": 6,
       "match": 1
      },
      "c5": {
@@ -864,31 +864,31 @@
   },
   "B-TERRACE|cave|primary": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
     "fail": 195,
-    "unknown": 440,
+    "unknown": 439,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -914,8 +914,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -934,31 +934,31 @@
   },
   "B-TERRACE|cave|s_open_ge2": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
     "fail": 187,
-    "unknown": 448,
+    "unknown": 447,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 187,
       "match": 36
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -984,8 +984,8 @@
       "match": 36
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -1004,31 +1004,31 @@
   },
   "B-TERRACE|cave|s_pillar_between": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
     "fail": 195,
-    "unknown": 440,
+    "unknown": 439,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 412,
+      "unknown": 411,
       "fail": 195,
       "match": 28
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 439,
+      "unknown": 438,
       "fail": 187,
       "match": 9
      }
@@ -1054,8 +1054,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {
@@ -1074,31 +1074,31 @@
   },
   "B-TERRACE|cave|s_singular_unknown": {
    "rows": {
-    "N": 635,
+    "N": 634,
     "all-match": 0,
     "fail": 117,
-    "unknown": 518,
+    "unknown": 517,
     "by_clause": {
      "c1": {
-      "match": 608,
+      "match": 607,
       "unknown": 27
      },
      "c2": {
-      "unknown": 605,
+      "unknown": 604,
       "match": 30
      },
      "c3": {
-      "unknown": 497,
+      "unknown": 496,
       "fail": 110,
       "match": 28
      },
      "c4": {
-      "unknown": 607,
-      "fail": 13,
+      "unknown": 604,
+      "fail": 15,
       "match": 15
      },
      "c5": {
-      "unknown": 524,
+      "unknown": 523,
       "fail": 102,
       "match": 9
      }
@@ -1124,8 +1124,8 @@
       "match": 28
      },
      "c4": {
-      "unknown": 578,
-      "fail": 12,
+      "unknown": 576,
+      "fail": 14,
       "match": 15
      },
      "c5": {

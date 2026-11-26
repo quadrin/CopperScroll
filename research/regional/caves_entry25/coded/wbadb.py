@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from coding import R, X  # noqa: E402
 
 ROWS, EXCL = [], []
-MERGE = {}
+MERGE = {"WB:E756": "DJD3:8"}  # round-2 B2-1, 6 Nov 2026: permit register L-399/1986 + ESI 6 pp. 68-69 (Cave Q3 = 3Q)
 T = "2026-10-11T05:14:00Z"
 SRC = "WBADB (Greenberg and Keinan 2009), WBADB_data1.xlsx"
 
@@ -111,7 +111,7 @@ w("E711", "Excavations 711", "Cave 24 in Qumran (Patrich survey numbering)", 193
   period="PPNB arrowhead; Roman lamp; Nabataean vessel; textiles", piw="partly", exc="excavated (Patrich 1997)", ref="Patrich 1994b: 90")
 w("E755", "Excavations 755", "Cave Q-5 (Hizmi)", 193550, 127650, "excavation permit record, via WBADB")
 w("E756", "Excavations 756", "Cave Q-3 (Jones 1978)", 195500, 127600, "V. Jones 1978 excavation, via WBADB",
-  notes="Label 'Q-3' as for the Copper Scroll cave in ESI 6 and for X/35 in Atiqot 41 (flagged by label). The printed point lies on the plain east of Qumran (doubtful).")
+  notes="Label 'Q-3'. MERGED into DJD3:8 (3Q) on 6 Nov 2026: the SOA permit register in the WBADB workbook gives 'Qumran, Cave Q3' as licence L-399/1986, and ESI 6 pp. 68-69 states that Cave Q3 is 1952 cave 8 (3Q), dug in April 1986. The WBADB point (195500/127600) is 2.95 km SE of 3Q on the shore plain. The juglet cave (X/35) is listed separately in WBADB (L-640, 1988). Side-quest round-2 B2-1; review RR3.")
 w("E760", "Excavations 760", "Cave Q-9 (Patrich)", 193650, 127550, "Hebrew University Judean Desert cave survey (Patrich), via WBADB",
   period="Roman pottery", piw="partly", notes="ESI 13 (1995): 64 gives 1935/1310 (not inventoried).")
 w("E761", "Excavations 761", "Cave Q-4 (Hizmi and Richardson)", 193450, 127550, "excavation permit record, via WBADB",

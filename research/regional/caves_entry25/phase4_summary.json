@@ -69,64 +69,64 @@
  },
  "headline": {
   "frozen": {
-   "N": 635,
+   "N": 634,
    "all-match": 1,
    "fail": 198,
-   "unknown": 436,
+   "unknown": 435,
    "by_clause": {
     "c1": {
-     "match": 608,
+     "match": 607,
      "unknown": 27
     },
     "c2": {
-     "unknown": 618,
+     "unknown": 617,
      "fail": 3,
      "match": 14
     },
     "c3": {
-     "unknown": 412,
+     "unknown": 411,
      "fail": 195,
      "match": 28
     },
     "c4": {
-     "unknown": 607,
-     "fail": 13,
+     "unknown": 604,
+     "fail": 15,
      "match": 15
     },
     "c5": {
-     "unknown": 439,
+     "unknown": 438,
      "fail": 187,
      "match": 9
     }
    }
   },
   "union": {
-   "N": 643,
+   "N": 642,
    "all-match": 1,
    "fail": 201,
-   "unknown": 441,
+   "unknown": 440,
    "by_clause": {
     "c1": {
-     "match": 616,
+     "match": 615,
      "unknown": 27
     },
     "c2": {
-     "unknown": 626,
+     "unknown": 625,
      "fail": 3,
      "match": 14
     },
     "c3": {
-     "unknown": 416,
+     "unknown": 415,
      "fail": 198,
      "match": 29
     },
     "c4": {
-     "unknown": 615,
-     "fail": 13,
+     "unknown": 612,
+     "fail": 15,
      "match": 15
     },
     "c5": {
-     "unknown": 445,
+     "unknown": 444,
      "fail": 189,
      "match": 9
     }
@@ -153,8 +153,8 @@
      "match": 28
     },
     "c4": {
-     "unknown": 578,
-     "fail": 12,
+     "unknown": 576,
+     "fail": 14,
      "match": 15
     },
     "c5": {
@@ -185,8 +185,8 @@
      "match": 29
     },
     "c4": {
-     "unknown": 585,
-     "fail": 12,
+     "unknown": 583,
+     "fail": 14,
      "match": 15
     },
     "c5": {
@@ -197,7 +197,7 @@
    }
   }
  },
- "union_N_rows": 643,
+ "union_N_rows": 642,
  "union_N_min": 612,
  "union_cluster_records": 33,
  "union_cluster_stated_members": 88,

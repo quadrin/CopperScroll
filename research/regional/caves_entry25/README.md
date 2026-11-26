@@ -1,5 +1,11 @@
 # Every recorded cave in the region, scored against entry 25
 
+**Corrections, 6 November 2026 (owner-approved data fixes).**
+- `WB:E756` ("Cave Q-3") is merged into `DJD3:8` (3Q). The SOA permit register gives "Qumran, Cave Q3" as licence L-399/1986, and ESI 6 pp. 68–69 states that Cave Q3 is 1952 cave 8. The WBADB point is 2.95 km SE on the plain (side-quest round-2 B2-1, review RR3).
+- Facings are added for A41:XI/18 (NNE, from Plan 6), XI/20 (S, Plan 8) and VIII/29 (northern and southern openings, from the text) (round-2 D1-1, review RR6). Thirty other ʿAtiqot 41 caves with plans are still coded "no facing in the record" and could be read the same way.
+- Rebuilt: caves.csv (664 rows), scores, aspect, summary, the IAA and phase-4 views, and the exposure audit. N_rows falls from 635 to 634.
+- The two `Freeze` tests in `tests/test_lane.py` fail on main as well (they check git history), so these changes did not cause them.
+
 **What it is.** An exploratory inventory of the caves recorded between Wadi el-Makkuk/Jericho and Naḥal Ḥever (Old Israel Grid E 180–197 km, N 91–150 km), each coded against the clauses of entry 25 (VI 1–6: "the cave of the pillar with the two entrances, facing east, at the northern entrance …") under the plan frozen in [PLAN.md](PLAN.md). It gives a denominator. It makes no identification claim and changes no registered outcome, class or closed test.
 
 **Main result.** Of **635** cave rows (**605** after merging possible duplicates; plus 30 cluster records), the cave-level pillar reading (B-PILLAR, Milik's eastward attachment) has **1 match every clause, 198 fail at least one, 436 unknown, of 635** (1 / 186 / 418 of 605). The one row is **ʿAtiqot 41 cave XII/53** (Naḥal Qumran): its east-facing opening is divided into a northern and a southern part by a built pillar (W2). At the stricter both-mouths level the only all-match row is the **Twin Cave** (repository record, exposed; exploratory). Under the terrace reading (B-TERRACE) **no** row matches every clause (0 / 195 / 440 of 635). Allegro's Temple reading (B-GATE) is not a cave; this inventory does not bear on it.
